@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1_main" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::Main</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1_main_1a5edeeb7a88e0b38f10684286d85253a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.notevault.Main.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.notevault.Main.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Главный метод приложения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Аргументы командной строки (не используются). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/Main.java" line="34" column="24" bodyfile="src/main/java/com/notevault/Main.java" bodystart="34" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1_main_1ad490168cfd02cdc82e6640b7cc7e21fc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.Main.getPreferredTheme</definition>
+        <argsstring>()</argsstring>
+        <name>getPreferredTheme</name>
+        <qualifiedname>com.notevault.Main.getPreferredTheme</qualifiedname>
+        <briefdescription>
+<para>Определяет предпочтительную тему оформления. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Читает значение ключа <javadoccode>&quot;theme&quot;</javadoccode> из <computeroutput><ref refid="" kindref="compound">Preferences</ref></computeroutput>. Возможные значения: <javadoccode>&quot;dark&quot;</javadoccode>, <javadoccode>&quot;light&quot;</javadoccode>, <javadoccode>&quot;auto&quot;</javadoccode>. При значении <javadoccode>&quot;auto&quot;</javadoccode> возвращает <javadoccode>&quot;light&quot;</javadoccode> (системное определение тёмного режима macOS через переменную окружения оставлено как заглушка для будущей реализации).</para>
+<para><simplesect kind="return"><para><javadoccode>&quot;dark&quot;</javadoccode> или <javadoccode>&quot;light&quot;</javadoccode>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/Main.java" line="72" column="27" bodyfile="src/main/java/com/notevault/Main.java" bodystart="72" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.Main</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/Main.java" line="27" column="7" bodyfile="src/main/java/com/notevault/Main.java" bodystart="27" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1_main_1ad490168cfd02cdc82e6640b7cc7e21fc" prot="private" virt="non-virtual"><scope>com::notevault::Main</scope><name>getPreferredTheme</name></member>
+      <member refid="classcom_1_1notevault_1_1_main_1a5edeeb7a88e0b38f10684286d85253a7" prot="public" virt="non-virtual"><scope>com::notevault::Main</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

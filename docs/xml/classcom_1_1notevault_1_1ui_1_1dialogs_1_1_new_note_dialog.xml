@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::dialogs::NewNoteDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a0c41fbd0bb08018052aaf97a3f3597b9" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.ui.dialogs.NewNoteDialog.createdNote</definition>
+        <argsstring></argsstring>
+        <name>createdNote</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.createdNote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="14" column="18" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1af1f836f2d42fc7ec8f03d562048873f7" prot="private" static="no" mutable="no">
+        <type>JTextField</type>
+        <definition>JTextField com.notevault.ui.dialogs.NewNoteDialog.titleField</definition>
+        <argsstring></argsstring>
+        <name>titleField</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.titleField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="15" column="24" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a962b2a1b27ab62b6e77657c8672d9362" prot="private" static="no" mutable="no">
+        <type>JTextField</type>
+        <definition>JTextField com.notevault.ui.dialogs.NewNoteDialog.tagsField</definition>
+        <argsstring></argsstring>
+        <name>tagsField</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.tagsField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="16" column="24" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1aba84c22d47c699140842c1d5fc6b40ad" prot="private" static="no" mutable="no">
+        <type>JComboBox&lt; BookItem &gt;</type>
+        <definition>JComboBox&lt;BookItem&gt; com.notevault.ui.dialogs.NewNoteDialog.bookCombo</definition>
+        <argsstring></argsstring>
+        <name>bookCombo</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.bookCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="17" column="23" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1ae3e4d6da329fcd26ee000fb840bd3426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.dialogs.NewNoteDialog.NewNoteDialog</definition>
+        <argsstring>(Frame parent)</argsstring>
+        <name>NewNoteDialog</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.NewNoteDialog</qualifiedname>
+        <param>
+          <type>Frame</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="19" column="12" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a60b83b3b4f75f1b5ceeb4c9210a86049" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.ui.dialogs.NewNoteDialog.getCreatedNote</definition>
+        <argsstring>()</argsstring>
+        <name>getCreatedNote</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.getCreatedNote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="114" column="17" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="114" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a06b233a90a443227b7e8b4bc87dfee27" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.dialogs.NewNoteDialog.buildUI</definition>
+        <argsstring>()</argsstring>
+        <name>buildUI</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.buildUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="27" column="18" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="27" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a98fa6c4642393114f6139dc342d3fd49" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.dialogs.NewNoteDialog.doCreate</definition>
+        <argsstring>()</argsstring>
+        <name>doCreate</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.doCreate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="83" column="18" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="83" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a3e6d8b9ea294c127d38eacac35747f13" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>List&lt; Tag &gt; com.notevault.ui.dialogs.NewNoteDialog.parseTags</definition>
+        <argsstring>(String text)</argsstring>
+        <name>parseTags</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.parseTags</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="104" column="18" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1afadfc0a1546352abb980f7a1e51c80c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>record</type>
+        <definition>record com.notevault.ui.dialogs.NewNoteDialog.BookItem</definition>
+        <argsstring>(Book book, String label)</argsstring>
+        <name>BookItem</name>
+        <qualifiedname>com.notevault.ui.dialogs.NewNoteDialog.BookItem</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="116" column="20" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="116" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.dialogs.NewNoteDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" line="12" column="7" bodyfile="src/main/java/com/notevault/ui/dialogs/NewNoteDialog.java" bodystart="12" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1aba84c22d47c699140842c1d5fc6b40ad" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>bookCombo</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1afadfc0a1546352abb980f7a1e51c80c2" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>BookItem</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a06b233a90a443227b7e8b4bc87dfee27" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>buildUI</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a0c41fbd0bb08018052aaf97a3f3597b9" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>createdNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a98fa6c4642393114f6139dc342d3fd49" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>doCreate</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a60b83b3b4f75f1b5ceeb4c9210a86049" prot="public" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>getCreatedNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1ae3e4d6da329fcd26ee000fb840bd3426" prot="public" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>NewNoteDialog</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a3e6d8b9ea294c127d38eacac35747f13" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>parseTags</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a962b2a1b27ab62b6e77657c8672d9362" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>tagsField</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1af1f836f2d42fc7ec8f03d562048873f7" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::NewNoteDialog</scope><name>titleField</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

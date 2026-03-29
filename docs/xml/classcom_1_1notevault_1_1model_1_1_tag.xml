@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1model_1_1_tag" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::model::Tag</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_tag_1af358c1790cd84a5cc4ccec03a3242831" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long com.notevault.model.Tag.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>com.notevault.model.Tag.id</qualifiedname>
+        <briefdescription>
+<para>Первичный ключ в таблице <javadoccode>tags</javadoccode>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="27" column="18" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_tag_1a933d99bdaab51513c15ac5b6af1a2a90" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.model.Tag.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>com.notevault.model.Tag.name</qualifiedname>
+        <briefdescription>
+<para>Имя тега (без символа <javadoccode>#</javadoccode>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Хранится в нижнем регистре по соглашению; сравнение в БД регистронезависимо. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="34" column="20" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_tag_1a1fc08a5846aa1946efe376732b95fc34" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.notevault.model.Tag.noteCount</definition>
+        <argsstring></argsstring>
+        <name>noteCount</name>
+        <qualifiedname>com.notevault.model.Tag.noteCount</qualifiedname>
+        <briefdescription>
+<para>Количество заметок с данным тегом. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Вспомогательное поле — заполняется при запросе <computeroutput><ref refid="_1a2e209db55eb53f05b1b82435b6b7e780" kindref="member">com.notevault.db.TagDAO#findAll()</ref></computeroutput> из агрегирующего SQL. Не хранится в БД отдельной колонкой. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="43" column="17" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1aad49b502f3fd3c41244869f015449401" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.model.Tag.Tag</definition>
+        <argsstring>()</argsstring>
+        <name>Tag</name>
+        <qualifiedname>com.notevault.model.Tag.Tag</qualifiedname>
+        <briefdescription>
+<para>Конструктор по умолчанию. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="46" column="12" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1a94d0247289a4e4da912324807c29a183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.model.Tag.Tag</definition>
+        <argsstring>(String name)</argsstring>
+        <name>Tag</name>
+        <qualifiedname>com.notevault.model.Tag.Tag</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Создаёт тег с заданным именем. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя тега (без <javadoccode>#</javadoccode>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="52" column="12" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1ad1a4a232281806edf648a9ea8b7c1467" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.notevault.model.Tag.getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>com.notevault.model.Tag.getId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Первичный ключ. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="55" column="17" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1a8a306276696a81614344c0b14a526355" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Tag.setId</definition>
+        <argsstring>(long id)</argsstring>
+        <name>setId</name>
+        <qualifiedname>com.notevault.model.Tag.setId</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="57" column="17" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1a26aa099743fc217a7ebd630572423c80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Tag.getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>com.notevault.model.Tag.getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Имя тега. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="60" column="19" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1a21ed58afcc84fb0238732738583a303a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Tag.setName</definition>
+        <argsstring>(String name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>com.notevault.model.Tag.setName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя тега. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="62" column="17" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1a660bc92a4e212c3ceb8bf73665983298" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.notevault.model.Tag.getNoteCount</definition>
+        <argsstring>()</argsstring>
+        <name>getNoteCount</name>
+        <qualifiedname>com.notevault.model.Tag.getNoteCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Число заметок с этим тегом (денормализованное поле). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="65" column="16" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1aaaa58cb614d065cb355bd81ebee686e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Tag.setNoteCount</definition>
+        <argsstring>(int noteCount)</argsstring>
+        <name>setNoteCount</name>
+        <qualifiedname>com.notevault.model.Tag.setNoteCount</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>noteCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noteCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Число заметок. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="67" column="17" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1a43e89863fa0f84c1450bcd31c306c836" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Tag.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.notevault.model.Tag.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Имя тега. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="70" column="20" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1ad2abb90a7ae39238c165bb417dbb699c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.notevault.model.Tag.equals</definition>
+        <argsstring>(Object o)</argsstring>
+        <name>equals</name>
+        <qualifiedname>com.notevault.model.Tag.equals</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Два тега равны, если совпадают их имена (регистронезависимо). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="76" column="20" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_tag_1aa5133192041936e663085794e82f54cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.notevault.model.Tag.hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <qualifiedname>com.notevault.model.Tag.hashCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Tag.java" line="83" column="16" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="83" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Тег (ярлык) для быстрой фильтрации заметок. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Теги хранятся в таблице <javadoccode>tags</javadoccode> БД с ограничением <javadoccode>UNIQUE COLLATE NOCASE</javadoccode> (регистронезависимая уникальность). Связь с заметками реализована через промежуточную таблицу <javadoccode>note_tags</javadoccode> (many-to-many).</para>
+<para>В YAML front-matter заметки теги записываются как список: <programlisting filename=".yaml"><codeline><highlight class="normal">tags:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>java</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>tutorial</highlight></codeline>
+</programlisting></para>
+<para>Физически заметки с одним тегом размещаются в папке с именем тега, что позволяет ориентироваться в хранилище без приложения.</para>
+<para><simplesect kind="see"><para>com.notevault.db.TagDAO </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">com.notevault.util.VaultLayout</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.model.Tag</label>
+        <link refid="classcom_1_1notevault_1_1model_1_1_tag"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/model/Tag.java" line="24" column="7" bodyfile="src/main/java/com/notevault/model/Tag.java" bodystart="24" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1ad2abb90a7ae39238c165bb417dbb699c" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>equals</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1ad1a4a232281806edf648a9ea8b7c1467" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>getId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a26aa099743fc217a7ebd630572423c80" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>getName</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a660bc92a4e212c3ceb8bf73665983298" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>getNoteCount</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1aa5133192041936e663085794e82f54cc" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>hashCode</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1af358c1790cd84a5cc4ccec03a3242831" prot="private" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>id</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a933d99bdaab51513c15ac5b6af1a2a90" prot="private" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>name</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a1fc08a5846aa1946efe376732b95fc34" prot="private" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>noteCount</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a8a306276696a81614344c0b14a526355" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>setId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a21ed58afcc84fb0238732738583a303a" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>setName</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1aaaa58cb614d065cb355bd81ebee686e0" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>setNoteCount</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1aad49b502f3fd3c41244869f015449401" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>Tag</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a94d0247289a4e4da912324807c29a183" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>Tag</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a43e89863fa0f84c1450bcd31c306c836" prot="public" virt="non-virtual"><scope>com::notevault::model::Tag</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1model_1_1_attachment" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::model::Attachment</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_attachment_1a17ca9a28d83540b79f23217a27369cd0" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long com.notevault.model.Attachment.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>com.notevault.model.Attachment.id</qualifiedname>
+        <briefdescription>
+<para>Первичный ключ в таблице <javadoccode>attachments</javadoccode>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="32" column="18" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_attachment_1ad4cbfd84af21668becee21cb0cdaed55" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long com.notevault.model.Attachment.noteId</definition>
+        <argsstring></argsstring>
+        <name>noteId</name>
+        <qualifiedname>com.notevault.model.Attachment.noteId</qualifiedname>
+        <briefdescription>
+<para>Внешний ключ на таблицу <javadoccode>notes</javadoccode>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="35" column="18" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_attachment_1a842bbc5f9e1edcdaf7bbdeeb6bc0b2c9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.model.Attachment.fileName</definition>
+        <argsstring></argsstring>
+        <name>fileName</name>
+        <qualifiedname>com.notevault.model.Attachment.fileName</qualifiedname>
+        <briefdescription>
+<para>Имя файла (без пути). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Используется в wiki-ссылках <javadoccode>![[fileName]]</javadoccode> внутри заметки. Пример: <javadoccode>&quot;diagram.png&quot;</javadoccode>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="43" column="20" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_attachment_1a4a16921ffdbf0dbdc6937c72d4d11333" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.model.Attachment.filePath</definition>
+        <argsstring></argsstring>
+        <name>filePath</name>
+        <qualifiedname>com.notevault.model.Attachment.filePath</qualifiedname>
+        <briefdescription>
+<para>Путь к файлу относительно корня vault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Пример: <javadoccode>&quot;_attachments/my-note/diagram.png&quot;</javadoccode>. Разделитель — <javadoccode>&apos;/&apos;</javadoccode>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="51" column="20" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1a1e3e52c4d31c2026dd5c5f96feccda83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.model.Attachment.Attachment</definition>
+        <argsstring>()</argsstring>
+        <name>Attachment</name>
+        <qualifiedname>com.notevault.model.Attachment.Attachment</qualifiedname>
+        <briefdescription>
+<para>Конструктор по умолчанию. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="54" column="12" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1ac787491f993f5ecd6709134904a24389" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.model.Attachment.Attachment</definition>
+        <argsstring>(long noteId, String fileName, String filePath)</argsstring>
+        <name>Attachment</name>
+        <qualifiedname>com.notevault.model.Attachment.Attachment</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>noteId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Создаёт запись о вложении. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noteId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID заметки-владельца. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя файла. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Относительный путь к файлу внутри vault. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="63" column="12" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1aff49276a3457de2f9786f64ab8023571" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.notevault.model.Attachment.getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>com.notevault.model.Attachment.getId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Первичный ключ. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="70" column="17" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1a32d6a1633ec0cdbb877c5c1451918567" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Attachment.setId</definition>
+        <argsstring>(long id)</argsstring>
+        <name>setId</name>
+        <qualifiedname>com.notevault.model.Attachment.setId</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="72" column="17" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1a0d5eb7c8753b0ed86c575c6274ecd44e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.notevault.model.Attachment.getNoteId</definition>
+        <argsstring>()</argsstring>
+        <name>getNoteId</name>
+        <qualifiedname>com.notevault.model.Attachment.getNoteId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ID заметки-владельца. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="75" column="17" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1a978cc037203be041a62777134b2a525a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Attachment.setNoteId</definition>
+        <argsstring>(long noteId)</argsstring>
+        <name>setNoteId</name>
+        <qualifiedname>com.notevault.model.Attachment.setNoteId</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>noteId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noteId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID заметки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="77" column="17" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1adc0a43f3f773b9623d9595241844b60e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Attachment.getFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getFileName</name>
+        <qualifiedname>com.notevault.model.Attachment.getFileName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Имя файла. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="80" column="19" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1aaed5d2b09ef78db6fa5f44edcdd35a33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Attachment.setFileName</definition>
+        <argsstring>(String fileName)</argsstring>
+        <name>setFileName</name>
+        <qualifiedname>com.notevault.model.Attachment.setFileName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя файла. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="82" column="17" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1a2cf860ac17220ee38e79140f70159db5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Attachment.getFilePath</definition>
+        <argsstring>()</argsstring>
+        <name>getFilePath</name>
+        <qualifiedname>com.notevault.model.Attachment.getFilePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Относительный путь к файлу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="85" column="19" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1ae8a603703d52b6363ba07faeb531b821" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Attachment.setFilePath</definition>
+        <argsstring>(String filePath)</argsstring>
+        <name>setFilePath</name>
+        <qualifiedname>com.notevault.model.Attachment.setFilePath</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Относительный путь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="87" column="17" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_attachment_1a039c8f1f3e34f479f287c6a3cf944862" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Attachment.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.notevault.model.Attachment.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Имя файла. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Attachment.java" line="90" column="20" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="90" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Прикреплённый файл, связанный с конкретной заметкой. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Вложения хранятся <bold>физически</bold> в папке <javadoccode>_attachments/&lt;note-slug&gt;/</javadoccode> внутри vault, а в БД (таблица <javadoccode>attachments</javadoccode>) хранится только ссылка на файл — имя и относительный путь. Сам бинарный контент в БД не попадает.</para>
+<sect1 id="classcom_1_1notevault_1_1model_1_1_attachment_1autotoc_md4_1s1"><sect2 id="classcom_1_1notevault_1_1model_1_1_attachment_1autotoc_md4">
+<title>Ссылка в Markdown</title><para>В тексте заметки вложение вставляется синтаксисом Obsidian-style: <programlisting filename=".md"><codeline><highlight class="normal">![[photo.png]]</highlight></codeline>
+<codeline><highlight class="normal">![[document.pdf]]</highlight></codeline>
+</programlisting> При рендере превью <computeroutput><ref refid="" kindref="compound">com.notevault.service.MarkdownRenderer</ref></computeroutput> подставляет абсолютный URI файла в тег <javadoccode>&lt;img&gt;</javadoccode> или <javadoccode>&lt;a&gt;</javadoccode>.</para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1model_1_1_attachment_1autotoc_md5_1s1"><sect2 id="classcom_1_1notevault_1_1model_1_1_attachment_1autotoc_md5">
+<title>Удаление</title><para>При удалении заметки связанные записи в таблице <javadoccode>attachments</javadoccode> каскадно удаляются (FK <javadoccode>ON DELETE CASCADE</javadoccode>). Физические файлы удаляются отдельно в <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce" kindref="member">com.notevault.service.VaultService#deleteNote</ref></computeroutput>.</para>
+<para><simplesect kind="see"><para>com.notevault.db.AttachmentDAO </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6214436e88511b5185536696610a7891" kindref="member">com.notevault.service.VaultService.addAttachment</ref> </para>
+</simplesect>
+</para>
+</sect2></sect1>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.model.Attachment</label>
+        <link refid="classcom_1_1notevault_1_1model_1_1_attachment"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/model/Attachment.java" line="29" column="7" bodyfile="src/main/java/com/notevault/model/Attachment.java" bodystart="29" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a1e3e52c4d31c2026dd5c5f96feccda83" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>Attachment</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1ac787491f993f5ecd6709134904a24389" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>Attachment</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a842bbc5f9e1edcdaf7bbdeeb6bc0b2c9" prot="private" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>fileName</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a4a16921ffdbf0dbdc6937c72d4d11333" prot="private" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>filePath</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1adc0a43f3f773b9623d9595241844b60e" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>getFileName</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a2cf860ac17220ee38e79140f70159db5" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>getFilePath</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1aff49276a3457de2f9786f64ab8023571" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>getId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a0d5eb7c8753b0ed86c575c6274ecd44e" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>getNoteId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a17ca9a28d83540b79f23217a27369cd0" prot="private" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>id</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1ad4cbfd84af21668becee21cb0cdaed55" prot="private" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>noteId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1aaed5d2b09ef78db6fa5f44edcdd35a33" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>setFileName</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1ae8a603703d52b6363ba07faeb531b821" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>setFilePath</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a32d6a1633ec0cdbb877c5c1451918567" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>setId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a978cc037203be041a62777134b2a525a" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>setNoteId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a039c8f1f3e34f479f287c6a3cf944862" prot="public" virt="non-virtual"><scope>com::notevault::model::Attachment</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

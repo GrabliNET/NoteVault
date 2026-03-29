@@ -2521,7 +2521,7 @@ details[open]>summary::before {
 
 
 html {
---timestamp: 'Пн 30 Мар 2026 00:26:14';
+--timestamp: 'Пн 30 Мар 2026 02:16:18';
 }
 span.timestamp { content: ' '; }
 span.timestamp:before { content: var(--timestamp); }

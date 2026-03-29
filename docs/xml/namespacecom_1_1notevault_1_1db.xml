@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacecom_1_1notevault_1_1db" kind="namespace" language="Java">
+    <compoundname>com::notevault::db</compoundname>
+    <innerclass refid="classcom_1_1notevault_1_1db_1_1_attachment_d_a_o" prot="public">com::notevault::db::AttachmentDAO</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o" prot="public">com::notevault::db::BookDAO</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1db_1_1_database_manager" prot="public">com::notevault::db::DatabaseManager</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o" prot="public">com::notevault::db::NoteDAO</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o" prot="public">com::notevault::db::TagDAO</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/db/AttachmentDAO.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

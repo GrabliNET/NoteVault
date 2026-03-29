@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="ru">
+  <compound refid="classcom_1_1notevault_1_1model_1_1_attachment" kind="class"><name>com::notevault::model::Attachment</name>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a17ca9a28d83540b79f23217a27369cd0" kind="variable"><name>id</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1ad4cbfd84af21668becee21cb0cdaed55" kind="variable"><name>noteId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a842bbc5f9e1edcdaf7bbdeeb6bc0b2c9" kind="variable"><name>fileName</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a4a16921ffdbf0dbdc6937c72d4d11333" kind="variable"><name>filePath</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a1e3e52c4d31c2026dd5c5f96feccda83" kind="function"><name>Attachment</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1ac787491f993f5ecd6709134904a24389" kind="function"><name>Attachment</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1aff49276a3457de2f9786f64ab8023571" kind="function"><name>getId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a32d6a1633ec0cdbb877c5c1451918567" kind="function"><name>setId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a0d5eb7c8753b0ed86c575c6274ecd44e" kind="function"><name>getNoteId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a978cc037203be041a62777134b2a525a" kind="function"><name>setNoteId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1adc0a43f3f773b9623d9595241844b60e" kind="function"><name>getFileName</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1aaed5d2b09ef78db6fa5f44edcdd35a33" kind="function"><name>setFileName</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a2cf860ac17220ee38e79140f70159db5" kind="function"><name>getFilePath</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1ae8a603703d52b6363ba07faeb531b821" kind="function"><name>setFilePath</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_attachment_1a039c8f1f3e34f479f287c6a3cf944862" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1db_1_1_attachment_d_a_o" kind="class"><name>com::notevault::db::AttachmentDAO</name>
+    <member refid="classcom_1_1notevault_1_1db_1_1_attachment_d_a_o_1aaa0e37d22a00a52c53c166501727c44b" kind="function"><name>conn</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_attachment_d_a_o_1ad74237664c551d1bdca4fc3a70ef6edf" kind="function"><name>insert</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_attachment_d_a_o_1af994440898bc2e9c5e9e31e37054e22f" kind="function"><name>findByNote</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_attachment_d_a_o_1a5c4749a4b089749f78dbd668e23c2721" kind="function"><name>delete</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_attachment_d_a_o_1a4bca8fb2b80815b233396b3528ea64ce" kind="function"><name>deleteByNote</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1model_1_1_book" kind="class"><name>com::notevault::model::Book</name>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a566e1d217edf795a2d5324b77af7fd97" kind="variable"><name>id</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a624566537438db3ad80a26c1ee279a13" kind="variable"><name>name</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a79b6899195b4a412c649216f4bd451b2" kind="variable"><name>description</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a28d7b6bcb51c1f3e767c03876dfb25db" kind="variable"><name>createdAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a15a499f586ce7fbf11f5031b3654e606" kind="variable"><name>notes</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a4fe42ce03a7b29b6cd8cdf4803d06e4b" kind="function"><name>Book</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1acfa761e01d270951d23e326de542ab81" kind="function"><name>Book</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a9d11c18e2b3e28bb542fe12e51e6f886" kind="function"><name>getId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a0a6a5c840f5a84b89061e73d49c44f02" kind="function"><name>setId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a3fd0442bda1da8284b0e4aa858842bf3" kind="function"><name>getName</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a6a3fab4bb87ead4a2a24fef8953109a9" kind="function"><name>setName</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a7b4574686f081069407a8b2022e45be2" kind="function"><name>getDescription</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a40209eb4bf88b0b13974ae1daf74767b" kind="function"><name>setDescription</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1aeb28a4eea64a08766b9a47a327b07b9a" kind="function"><name>getCreatedAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a2f9c534a8810007e0b161449edeaa8e9" kind="function"><name>setCreatedAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a9e44053f2da5c3e4f0254aefe97ed971" kind="function"><name>getNotes</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1a3772eafaee1456a6b4d9216bc227661b" kind="function"><name>setNotes</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_book_1aebdb46f2974525091ad9a8e8696f0295" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog" kind="class"><name>com::notevault::ui::dialogs::BookAssignDialog</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a48b0a26d87420e20999e36e35f7755d4" kind="variable"><name>note</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0e7309a21b55cb9434e0c0fc8d06697d" kind="variable"><name>changed</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1adff2c9b0c99f3f0fc2a6cc75fce65c28" kind="variable"><name>bookCombo</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a857338febf4cb197bd657980078631cc" kind="variable"><name>orderSpinner</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1aadff47fb404b1f450198deb93740bfd6" kind="function"><name>BookAssignDialog</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0fc9da81c1c0ec0a466e865f31538839" kind="function"><name>isChanged</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0d387b503c860d4cc07c9b27db9314df" kind="function"><name>buildUI</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a9771c80d6ccddc3608a1558145a8a3d8" kind="function"><name>BookItem</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o" kind="class"><name>com::notevault::db::BookDAO</name>
+    <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a51023e0d2397816efd562b88bba13063" kind="function"><name>conn</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a8fc2e79a4263de3f4ec51667601121bf" kind="function"><name>insert</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a5dbc415f02447fe7f266f2ada6d21f94" kind="function"><name>update</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1aec2c7777f8ec374402912e18f53c0f40" kind="function"><name>delete</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1ac8e76b4e3ae3674cfab8e0bb17508300" kind="function"><name>findAll</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a44341b303709b7aa4f8643caf4770ee3" kind="function"><name>findById</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1aba7b5535ae84ed18858f51cbc5d7e904" kind="function"><name>updateNoteOrder</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1af0eebcd150282ba384dd86c324bb64ae" kind="function"><name>getNoteCount</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1db_1_1_database_manager" kind="class"><name>com::notevault::db::DatabaseManager</name>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1ab949653b63ebbf6f10ac81f6d6e3eb17" kind="variable"><name>LOG</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a4a7a5ed0a3a64cce203ac9dca9abc1aa" kind="variable"><name>instance</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1abe001d64a5edadecb8a237055a9dc16f" kind="variable"><name>connection</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a5fa5a17d4ffb93b881ee94353161c85a" kind="variable"><name>dbPath</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a14e3adb140c87c035ed945db49e74926" kind="function"><name>DatabaseManager</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1adb3334287c14d3c0adf5f6bcdbb4d567" kind="function"><name>executePragma</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a9e57b46b44f91633d38b083f49cfaf05" kind="function"><name>createSchema</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a65712db998cc14fa231fb575992b998d" kind="function"><name>getInstance</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a42b54822e14be23513c4b8bc437b7564" kind="function"><name>initialize</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a9aeb78ed51b075d9aedef99826a8544f" kind="function"><name>openVault</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a00f22aef1446eac4b74ce4a94b64bcac" kind="function"><name>getConnection</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a4799102dbe7478ae807a9509339610cd" kind="function"><name>isOpen</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1aeaf67f070e82cdac4057fb233e0a9aa1" kind="function"><name>close</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1_database_manager" kind="class"><name>com::notevault::ui::DatabaseManager</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_database_manager_1a3fa85fab786a6732bcb2db705145bc55" kind="function"><name>closeAll</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel" kind="class"><name>com::notevault::ui::panels::EditorPanel</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a4ada349e5aa6afabd07403400fa72727" kind="variable"><name>mainWindow</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5cbb1b4ec5e38cfb6ee0b79583d233aa" kind="variable"><name>currentNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa88f31160c25c2e57199c6a9cb8419fd" kind="variable"><name>toolbar</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a79f42f41fb778fbdfb238d145d3e99f5" kind="variable"><name>noteTitleLabel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ab5e894c45379142aaed88dc567df9967" kind="variable"><name>editPreviewToggle</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a701d376d6c2b4ae185e08a502f5cb86a" kind="variable"><name>addTagBtn</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a7a921af7c137d8447a3e785fb5f589d0" kind="variable"><name>attachBtn</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a7f4af22d2f0560617bf93d4d6400c3d7" kind="variable"><name>bookBtn</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1acb8ffb65f0b765749932c3492d4e04eb" kind="variable"><name>exportBtn</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a41b58802ca8778341d6ad6f7a93c5571" kind="variable"><name>tagChipPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a97eb11e8b4e1f7471b6ec1f629eb5019" kind="variable"><name>editorSplit</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa4c695f82b02360ee9a3104174477401" kind="variable"><name>editorArea</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a65736ff290d1e080578ad1844de3a439" kind="variable"><name>previewPane</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a3f0f89e265fbad1356670d1a6142fd35" kind="variable"><name>previewVisible</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa187c182cde09c2e15136d6e6f7a10e7" kind="variable"><name>autoSaveTimer</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a4f2a77cc89ecb9f9ca77ddebcc58eb8f" kind="variable"><name>dirty</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a97e66d88ef28e9cc66e6de7c8cffa30d" kind="variable"><name>previewDebounce</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1af76606b2004664bee9e13b1497147360" kind="variable"><name>autoSaveDebounce</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac2cbcd13169f0e91a6b975cb7d74dc7e" kind="function"><name>EditorPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5593ac32898fedf86b7164c8ab6329ac" kind="function"><name>loadNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a56ea88c3aeddc2b3400cf6dd265c1ab8" kind="function"><name>clearEditor</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5a7c98fec51fb9f7a0c31b49df7dc732" kind="function"><name>refreshPreview</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a644611bcbaf271e8d3c605be7c71a0e5" kind="function"><name>saveCurrentNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac552b30f7a6dd29d392acecceaf0361e" kind="function"><name>exportCurrentNoteToPdf</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a753ecb278075e9bc39033df9cedceb45" kind="function"><name>buildUI</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a236462445325766c0a02f53e958f261b" kind="function"><name>onEdit</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a41dba182df8ed31f10bd5d83d5bc3512" kind="function"><name>updatePreviewDelayed</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ae7ed82bd1e61769d280164dec197670f" kind="function"><name>scheduleAutoSave</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac340a388735d1ec52e06bf55f9c24778" kind="function"><name>updatePreview</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a919a5bcdef805f9085f3276fce40537a" kind="function"><name>togglePreview</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ad396369d127b098d4db542370072a54d" kind="function"><name>manageTags</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ae954dcb69838e8973ae81009d8a22a32" kind="function"><name>onTagRemoved</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aef0282101a30c6c5286f8ad48a566164" kind="function"><name>attachFile</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a29257eee0f11d6c0567dc29867ea612d" kind="function"><name>assignBook</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a00f8e29d0b38358ee8cd0c4f2be22ad0" kind="function"><name>updateToolbarEnabled</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a170e73157072e9e353bfb605fe6166c1" kind="function"><name>toolbarBtn</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser" kind="class"><name>com::notevault::util::FrontMatterParser</name>
+    <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a199048ad13916cdb42a1f33605858af2" kind="variable"><name>YAML</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a2442a1469a39fe8736786025afa70fc3" kind="function"><name>FrontMatterParser</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1ad66b202505a66d10cb5266fb6cbc5b85" kind="function"><name>applyToNote</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a46d1c589e255538e6f8ca2b281940af7" kind="function"><name>buildContent</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1acb026c526adc6af2f7487746d32c9dcb" kind="function"><name>extractFrontMatter</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1aa331632bb988b9e92b64c311aeed9649" kind="function"><name>extractBody</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1adf958d043c26a39ccd35dbd378bdcd4a" kind="function"><name>extractAttachmentRefs</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1_main" kind="class"><name>com::notevault::Main</name>
+    <member refid="classcom_1_1notevault_1_1_main_1a5edeeb7a88e0b38f10684286d85253a7" kind="function"><name>main</name></member>
+    <member refid="classcom_1_1notevault_1_1_main_1ad490168cfd02cdc82e6640b7cc7e21fc" kind="function"><name>getPreferredTheme</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1_main_window" kind="class"><name>com::notevault::ui::MainWindow</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a74f2af2331577b747396fc5f9a55b710" kind="variable"><name>sidebarPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a5801db99d354dc92c5020fc9119f5b87" kind="variable"><name>noteListPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a0693fecc3c4d4cc4d7bd141509358e13" kind="variable"><name>editorPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a4fc4da18dd66f82870e05e2372e394a6" kind="variable"><name>leftSplit</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1acbda860c65cba530eaca33ef9b5e3a13" kind="variable"><name>rightSplit</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ae6583bb79c8a8a261780371ca25af1dc" kind="variable"><name>statusLabel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ad42c9b70ccea618915fb2a0aa7efd5e1" kind="function"><name>MainWindow</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a8c2fad619a8ca32f47c2e921b8ecc18e" kind="function"><name>onNoteSelected</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a053b448e40b6962278132af239d16c39" kind="function"><name>onNoteSaved</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a3094bdfb5e0809313457f605d259711e" kind="function"><name>onNoteDeleted</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1af9c4f8ea1396abe324959c62523ce856" kind="function"><name>onSidebarSelectionChanged</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a0272f9cdbfaa7791b7ed41a4c014fd9c" kind="function"><name>refreshSidebar</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1aa8047e93ed2b46f29dad26b22972648e" kind="function"><name>refreshAll</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a3cdd292da0e88c99790dd93b4c944e1b" kind="function"><name>chooseVault</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a8b0232070ef5c3198c8cffecd06ab371" kind="function"><name>setStatus</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ade97e80a9484917d639037310c023300" kind="function"><name>showError</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ac37f736a36db28f68ad900dae7972f1f" kind="function"><name>buildUI</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1aa57991da817d6e82bd1ce1eeadd7d446" kind="function"><name>buildMenuBar</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a94ac68cf9a235d183027de8f2ae6bb8e" kind="function"><name>registerShortcuts</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1abd21dedf0dfb766ba5fd5aae04032d98" kind="function"><name>openLastVaultOrChoose</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a5d20712619f9f1554345593e372ace68" kind="function"><name>openVault</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a3b58aa78a70f225f1689d432375fc44f" kind="function"><name>newNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ab422d560a4ddb039bc3afd053523a8b2" kind="function"><name>toggleTheme</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a5129ee3d7d846eb41403296cf4b243de" kind="function"><name>exitApp</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer" kind="class"><name>com::notevault::service::MarkdownRenderer</name>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1ab1b9a41df836a4f0afad779b6edfd409" kind="variable"><name>EXTENSIONS</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a1c3f31fa17bc1510e9072c391535dcf5" kind="variable"><name>PARSER</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1ae2dd8730b4de7c402ba6528523836d65" kind="variable"><name>RENDERER</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a1d4242e95451f91fe69823eae14ede21" kind="function"><name>render</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a6779445a89aee80ebdc706c822825ecc" kind="function"><name>renderSimple</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a78f27b6ab7c41c86dc28b14f5a18f26b" kind="function"><name>wrapHtml</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a74941ed14dc9bd01927918a2369d13dd" kind="function"><name>processAttachmentRefs</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a86be8a718bdc24bbf871f53691aed0ba" kind="function"><name>resolveAttachmentTag</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a3643f89cb7e99d05582719c6e5ef54a2" kind="function"><name>stripFrontMatter</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a22955ced438ddefa979d60c80b5922c7" kind="function"><name>isDarkTheme</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog" kind="class"><name>com::notevault::ui::dialogs::NewNoteDialog</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a0c41fbd0bb08018052aaf97a3f3597b9" kind="variable"><name>createdNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1af1f836f2d42fc7ec8f03d562048873f7" kind="variable"><name>titleField</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a962b2a1b27ab62b6e77657c8672d9362" kind="variable"><name>tagsField</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1aba84c22d47c699140842c1d5fc6b40ad" kind="variable"><name>bookCombo</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1ae3e4d6da329fcd26ee000fb840bd3426" kind="function"><name>NewNoteDialog</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a60b83b3b4f75f1b5ceeb4c9210a86049" kind="function"><name>getCreatedNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a06b233a90a443227b7e8b4bc87dfee27" kind="function"><name>buildUI</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a98fa6c4642393114f6139dc342d3fd49" kind="function"><name>doCreate</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1a3e6d8b9ea294c127d38eacac35747f13" kind="function"><name>parseTags</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog_1afadfc0a1546352abb980f7a1e51c80c2" kind="function"><name>BookItem</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1model_1_1_note" kind="class"><name>com::notevault::model::Note</name>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1aa1a592d4e7f608424ff64feebe86cd77" kind="variable"><name>id</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a5569d26a3925ee827bc484396403976f" kind="variable"><name>title</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a6375786bb21e7fc297ae959061ea6d88" kind="variable"><name>filePath</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a8d7a1e8354350be377f388c226210948" kind="variable"><name>content</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a12530844eca0b99656bae213aeadba66" kind="variable"><name>createdAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a84bcb7cbaadc4685f79e8b31887fb8fa" kind="variable"><name>updatedAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1accc76318b4cf7d0a6240cbce8d3a0069" kind="variable"><name>tags</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a301111fade54876683b3717d646dad6a" kind="variable"><name>bookId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a25fea9821270f0124210ab1f334562b0" kind="variable"><name>bookOrder</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1ad613f23451ed40ba71ab405353210e54" kind="variable"><name>metaExtra</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1af12261b48e9317911fa214735e3fe7c2" kind="function"><name>Note</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a9c62b36c90a66aaa762095d7c302e51a" kind="function"><name>Note</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f" kind="function"><name>getId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a6f773c8d062b8859bae1277a80cfa2fc" kind="function"><name>setId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1ae082ea02f6c2a9b4ecc1a8e98c68e44a" kind="function"><name>getTitle</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a80d15ec55d70a8139519ca8dec5cc02e" kind="function"><name>setTitle</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a21bd47bd8d83648504373bde82fee650" kind="function"><name>getFilePath</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a53fc133aa0bd847b0313f7d862b39469" kind="function"><name>setFilePath</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a3a4e835c1899864c8e038e984db222ac" kind="function"><name>getContent</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a557961fa4c7f26a45fcc8b33bd807fd0" kind="function"><name>setContent</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a5dea4e089aa91ddf563fb54766ba8a8e" kind="function"><name>getCreatedAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1acadaa21a92a469da9f5da581a5101d6e" kind="function"><name>setCreatedAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a31612e4a5eee4c1d88697e6b26c5d1cd" kind="function"><name>getUpdatedAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a7313a62632197afec6dfa2dff837ae61" kind="function"><name>setUpdatedAt</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1aa6a04f87d9d19f2a2cc40b25849ab0cd" kind="function"><name>getTags</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1ac7e2444b75d621a08ebdc1bdb700509d" kind="function"><name>setTags</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a2a8f5cdeedcec162e5cf20bb419fdeaa" kind="function"><name>getBookId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a709ff968407368c143516d74945edd3c" kind="function"><name>setBookId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a9fbf3d0e1299e220f36d646f547a036d" kind="function"><name>getBookOrder</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1abde8703ba931dd1d08bb2a4302409406" kind="function"><name>setBookOrder</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a23613b32016b945988104960d57670b3" kind="function"><name>getMetaExtra</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a62669f822f1fb316e5ec822191557a84" kind="function"><name>setMetaExtra</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a0d1bf8d504a6de63f1c82f07e44e77c6" kind="function"><name>getBodyContent</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_note_1a14fd91f0ebc4676f259b18d75bb01561" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o" kind="class"><name>com::notevault::db::NoteDAO</name>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1aaf4fc5fb6268056e09f5d10a01cabd59" kind="function"><name>conn</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a14dacffcca8a4f0993a668017f2844df" kind="function"><name>syncTags</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a57b4d8e7f8157934008edfa3c04d9d1a" kind="function"><name>syncBook</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a49be514310508833952e686c5e4eefcf" kind="function"><name>mapNote</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a6dca6a6bbfc2f6aa4a9810932dc91d7f" kind="function"><name>insert</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ae9ad6e0f021ea1f3703773b2ab14f618" kind="function"><name>update</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0728747695e65859e85a54c446634dac" kind="function"><name>delete</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ad5723f704075627c10ffc41d402a91c9" kind="function"><name>findById</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a4f3ad6742d8a06915fe8779b7324638b" kind="function"><name>findByPath</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1af65ea8d4c95cf1d99b77777dd40b45f4" kind="function"><name>findAll</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a1dfbc77dbd1d41e9c1d349ffc48d5621" kind="function"><name>findByTag</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1adda6c5eb37b8eaf7790152781ba1d70d" kind="function"><name>findByBook</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0a120a09d344685d9da1bb6c9d657bcb" kind="function"><name>search</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a20f9e3a2d1bd565e699fe9c609b2800a" kind="function"><name>findTagsForNote</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ac683dabefcafc6251b57e39b0f6e9bf9" kind="function"><name>getOrCreateTag</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer" kind="class"><name>com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1ae0a0baeb58f4f50311fec7381d47f8ee" kind="variable"><name>titleLabel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a117635a677131f41f970ec91df333597" kind="variable"><name>dateLabel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1aabac9569e4e5ea3e2d7ea76a4074f045" kind="variable"><name>tagsLabel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a10cbd8f6cd525d4a435f439461775c6f" kind="variable"><name>textPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1af5d82e9c8f1992da26993508393b04f7" kind="function"><name>NoteListCellRenderer</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a30f2b48bea1f389c1d501249f87856a6" kind="function"><name>getListCellRendererComponent</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel" kind="class"><name>com::notevault::ui::panels::NoteListPanel</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a37a367f08ca7f373a5303dd45267fd4d" kind="variable"><name>DATE_FMT</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a9badba6dda4d92e7330cbde7b7ddca81" kind="variable"><name>mainWindow</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a77a9511fea477232fec1dab075969bf1" kind="variable"><name>listModel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1af3ca357be5b17e47dce59ab3b30bdf84" kind="variable"><name>noteList</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a194fb59f7747c64ae69e4d8fbd016c14" kind="variable"><name>searchField</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a06ab271ba28c00d330251ea4c7ed3db6" kind="variable"><name>headerLabel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a86dcb560faf1039c4689f4636cbc4cb0" kind="variable"><name>currentSelection</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a6d91924f7ff5034325c74fdc03dd1d66" kind="variable"><name>searchDebounce</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a87162a98405ba12e92363406bd9af4d0" kind="function"><name>NoteListPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1addbef7d387230bd496067bb3ef53782e" kind="function"><name>showAllNotes</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1aed987dd73e54679bd6f5060d94521296" kind="function"><name>loadSelection</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1ae762ea0479774a1218f7b8a3122ece70" kind="function"><name>reload</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1acbb36708d8c07510faa483c0ceb26e31" kind="function"><name>addNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a31946f53326d04103f962dfb2277d657" kind="function"><name>refreshNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a2eaac91eb23a29f3563736f7c8d8d99a" kind="function"><name>removeNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a9c33709d8209deb6ed8b4fa92461040e" kind="function"><name>selectNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a799105f3fa0933e14e8d2ae1f8677bae" kind="function"><name>focusSearch</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1ad85662ab13df20dd689cbb4992dc4719" kind="function"><name>buildUI</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a89a6a2874b85064e8a5f3e19e8a66b7a" kind="function"><name>loadFromService</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1afa168799366fba4db85df46017dd63fc" kind="function"><name>performSearch</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a6a34e6aa8c59a492173fa6e3d644ef32" kind="function"><name>showContextMenu</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a561683f152a8263fe9b650fc1ef81bf8" kind="function"><name>renameNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a48e5232cf5f97cbec1e8e7ace4fd4334" kind="function"><name>deleteNote</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a107244d28707c887151592fd133d1a76" kind="function"><name>searchIcon</name></member>
+  </compound>
+  <compound refid="interfacecom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_supplier" kind="interface"><name>com::notevault::ui::panels::NoteListPanel::NoteSupplier</name>
+    <member refid="interfacecom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_supplier_1a4fa92db131d328f0f927995cac8fa46c" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1_1_sidebar_cell_renderer" kind="class"><name>com::notevault::ui::panels::SidebarPanel::SidebarCellRenderer</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1_1_sidebar_cell_renderer_1af934e34884b55ed2a7de9b01253645fd" kind="function"><name>getTreeCellRendererComponent</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel" kind="class"><name>com::notevault::ui::panels::SidebarPanel</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a30dec7a937a6fd4e347b43229ac851af" kind="variable"><name>mainWindow</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a680edbcc391742a57b6091b079728b86" kind="variable"><name>tree</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a848d5965dd72a69bb52813c9cb06ef3e" kind="variable"><name>rootNode</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1acac46fd160fb1a5b051306bbb09b7354" kind="variable"><name>allNotesNode</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a957764f27f96287639518e678c605e3d" kind="variable"><name>booksNode</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a844c94beac3b205445da33681217767d" kind="variable"><name>tagsNode</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac0f8d60e6d02786b755e9831cacd7e2c" kind="variable"><name>treeModel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ad8c66db4663836e131baae7cfdadbef5" kind="variable"><name>newNoteBtn</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a8c8430a96463506703e24846f5c08b30" kind="function"><name>SidebarPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1aec55c5fcc208493f930663671c42218a" kind="function"><name>refresh</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a67737fa288ab225dc5f3305bd1bad467" kind="function"><name>buildUI</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a574fbd0c16831f6005ad10ef25057195" kind="function"><name>showContextMenu</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac6b78db982ff932d73c254ebc2930196" kind="function"><name>createBook</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ae95e142b7927cbbf49f1d5456c431d20" kind="function"><name>renameBook</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a87a17e98c0c7b5784fd0b729d1a9a6d0" kind="function"><name>deleteBook</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1adb6d0812673c61c19fb8737b4aa8249e" kind="function"><name>exportBook</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac2ae84660ef30cf833e5830e836fa0f8" kind="function"><name>renameTag</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a91837e2f80abc2eb7cbb2e0100e71333" kind="function"><name>deleteTag</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1model_1_1_tag" kind="class"><name>com::notevault::model::Tag</name>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1af358c1790cd84a5cc4ccec03a3242831" kind="variable"><name>id</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a933d99bdaab51513c15ac5b6af1a2a90" kind="variable"><name>name</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a1fc08a5846aa1946efe376732b95fc34" kind="variable"><name>noteCount</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1aad49b502f3fd3c41244869f015449401" kind="function"><name>Tag</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a94d0247289a4e4da912324807c29a183" kind="function"><name>Tag</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1ad1a4a232281806edf648a9ea8b7c1467" kind="function"><name>getId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a8a306276696a81614344c0b14a526355" kind="function"><name>setId</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a26aa099743fc217a7ebd630572423c80" kind="function"><name>getName</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a21ed58afcc84fb0238732738583a303a" kind="function"><name>setName</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a660bc92a4e212c3ceb8bf73665983298" kind="function"><name>getNoteCount</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1aaaa58cb614d065cb355bd81ebee686e0" kind="function"><name>setNoteCount</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1a43e89863fa0f84c1450bcd31c306c836" kind="function"><name>toString</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1ad2abb90a7ae39238c165bb417dbb699c" kind="function"><name>equals</name></member>
+    <member refid="classcom_1_1notevault_1_1model_1_1_tag_1aa5133192041936e663085794e82f54cc" kind="function"><name>hashCode</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel" kind="class"><name>com::notevault::ui::components::TagChipPanel</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a0bdc5dc36d24f61cfbbb25b276478398" kind="variable"><name>onRemove</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1ae44811c4c0672a4a1b2e666e0bb37c35" kind="function"><name>TagChipPanel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a2f4fb6ec4006e5821b863294f5890044" kind="function"><name>setTags</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a39620e4728b12ab1b3b71103629c8919" kind="function"><name>buildChip</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o" kind="class"><name>com::notevault::db::TagDAO</name>
+    <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1af168978a11df0a44db510b0d5906a585" kind="function"><name>conn</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a2e209db55eb53f05b1b82435b6b7e780" kind="function"><name>findAll</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a6d64683684301238cb40b9c4c39a6ba2" kind="function"><name>findByName</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a99f618cfcf94be1194463472b8c6bac0" kind="function"><name>rename</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1acda760a118823abe688311e93e4079aa" kind="function"><name>delete</name></member>
+    <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1ae7caf23270e17c5391aa21c3c7a115c7" kind="function"><name>pruneUnused</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog" kind="class"><name>com::notevault::ui::dialogs::TagManagerDialog</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ae74b4d418f60a7486f28f81823c8bffe" kind="variable"><name>selectedTags</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a32524eed4a510a4833055f341562a0c6" kind="variable"><name>changed</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a8d65689a82588bd1d0894ca249606e67" kind="variable"><name>availableModel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ad6e921e32e33b9a0db4c9b51773b6d91" kind="variable"><name>selectedModel</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a1b1f2f880958ea7163d7433b6dab35f1" kind="function"><name>TagManagerDialog</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ac1490e7ea16bdb9c1762169447d10309" kind="function"><name>getSelectedTags</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a376d60d5c69a926dddb8daa1d59bd0be" kind="function"><name>isChanged</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ad1fb242f4f3a00ab91c01a92f5280b42" kind="function"><name>buildUI</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_vault_chooser_dialog" kind="class"><name>com::notevault::ui::dialogs::VaultChooserDialog</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_vault_chooser_dialog_1a69f041ff1dda7cfe4c63d28a7061377a" kind="variable"><name>chosenPath</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_vault_chooser_dialog_1a6a9f1fe28009aa14ab771d81acc21c4d" kind="function"><name>VaultChooserDialog</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_vault_chooser_dialog_1afc6c763573c4e1fc7a2ad21e29861338" kind="function"><name>getChosenPath</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_vault_chooser_dialog_1ad078b363e722a137064786645cec0837" kind="function"><name>buildUI</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kind="class"><name>com::notevault::util::VaultLayout</name>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a42c72e4bcee468012fec126e209d8a37" kind="variable"><name>DIR_UNSORTED</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1aa8495b18ab90847a5d1342f7453b20ce" kind="variable"><name>DIR_MULTI</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a6f69dc63cd3de58f199351c45c559a3b" kind="variable"><name>DIR_ATTACHMENTS</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a4c509ede24da6b2364ef9400089acf4e" kind="variable"><name>DIR_DB</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a3f220327286d4cfc0dec681d8d552674" kind="variable"><name>vaultRoot</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1aa9f14ea39f52a87bd71ab9ecf3ef76fd" kind="function"><name>VaultLayout</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a08a6cdcf2e700e24f55fb9ba5e56e4d4" kind="function"><name>getVaultRoot</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a336e7837b2918bd0443d04ff7c489204" kind="function"><name>folderForNote</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a0fc1310784d361f294bcb8857ad56266" kind="function"><name>noteFilePath</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a842f2ca4b0ea581b868f728c314bd3e7" kind="function"><name>attachmentDir</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a45ca207beba9eabc5a446d6d4f65913c" kind="function"><name>ensureDirs</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1ab4fa88c1fa3f15beb2f1c8b75770c9b2" kind="function"><name>relocateIfNeeded</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1abb884768cfd534b3ba6fdc8f47108c9c" kind="function"><name>relativePath</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a0bac2343b0bff34768ba306c415c2525" kind="function"><name>resolve</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a6d7b3717912dd6baa48127339c757469" kind="function"><name>uniquePath</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e" kind="function"><name>sanitizeFileName</name></member>
+    <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a8b4b17b564931bc4c175b4f8869b574c" kind="function"><name>sanitizeDirName</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1service_1_1_vault_service" kind="class"><name>com::notevault::service::VaultService</name>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a860341c073aed85d99c962b8ed1934da" kind="variable"><name>LOG</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a454310f4afaa4c45d5a980cb06adfe72" kind="variable"><name>instance</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a5f84653e630a62b39adce3e163f61056" kind="variable"><name>layout</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a5212b5bd3e916a994cc20e801f130e5e" kind="variable"><name>noteDAO</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1acb4ddb954f8787af6ecf54972dd63e86" kind="variable"><name>tagDAO</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1ae8e1c3ca68c358a3f5b2282f7ae44d86" kind="variable"><name>bookDAO</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a39bbc8e41ad546c2510c0813b74adac2" kind="variable"><name>attachmentDAO</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a42abb8badd8c4845beeba402af8d1269" kind="function"><name>VaultService</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1aae6ace1982cf5ac85b338e5109af1314" kind="function"><name>resolveBookReference</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1abe5535c0c907dab6be34c9859fb41f04" kind="function"><name>getInstance</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a5f70401a9034bf14f46569cf0d609c2f" kind="function"><name>openVault</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a00cfff9997b54c5494855c8dc20e2a6d" kind="function"><name>isVaultOpen</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1acbc120014fa079090f088f7e857f7924" kind="function"><name>getLayout</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a31177c35ada66e4019a3521dd0c14559" kind="function"><name>createNote</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1aacc7298527393af3b6776dde92ed678d" kind="function"><name>createNote</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a439dd8e1fc2ce85b161fddbf7f6c0e10" kind="function"><name>saveNote</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6d9901d90cd4532daf3a5119e99240e1" kind="function"><name>updateNoteMeta</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a55e16ef92daaa1621949acccd5ed42f6" kind="function"><name>renameNote</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce" kind="function"><name>deleteNote</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6e9bd86241b701df9cdc8e2e946706d5" kind="function"><name>loadNoteContent</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6dfdc5ecf391ff0e0fc55b32c058d8e2" kind="function"><name>getAllNotes</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1abbc0f374d4a1ee5210874779484cf6ea" kind="function"><name>getNotesByTag</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a8a9fa42ec388ec5cd3e70db6aba90e28" kind="function"><name>getNotesByBook</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1ac8577a4e6f64820816de6c2550b4ec2c" kind="function"><name>searchNotes</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1afa4ff5e503dbfd57060bd569426e5ff5" kind="function"><name>getAllTags</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6c2b95f17dc3edf538856293cb64fe27" kind="function"><name>renameTag</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1af90017ddceba03e0fff5df67b79cf1d7" kind="function"><name>deleteTag</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a468dae458fde9a15fb5a0a567b06878d" kind="function"><name>getAllBooks</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1af35db116e54951ab3fade7fe8a257193" kind="function"><name>createBook</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a20d4b617579a58755d031376f5baa95e" kind="function"><name>updateBook</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a1db6199490f5c8f8477fac38f77bddab" kind="function"><name>deleteBook</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6214436e88511b5185536696610a7891" kind="function"><name>addAttachment</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1acdb5217fb532251bdb6ebcf783562bcd" kind="function"><name>getAttachments</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a47a61e44d5f7d80519d82bad262f0bbc" kind="function"><name>deleteAttachment</name></member>
+    <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1ada2682780ae13fe09de153969c0e2067" kind="function"><name>getBookContent</name></member>
+  </compound>
+  <compound refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout" kind="class"><name>com::notevault::ui::components::TagChipPanel::WrapLayout</name>
+    <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1aa5a3d135e35daaf196d71b10b14140e3" kind="function"><name>WrapLayout</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a4e4a48306ea5ee4846d0e9da635afa1f" kind="function"><name>preferredLayoutSize</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a4a5de5f9b4bd5446583408ebbe13a08f" kind="function"><name>minimumLayoutSize</name></member>
+    <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a96b498a19af595b72e798192a0306dae" kind="function"><name>layoutSize</name></member>
+  </compound>
+  <compound refid="namespacecom" kind="namespace"><name>com</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault" kind="namespace"><name>com::notevault</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault_1_1db" kind="namespace"><name>com::notevault::db</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault_1_1model" kind="namespace"><name>com::notevault::model</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault_1_1service" kind="namespace"><name>com::notevault::service</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault_1_1ui" kind="namespace"><name>com::notevault::ui</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault_1_1ui_1_1components" kind="namespace"><name>com::notevault::ui::components</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault_1_1ui_1_1dialogs" kind="namespace"><name>com::notevault::ui::dialogs</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault_1_1ui_1_1panels" kind="namespace"><name>com::notevault::ui::panels</name>
+  </compound>
+  <compound refid="namespacecom_1_1notevault_1_1util" kind="namespace"><name>com::notevault::util</name>
+  </compound>
+  <compound refid="namespacejava_1_1awt" kind="namespace"><name>java::awt</name>
+  </compound>
+  <compound refid="namespacejava_1_1awt_1_1event" kind="namespace"><name>java::awt::event</name>
+  </compound>
+  <compound refid="namespacejava_1_1io" kind="namespace"><name>java::io</name>
+  </compound>
+  <compound refid="namespacejava_1_1lang" kind="namespace"><name>java::lang</name>
+  </compound>
+  <compound refid="namespacejava_1_1nio_1_1file" kind="namespace"><name>java::nio::file</name>
+  </compound>
+  <compound refid="namespacejava_1_1sql" kind="namespace"><name>java::sql</name>
+  </compound>
+  <compound refid="namespacejava_1_1util" kind="namespace"><name>java::util</name>
+  </compound>
+  <compound refid="namespacejavax_1_1swing" kind="namespace"><name>javax::swing</name>
+  </compound>
+  <compound refid="namespacejavax_1_1swing_1_1border" kind="namespace"><name>javax::swing::border</name>
+  </compound>
+  <compound refid="namespacejavax_1_1swing_1_1tree" kind="namespace"><name>javax::swing::tree</name>
+  </compound>
+  <compound refid="_attachment_d_a_o_8java" kind="file"><name>AttachmentDAO.java</name>
+  </compound>
+  <compound refid="_book_d_a_o_8java" kind="file"><name>BookDAO.java</name>
+  </compound>
+  <compound refid="_database_manager_8java" kind="file"><name>DatabaseManager.java</name>
+  </compound>
+  <compound refid="_note_d_a_o_8java" kind="file"><name>NoteDAO.java</name>
+  </compound>
+  <compound refid="_tag_d_a_o_8java" kind="file"><name>TagDAO.java</name>
+  </compound>
+  <compound refid="_main_8java" kind="file"><name>Main.java</name>
+  </compound>
+  <compound refid="_attachment_8java" kind="file"><name>Attachment.java</name>
+  </compound>
+  <compound refid="_book_8java" kind="file"><name>Book.java</name>
+  </compound>
+  <compound refid="_note_8java" kind="file"><name>Note.java</name>
+  </compound>
+  <compound refid="_tag_8java" kind="file"><name>Tag.java</name>
+  </compound>
+  <compound refid="_markdown_renderer_8java" kind="file"><name>MarkdownRenderer.java</name>
+  </compound>
+  <compound refid="_pdf_exporter_8java" kind="file"><name>PdfExporter.java</name>
+  </compound>
+  <compound refid="_vault_service_8java" kind="file"><name>VaultService.java</name>
+  </compound>
+  <compound refid="_tag_chip_panel_8java" kind="file"><name>TagChipPanel.java</name>
+  </compound>
+  <compound refid="_book_assign_dialog_8java" kind="file"><name>BookAssignDialog.java</name>
+  </compound>
+  <compound refid="_new_note_dialog_8java" kind="file"><name>NewNoteDialog.java</name>
+  </compound>
+  <compound refid="_tag_manager_dialog_8java" kind="file"><name>TagManagerDialog.java</name>
+  </compound>
+  <compound refid="_vault_chooser_dialog_8java" kind="file"><name>VaultChooserDialog.java</name>
+  </compound>
+  <compound refid="_main_window_8java" kind="file"><name>MainWindow.java</name>
+  </compound>
+  <compound refid="_editor_panel_8java" kind="file"><name>EditorPanel.java</name>
+  </compound>
+  <compound refid="_note_list_panel_8java" kind="file"><name>NoteListPanel.java</name>
+  </compound>
+  <compound refid="_sidebar_panel_8java" kind="file"><name>SidebarPanel.java</name>
+  </compound>
+  <compound refid="_front_matter_parser_8java" kind="file"><name>FrontMatterParser.java</name>
+  </compound>
+  <compound refid="_vault_layout_8java" kind="file"><name>VaultLayout.java</name>
+  </compound>
+  <compound refid="dir_d8517d8b842053dc3dd7dde525dd9163" kind="dir"><name>src/main/java/com</name>
+  </compound>
+  <compound refid="dir_474d672c4a9e1862ea254aa73f8169cd" kind="dir"><name>src/main/java/com/notevault/ui/components</name>
+  </compound>
+  <compound refid="dir_412de3699623d07ab64ebc58f70ce08f" kind="dir"><name>src/main/java/com/notevault/db</name>
+  </compound>
+  <compound refid="dir_6e15e5861a113f527725f4404de3e1e8" kind="dir"><name>src/main/java/com/notevault/ui/dialogs</name>
+  </compound>
+  <compound refid="dir_fd3f6763802dee1ad875f6c80eac0bda" kind="dir"><name>src/main/java</name>
+  </compound>
+  <compound refid="dir_5eb159725f84c66aafd839904a4acdd0" kind="dir"><name>src/main</name>
+  </compound>
+  <compound refid="dir_e72eeaf41f2475b702ff7f8b6d13ba3f" kind="dir"><name>src/main/java/com/notevault/model</name>
+  </compound>
+  <compound refid="dir_875d76c90e4ebc86d49621b945e8e2ab" kind="dir"><name>src/main/java/com/notevault</name>
+  </compound>
+  <compound refid="dir_e0483b35ef0130b69b5cc07321d97d26" kind="dir"><name>src/main/java/com/notevault/ui/panels</name>
+  </compound>
+  <compound refid="dir_c88e2f18706adf9e190278a28cdfb655" kind="dir"><name>src/main/java/com/notevault/service</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_bab5cc19cce40caca260ba7472b0a2e4" kind="dir"><name>src/main/java/com/notevault/ui</name>
+  </compound>
+  <compound refid="dir_359bb1f96702d392418dbe6d1be825d3" kind="dir"><name>src/main/java/com/notevault/util</name>
+  </compound>
+</doxygenindex>

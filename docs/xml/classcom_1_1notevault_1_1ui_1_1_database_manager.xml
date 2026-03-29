@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1_database_manager" kind="class" language="Java" prot="package">
+    <compoundname>com::notevault::ui::DatabaseManager</compoundname>
+    <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_database_manager_1a3fa85fab786a6732bcb2db705145bc55" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.notevault.ui.DatabaseManager.closeAll</definition>
+        <argsstring>()</argsstring>
+        <name>closeAll</name>
+        <qualifiedname>com.notevault.ui.DatabaseManager.closeAll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="267" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="267" bodyend="269"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.DatabaseManager</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/MainWindow.java" line="266" column="1" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="266" bodyend="270"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_database_manager_1a3fa85fab786a6732bcb2db705145bc55" prot="package" virt="non-virtual"><scope>com::notevault::ui::DatabaseManager</scope><name>closeAll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

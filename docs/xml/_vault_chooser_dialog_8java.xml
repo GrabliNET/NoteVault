@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="_vault_chooser_dialog_8java" kind="file" language="Java">
+    <compoundname>VaultChooserDialog.java</compoundname>
+    <includes local="no">javax.swing.*</includes>
+    <includes local="no">javax.swing.border.EmptyBorder</includes>
+    <includes local="no">java.awt.*</includes>
+    <includes local="no">java.io.File</includes>
+    <includes local="no">java.nio.file.Path</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/notevault/ui/dialogs/VaultChooserDialog.java</label>
+        <link refid="_vault_chooser_dialog_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>java.awt.*</label>
+      </node>
+      <node id="5">
+        <label>java.io.File</label>
+      </node>
+      <node id="6">
+        <label>java.nio.file.Path</label>
+      </node>
+      <node id="2">
+        <label>javax.swing.*</label>
+      </node>
+      <node id="3">
+        <label>javax.swing.border.EmptyBorder</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_vault_chooser_dialog" prot="public">com::notevault::ui::dialogs::VaultChooserDialog</innerclass>
+    <innernamespace refid="namespacecom_1_1notevault_1_1ui_1_1dialogs">com::notevault::ui::dialogs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.notevault.ui.dialogs;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javax.swing.*;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javax.swing.border.EmptyBorder;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.awt.*;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.File;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.nio.file.Path;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">VaultChooserDialog<sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>JDialog<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Path<sp/>chosenPath;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>VaultChooserDialog(Frame<sp/>parent)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super(parent,<sp/></highlight><highlight class="stringliteral">&quot;Open<sp/>Vault&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setSize(460,<sp/>220);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setLocationRelativeTo(parent);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setResizable(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buildUI();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>buildUI()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JPanel<sp/>panel<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JPanel(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>BorderLayout(0,<sp/>16));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>panel.setBorder(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>EmptyBorder(24,<sp/>28,<sp/>20,<sp/>28));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JLabel<sp/>desc<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JLabel(</highlight><highlight class="stringliteral">&quot;&lt;html&gt;&lt;b&gt;Choose<sp/>or<sp/>create<sp/>a<sp/>vault<sp/>folder&lt;/b&gt;&lt;br&gt;&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;span<sp/>style=&apos;color:gray&apos;&gt;A<sp/>vault<sp/>is<sp/>a<sp/>directory<sp/>where<sp/>your<sp/>notes<sp/>and<sp/>database<sp/>are<sp/>stored.&lt;/span&gt;&lt;/html&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>panel.add(desc,<sp/>BorderLayout.NORTH);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JTextField<sp/>pathField<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JTextField();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathField.setEditable(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathField.putClientProperty(</highlight><highlight class="stringliteral">&quot;JTextField.placeholderText&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>folder<sp/>selected…&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JButton<sp/>browseBtn<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JButton(</highlight><highlight class="stringliteral">&quot;Browse…&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>browseBtn.addActionListener(e<sp/>-&gt;<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JFileChooser<sp/>fc<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JFileChooser();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fc.setDialogTitle(</highlight><highlight class="stringliteral">&quot;Select<sp/>Vault<sp/>Folder&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fc.showOpenDialog(</highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>==<sp/>JFileChooser.APPROVE_OPTION)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathField.setText(fc.getSelectedFile().getAbsolutePath());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JButton<sp/>newBtn<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JButton(</highlight><highlight class="stringliteral">&quot;New<sp/>Folder…&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newBtn.addActionListener(e<sp/>-&gt;<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JFileChooser<sp/>fc<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JFileChooser();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fc.setDialogTitle(</highlight><highlight class="stringliteral">&quot;Create<sp/>New<sp/>Vault<sp/>Folder&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fc.showSaveDialog(</highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>==<sp/>JFileChooser.APPROVE_OPTION)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>dir<sp/>=<sp/>fc.getSelectedFile();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir.mkdirs();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathField.setText(dir.getAbsolutePath());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JPanel<sp/>pathRow<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JPanel(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>BorderLayout(6,<sp/>0));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathRow.add(pathField,<sp/>BorderLayout.CENTER);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JPanel<sp/>btnRow<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JPanel(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GridLayout(1,<sp/>2,<sp/>4,<sp/>0));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btnRow.add(browseBtn);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btnRow.add(newBtn);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathRow.add(btnRow,<sp/>BorderLayout.EAST);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>panel.add(pathRow,<sp/>BorderLayout.CENTER);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JButton<sp/>openBtn<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JButton(</highlight><highlight class="stringliteral">&quot;Open<sp/>Vault&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>openBtn.putClientProperty(</highlight><highlight class="stringliteral">&quot;JButton.buttonType&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>openBtn.addActionListener(e<sp/>-&gt;<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>text<sp/>=<sp/>pathField.getText().trim();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(text.isEmpty())<sp/>{<sp/>JOptionPane.showMessageDialog(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Please<sp/>select<sp/>a<sp/>folder.&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chosenPath<sp/>=<sp/>Path.of(text);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dispose();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JButton<sp/>cancelBtn<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JButton(</highlight><highlight class="stringliteral">&quot;Cancel&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cancelBtn.addActionListener(e<sp/>-&gt;<sp/>dispose());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JPanel<sp/>buttons<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JPanel(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>FlowLayout(FlowLayout.RIGHT,<sp/>8,<sp/>0));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttons.add(cancelBtn);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttons.add(openBtn);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>panel.add(buttons,<sp/>BorderLayout.SOUTH);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getRootPane().setDefaultButton(openBtn);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add(panel);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Path<sp/>getChosenPath()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>chosenPath;<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/com/notevault/ui/dialogs/VaultChooserDialog.java"/>
+  </compounddef>
+</doxygen>

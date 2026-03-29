@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1_main_window" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JFrame</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a74f2af2331577b747396fc5f9a55b710" prot="private" static="no" mutable="no">
+        <type>SidebarPanel</type>
+        <definition>SidebarPanel com.notevault.ui.MainWindow.sidebarPanel</definition>
+        <argsstring></argsstring>
+        <name>sidebarPanel</name>
+        <qualifiedname>com.notevault.ui.MainWindow.sidebarPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="21" column="26" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a5801db99d354dc92c5020fc9119f5b87" prot="private" static="no" mutable="no">
+        <type>NoteListPanel</type>
+        <definition>NoteListPanel com.notevault.ui.MainWindow.noteListPanel</definition>
+        <argsstring></argsstring>
+        <name>noteListPanel</name>
+        <qualifiedname>com.notevault.ui.MainWindow.noteListPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="22" column="27" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a0693fecc3c4d4cc4d7bd141509358e13" prot="private" static="no" mutable="no">
+        <type>EditorPanel</type>
+        <definition>EditorPanel com.notevault.ui.MainWindow.editorPanel</definition>
+        <argsstring></argsstring>
+        <name>editorPanel</name>
+        <qualifiedname>com.notevault.ui.MainWindow.editorPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="23" column="25" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a4fc4da18dd66f82870e05e2372e394a6" prot="private" static="no" mutable="no">
+        <type>JSplitPane</type>
+        <definition>JSplitPane com.notevault.ui.MainWindow.leftSplit</definition>
+        <argsstring></argsstring>
+        <name>leftSplit</name>
+        <qualifiedname>com.notevault.ui.MainWindow.leftSplit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="24" column="24" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1_main_window_1acbda860c65cba530eaca33ef9b5e3a13" prot="private" static="no" mutable="no">
+        <type>JSplitPane</type>
+        <definition>JSplitPane com.notevault.ui.MainWindow.rightSplit</definition>
+        <argsstring></argsstring>
+        <name>rightSplit</name>
+        <qualifiedname>com.notevault.ui.MainWindow.rightSplit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="25" column="24" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1_main_window_1ae6583bb79c8a8a261780371ca25af1dc" prot="private" static="no" mutable="no">
+        <type>JLabel</type>
+        <definition>JLabel com.notevault.ui.MainWindow.statusLabel</definition>
+        <argsstring></argsstring>
+        <name>statusLabel</name>
+        <qualifiedname>com.notevault.ui.MainWindow.statusLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="27" column="20" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1ad42c9b70ccea618915fb2a0aa7efd5e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.MainWindow.MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>com.notevault.ui.MainWindow.MainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="29" column="12" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="29" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a8c2fad619a8ca32f47c2e921b8ecc18e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.onNoteSelected</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>onNoteSelected</name>
+        <qualifiedname>com.notevault.ui.MainWindow.onNoteSelected</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="149" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="149" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a053b448e40b6962278132af239d16c39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.onNoteSaved</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>onNoteSaved</name>
+        <qualifiedname>com.notevault.ui.MainWindow.onNoteSaved</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="159" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a3094bdfb5e0809313457f605d259711e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.onNoteDeleted</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>onNoteDeleted</name>
+        <qualifiedname>com.notevault.ui.MainWindow.onNoteDeleted</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="164" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="164" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1af9c4f8ea1396abe324959c62523ce856" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.onSidebarSelectionChanged</definition>
+        <argsstring>(Object selection)</argsstring>
+        <name>onSidebarSelectionChanged</name>
+        <qualifiedname>com.notevault.ui.MainWindow.onSidebarSelectionChanged</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>selection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="171" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a0272f9cdbfaa7791b7ed41a4c014fd9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.refreshSidebar</definition>
+        <argsstring>()</argsstring>
+        <name>refreshSidebar</name>
+        <qualifiedname>com.notevault.ui.MainWindow.refreshSidebar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="176" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1aa8047e93ed2b46f29dad26b22972648e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.refreshAll</definition>
+        <argsstring>()</argsstring>
+        <name>refreshAll</name>
+        <qualifiedname>com.notevault.ui.MainWindow.refreshAll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="180" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a3cdd292da0e88c99790dd93b4c944e1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.chooseVault</definition>
+        <argsstring>()</argsstring>
+        <name>chooseVault</name>
+        <qualifiedname>com.notevault.ui.MainWindow.chooseVault</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="201" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="201" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a8b0232070ef5c3198c8cffecd06ab371" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.setStatus</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>setStatus</name>
+        <qualifiedname>com.notevault.ui.MainWindow.setStatus</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="254" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1ade97e80a9484917d639037310c023300" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.showError</definition>
+        <argsstring>(String title, Exception ex)</argsstring>
+        <name>showError</name>
+        <qualifiedname>com.notevault.ui.MainWindow.showError</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>ex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="258" column="17" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="258" bodyend="262"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1ac37f736a36db28f68ad900dae7972f1f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.buildUI</definition>
+        <argsstring>()</argsstring>
+        <name>buildUI</name>
+        <qualifiedname>com.notevault.ui.MainWindow.buildUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="48" column="18" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="48" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1aa57991da817d6e82bd1ce1eeadd7d446" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.buildMenuBar</definition>
+        <argsstring>()</argsstring>
+        <name>buildMenuBar</name>
+        <qualifiedname>com.notevault.ui.MainWindow.buildMenuBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="88" column="18" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="88" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a94ac68cf9a235d183027de8f2ae6bb8e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.registerShortcuts</definition>
+        <argsstring>()</argsstring>
+        <name>registerShortcuts</name>
+        <qualifiedname>com.notevault.ui.MainWindow.registerShortcuts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="139" column="18" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="139" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1abd21dedf0dfb766ba5fd5aae04032d98" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.openLastVaultOrChoose</definition>
+        <argsstring>()</argsstring>
+        <name>openLastVaultOrChoose</name>
+        <qualifiedname>com.notevault.ui.MainWindow.openLastVaultOrChoose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="188" column="18" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="188" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a5d20712619f9f1554345593e372ace68" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.openVault</definition>
+        <argsstring>(Path vaultPath)</argsstring>
+        <name>openVault</name>
+        <qualifiedname>com.notevault.ui.MainWindow.openVault</qualifiedname>
+        <param>
+          <type>Path</type>
+          <declname>vaultPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="208" column="18" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="208" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a3b58aa78a70f225f1689d432375fc44f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.newNote</definition>
+        <argsstring>()</argsstring>
+        <name>newNote</name>
+        <qualifiedname>com.notevault.ui.MainWindow.newNote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="223" column="18" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="223" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1ab422d560a4ddb039bc3afd053523a8b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.toggleTheme</definition>
+        <argsstring>()</argsstring>
+        <name>toggleTheme</name>
+        <qualifiedname>com.notevault.ui.MainWindow.toggleTheme</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="235" column="18" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="235" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1_main_window_1a5129ee3d7d846eb41403296cf4b243de" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.MainWindow.exitApp</definition>
+        <argsstring>()</argsstring>
+        <name>exitApp</name>
+        <qualifiedname>com.notevault.ui.MainWindow.exitApp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/MainWindow.java" line="247" column="18" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="247" bodyend="252"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.MainWindow</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/MainWindow.java" line="19" column="7" bodyfile="src/main/java/com/notevault/ui/MainWindow.java" bodystart="19" bodyend="263"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1aa57991da817d6e82bd1ce1eeadd7d446" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>buildMenuBar</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ac37f736a36db28f68ad900dae7972f1f" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>buildUI</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a3cdd292da0e88c99790dd93b4c944e1b" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>chooseVault</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a0693fecc3c4d4cc4d7bd141509358e13" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>editorPanel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a5129ee3d7d846eb41403296cf4b243de" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>exitApp</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a4fc4da18dd66f82870e05e2372e394a6" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>leftSplit</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ad42c9b70ccea618915fb2a0aa7efd5e1" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>MainWindow</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a3b58aa78a70f225f1689d432375fc44f" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>newNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a5801db99d354dc92c5020fc9119f5b87" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>noteListPanel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a3094bdfb5e0809313457f605d259711e" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>onNoteDeleted</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a053b448e40b6962278132af239d16c39" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>onNoteSaved</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a8c2fad619a8ca32f47c2e921b8ecc18e" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>onNoteSelected</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1af9c4f8ea1396abe324959c62523ce856" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>onSidebarSelectionChanged</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1abd21dedf0dfb766ba5fd5aae04032d98" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>openLastVaultOrChoose</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a5d20712619f9f1554345593e372ace68" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>openVault</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1aa8047e93ed2b46f29dad26b22972648e" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>refreshAll</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a0272f9cdbfaa7791b7ed41a4c014fd9c" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>refreshSidebar</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a94ac68cf9a235d183027de8f2ae6bb8e" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>registerShortcuts</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1acbda860c65cba530eaca33ef9b5e3a13" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>rightSplit</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a8b0232070ef5c3198c8cffecd06ab371" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>setStatus</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ade97e80a9484917d639037310c023300" prot="public" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>showError</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1a74f2af2331577b747396fc5f9a55b710" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>sidebarPanel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ae6583bb79c8a8a261780371ca25af1dc" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>statusLabel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1_main_window_1ab422d560a4ddb039bc3afd053523a8b2" prot="private" virt="non-virtual"><scope>com::notevault::ui::MainWindow</scope><name>toggleTheme</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

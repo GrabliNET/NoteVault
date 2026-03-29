@@ -1,0 +1,1307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1service_1_1_vault_service" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::service::VaultService</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a860341c073aed85d99c962b8ed1934da" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.notevault.service.VaultService.LOG</definition>
+        <argsstring></argsstring>
+        <name>LOG</name>
+        <qualifiedname>com.notevault.service.VaultService.LOG</qualifiedname>
+        <initializer>= Logger.getLogger(VaultService.class.getName())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="49" column="33" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a454310f4afaa4c45d5a980cb06adfe72" prot="private" static="yes" mutable="no">
+        <type>VaultService</type>
+        <definition>VaultService com.notevault.service.VaultService.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>com.notevault.service.VaultService.instance</qualifiedname>
+        <briefdescription>
+<para>Единственный экземпляр (паттерн Singleton). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="52" column="33" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a5f84653e630a62b39adce3e163f61056" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">VaultLayout</ref></type>
+        <definition>VaultLayout com.notevault.service.VaultService.layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <qualifiedname>com.notevault.service.VaultService.layout</qualifiedname>
+        <briefdescription>
+<para>Менеджер физической раскладки файлов vault. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="55" column="25" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a5212b5bd3e916a994cc20e801f130e5e" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o" kindref="compound">NoteDAO</ref></type>
+        <definition>final NoteDAO com.notevault.service.VaultService.noteDAO</definition>
+        <argsstring></argsstring>
+        <name>noteDAO</name>
+        <qualifiedname>com.notevault.service.VaultService.noteDAO</qualifiedname>
+        <initializer>= new <ref refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o" kindref="compound">NoteDAO</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="57" column="33" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_vault_service_1acb4ddb954f8787af6ecf54972dd63e86" prot="private" static="no" mutable="no">
+        <type>final TagDAO</type>
+        <definition>final TagDAO com.notevault.service.VaultService.tagDAO</definition>
+        <argsstring></argsstring>
+        <name>tagDAO</name>
+        <qualifiedname>com.notevault.service.VaultService.tagDAO</qualifiedname>
+        <initializer>= new TagDAO()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="58" column="33" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_vault_service_1ae8e1c3ca68c358a3f5b2282f7ae44d86" prot="private" static="no" mutable="no">
+        <type>final BookDAO</type>
+        <definition>final BookDAO com.notevault.service.VaultService.bookDAO</definition>
+        <argsstring></argsstring>
+        <name>bookDAO</name>
+        <qualifiedname>com.notevault.service.VaultService.bookDAO</qualifiedname>
+        <initializer>= new BookDAO()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="59" column="33" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a39bbc8e41ad546c2510c0813b74adac2" prot="private" static="no" mutable="no">
+        <type>final AttachmentDAO</type>
+        <definition>final AttachmentDAO com.notevault.service.VaultService.attachmentDAO</definition>
+        <argsstring></argsstring>
+        <name>attachmentDAO</name>
+        <qualifiedname>com.notevault.service.VaultService.attachmentDAO</qualifiedname>
+        <initializer>= new AttachmentDAO()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="60" column="33" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a42abb8badd8c4845beeba402af8d1269" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.service.VaultService.VaultService</definition>
+        <argsstring>()</argsstring>
+        <name>VaultService</name>
+        <qualifiedname>com.notevault.service.VaultService.VaultService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="62" column="13" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1aae6ace1982cf5ac85b338e5109af1314" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.resolveBookReference</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>resolveBookReference</name>
+        <qualifiedname>com.notevault.service.VaultService.resolveBookReference</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Разрешает имя книги из <javadoccode>metaExtra</javadoccode> в ID существующей или новой книги. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если в <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note_1a23613b32016b945988104960d57670b3" kindref="member">Note#getMetaExtra()</ref></computeroutput> есть ключ <javadoccode>&quot;bookName&quot;</javadoccode>, ищет книгу с таким именем в БД. Если не найдена — создаёт автоматически. Результат записывается в <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note_1a709ff968407368c143516d74945edd3c" kindref="member">Note#setBookId(Long)</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка для обработки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке обращения к БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="533" column="18" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="533" bodyend="544"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1abe5535c0c907dab6be34c9859fb41f04" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VaultService</type>
+        <definition>static VaultService com.notevault.service.VaultService.getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>com.notevault.service.VaultService.getInstance</qualifiedname>
+        <briefdescription>
+<para>Возвращает единственный экземпляр сервиса. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Экземпляр <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service" kindref="compound">VaultService</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="68" column="32" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="68" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a5f70401a9034bf14f46569cf0d609c2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.openVault</definition>
+        <argsstring>(Path vaultRoot)</argsstring>
+        <name>openVault</name>
+        <qualifiedname>com.notevault.service.VaultService.openVault</qualifiedname>
+        <param>
+          <type>Path</type>
+          <declname>vaultRoot</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Открывает хранилище заметок по указанному пути. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>Инициализирует <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">VaultLayout</ref></computeroutput> для управления файловой структурой.</para>
+</listitem><listitem><para>Создаёт системные директории vault (<javadoccode>_unsorted</javadoccode>, <javadoccode>_multi</javadoccode>, <javadoccode>_attachments</javadoccode>, <javadoccode>_db</javadoccode>).</para>
+</listitem><listitem><para>Открывает (или создаёт) SQLite БД через <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_database_manager" kindref="compound">DatabaseManager</ref></computeroutput>.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vaultRoot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Абсолютный путь к корневой директории vault. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если не удалось создать директории или открыть БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="87" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="87" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a00cfff9997b54c5494855c8dc20e2a6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.notevault.service.VaultService.isVaultOpen</definition>
+        <argsstring>()</argsstring>
+        <name>isVaultOpen</name>
+        <qualifiedname>com.notevault.service.VaultService.isVaultOpen</qualifiedname>
+        <briefdescription>
+<para>Проверяет, открыт ли vault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><javadoccode>true</javadoccode> если layout инициализирован и БД открыта. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="101" column="20" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1acbc120014fa079090f088f7e857f7924" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">VaultLayout</ref></type>
+        <definition>VaultLayout com.notevault.service.VaultService.getLayout</definition>
+        <argsstring>()</argsstring>
+        <name>getLayout</name>
+        <qualifiedname>com.notevault.service.VaultService.getLayout</qualifiedname>
+        <briefdescription>
+<para>Возвращает менеджер файловой раскладки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Текущий <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">VaultLayout</ref></computeroutput> или <javadoccode>null</javadoccode> если vault не открыт. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="109" column="24" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a31177c35ada66e4019a3521dd0c14559" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.service.VaultService.createNote</definition>
+        <argsstring>(String title)</argsstring>
+        <name>createNote</name>
+        <qualifiedname>com.notevault.service.VaultService.createNote</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>title</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Создаёт новую заметку с пустым телом и без тегов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок заметки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданная заметка с заполненным <javadoccode>id</javadoccode> и <javadoccode>filePath</javadoccode>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке файловой системы или БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="120" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1aacc7298527393af3b6776dde92ed678d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.service.VaultService.createNote</definition>
+        <argsstring>(String title, String body, List&lt; Tag &gt; tags)</argsstring>
+        <name>createNote</name>
+        <qualifiedname>com.notevault.service.VaultService.createNote</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+          <declname>tags</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Создаёт новую заметку с заданным содержимым и тегами. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм:<orderedlist>
+<listitem><para>Определяет целевую директорию по тегам через <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a0fc1310784d361f294bcb8857ad56266" kindref="member">VaultLayout#noteFilePath</ref></computeroutput>.</para>
+</listitem><listitem><para>Генерирует уникальное имя файла (добавляет суффикс при коллизии).</para>
+</listitem><listitem><para>Строит полный текст файла (front-matter + тело) через <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a46d1c589e255538e6f8ca2b281940af7" kindref="member">FrontMatterParser#buildContent</ref></computeroutput>.</para>
+</listitem><listitem><para>Записывает файл на диск.</para>
+</listitem><listitem><para>Сохраняет метаданные в БД через <computeroutput><ref refid="" kindref="compound">NoteDAO#insert</ref></computeroutput>.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок заметки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тело заметки в формате Markdown (без front-matter). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список тегов (может быть пустым). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданная и сохранённая заметка. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке файловой системы или БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="141" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="141" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a439dd8e1fc2ce85b161fddbf7f6c0e10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.saveNote</definition>
+        <argsstring>(Note note, String newContent)</argsstring>
+        <name>saveNote</name>
+        <qualifiedname>com.notevault.service.VaultService.saveNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>newContent</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Сохраняет изменённое содержимое заметки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Перечитывает front-matter из нового содержимого (пользователь мог изменить теги вручную прямо в редакторе). При изменении тегов файл может быть <bold>перемещён</bold> в другую директорию vault.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка (должна иметь корректный <javadoccode>id</javadoccode> и <javadoccode>filePath</javadoccode>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полный новый текст файла (front-matter + тело). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке файловой системы или БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="170" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="170" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a6d9901d90cd4532daf3a5119e99240e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.updateNoteMeta</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>updateNoteMeta</name>
+        <qualifiedname>com.notevault.service.VaultService.updateNoteMeta</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Обновляет метаданные заметки (теги, книга) без изменения тела. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Перестраивает front-matter файла на основе текущего состояния объекта <javadoccode>note</javadoccode>, при необходимости перемещает файл.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с обновлёнными тегами / книгой. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке файловой системы или БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="195" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="195" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a55e16ef92daaa1621949acccd5ed42f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.renameNote</definition>
+        <argsstring>(Note note, String newTitle)</argsstring>
+        <name>renameNote</name>
+        <qualifiedname>com.notevault.service.VaultService.renameNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>newTitle</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Переименовывает заметку и физически переименовывает файл. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Новое имя файла строится из нового заголовка через <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e" kindref="member">VaultLayout#sanitizeFileName</ref></computeroutput>. Если файл с таким именем уже существует, добавляется числовой суффикс.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка для переименования. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newTitle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый заголовок. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке файловой системы или БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="221" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="221" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.deleteNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>deleteNote</name>
+        <qualifiedname>com.notevault.service.VaultService.deleteNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Удаляет заметку: файл с диска и запись из БД. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаление из БД каскадно очищает <javadoccode>note_tags</javadoccode>, <javadoccode>book_notes</javadoccode> и <javadoccode>attachments</javadoccode>. Директория вложений удаляется только если она пуста.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка для удаления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке файловой системы или БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="250" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="250" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a6e9bd86241b701df9cdc8e2e946706d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.service.VaultService.loadNoteContent</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>loadNoteContent</name>
+        <qualifiedname>com.notevault.service.VaultService.loadNoteContent</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Загружает содержимое MD-файла в объект заметки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Читает файл с диска и разбирает front-matter через <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1ad66b202505a66d10cb5266fb6cbc5b85" kindref="member">FrontMatterParser#applyToNote</ref></computeroutput>. Вызывается лениво — только при открытии заметки в редакторе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с корректным <javadoccode>filePath</javadoccode>; содержимое будет перезаписано. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Тот же объект <javadoccode>note</javadoccode> с заполненным <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note_1a3a4e835c1899864c8e038e984db222ac" kindref="member">Note#getContent()</ref></computeroutput>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если файл не найден или недоступен. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="275" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="275" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a6dfdc5ecf391ff0e0fc55b32c058d8e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.service.VaultService.getAllNotes</definition>
+        <argsstring>()</argsstring>
+        <name>getAllNotes</name>
+        <qualifiedname>com.notevault.service.VaultService.getAllNotes</qualifiedname>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Возвращает все заметки хранилища. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Список заметок, отсортированных по дате изменения. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса к БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="292" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="292" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1abbc0f374d4a1ee5210874779484cf6ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.service.VaultService.getNotesByTag</definition>
+        <argsstring>(Tag tag)</argsstring>
+        <name>getNotesByTag</name>
+        <qualifiedname>com.notevault.service.VaultService.getNotesByTag</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref></type>
+          <declname>tag</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Возвращает заметки с указанным тегом. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тег с корректным <javadoccode>id</javadoccode>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Список заметок. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса к БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="300" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="300" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a8a9fa42ec388ec5cd3e70db6aba90e28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.service.VaultService.getNotesByBook</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>getNotesByBook</name>
+        <qualifiedname>com.notevault.service.VaultService.getNotesByBook</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Возвращает заметки книги с загруженным содержимым. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>В отличие от <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6dfdc5ecf391ff0e0fc55b32c058d8e2" kindref="member">getAllNotes()</ref></computeroutput>, здесь содержимое файлов загружается сразу — для последующей склейки в <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1ada2682780ae13fe09de153969c0e2067" kindref="member">getBookContent</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>book</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Книга с корректным <javadoccode>id</javadoccode>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Заметки книги в порядке <javadoccode>order_index</javadoccode>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса или чтения файлов. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="315" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="315" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1ac8577a4e6f64820816de6c2550b4ec2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.service.VaultService.searchNotes</definition>
+        <argsstring>(String query)</argsstring>
+        <name>searchNotes</name>
+        <qualifiedname>com.notevault.service.VaultService.searchNotes</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>query</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Выполняет поиск заметок по части заголовка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поисковый запрос (LIKE без учёта регистра). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Список подходящих заметок. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса к БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="328" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="328" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1afa4ff5e503dbfd57060bd569426e5ff5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>List&lt; Tag &gt; com.notevault.service.VaultService.getAllTags</definition>
+        <argsstring>()</argsstring>
+        <name>getAllTags</name>
+        <qualifiedname>com.notevault.service.VaultService.getAllTags</qualifiedname>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Возвращает все теги с количеством заметок. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Список тегов, отсортированных по имени. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса к БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="339" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="339" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a6c2b95f17dc3edf538856293cb64fe27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.renameTag</definition>
+        <argsstring>(Tag tag, String newName)</argsstring>
+        <name>renameTag</name>
+        <qualifiedname>com.notevault.service.VaultService.renameTag</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref></type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>newName</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Переименовывает тег и обновляет front-matter всех затронутых заметок. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>После переименования в БД перечитывает все заметки с этим тегом и перезаписывает их MD-файлы с обновлённым front-matter. Файлы <bold>не перемещаются</bold> (имя директории тега не меняется автоматически).</para>
+<para><simplesect kind="note"><para>Если нужно переместить файлы в директорию с новым именем тега, это потребует дополнительной реализации.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тег для переименования. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое имя тега. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке БД или файловой системы. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="356" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="356" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1af90017ddceba03e0fff5df67b79cf1d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.deleteTag</definition>
+        <argsstring>(Tag tag)</argsstring>
+        <name>deleteTag</name>
+        <qualifiedname>com.notevault.service.VaultService.deleteTag</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref></type>
+          <declname>tag</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Удаляет тег и очищает неиспользуемые теги. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тег для удаления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="375" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a468dae458fde9a15fb5a0a567b06878d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref> &gt;</type>
+        <definition>List&lt; Book &gt; com.notevault.service.VaultService.getAllBooks</definition>
+        <argsstring>()</argsstring>
+        <name>getAllBooks</name>
+        <qualifiedname>com.notevault.service.VaultService.getAllBooks</qualifiedname>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Возвращает все книги. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Список книг, отсортированных по имени. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса к БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="387" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="387" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1af35db116e54951ab3fade7fe8a257193" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+        <definition>Book com.notevault.service.VaultService.createBook</definition>
+        <argsstring>(String name, String description)</argsstring>
+        <name>createBook</name>
+        <qualifiedname>com.notevault.service.VaultService.createBook</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Создаёт новую книгу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уникальное имя книги. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Описание (может быть пустым). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданная книга с заполненным <javadoccode>id</javadoccode>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке вставки в БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="397" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="397" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a20d4b617579a58755d031376f5baa95e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.updateBook</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>updateBook</name>
+        <qualifiedname>com.notevault.service.VaultService.updateBook</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Обновляет имя и описание книги. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>book</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Книга с актуальными данными. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке обновления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="408" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="408" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a1db6199490f5c8f8477fac38f77bddab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.deleteBook</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>deleteBook</name>
+        <qualifiedname>com.notevault.service.VaultService.deleteBook</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Удаляет книгу (заметки при этом сохраняются). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаление из БД каскадно удаляет <javadoccode>book_notes</javadoccode>. Физические файлы заметок не затрагиваются.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>book</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Книга для удаления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке удаления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="419" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="419" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a6214436e88511b5185536696610a7891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_attachment" kindref="compound">Attachment</ref></type>
+        <definition>Attachment com.notevault.service.VaultService.addAttachment</definition>
+        <argsstring>(Note note, Path sourceFile)</argsstring>
+        <name>addAttachment</name>
+        <qualifiedname>com.notevault.service.VaultService.addAttachment</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>sourceFile</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Копирует файл в директорию вложений заметки и регистрирует в БД. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Файл копируется в <javadoccode>_attachments/&lt;note-slug&gt;/</javadoccode>. При коллизии имён добавляется числовой суффикс. Исходный файл не удаляется.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка-владелец. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourceFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к исходному файлу. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Запись о вложении с заполненным <javadoccode>id</javadoccode>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке файловой системы или БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="435" column="23" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="435" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1acdb5217fb532251bdb6ebcf783562bcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_attachment" kindref="compound">Attachment</ref> &gt;</type>
+        <definition>List&lt; Attachment &gt; com.notevault.service.VaultService.getAttachments</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>getAttachments</name>
+        <qualifiedname>com.notevault.service.VaultService.getAttachments</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Возвращает список вложений заметки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Список вложений. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="460" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="460" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1a47a61e44d5f7d80519d82bad262f0bbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.service.VaultService.deleteAttachment</definition>
+        <argsstring>(Attachment att)</argsstring>
+        <name>deleteAttachment</name>
+        <qualifiedname>com.notevault.service.VaultService.deleteAttachment</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_attachment" kindref="compound">Attachment</ref></type>
+          <declname>att</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Удаляет вложение: физический файл и запись в БД. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>att</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вложение для удаления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="469" column="17" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="469" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_vault_service_1ada2682780ae13fe09de153969c0e2067" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.service.VaultService.getBookContent</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>getBookContent</name>
+        <qualifiedname>com.notevault.service.VaultService.getBookContent</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Формирует объединённый Markdown-текст всех заметок книги. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Заметки берутся в порядке <javadoccode>order_index</javadoccode> и конкатенируются через горизонтальную линию <javadoccode>---</javadoccode>. Физические файлы не изменяются. Результат используется для отображения книги в режиме чтения и для экспорта в PDF.</para>
+<para>Формат результата: <programlisting filename=".md"><codeline><highlight class="normal">#<sp/>Название<sp/>книги</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Описание<sp/>книги...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;содержимое<sp/>заметки<sp/>1&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;содержимое<sp/>заметки<sp/>2&gt;</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>book</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Книга с корректным <javadoccode>id</javadoccode>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Markdown-строка с объединённым содержимым. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке чтения файлов или запроса к БД. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/VaultService.java" line="502" column="19" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="502" bodyend="518"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Центральный сервисный слой приложения. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Координирует все операции, требующие одновременного изменения <bold>файловой системы</bold> и <bold>базы данных</bold>. Является единственным местом, где принимаются решения о физическом расположении файлов.</para>
+<sect1 id="classcom_1_1notevault_1_1service_1_1_vault_service_1autotoc_md11_1s1"><sect2 id="classcom_1_1notevault_1_1service_1_1_vault_service_1autotoc_md11">
+<title>Принцип двойного хранения</title><para>Каждая заметка существует в двух представлениях:<itemizedlist>
+<listitem><para><bold>MD-файл</bold> — источник истины для содержимого и базовых метаданных (теги, книга, порядок — через YAML front-matter).</para>
+</listitem><listitem><para><bold>SQLite</bold> — источник истины для быстрого поиска, индексов, связей и агрегированных данных (счётчик тегов и т.д.).</para>
+</listitem></itemizedlist>
+</para>
+<para>При любом изменении оба представления обновляются в рамках одного публичного метода сервиса.</para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1service_1_1_vault_service_1autotoc_md12_1s1"><sect2 id="classcom_1_1notevault_1_1service_1_1_vault_service_1autotoc_md12">
+<title>Жизненный цикл vault</title><para><programlisting><codeline><highlight class="normal">VaultService.getInstance().openVault(path);<sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>выбор<sp/>vault</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Note<sp/>n<sp/>=<sp/>service.createNote(</highlight><highlight class="stringliteral">&quot;Title&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>tags);<sp/></highlight><highlight class="comment">//<sp/>2.<sp/>создание<sp/>заметки</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">service.saveNote(n,<sp/>newContent);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>сохранение</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">service.deleteNote(n);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>4.<sp/>удаление</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="warning"><para>Не является потокобезопасным. Весь доступ должен производиться из Event Dispatch Thread или с внешней синхронизацией.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">com.notevault.util.VaultLayout</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser" kindref="compound">com.notevault.util.FrontMatterParser</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o" kindref="compound">com.notevault.db.NoteDAO</ref> </para>
+</simplesect>
+</para>
+</sect2></sect1>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.service.VaultService</label>
+        <link refid="classcom_1_1notevault_1_1service_1_1_vault_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/service/VaultService.java" line="47" column="7" bodyfile="src/main/java/com/notevault/service/VaultService.java" bodystart="47" bodyend="545"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6214436e88511b5185536696610a7891" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>addAttachment</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a39bbc8e41ad546c2510c0813b74adac2" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>attachmentDAO</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1ae8e1c3ca68c358a3f5b2282f7ae44d86" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>bookDAO</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1af35db116e54951ab3fade7fe8a257193" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>createBook</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a31177c35ada66e4019a3521dd0c14559" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>createNote</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1aacc7298527393af3b6776dde92ed678d" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>createNote</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a47a61e44d5f7d80519d82bad262f0bbc" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>deleteAttachment</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a1db6199490f5c8f8477fac38f77bddab" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>deleteBook</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>deleteNote</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1af90017ddceba03e0fff5df67b79cf1d7" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>deleteTag</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a468dae458fde9a15fb5a0a567b06878d" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getAllBooks</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6dfdc5ecf391ff0e0fc55b32c058d8e2" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getAllNotes</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1afa4ff5e503dbfd57060bd569426e5ff5" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getAllTags</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1acdb5217fb532251bdb6ebcf783562bcd" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getAttachments</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1ada2682780ae13fe09de153969c0e2067" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getBookContent</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1abe5535c0c907dab6be34c9859fb41f04" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getInstance</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1acbc120014fa079090f088f7e857f7924" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getLayout</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a8a9fa42ec388ec5cd3e70db6aba90e28" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getNotesByBook</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1abbc0f374d4a1ee5210874779484cf6ea" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>getNotesByTag</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a454310f4afaa4c45d5a980cb06adfe72" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>instance</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a00cfff9997b54c5494855c8dc20e2a6d" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>isVaultOpen</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a5f84653e630a62b39adce3e163f61056" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>layout</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6e9bd86241b701df9cdc8e2e946706d5" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>loadNoteContent</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a860341c073aed85d99c962b8ed1934da" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>LOG</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a5212b5bd3e916a994cc20e801f130e5e" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>noteDAO</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a5f70401a9034bf14f46569cf0d609c2f" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>openVault</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a55e16ef92daaa1621949acccd5ed42f6" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>renameNote</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6c2b95f17dc3edf538856293cb64fe27" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>renameTag</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1aae6ace1982cf5ac85b338e5109af1314" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>resolveBookReference</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a439dd8e1fc2ce85b161fddbf7f6c0e10" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>saveNote</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1ac8577a4e6f64820816de6c2550b4ec2c" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>searchNotes</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1acb4ddb954f8787af6ecf54972dd63e86" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>tagDAO</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a20d4b617579a58755d031376f5baa95e" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>updateBook</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6d9901d90cd4532daf3a5119e99240e1" prot="public" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>updateNoteMeta</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a42abb8badd8c4845beeba402af8d1269" prot="private" virt="non-virtual"><scope>com::notevault::service::VaultService</scope><name>VaultService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

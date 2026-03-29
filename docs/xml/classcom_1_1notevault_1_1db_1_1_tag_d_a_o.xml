@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1db_1_1_tag_d_a_o" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::db::TagDAO</compoundname>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1af168978a11df0a44db510b0d5906a585" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Connection</type>
+        <definition>Connection com.notevault.db.TagDAO.conn</definition>
+        <argsstring>()</argsstring>
+        <name>conn</name>
+        <qualifiedname>com.notevault.db.TagDAO.conn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/TagDAO.java" line="11" column="24" bodyfile="src/main/java/com/notevault/db/TagDAO.java" bodystart="11" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a2e209db55eb53f05b1b82435b6b7e780" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>List&lt; Tag &gt; com.notevault.db.TagDAO.findAll</definition>
+        <argsstring>()</argsstring>
+        <name>findAll</name>
+        <qualifiedname>com.notevault.db.TagDAO.findAll</qualifiedname>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/TagDAO.java" line="15" column="17" bodyfile="src/main/java/com/notevault/db/TagDAO.java" bodystart="15" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a6d64683684301238cb40b9c4c39a6ba2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref></type>
+        <definition>Tag com.notevault.db.TagDAO.findByName</definition>
+        <argsstring>(String name)</argsstring>
+        <name>findByName</name>
+        <qualifiedname>com.notevault.db.TagDAO.findByName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/TagDAO.java" line="35" column="16" bodyfile="src/main/java/com/notevault/db/TagDAO.java" bodystart="35" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a99f618cfcf94be1194463472b8c6bac0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.TagDAO.rename</definition>
+        <argsstring>(long tagId, String newName)</argsstring>
+        <name>rename</name>
+        <qualifiedname>com.notevault.db.TagDAO.rename</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>tagId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>newName</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/TagDAO.java" line="49" column="17" bodyfile="src/main/java/com/notevault/db/TagDAO.java" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1acda760a118823abe688311e93e4079aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.TagDAO.delete</definition>
+        <argsstring>(long tagId)</argsstring>
+        <name>delete</name>
+        <qualifiedname>com.notevault.db.TagDAO.delete</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>tagId</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/TagDAO.java" line="57" column="17" bodyfile="src/main/java/com/notevault/db/TagDAO.java" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1ae7caf23270e17c5391aa21c3c7a115c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.TagDAO.pruneUnused</definition>
+        <argsstring>()</argsstring>
+        <name>pruneUnused</name>
+        <qualifiedname>com.notevault.db.TagDAO.pruneUnused</qualifiedname>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/TagDAO.java" line="64" column="17" bodyfile="src/main/java/com/notevault/db/TagDAO.java" bodystart="64" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.db.TagDAO</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/db/TagDAO.java" line="9" column="7" bodyfile="src/main/java/com/notevault/db/TagDAO.java" bodystart="9" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1af168978a11df0a44db510b0d5906a585" prot="private" virt="non-virtual"><scope>com::notevault::db::TagDAO</scope><name>conn</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1acda760a118823abe688311e93e4079aa" prot="public" virt="non-virtual"><scope>com::notevault::db::TagDAO</scope><name>delete</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a2e209db55eb53f05b1b82435b6b7e780" prot="public" virt="non-virtual"><scope>com::notevault::db::TagDAO</scope><name>findAll</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a6d64683684301238cb40b9c4c39a6ba2" prot="public" virt="non-virtual"><scope>com::notevault::db::TagDAO</scope><name>findByName</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1ae7caf23270e17c5391aa21c3c7a115c7" prot="public" virt="non-virtual"><scope>com::notevault::db::TagDAO</scope><name>pruneUnused</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_tag_d_a_o_1a99f618cfcf94be1194463472b8c6bac0" prot="public" virt="non-virtual"><scope>com::notevault::db::TagDAO</scope><name>rename</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

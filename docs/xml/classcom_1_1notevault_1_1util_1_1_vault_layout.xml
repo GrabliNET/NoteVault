@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1util_1_1_vault_layout" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::util::VaultLayout</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a42c72e4bcee468012fec126e209d8a37" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.notevault.util.VaultLayout.DIR_UNSORTED</definition>
+        <argsstring></argsstring>
+        <name>DIR_UNSORTED</name>
+        <qualifiedname>com.notevault.util.VaultLayout.DIR_UNSORTED</qualifiedname>
+        <initializer>= &quot;_unsorted&quot;</initializer>
+        <briefdescription>
+<para>Имя директории для заметок без тегов. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="51" column="32" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1aa8495b18ab90847a5d1342f7453b20ce" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.notevault.util.VaultLayout.DIR_MULTI</definition>
+        <argsstring></argsstring>
+        <name>DIR_MULTI</name>
+        <qualifiedname>com.notevault.util.VaultLayout.DIR_MULTI</qualifiedname>
+        <initializer>= &quot;_multi&quot;</initializer>
+        <briefdescription>
+<para>Имя директории для заметок с несколькими тегами. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="54" column="32" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a6f69dc63cd3de58f199351c45c559a3b" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.notevault.util.VaultLayout.DIR_ATTACHMENTS</definition>
+        <argsstring></argsstring>
+        <name>DIR_ATTACHMENTS</name>
+        <qualifiedname>com.notevault.util.VaultLayout.DIR_ATTACHMENTS</qualifiedname>
+        <initializer>= &quot;_attachments&quot;</initializer>
+        <briefdescription>
+<para>Имя корневой директории вложений. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="57" column="32" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a4c509ede24da6b2364ef9400089acf4e" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.notevault.util.VaultLayout.DIR_DB</definition>
+        <argsstring></argsstring>
+        <name>DIR_DB</name>
+        <qualifiedname>com.notevault.util.VaultLayout.DIR_DB</qualifiedname>
+        <initializer>= &quot;_db&quot;</initializer>
+        <briefdescription>
+<para>Имя директории базы данных. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="60" column="32" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a3f220327286d4cfc0dec681d8d552674" prot="private" static="no" mutable="no">
+        <type>final Path</type>
+        <definition>final Path com.notevault.util.VaultLayout.vaultRoot</definition>
+        <argsstring></argsstring>
+        <name>vaultRoot</name>
+        <qualifiedname>com.notevault.util.VaultLayout.vaultRoot</qualifiedname>
+        <briefdescription>
+<para>Корневая директория vault. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="63" column="24" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1aa9f14ea39f52a87bd71ab9ecf3ef76fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.util.VaultLayout.VaultLayout</definition>
+        <argsstring>(Path vaultRoot)</argsstring>
+        <name>VaultLayout</name>
+        <qualifiedname>com.notevault.util.VaultLayout.VaultLayout</qualifiedname>
+        <param>
+          <type>Path</type>
+          <declname>vaultRoot</declname>
+        </param>
+        <briefdescription>
+<para>Создаёт экземпляр для указанного vault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vaultRoot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Абсолютный путь к корню vault. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="69" column="12" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a08a6cdcf2e700e24f55fb9ba5e56e4d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path com.notevault.util.VaultLayout.getVaultRoot</definition>
+        <argsstring>()</argsstring>
+        <name>getVaultRoot</name>
+        <qualifiedname>com.notevault.util.VaultLayout.getVaultRoot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Корневая директория vault. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="74" column="17" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a336e7837b2918bd0443d04ff7c489204" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.util.VaultLayout.folderForNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>folderForNote</name>
+        <qualifiedname>com.notevault.util.VaultLayout.folderForNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+<para>Определяет имя директории для заметки на основе её тегов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка (теги должны быть заполнены). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Имя поддиректории относительно vault root. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="82" column="19" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a0fc1310784d361f294bcb8857ad56266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path com.notevault.util.VaultLayout.noteFilePath</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>noteFilePath</name>
+        <qualifiedname>com.notevault.util.VaultLayout.noteFilePath</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет ожидаемый абсолютный путь к MD-файлу заметки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Путь строится по схеме: <javadoccode>&lt;vaultRoot&gt;/&lt;folder&gt;/&lt;slug&gt;.md</javadoccode>, где <javadoccode>&lt;folder&gt;</javadoccode> определяется тегами, а <javadoccode>&lt;slug&gt;</javadoccode> — санированным заголовком.</para>
+<para><simplesect kind="warning"><para>Возвращаемый путь может уже существовать. Для гарантии уникальности используйте <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a6d7b3717912dd6baa48127339c757469" kindref="member">uniquePath(Path)</ref></computeroutput>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с заполненными заголовком и тегами. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Абсолютный <computeroutput><ref refid="" kindref="compound">Path</ref></computeroutput> к MD-файлу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="103" column="17" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a842f2ca4b0ea581b868f728c314bd3e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path com.notevault.util.VaultLayout.attachmentDir</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>attachmentDir</name>
+        <qualifiedname>com.notevault.util.VaultLayout.attachmentDir</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает директорию вложений для заметки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Путь: <javadoccode>&lt;vaultRoot&gt;/_attachments/&lt;note-slug&gt;/</javadoccode></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с заполненным заголовком. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Абсолютный <computeroutput><ref refid="" kindref="compound">Path</ref></computeroutput> к директории вложений. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="117" column="17" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a45ca207beba9eabc5a446d6d4f65913c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.util.VaultLayout.ensureDirs</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>ensureDirs</name>
+        <qualifiedname>com.notevault.util.VaultLayout.ensureDirs</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Создаёт все директории, необходимые для размещения заметки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Создаёт родительскую директорию MD-файла и директорию вложений.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если создание директорий завершилось ошибкой. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="129" column="17" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1ab4fa88c1fa3f15beb2f1c8b75770c9b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path com.notevault.util.VaultLayout.relocateIfNeeded</definition>
+        <argsstring>(Note note, Path currentPath)</argsstring>
+        <name>relocateIfNeeded</name>
+        <qualifiedname>com.notevault.util.VaultLayout.relocateIfNeeded</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>currentPath</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Перемещает файл заметки если её теги изменились. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Сравнивает <javadoccode>currentPath</javadoccode> с ожидаемым путём по текущим тегам. Если пути различаются — перемещает файл через <javadoccode>Files.move</javadoccode>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с актуальными тегами. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Текущий абсолютный путь к файлу. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Новый (или тот же) абсолютный путь к файлу. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке перемещения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="146" column="17" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="146" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1abb884768cfd534b3ba6fdc8f47108c9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.util.VaultLayout.relativePath</definition>
+        <argsstring>(Path absolutePath)</argsstring>
+        <name>relativePath</name>
+        <qualifiedname>com.notevault.util.VaultLayout.relativePath</qualifiedname>
+        <param>
+          <type>Path</type>
+          <declname>absolutePath</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет путь относительно корня vault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Разделитель в возвращаемой строке всегда <javadoccode>&apos;/&apos;</javadoccode> независимо от ОС.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>absolutePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Абсолютный путь внутри vault. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Относительный путь с <javadoccode>&apos;/&apos;</javadoccode> в качестве разделителя. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="165" column="19" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a0bac2343b0bff34768ba306c415c2525" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path com.notevault.util.VaultLayout.resolve</definition>
+        <argsstring>(String relativePath)</argsstring>
+        <name>resolve</name>
+        <qualifiedname>com.notevault.util.VaultLayout.resolve</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>relativePath</declname>
+        </param>
+        <briefdescription>
+<para>Разрешает относительный путь в абсолютный. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1abb884768cfd534b3ba6fdc8f47108c9c" kindref="member">relativePath</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Относительный путь (разделитель <javadoccode>&apos;/&apos;</javadoccode>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Абсолютный <computeroutput><ref refid="" kindref="compound">Path</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="175" column="17" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a6d7b3717912dd6baa48127339c757469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path com.notevault.util.VaultLayout.uniquePath</definition>
+        <argsstring>(Path desired)</argsstring>
+        <name>uniquePath</name>
+        <qualifiedname>com.notevault.util.VaultLayout.uniquePath</qualifiedname>
+        <param>
+          <type>Path</type>
+          <declname>desired</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает уникальный путь, добавляя числовой суффикс при коллизии. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если <javadoccode>desired</javadoccode> не существует — возвращает его без изменений. Иначе перебирает <javadoccode>base-1.md</javadoccode>, <javadoccode>base-2.md</javadoccode> и т.д. до первого несуществующего варианта.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desired</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Желаемый путь (обычно <javadoccode>noteFilePath(note)</javadoccode>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Гарантированно несуществующий путь. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="231" column="17" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="231" bodyend="243"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.util.VaultLayout.sanitizeFileName</definition>
+        <argsstring>(String title)</argsstring>
+        <name>sanitizeFileName</name>
+        <qualifiedname>com.notevault.util.VaultLayout.sanitizeFileName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует заголовок заметки в безопасное имя файла (без расширения). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм:<orderedlist>
+<listitem><para>Обрезает пробелы.</para>
+</listitem><listitem><para>Заменяет символы, недопустимые в именах файлов, на <javadoccode>_</javadoccode>.</para>
+</listitem><listitem><para>Заменяет пробелы на <javadoccode>-</javadoccode>.</para>
+</listitem><listitem><para>Приводит к нижнему регистру.</para>
+</listitem><listitem><para>Сжимает множественные дефисы.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок заметки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Безопасное имя файла или <javadoccode>&quot;untitled&quot;</javadoccode> если заголовок пуст. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="195" column="26" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="195" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_vault_layout_1a8b4b17b564931bc4c175b4f8869b574c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.util.VaultLayout.sanitizeDirName</definition>
+        <argsstring>(String name)</argsstring>
+        <name>sanitizeDirName</name>
+        <qualifiedname>com.notevault.util.VaultLayout.sanitizeDirName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует имя тега в безопасное имя директории. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Аналог <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e" kindref="member">sanitizeFileName</ref></computeroutput> для директорий.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя тега. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Безопасное имя директории или <javadoccode>&quot;_unsorted&quot;</javadoccode> если имя пусто. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/VaultLayout.java" line="212" column="26" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="212" bodyend="218"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Менеджер физической структуры директорий внутри vault. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Инкапсулирует все правила размещения файлов: какой заметке соответствует какой путь, где лежат вложения, как избежать коллизий имён.</para>
+<sect1 id="classcom_1_1notevault_1_1util_1_1_vault_layout_1autotoc_md16_1s1"><sect2 id="classcom_1_1notevault_1_1util_1_1_vault_layout_1autotoc_md16">
+<title>Структура vault</title><para><programlisting><codeline><highlight class="normal">vault/</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>_db/</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>└──<sp/>notes.db<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>←<sp/>SQLite<sp/>база<sp/>данных</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>_unsorted/</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>└──<sp/>*.md<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>←<sp/>заметки<sp/>без<sp/>тегов</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>_multi/</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>└──<sp/>*.md<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>←<sp/>заметки<sp/>с<sp/>двумя<sp/>и<sp/>более<sp/>тегами</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>_attachments/</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>└──<sp/>&lt;note-slug&gt;/</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/><sp/><sp/><sp/><sp/>└──<sp/>&lt;file&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>←<sp/>вложения<sp/>конкретной<sp/>заметки</highlight></codeline>
+<codeline><highlight class="normal">└──<sp/>&lt;tag&gt;/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>└──<sp/>*.md<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>←<sp/>заметки<sp/>ровно<sp/>с<sp/>одним<sp/>тегом</highlight></codeline>
+</programlisting></para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1util_1_1_vault_layout_1autotoc_md17_1s1"><sect2 id="classcom_1_1notevault_1_1util_1_1_vault_layout_1autotoc_md17">
+<title>Правила размещения</title><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para>Число тегов  </para>
+</entry><entry thead="yes"><para>Директория  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0  </para>
+</entry><entry thead="no"><para><computeroutput>_unsorted/</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>1  </para>
+</entry><entry thead="no"><para><computeroutput>&lt;tagname&gt;/</computeroutput>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>2+  </para>
+</entry><entry thead="no"><para><computeroutput>_multi/</computeroutput>  </para>
+</entry></row>
+</table>
+</para>
+<para>Эта логика позволяет пользователю ориентироваться в хранилище даже без приложения: тематические заметки лежат в папках с понятными именами.</para>
+<para><simplesect kind="note"><para>Класс работает только с путями; чтение/запись файлов — ответственность <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service" kindref="compound">com.notevault.service.VaultService</ref></computeroutput>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service" kindref="compound">com.notevault.service.VaultService</ref> </para>
+</simplesect>
+</para>
+</sect2></sect1>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.util.VaultLayout</label>
+        <link refid="classcom_1_1notevault_1_1util_1_1_vault_layout"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/util/VaultLayout.java" line="48" column="7" bodyfile="src/main/java/com/notevault/util/VaultLayout.java" bodystart="48" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a842f2ca4b0ea581b868f728c314bd3e7" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>attachmentDir</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a6f69dc63cd3de58f199351c45c559a3b" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>DIR_ATTACHMENTS</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a4c509ede24da6b2364ef9400089acf4e" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>DIR_DB</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1aa8495b18ab90847a5d1342f7453b20ce" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>DIR_MULTI</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a42c72e4bcee468012fec126e209d8a37" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>DIR_UNSORTED</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a45ca207beba9eabc5a446d6d4f65913c" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>ensureDirs</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a336e7837b2918bd0443d04ff7c489204" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>folderForNote</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a08a6cdcf2e700e24f55fb9ba5e56e4d4" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>getVaultRoot</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a0fc1310784d361f294bcb8857ad56266" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>noteFilePath</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1abb884768cfd534b3ba6fdc8f47108c9c" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>relativePath</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1ab4fa88c1fa3f15beb2f1c8b75770c9b2" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>relocateIfNeeded</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a0bac2343b0bff34768ba306c415c2525" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>resolve</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a8b4b17b564931bc4c175b4f8869b574c" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>sanitizeDirName</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>sanitizeFileName</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a6d7b3717912dd6baa48127339c757469" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>uniquePath</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1aa9f14ea39f52a87bd71ab9ecf3ef76fd" prot="public" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>VaultLayout</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_vault_layout_1a3f220327286d4cfc0dec681d8d552674" prot="private" virt="non-virtual"><scope>com::notevault::util::VaultLayout</scope><name>vaultRoot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

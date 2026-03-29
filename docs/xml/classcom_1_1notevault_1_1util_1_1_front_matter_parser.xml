@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1util_1_1_front_matter_parser" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::util::FrontMatterParser</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a199048ad13916cdb42a1f33605858af2" prot="private" static="yes" mutable="no">
+        <type>final Yaml</type>
+        <definition>final Yaml com.notevault.util.FrontMatterParser.YAML</definition>
+        <argsstring></argsstring>
+        <name>YAML</name>
+        <qualifiedname>com.notevault.util.FrontMatterParser.YAML</qualifiedname>
+        <initializer>= new Yaml()</initializer>
+        <briefdescription>
+<para>SnakeYAML инстанс для десериализации front-matter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Не потокобезопасен сам по себе. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/FrontMatterParser.java" line="51" column="31" bodyfile="src/main/java/com/notevault/util/FrontMatterParser.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a2442a1469a39fe8736786025afa70fc3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.util.FrontMatterParser.FrontMatterParser</definition>
+        <argsstring>()</argsstring>
+        <name>FrontMatterParser</name>
+        <qualifiedname>com.notevault.util.FrontMatterParser.FrontMatterParser</qualifiedname>
+        <briefdescription>
+<para>Утилитный класс — конструктор недоступен. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/FrontMatterParser.java" line="54" column="13" bodyfile="src/main/java/com/notevault/util/FrontMatterParser.java" bodystart="54" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1ad66b202505a66d10cb5266fb6cbc5b85" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.notevault.util.FrontMatterParser.applyToNote</definition>
+        <argsstring>(String content, Note note)</argsstring>
+        <name>applyToNote</name>
+        <qualifiedname>com.notevault.util.FrontMatterParser.applyToNote</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+<para>Разбирает front-matter файла и заполняет поля объекта <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если front-matter отсутствует или не содержит нужных полей, поля объекта <javadoccode>note</javadoccode> не изменяются.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полное содержимое MD-файла (front-matter + тело). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект заметки, в который записываются распознанные поля. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/FrontMatterParser.java" line="67" column="24" bodyfile="src/main/java/com/notevault/util/FrontMatterParser.java" bodystart="67" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a46d1c589e255538e6f8ca2b281940af7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.util.FrontMatterParser.buildContent</definition>
+        <argsstring>(Note note, String body)</argsstring>
+        <name>buildContent</name>
+        <qualifiedname>com.notevault.util.FrontMatterParser.buildContent</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Строит полный текст MD-файла: front-matter (из полей <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref>) + тело. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Front-matter генерируется вручную (без SnakeYAML) для контроля форматирования вывода и минимизации лишних полей. Если у заметки нет тегов и она не принадлежит книге — front-matter не добавляется.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с актуальными тегами, книгой и порядком. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тело заметки (без front-matter). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Полный текст файла, готовый для записи на диск. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/FrontMatterParser.java" line="108" column="26" bodyfile="src/main/java/com/notevault/util/FrontMatterParser.java" bodystart="108" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1acb026c526adc6af2f7487746d32c9dcb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>static Map&lt; String, Object &gt; com.notevault.util.FrontMatterParser.extractFrontMatter</definition>
+        <argsstring>(String content)</argsstring>
+        <name>extractFrontMatter</name>
+        <qualifiedname>com.notevault.util.FrontMatterParser.extractFrontMatter</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает сырой front-matter блок как Map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полный текст MD-файла. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Распарсенная карта полей или <javadoccode>null</javadoccode> если front-matter отсутствует. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/FrontMatterParser.java" line="151" column="23" bodyfile="src/main/java/com/notevault/util/FrontMatterParser.java" bodystart="151" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1aa331632bb988b9e92b64c311aeed9649" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.util.FrontMatterParser.extractBody</definition>
+        <argsstring>(String content)</argsstring>
+        <name>extractBody</name>
+        <qualifiedname>com.notevault.util.FrontMatterParser.extractBody</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает тело заметки без YAML front-matter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полный текст MD-файла. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Тело без front-matter (пустая строка если <javadoccode>content == null</javadoccode>). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/FrontMatterParser.java" line="169" column="26" bodyfile="src/main/java/com/notevault/util/FrontMatterParser.java" bodystart="169" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1adf958d043c26a39ccd35dbd378bdcd4a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; String &gt;</type>
+        <definition>static List&lt; String &gt; com.notevault.util.FrontMatterParser.extractAttachmentRefs</definition>
+        <argsstring>(String content)</argsstring>
+        <name>extractAttachmentRefs</name>
+        <qualifiedname>com.notevault.util.FrontMatterParser.extractAttachmentRefs</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает список имён файлов из Obsidian-style ссылок <javadoccode>![[file]]</javadoccode>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ищет все вхождения паттерна <javadoccode>![[...]]</javadoccode>} в теле заметки (front-matter при этом исключается).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полный текст MD-файла. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Список имён файлов (без скобок и пути). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/util/FrontMatterParser.java" line="187" column="24" bodyfile="src/main/java/com/notevault/util/FrontMatterParser.java" bodystart="187" bodyend="198"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Парсер и генератор YAML front-matter блока в MD-файлах. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Обеспечивает двунаправленную конвертацию между YAML front-matter внутри Markdown-файлов и полями объекта <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></computeroutput>.</para>
+<sect1 id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1autotoc_md13_1s1"><sect2 id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1autotoc_md13">
+<title>Поддерживаемые поля front-matter</title><para><table rows="4" cols="3"><row>
+<entry thead="yes"><para>Поле  </para>
+</entry><entry thead="yes"><para>Тип  </para>
+</entry><entry thead="yes"><para>Описание  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>tags</computeroutput>  </para>
+</entry><entry thead="no"><para>список строк  </para>
+</entry><entry thead="no"><para>Теги заметки  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>book</computeroutput>  </para>
+</entry><entry thead="no"><para>список строк  </para>
+</entry><entry thead="no"><para>Имя книги (берётся первый элемент)  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>order</computeroutput>  </para>
+</entry><entry thead="no"><para>целое число  </para>
+</entry><entry thead="no"><para>Позиция в книге (с нуля)  </para>
+</entry></row>
+</table>
+</para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1autotoc_md14_1s1"><sect2 id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1autotoc_md14">
+<title>Пример front-matter</title><para><programlisting filename=".yaml"><codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">tags:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>java</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>tutorial</highlight></codeline>
+<codeline><highlight class="normal">book:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>java_guide</highlight></codeline>
+<codeline><highlight class="normal">order:<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+</programlisting></para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1autotoc_md15_1s1"><sect2 id="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1autotoc_md15">
+<title>Синтаксис вложений</title><para>Ссылки на прикреплённые файлы используют Obsidian-style синтаксис: <programlisting filename=".md"><codeline><highlight class="normal">![[image.png]]</highlight></codeline>
+<codeline><highlight class="normal">![[document.pdf]]</highlight></codeline>
+</programlisting> <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1adf958d043c26a39ccd35dbd378bdcd4a" kindref="member">extractAttachmentRefs(String)</ref></computeroutput> выделяет имена файлов из таких ссылок.</para>
+<para><simplesect kind="note"><para>Класс является утилитным — все методы статические, экземпляр не создаётся.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service" kindref="compound">com.notevault.service.VaultService</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>com.notevault.service.MarkdownRenderer </para>
+</simplesect>
+</para>
+</sect2></sect1>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.util.FrontMatterParser</label>
+        <link refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/util/FrontMatterParser.java" line="48" column="7" bodyfile="src/main/java/com/notevault/util/FrontMatterParser.java" bodystart="48" bodyend="199"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1ad66b202505a66d10cb5266fb6cbc5b85" prot="public" virt="non-virtual"><scope>com::notevault::util::FrontMatterParser</scope><name>applyToNote</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a46d1c589e255538e6f8ca2b281940af7" prot="public" virt="non-virtual"><scope>com::notevault::util::FrontMatterParser</scope><name>buildContent</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1adf958d043c26a39ccd35dbd378bdcd4a" prot="public" virt="non-virtual"><scope>com::notevault::util::FrontMatterParser</scope><name>extractAttachmentRefs</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1aa331632bb988b9e92b64c311aeed9649" prot="public" virt="non-virtual"><scope>com::notevault::util::FrontMatterParser</scope><name>extractBody</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1acb026c526adc6af2f7487746d32c9dcb" prot="public" virt="non-virtual"><scope>com::notevault::util::FrontMatterParser</scope><name>extractFrontMatter</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a2442a1469a39fe8736786025afa70fc3" prot="private" virt="non-virtual"><scope>com::notevault::util::FrontMatterParser</scope><name>FrontMatterParser</name></member>
+      <member refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a199048ad13916cdb42a1f33605858af2" prot="private" virt="non-virtual"><scope>com::notevault::util::FrontMatterParser</scope><name>YAML</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

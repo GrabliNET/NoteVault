@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1model_1_1_book" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::model::Book</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_book_1a566e1d217edf795a2d5324b77af7fd97" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long com.notevault.model.Book.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>com.notevault.model.Book.id</qualifiedname>
+        <briefdescription>
+<para>Первичный ключ в таблице <javadoccode>books</javadoccode>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="42" column="18" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_book_1a624566537438db3ad80a26c1ee279a13" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.model.Book.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>com.notevault.model.Book.name</qualifiedname>
+        <briefdescription>
+<para>Уникальное имя книги. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Используется как идентификатор в YAML front-matter заметок (поле <javadoccode>book</javadoccode>). Ограничение <javadoccode>UNIQUE</javadoccode> в БД. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="50" column="20" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_book_1a79b6899195b4a412c649216f4bd451b2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.model.Book.description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>com.notevault.model.Book.description</qualifiedname>
+        <briefdescription>
+<para>Необязательное описание книги (отображается в начале при склейке). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="53" column="20" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_book_1a28d7b6bcb51c1f3e767c03876dfb25db" prot="private" static="no" mutable="no">
+        <type>LocalDateTime</type>
+        <definition>LocalDateTime com.notevault.model.Book.createdAt</definition>
+        <argsstring></argsstring>
+        <name>createdAt</name>
+        <qualifiedname>com.notevault.model.Book.createdAt</qualifiedname>
+        <briefdescription>
+<para>Дата создания книги. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="56" column="27" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_book_1a15a499f586ce7fbf11f5031b3654e606" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt;Note&gt; com.notevault.model.Book.notes</definition>
+        <argsstring></argsstring>
+        <name>notes</name>
+        <qualifiedname>com.notevault.model.Book.notes</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+<para>Заметки книги в порядке <javadoccode>order_index</javadoccode>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Поле заполняется только после явного запроса <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a8a9fa42ec388ec5cd3e70db6aba90e28" kindref="member">com.notevault.service.VaultService#getNotesByBook(Book)</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="64" column="18" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a4fe42ce03a7b29b6cd8cdf4803d06e4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.model.Book.Book</definition>
+        <argsstring>()</argsstring>
+        <name>Book</name>
+        <qualifiedname>com.notevault.model.Book.Book</qualifiedname>
+        <briefdescription>
+<para>Конструктор по умолчанию. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="67" column="12" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1acfa761e01d270951d23e326de542ab81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.model.Book.Book</definition>
+        <argsstring>(String name)</argsstring>
+        <name>Book</name>
+        <qualifiedname>com.notevault.model.Book.Book</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Создаёт книгу с заданным именем. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уникальное имя книги. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="73" column="12" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a9d11c18e2b3e28bb542fe12e51e6f886" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.notevault.model.Book.getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>com.notevault.model.Book.getId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Первичный ключ. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="79" column="17" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a0a6a5c840f5a84b89061e73d49c44f02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Book.setId</definition>
+        <argsstring>(long id)</argsstring>
+        <name>setId</name>
+        <qualifiedname>com.notevault.model.Book.setId</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="81" column="17" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a3fd0442bda1da8284b0e4aa858842bf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Book.getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>com.notevault.model.Book.getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Имя книги. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="84" column="19" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a6a3fab4bb87ead4a2a24fef8953109a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Book.setName</definition>
+        <argsstring>(String name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>com.notevault.model.Book.setName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя книги. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="86" column="17" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a7b4574686f081069407a8b2022e45be2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Book.getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>com.notevault.model.Book.getDescription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Описание книги или <javadoccode>null</javadoccode>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="89" column="19" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a40209eb4bf88b0b13974ae1daf74767b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Book.setDescription</definition>
+        <argsstring>(String description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>com.notevault.model.Book.setDescription</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Описание. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="91" column="17" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1aeb28a4eea64a08766b9a47a327b07b9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDateTime</type>
+        <definition>LocalDateTime com.notevault.model.Book.getCreatedAt</definition>
+        <argsstring>()</argsstring>
+        <name>getCreatedAt</name>
+        <qualifiedname>com.notevault.model.Book.getCreatedAt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Дата создания. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="94" column="26" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a2f9c534a8810007e0b161449edeaa8e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Book.setCreatedAt</definition>
+        <argsstring>(LocalDateTime createdAt)</argsstring>
+        <name>setCreatedAt</name>
+        <qualifiedname>com.notevault.model.Book.setCreatedAt</qualifiedname>
+        <param>
+          <type>LocalDateTime</type>
+          <declname>createdAt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>createdAt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дата создания. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="96" column="17" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a9e44053f2da5c3e4f0254aefe97ed971" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.model.Book.getNotes</definition>
+        <argsstring>()</argsstring>
+        <name>getNotes</name>
+        <qualifiedname>com.notevault.model.Book.getNotes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Список заметок (может быть пустым если не загружен). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="99" column="17" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1a3772eafaee1456a6b4d9216bc227661b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Book.setNotes</definition>
+        <argsstring>(List&lt; Note &gt; notes)</argsstring>
+        <name>setNotes</name>
+        <qualifiedname>com.notevault.model.Book.setNotes</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+          <declname>notes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>notes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список заметок. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="101" column="17" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_book_1aebdb46f2974525091ad9a8e8696f0295" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Book.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.notevault.model.Book.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Имя книги. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Book.java" line="104" column="20" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="104" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Книга — именованная коллекция заметок с фиксированным порядком. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Книга не является физическим файлом или папкой — это логическая группировка заметок, хранящаяся в таблицах <javadoccode>books</javadoccode> и <javadoccode>book_notes</javadoccode> БД.</para>
+<sect1 id="classcom_1_1notevault_1_1model_1_1_book_1autotoc_md6_1s1"><sect2 id="classcom_1_1notevault_1_1model_1_1_book_1autotoc_md6">
+<title>Принцип работы</title><para>Заметки физически лежат в своих папках тегов и <bold>не перемещаются</bold> при добавлении в книгу. При чтении книги сервисный слой делает SQL-запрос с <javadoccode>ORDER BY order_index</javadoccode> и «склеивает» тела заметок в единый Markdown-документ (без изменения файлов на диске).</para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1model_1_1_book_1autotoc_md7_1s1"><sect2 id="classcom_1_1notevault_1_1model_1_1_book_1autotoc_md7">
+<title>Front-matter заметки в книге</title><para><programlisting filename=".yaml"><codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">tags:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>java</highlight></codeline>
+<codeline><highlight class="normal">book:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>java_guide</highlight></codeline>
+<codeline><highlight class="normal">order:<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+</programlisting> Поле <javadoccode>book</javadoccode> содержит имя книги; <javadoccode>order</javadoccode> — позицию (с нуля).</para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1model_1_1_book_1autotoc_md8_1s1"><sect2 id="classcom_1_1notevault_1_1model_1_1_book_1autotoc_md8">
+<title>Экспорт</title><para>Книгу можно экспортировать целиком в PDF через <computeroutput><ref refid="" kindref="compound">com.notevault.service.PdfExporter#exportBook(Book, java.nio.file.Path)</ref></computeroutput>.</para>
+<para><simplesect kind="see"><para>com.notevault.db.BookDAO </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1ada2682780ae13fe09de153969c0e2067" kindref="member">com.notevault.service.VaultService.getBookContent(Book)</ref> </para>
+</simplesect>
+</para>
+</sect2></sect1>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.model.Book</label>
+        <link refid="classcom_1_1notevault_1_1model_1_1_book"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/model/Book.java" line="39" column="7" bodyfile="src/main/java/com/notevault/model/Book.java" bodystart="39" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a4fe42ce03a7b29b6cd8cdf4803d06e4b" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>Book</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1acfa761e01d270951d23e326de542ab81" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>Book</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a28d7b6bcb51c1f3e767c03876dfb25db" prot="private" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>createdAt</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a79b6899195b4a412c649216f4bd451b2" prot="private" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>description</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1aeb28a4eea64a08766b9a47a327b07b9a" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>getCreatedAt</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a7b4574686f081069407a8b2022e45be2" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>getDescription</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a9d11c18e2b3e28bb542fe12e51e6f886" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>getId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a3fd0442bda1da8284b0e4aa858842bf3" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>getName</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a9e44053f2da5c3e4f0254aefe97ed971" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>getNotes</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a566e1d217edf795a2d5324b77af7fd97" prot="private" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>id</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a624566537438db3ad80a26c1ee279a13" prot="private" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>name</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a15a499f586ce7fbf11f5031b3654e606" prot="private" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>notes</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a2f9c534a8810007e0b161449edeaa8e9" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>setCreatedAt</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a40209eb4bf88b0b13974ae1daf74767b" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>setDescription</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a0a6a5c840f5a84b89061e73d49c44f02" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>setId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a6a3fab4bb87ead4a2a24fef8953109a9" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>setName</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1a3772eafaee1456a6b4d9216bc227661b" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>setNotes</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_book_1aebdb46f2974525091ad9a8e8696f0295" prot="public" virt="non-virtual"><scope>com::notevault::model::Book</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

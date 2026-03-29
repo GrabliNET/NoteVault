@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_c88e2f18706adf9e190278a28cdfb655" kind="dir">
+    <compoundname>src/main/java/com/notevault/service</compoundname>
+    <innerfile refid="_markdown_renderer_8java">MarkdownRenderer.java</innerfile>
+    <innerfile refid="_pdf_exporter_8java">PdfExporter.java</innerfile>
+    <innerfile refid="_vault_service_8java">VaultService.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/service/"/>
+  </compounddef>
+</doxygen>

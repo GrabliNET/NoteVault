@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacecom_1_1notevault_1_1ui" kind="namespace" language="Java">
+    <compoundname>com::notevault::ui</compoundname>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1_main_window" prot="public">com::notevault::ui::MainWindow</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1_database_manager" prot="package">com::notevault::ui::DatabaseManager</innerclass>
+    <innernamespace refid="namespacecom_1_1notevault_1_1ui_1_1components">com::notevault::ui::components</innernamespace>
+    <innernamespace refid="namespacecom_1_1notevault_1_1ui_1_1dialogs">com::notevault::ui::dialogs</innernamespace>
+    <innernamespace refid="namespacecom_1_1notevault_1_1ui_1_1panels">com::notevault::ui::panels</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/ui/MainWindow.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

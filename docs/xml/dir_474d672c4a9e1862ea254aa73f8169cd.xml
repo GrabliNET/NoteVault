@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_474d672c4a9e1862ea254aa73f8169cd" kind="dir">
+    <compoundname>src/main/java/com/notevault/ui/components</compoundname>
+    <innerfile refid="_tag_chip_panel_8java">TagChipPanel.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/ui/components/"/>
+  </compounddef>
+</doxygen>

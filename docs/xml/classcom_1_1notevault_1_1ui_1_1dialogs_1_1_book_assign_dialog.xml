@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::dialogs::BookAssignDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a48b0a26d87420e20999e36e35f7755d4" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>final Note com.notevault.ui.dialogs.BookAssignDialog.note</definition>
+        <argsstring></argsstring>
+        <name>note</name>
+        <qualifiedname>com.notevault.ui.dialogs.BookAssignDialog.note</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="13" column="24" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0e7309a21b55cb9434e0c0fc8d06697d" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.notevault.ui.dialogs.BookAssignDialog.changed</definition>
+        <argsstring></argsstring>
+        <name>changed</name>
+        <qualifiedname>com.notevault.ui.dialogs.BookAssignDialog.changed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="14" column="21" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1adff2c9b0c99f3f0fc2a6cc75fce65c28" prot="private" static="no" mutable="no">
+        <type>JComboBox&lt; BookItem &gt;</type>
+        <definition>JComboBox&lt;BookItem&gt; com.notevault.ui.dialogs.BookAssignDialog.bookCombo</definition>
+        <argsstring></argsstring>
+        <name>bookCombo</name>
+        <qualifiedname>com.notevault.ui.dialogs.BookAssignDialog.bookCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="15" column="23" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a857338febf4cb197bd657980078631cc" prot="private" static="no" mutable="no">
+        <type>JSpinner</type>
+        <definition>JSpinner com.notevault.ui.dialogs.BookAssignDialog.orderSpinner</definition>
+        <argsstring></argsstring>
+        <name>orderSpinner</name>
+        <qualifiedname>com.notevault.ui.dialogs.BookAssignDialog.orderSpinner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="16" column="22" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1aadff47fb404b1f450198deb93740bfd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.dialogs.BookAssignDialog.BookAssignDialog</definition>
+        <argsstring>(Frame parent, Note note)</argsstring>
+        <name>BookAssignDialog</name>
+        <qualifiedname>com.notevault.ui.dialogs.BookAssignDialog.BookAssignDialog</qualifiedname>
+        <param>
+          <type>Frame</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="18" column="12" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0fc9da81c1c0ec0a466e865f31538839" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.notevault.ui.dialogs.BookAssignDialog.isChanged</definition>
+        <argsstring>()</argsstring>
+        <name>isChanged</name>
+        <qualifiedname>com.notevault.ui.dialogs.BookAssignDialog.isChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="93" column="20" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="93" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0d387b503c860d4cc07c9b27db9314df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.dialogs.BookAssignDialog.buildUI</definition>
+        <argsstring>()</argsstring>
+        <name>buildUI</name>
+        <qualifiedname>com.notevault.ui.dialogs.BookAssignDialog.buildUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="27" column="18" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="27" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a9771c80d6ccddc3608a1558145a8a3d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>record</type>
+        <definition>record com.notevault.ui.dialogs.BookAssignDialog.BookItem</definition>
+        <argsstring>(Book book, String label)</argsstring>
+        <name>BookItem</name>
+        <qualifiedname>com.notevault.ui.dialogs.BookAssignDialog.BookItem</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="95" column="20" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.dialogs.BookAssignDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="11" column="7" bodyfile="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" bodystart="11" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1aadff47fb404b1f450198deb93740bfd6" prot="public" virt="non-virtual"><scope>com::notevault::ui::dialogs::BookAssignDialog</scope><name>BookAssignDialog</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1adff2c9b0c99f3f0fc2a6cc75fce65c28" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::BookAssignDialog</scope><name>bookCombo</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a9771c80d6ccddc3608a1558145a8a3d8" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::BookAssignDialog</scope><name>BookItem</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0d387b503c860d4cc07c9b27db9314df" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::BookAssignDialog</scope><name>buildUI</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0e7309a21b55cb9434e0c0fc8d06697d" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::BookAssignDialog</scope><name>changed</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a0fc9da81c1c0ec0a466e865f31538839" prot="public" virt="non-virtual"><scope>com::notevault::ui::dialogs::BookAssignDialog</scope><name>isChanged</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a48b0a26d87420e20999e36e35f7755d4" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::BookAssignDialog</scope><name>note</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog_1a857338febf4cb197bd657980078631cc" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::BookAssignDialog</scope><name>orderSpinner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

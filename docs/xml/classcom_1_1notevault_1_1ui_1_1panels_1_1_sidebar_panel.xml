@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::panels::SidebarPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JPanel</basecompoundref>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1_1_sidebar_cell_renderer" prot="private">com::notevault::ui::panels::SidebarPanel::SidebarCellRenderer</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a30dec7a937a6fd4e347b43229ac851af" prot="private" static="no" mutable="no">
+        <type>final MainWindow</type>
+        <definition>final MainWindow com.notevault.ui.panels.SidebarPanel.mainWindow</definition>
+        <argsstring></argsstring>
+        <name>mainWindow</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.mainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="17" column="30" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a680edbcc391742a57b6091b079728b86" prot="private" static="no" mutable="no">
+        <type>JTree</type>
+        <definition>JTree com.notevault.ui.panels.SidebarPanel.tree</definition>
+        <argsstring></argsstring>
+        <name>tree</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.tree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="18" column="19" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a848d5965dd72a69bb52813c9cb06ef3e" prot="private" static="no" mutable="no">
+        <type>DefaultMutableTreeNode</type>
+        <definition>DefaultMutableTreeNode com.notevault.ui.panels.SidebarPanel.rootNode</definition>
+        <argsstring></argsstring>
+        <name>rootNode</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.rootNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="19" column="36" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1acac46fd160fb1a5b051306bbb09b7354" prot="private" static="no" mutable="no">
+        <type>DefaultMutableTreeNode</type>
+        <definition>DefaultMutableTreeNode com.notevault.ui.panels.SidebarPanel.allNotesNode</definition>
+        <argsstring></argsstring>
+        <name>allNotesNode</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.allNotesNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="20" column="36" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a957764f27f96287639518e678c605e3d" prot="private" static="no" mutable="no">
+        <type>DefaultMutableTreeNode</type>
+        <definition>DefaultMutableTreeNode com.notevault.ui.panels.SidebarPanel.booksNode</definition>
+        <argsstring></argsstring>
+        <name>booksNode</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.booksNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="21" column="36" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a844c94beac3b205445da33681217767d" prot="private" static="no" mutable="no">
+        <type>DefaultMutableTreeNode</type>
+        <definition>DefaultMutableTreeNode com.notevault.ui.panels.SidebarPanel.tagsNode</definition>
+        <argsstring></argsstring>
+        <name>tagsNode</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.tagsNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="22" column="36" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac0f8d60e6d02786b755e9831cacd7e2c" prot="private" static="no" mutable="no">
+        <type>DefaultTreeModel</type>
+        <definition>DefaultTreeModel com.notevault.ui.panels.SidebarPanel.treeModel</definition>
+        <argsstring></argsstring>
+        <name>treeModel</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.treeModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="23" column="30" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ad8c66db4663836e131baae7cfdadbef5" prot="private" static="no" mutable="no">
+        <type>JButton</type>
+        <definition>JButton com.notevault.ui.panels.SidebarPanel.newNoteBtn</definition>
+        <argsstring></argsstring>
+        <name>newNoteBtn</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.newNoteBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="25" column="21" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a8c8430a96463506703e24846f5c08b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.panels.SidebarPanel.SidebarPanel</definition>
+        <argsstring>(MainWindow mainWindow)</argsstring>
+        <name>SidebarPanel</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.SidebarPanel</qualifiedname>
+        <param>
+          <type>MainWindow</type>
+          <declname>mainWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="27" column="12" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1aec55c5fcc208493f930663671c42218a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.refresh</definition>
+        <argsstring>()</argsstring>
+        <name>refresh</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.refresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="93" column="17" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="93" bodyend="131"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a67737fa288ab225dc5f3305bd1bad467" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.buildUI</definition>
+        <argsstring>()</argsstring>
+        <name>buildUI</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.buildUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="33" column="18" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="33" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a574fbd0c16831f6005ad10ef25057195" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.showContextMenu</definition>
+        <argsstring>(MouseEvent e)</argsstring>
+        <name>showContextMenu</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.showContextMenu</qualifiedname>
+        <param>
+          <type>MouseEvent</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="133" column="18" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="133" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac6b78db982ff932d73c254ebc2930196" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.createBook</definition>
+        <argsstring>()</argsstring>
+        <name>createBook</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.createBook</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="170" column="18" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="170" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ae95e142b7927cbbf49f1d5456c431d20" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.renameBook</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>renameBook</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.renameBook</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="179" column="18" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="179" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a87a17e98c0c7b5784fd0b729d1a9a6d0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.deleteBook</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>deleteBook</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.deleteBook</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="190" column="18" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="190" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1adb6d0812673c61c19fb8737b4aa8249e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.exportBook</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>exportBook</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.exportBook</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="202" column="18" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="202" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac2ae84660ef30cf833e5830e836fa0f8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.renameTag</definition>
+        <argsstring>(Tag tag)</argsstring>
+        <name>renameTag</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.renameTag</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref></type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="213" column="18" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="213" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a91837e2f80abc2eb7cbb2e0100e71333" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.SidebarPanel.deleteTag</definition>
+        <argsstring>(Tag tag)</argsstring>
+        <name>deleteTag</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.deleteTag</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref></type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="223" column="18" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="223" bodyend="232"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.panels.SidebarPanel</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="15" column="7" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="15" bodyend="268"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1acac46fd160fb1a5b051306bbb09b7354" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>allNotesNode</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a957764f27f96287639518e678c605e3d" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>booksNode</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a67737fa288ab225dc5f3305bd1bad467" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>buildUI</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac6b78db982ff932d73c254ebc2930196" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>createBook</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a87a17e98c0c7b5784fd0b729d1a9a6d0" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>deleteBook</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a91837e2f80abc2eb7cbb2e0100e71333" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>deleteTag</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1adb6d0812673c61c19fb8737b4aa8249e" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>exportBook</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a30dec7a937a6fd4e347b43229ac851af" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>mainWindow</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ad8c66db4663836e131baae7cfdadbef5" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>newNoteBtn</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1aec55c5fcc208493f930663671c42218a" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>refresh</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ae95e142b7927cbbf49f1d5456c431d20" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>renameBook</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac2ae84660ef30cf833e5830e836fa0f8" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>renameTag</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a848d5965dd72a69bb52813c9cb06ef3e" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>rootNode</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a574fbd0c16831f6005ad10ef25057195" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>showContextMenu</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a8c8430a96463506703e24846f5c08b30" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>SidebarPanel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a844c94beac3b205445da33681217767d" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>tagsNode</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1a680edbcc391742a57b6091b079728b86" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>tree</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1ac0f8d60e6d02786b755e9831cacd7e2c" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel</scope><name>treeModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

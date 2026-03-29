@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacecom_1_1notevault_1_1ui_1_1dialogs" kind="namespace" language="Java">
+    <compoundname>com::notevault::ui::dialogs</compoundname>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_book_assign_dialog" prot="public">com::notevault::ui::dialogs::BookAssignDialog</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_new_note_dialog" prot="public">com::notevault::ui::dialogs::NewNoteDialog</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog" prot="public">com::notevault::ui::dialogs::TagManagerDialog</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_vault_chooser_dialog" prot="public">com::notevault::ui::dialogs::VaultChooserDialog</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/ui/dialogs/BookAssignDialog.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

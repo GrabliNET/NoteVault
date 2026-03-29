@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_875d76c90e4ebc86d49621b945e8e2ab" kind="dir">
+    <compoundname>src/main/java/com/notevault</compoundname>
+    <innerdir refid="dir_412de3699623d07ab64ebc58f70ce08f">src/main/java/com/notevault/db</innerdir>
+    <innerdir refid="dir_e72eeaf41f2475b702ff7f8b6d13ba3f">src/main/java/com/notevault/model</innerdir>
+    <innerdir refid="dir_c88e2f18706adf9e190278a28cdfb655">src/main/java/com/notevault/service</innerdir>
+    <innerdir refid="dir_bab5cc19cce40caca260ba7472b0a2e4">src/main/java/com/notevault/ui</innerdir>
+    <innerdir refid="dir_359bb1f96702d392418dbe6d1be825d3">src/main/java/com/notevault/util</innerdir>
+    <innerfile refid="_main_8java">Main.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/"/>
+  </compounddef>
+</doxygen>

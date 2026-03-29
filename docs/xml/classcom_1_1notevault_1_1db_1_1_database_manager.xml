@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1db_1_1_database_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::db::DatabaseManager</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1db_1_1_database_manager_1ab949653b63ebbf6f10ac81f6d6e3eb17" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.notevault.db.DatabaseManager.LOG</definition>
+        <argsstring></argsstring>
+        <name>LOG</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.LOG</qualifiedname>
+        <initializer>= Logger.getLogger(DatabaseManager.class.getName())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="42" column="33" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a4a7a5ed0a3a64cce203ac9dca9abc1aa" prot="private" static="yes" mutable="no">
+        <type>DatabaseManager</type>
+        <definition>DatabaseManager com.notevault.db.DatabaseManager.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.instance</qualifiedname>
+        <briefdescription>
+<para>Единственный экземпляр (паттерн Singleton). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="45" column="36" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1db_1_1_database_manager_1abe001d64a5edadecb8a237055a9dc16f" prot="private" static="no" mutable="no">
+        <type>Connection</type>
+        <definition>Connection com.notevault.db.DatabaseManager.connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.connection</qualifiedname>
+        <briefdescription>
+<para>Активное соединение с БД. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><javadoccode>null</javadoccode> до вызова <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a9aeb78ed51b075d9aedef99826a8544f" kindref="member">openVault(String)</ref></computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="48" column="24" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a5fa5a17d4ffb93b881ee94353161c85a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.db.DatabaseManager.dbPath</definition>
+        <argsstring></argsstring>
+        <name>dbPath</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.dbPath</qualifiedname>
+        <briefdescription>
+<para>Абсолютный путь к файлу БД (для диагностических сообщений). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="51" column="20" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a14e3adb140c87c035ed945db49e74926" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.db.DatabaseManager.DatabaseManager</definition>
+        <argsstring>()</argsstring>
+        <name>DatabaseManager</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.DatabaseManager</qualifiedname>
+        <briefdescription>
+<para>Приватный конструктор — использовать <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a65712db998cc14fa231fb575992b998d" kindref="member">getInstance()</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="54" column="13" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1adb3334287c14d3c0adf5f6bcdbb4d567" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.DatabaseManager.executePragma</definition>
+        <argsstring>(String pragma)</argsstring>
+        <name>executePragma</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.executePragma</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>pragma</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Исполняет одиночный PRAGMA в изолированном Statement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Try-with-resources гарантирует финализацию Statement (и связанной с ним неявной транзакции sqlite-jdbc) до перехода к следующей операции.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pragma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SQL-строка вида <javadoccode>&quot;PRAGMA journal_mode=WAL&quot;</javadoccode>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке выполнения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="125" column="18" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="125" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a9e57b46b44f91633d38b083f49cfaf05" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.DatabaseManager.createSchema</definition>
+        <argsstring>()</argsstring>
+        <name>createSchema</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.createSchema</qualifiedname>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Создаёт все таблицы и индексы если они не существуют. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>DDL выполняется в явной транзакции для атомарности: либо вся схема создаётся, либо (при ошибке) откатывается полностью. Идемпотентен благодаря <javadoccode>IF NOT EXISTS</javadoccode>.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке DDL (с автоматическим rollback). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="141" column="18" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="141" bodyend="194"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a65712db998cc14fa231fb575992b998d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DatabaseManager</type>
+        <definition>static DatabaseManager com.notevault.db.DatabaseManager.getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.getInstance</qualifiedname>
+        <briefdescription>
+<para>Возвращает единственный экземпляр менеджера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Экземпляр <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_database_manager" kindref="compound">DatabaseManager</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="60" column="35" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="60" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a42b54822e14be23513c4b8bc437b7564" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.DatabaseManager.initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.initialize</qualifiedname>
+        <briefdescription>
+<para>Вызывается при старте приложения до выбора vault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Метод-заглушка; реальная инициализация происходит в <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a9aeb78ed51b075d9aedef99826a8544f" kindref="member">openVault(String)</ref></computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="70" column="17" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a9aeb78ed51b075d9aedef99826a8544f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.DatabaseManager.openVault</definition>
+        <argsstring>(String vaultPath)</argsstring>
+        <name>openVault</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.openVault</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>vaultPath</declname>
+        </param>
+        <briefdescription>
+<para>Открывает (или создаёт) базу данных в указанном vault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм:<orderedlist>
+<listitem><para>Закрывает предыдущее соединение, если оно открыто.</para>
+</listitem><listitem><para>Создаёт директорию <javadoccode>&lt;vaultPath&gt;/_db/</javadoccode> если не существует.</para>
+</listitem><listitem><para>Открывает соединение JDBC с файлом <javadoccode>notes.db</javadoccode>.</para>
+</listitem><listitem><para>Применяет PRAGMA (по одному на Statement).</para>
+</listitem><listitem><para>Создаёт схему БД если таблицы ещё не существуют.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vaultPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Абсолютный путь к корневой директории vault. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если соединение или создание схемы провалилось. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="86" column="17" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="86" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a00f22aef1446eac4b74ce4a94b64bcac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Connection</type>
+        <definition>Connection com.notevault.db.DatabaseManager.getConnection</definition>
+        <argsstring>()</argsstring>
+        <name>getConnection</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.getConnection</qualifiedname>
+        <briefdescription>
+<para>Возвращает активное соединение с БД. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Активный <computeroutput><ref refid="" kindref="compound">Connection</ref></computeroutput>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalStateException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если vault ещё не открыт. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="202" column="23" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="202" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1a4799102dbe7478ae807a9509339610cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.notevault.db.DatabaseManager.isOpen</definition>
+        <argsstring>()</argsstring>
+        <name>isOpen</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.isOpen</qualifiedname>
+        <briefdescription>
+<para>Проверяет, открыто ли соединение с БД. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><javadoccode>true</javadoccode> если соединение существует и не закрыто. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="212" column="20" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="212" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_database_manager_1aeaf67f070e82cdac4057fb233e0a9aa1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.DatabaseManager.close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>com.notevault.db.DatabaseManager.close</qualifiedname>
+        <briefdescription>
+<para>Закрывает соединение с БД. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Вызывается при завершении приложения из <computeroutput><ref refid="" kindref="compound">com.notevault.ui.MainWindow</ref></computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="225" column="17" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="225" bodyend="236"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Синглтон-менеджер соединения с базой данных SQLite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Управляет жизненным циклом единственного <computeroutput><ref refid="" kindref="compound">Connection</ref></computeroutput> к файлу <javadoccode>_db/notes.db</javadoccode> внутри выбранного vault.</para>
+<sect1 id="classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md0_1s1"><sect2 id="classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md0">
+<title>Схема БД</title><para><table rows="7" cols="2"><row>
+<entry thead="yes"><para>Таблица  </para>
+</entry><entry thead="yes"><para>Назначение  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>notes</computeroutput>  </para>
+</entry><entry thead="no"><para>Основные метаданные заметок  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>tags</computeroutput>  </para>
+</entry><entry thead="no"><para>Глобальный список тегов  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>note_tags</computeroutput>  </para>
+</entry><entry thead="no"><para>Связь M:N между заметками и тегами  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>books</computeroutput>  </para>
+</entry><entry thead="no"><para>Именованные коллекции заметок  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>book_notes</computeroutput>  </para>
+</entry><entry thead="no"><para>Связь M:N с порядком для книг  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>attachments</computeroutput>  </para>
+</entry><entry thead="no"><para>Ссылки на прикреплённые файлы (без бинарных данных)  </para>
+</entry></row>
+</table>
+</para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md1_1s1"><sect2 id="classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md1">
+<title>Настройки SQLite</title><para>При открытии устанавливаются PRAGMA:<itemizedlist>
+<listitem><para><bold>WAL</bold> — Write-Ahead Logging, параллельные чтения без блокировок.</para>
+</listitem><listitem><para><bold>foreign_keys=ON</bold> — каскадные удаления по FK.</para>
+</listitem><listitem><para><bold>synchronous=NORMAL</bold> — баланс надёжности и скорости при WAL.</para>
+</listitem><listitem><para><bold>busy_timeout=5000</bold> — ожидание до 5 с при заблокированном файле.</para>
+</listitem></itemizedlist>
+</para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md2_1s1"><sect2 id="classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md2">
+<title>Важно о порядке вызова PRAGMA</title><para>Каждый PRAGMA исполняется в <bold>отдельном</bold> <computeroutput><ref refid="" kindref="compound">Statement</ref></computeroutput> через try-with-resources. Это необходимо из-за поведения sqlite-jdbc ≥ 3.45: драйвер удерживает неявную транзакцию после первого <javadoccode>execute()</javadoccode>, и цепочка вызовов на одном Statement приводит к <javadoccode>SQLITE_BUSY</javadoccode>.</para>
+<para><simplesect kind="warning"><para>Не является потокобезопасным. Все операции должны выполняться из Event Dispatch Thread или с внешней синхронизацией.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a5f70401a9034bf14f46569cf0d609c2f" kindref="member">com.notevault.service.VaultService.openVault</ref>(java.nio.file.Path) </para>
+</simplesect>
+</para>
+</sect2></sect1>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.db.DatabaseManager</label>
+        <link refid="classcom_1_1notevault_1_1db_1_1_database_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/db/DatabaseManager.java" line="41" column="7" bodyfile="src/main/java/com/notevault/db/DatabaseManager.java" bodystart="41" bodyend="237"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1aeaf67f070e82cdac4057fb233e0a9aa1" prot="public" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>close</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1abe001d64a5edadecb8a237055a9dc16f" prot="private" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>connection</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a9e57b46b44f91633d38b083f49cfaf05" prot="private" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>createSchema</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a14e3adb140c87c035ed945db49e74926" prot="private" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>DatabaseManager</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a5fa5a17d4ffb93b881ee94353161c85a" prot="private" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>dbPath</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1adb3334287c14d3c0adf5f6bcdbb4d567" prot="private" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>executePragma</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a00f22aef1446eac4b74ce4a94b64bcac" prot="public" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>getConnection</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a65712db998cc14fa231fb575992b998d" prot="public" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>getInstance</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a42b54822e14be23513c4b8bc437b7564" prot="public" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>initialize</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a4a7a5ed0a3a64cce203ac9dca9abc1aa" prot="private" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>instance</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a4799102dbe7478ae807a9509339610cd" prot="public" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>isOpen</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1ab949653b63ebbf6f10ac81f6d6e3eb17" prot="private" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>LOG</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a9aeb78ed51b075d9aedef99826a8544f" prot="public" virt="non-virtual"><scope>com::notevault::db::DatabaseManager</scope><name>openVault</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

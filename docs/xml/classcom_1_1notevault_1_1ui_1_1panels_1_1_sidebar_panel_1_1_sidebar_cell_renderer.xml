@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1_1_sidebar_cell_renderer" kind="class" language="Java" prot="private">
+    <compoundname>com::notevault::ui::panels::SidebarPanel::SidebarCellRenderer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DefaultTreeCellRenderer</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1_1_sidebar_cell_renderer_1af934e34884b55ed2a7de9b01253645fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Component</type>
+        <definition>Component com.notevault.ui.panels.SidebarPanel.SidebarCellRenderer.getTreeCellRendererComponent</definition>
+        <argsstring>(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus)</argsstring>
+        <name>getTreeCellRendererComponent</name>
+        <qualifiedname>com.notevault.ui.panels.SidebarPanel.SidebarCellRenderer.getTreeCellRendererComponent</qualifiedname>
+        <param>
+          <type>JTree</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>sel</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>expanded</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>leaf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>hasFocus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="238" column="26" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="238" bodyend="266"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.panels.SidebarPanel.SidebarCellRenderer</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/panels/SidebarPanel.java" line="236" column="20" bodyfile="src/main/java/com/notevault/ui/panels/SidebarPanel.java" bodystart="236" bodyend="267"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_sidebar_panel_1_1_sidebar_cell_renderer_1af934e34884b55ed2a7de9b01253645fd" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::SidebarPanel::SidebarCellRenderer</scope><name>getTreeCellRendererComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1db_1_1_book_d_a_o" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::db::BookDAO</compoundname>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a51023e0d2397816efd562b88bba13063" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Connection</type>
+        <definition>Connection com.notevault.db.BookDAO.conn</definition>
+        <argsstring>()</argsstring>
+        <name>conn</name>
+        <qualifiedname>com.notevault.db.BookDAO.conn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/BookDAO.java" line="12" column="24" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="12" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a8fc2e79a4263de3f4ec51667601121bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+        <definition>Book com.notevault.db.BookDAO.insert</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>insert</name>
+        <qualifiedname>com.notevault.db.BookDAO.insert</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/BookDAO.java" line="16" column="17" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="16" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a5dbc415f02447fe7f266f2ada6d21f94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.BookDAO.update</definition>
+        <argsstring>(Book book)</argsstring>
+        <name>update</name>
+        <qualifiedname>com.notevault.db.BookDAO.update</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+          <declname>book</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/BookDAO.java" line="30" column="17" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="30" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1aec2c7777f8ec374402912e18f53c0f40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.BookDAO.delete</definition>
+        <argsstring>(long bookId)</argsstring>
+        <name>delete</name>
+        <qualifiedname>com.notevault.db.BookDAO.delete</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>bookId</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/BookDAO.java" line="40" column="17" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1ac8e76b4e3ae3674cfab8e0bb17508300" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref> &gt;</type>
+        <definition>List&lt; Book &gt; com.notevault.db.BookDAO.findAll</definition>
+        <argsstring>()</argsstring>
+        <name>findAll</name>
+        <qualifiedname>com.notevault.db.BookDAO.findAll</qualifiedname>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/BookDAO.java" line="47" column="17" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="47" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a44341b303709b7aa4f8643caf4770ee3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">Book</ref></type>
+        <definition>Book com.notevault.db.BookDAO.findById</definition>
+        <argsstring>(long id)</argsstring>
+        <name>findById</name>
+        <qualifiedname>com.notevault.db.BookDAO.findById</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/BookDAO.java" line="63" column="17" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="63" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1aba7b5535ae84ed18858f51cbc5d7e904" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.BookDAO.updateNoteOrder</definition>
+        <argsstring>(long bookId, long noteId, int order)</argsstring>
+        <name>updateNoteOrder</name>
+        <qualifiedname>com.notevault.db.BookDAO.updateNoteOrder</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>bookId</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>noteId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/BookDAO.java" line="78" column="17" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="78" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1af0eebcd150282ba384dd86c324bb64ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.notevault.db.BookDAO.getNoteCount</definition>
+        <argsstring>(long bookId)</argsstring>
+        <name>getNoteCount</name>
+        <qualifiedname>com.notevault.db.BookDAO.getNoteCount</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>bookId</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/BookDAO.java" line="88" column="16" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="88" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.db.BookDAO</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/db/BookDAO.java" line="10" column="7" bodyfile="src/main/java/com/notevault/db/BookDAO.java" bodystart="10" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a51023e0d2397816efd562b88bba13063" prot="private" virt="non-virtual"><scope>com::notevault::db::BookDAO</scope><name>conn</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1aec2c7777f8ec374402912e18f53c0f40" prot="public" virt="non-virtual"><scope>com::notevault::db::BookDAO</scope><name>delete</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1ac8e76b4e3ae3674cfab8e0bb17508300" prot="public" virt="non-virtual"><scope>com::notevault::db::BookDAO</scope><name>findAll</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a44341b303709b7aa4f8643caf4770ee3" prot="public" virt="non-virtual"><scope>com::notevault::db::BookDAO</scope><name>findById</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1af0eebcd150282ba384dd86c324bb64ae" prot="public" virt="non-virtual"><scope>com::notevault::db::BookDAO</scope><name>getNoteCount</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a8fc2e79a4263de3f4ec51667601121bf" prot="public" virt="non-virtual"><scope>com::notevault::db::BookDAO</scope><name>insert</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1a5dbc415f02447fe7f266f2ada6d21f94" prot="public" virt="non-virtual"><scope>com::notevault::db::BookDAO</scope><name>update</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_book_d_a_o_1aba7b5535ae84ed18858f51cbc5d7e904" prot="public" virt="non-virtual"><scope>com::notevault::db::BookDAO</scope><name>updateNoteOrder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

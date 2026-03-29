@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_6e15e5861a113f527725f4404de3e1e8" kind="dir">
+    <compoundname>src/main/java/com/notevault/ui/dialogs</compoundname>
+    <innerfile refid="_book_assign_dialog_8java">BookAssignDialog.java</innerfile>
+    <innerfile refid="_new_note_dialog_8java">NewNoteDialog.java</innerfile>
+    <innerfile refid="_tag_manager_dialog_8java">TagManagerDialog.java</innerfile>
+    <innerfile refid="_vault_chooser_dialog_8java">VaultChooserDialog.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/ui/dialogs/"/>
+  </compounddef>
+</doxygen>

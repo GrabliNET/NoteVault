@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_e72eeaf41f2475b702ff7f8b6d13ba3f" kind="dir">
+    <compoundname>src/main/java/com/notevault/model</compoundname>
+    <innerfile refid="_attachment_8java">Attachment.java</innerfile>
+    <innerfile refid="_book_8java">Book.java</innerfile>
+    <innerfile refid="_note_8java">Note.java</innerfile>
+    <innerfile refid="_tag_8java">Tag.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/model/"/>
+  </compounddef>
+</doxygen>

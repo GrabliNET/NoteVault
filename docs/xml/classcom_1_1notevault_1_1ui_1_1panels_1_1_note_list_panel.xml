@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::panels::NoteListPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JPanel</basecompoundref>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer" prot="private">com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</innerclass>
+    <innerclass refid="interfacecom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_supplier" prot="public">com::notevault::ui::panels::NoteListPanel::NoteSupplier</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a37a367f08ca7f373a5303dd45267fd4d" prot="private" static="yes" mutable="no">
+        <type>final DateTimeFormatter</type>
+        <definition>final DateTimeFormatter com.notevault.ui.panels.NoteListPanel.DATE_FMT</definition>
+        <argsstring></argsstring>
+        <name>DATE_FMT</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.DATE_FMT</qualifiedname>
+        <initializer>= DateTimeFormatter.ofPattern(&quot;dd MMM yyyy&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="19" column="44" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a9badba6dda4d92e7330cbde7b7ddca81" prot="private" static="no" mutable="no">
+        <type>final MainWindow</type>
+        <definition>final MainWindow com.notevault.ui.panels.NoteListPanel.mainWindow</definition>
+        <argsstring></argsstring>
+        <name>mainWindow</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.mainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="21" column="30" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a77a9511fea477232fec1dab075969bf1" prot="private" static="no" mutable="no">
+        <type>DefaultListModel&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>DefaultListModel&lt;Note&gt; com.notevault.ui.panels.NoteListPanel.listModel</definition>
+        <argsstring></argsstring>
+        <name>listModel</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.listModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="22" column="30" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1af3ca357be5b17e47dce59ab3b30bdf84" prot="private" static="no" mutable="no">
+        <type>JList&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>JList&lt;Note&gt; com.notevault.ui.panels.NoteListPanel.noteList</definition>
+        <argsstring></argsstring>
+        <name>noteList</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.noteList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="23" column="19" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a194fb59f7747c64ae69e4d8fbd016c14" prot="private" static="no" mutable="no">
+        <type>JTextField</type>
+        <definition>JTextField com.notevault.ui.panels.NoteListPanel.searchField</definition>
+        <argsstring></argsstring>
+        <name>searchField</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.searchField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="24" column="24" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a06ab271ba28c00d330251ea4c7ed3db6" prot="private" static="no" mutable="no">
+        <type>JLabel</type>
+        <definition>JLabel com.notevault.ui.panels.NoteListPanel.headerLabel</definition>
+        <argsstring></argsstring>
+        <name>headerLabel</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.headerLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="25" column="20" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a86dcb560faf1039c4689f4636cbc4cb0" prot="private" static="no" mutable="no">
+        <type>Object</type>
+        <definition>Object com.notevault.ui.panels.NoteListPanel.currentSelection</definition>
+        <argsstring></argsstring>
+        <name>currentSelection</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.currentSelection</qualifiedname>
+        <initializer>= &quot;ALL&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="26" column="20" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a6d91924f7ff5034325c74fdc03dd1d66" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer com.notevault.ui.panels.NoteListPanel.searchDebounce</definition>
+        <argsstring></argsstring>
+        <name>searchDebounce</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.searchDebounce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="27" column="19" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a87162a98405ba12e92363406bd9af4d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.panels.NoteListPanel.NoteListPanel</definition>
+        <argsstring>(MainWindow mainWindow)</argsstring>
+        <name>NoteListPanel</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.NoteListPanel</qualifiedname>
+        <param>
+          <type>MainWindow</type>
+          <declname>mainWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="29" column="12" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1addbef7d387230bd496067bb3ef53782e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.showAllNotes</definition>
+        <argsstring>()</argsstring>
+        <name>showAllNotes</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.showAllNotes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="97" column="17" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1aed987dd73e54679bd6f5060d94521296" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.loadSelection</definition>
+        <argsstring>(Object selection)</argsstring>
+        <name>loadSelection</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.loadSelection</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>selection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="103" column="17" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="103" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1ae762ea0479774a1218f7b8a3122ece70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.reload</definition>
+        <argsstring>()</argsstring>
+        <name>reload</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.reload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="117" column="17" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1acbb36708d8c07510faa483c0ceb26e31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.addNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>addNote</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.addNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="121" column="17" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a31946f53326d04103f962dfb2277d657" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.refreshNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>refreshNote</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.refreshNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="125" column="17" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="125" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a2eaac91eb23a29f3563736f7c8d8d99a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.removeNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>removeNote</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.removeNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="134" column="17" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="134" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a9c33709d8209deb6ed8b4fa92461040e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.selectNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>selectNote</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.selectNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="143" column="17" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="143" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a799105f3fa0933e14e8d2ae1f8677bae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.focusSearch</definition>
+        <argsstring>()</argsstring>
+        <name>focusSearch</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.focusSearch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="153" column="17" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="153" bodyend="156"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1ad85662ab13df20dd689cbb4992dc4719" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.buildUI</definition>
+        <argsstring>()</argsstring>
+        <name>buildUI</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.buildUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="35" column="18" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="35" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a89a6a2874b85064e8a5f3e19e8a66b7a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.loadFromService</definition>
+        <argsstring>(NoteSupplier supplier)</argsstring>
+        <name>loadFromService</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.loadFromService</qualifiedname>
+        <param>
+          <type>NoteSupplier</type>
+          <declname>supplier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="160" column="18" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="160" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1afa168799366fba4db85df46017dd63fc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.performSearch</definition>
+        <argsstring>()</argsstring>
+        <name>performSearch</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.performSearch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="176" column="18" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a6a34e6aa8c59a492173fa6e3d644ef32" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.showContextMenu</definition>
+        <argsstring>(MouseEvent e)</argsstring>
+        <name>showContextMenu</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.showContextMenu</qualifiedname>
+        <param>
+          <type>MouseEvent</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="182" column="18" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="182" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a561683f152a8263fe9b650fc1ef81bf8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.renameNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>renameNote</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.renameNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="199" column="18" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="199" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a48e5232cf5f97cbec1e8e7ace4fd4334" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.NoteListPanel.deleteNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>deleteNote</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.deleteNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="210" column="18" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="210" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a107244d28707c887151592fd133d1a76" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Icon</type>
+        <definition>Icon com.notevault.ui.panels.NoteListPanel.searchIcon</definition>
+        <argsstring>()</argsstring>
+        <name>searchIcon</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.searchIcon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="221" column="18" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="221" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.panels.NoteListPanel</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="17" column="7" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="17" bodyend="300"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1acbb36708d8c07510faa483c0ceb26e31" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>addNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1ad85662ab13df20dd689cbb4992dc4719" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>buildUI</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a86dcb560faf1039c4689f4636cbc4cb0" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>currentSelection</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a37a367f08ca7f373a5303dd45267fd4d" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>DATE_FMT</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a48e5232cf5f97cbec1e8e7ace4fd4334" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>deleteNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a799105f3fa0933e14e8d2ae1f8677bae" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>focusSearch</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a06ab271ba28c00d330251ea4c7ed3db6" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>headerLabel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a77a9511fea477232fec1dab075969bf1" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>listModel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a89a6a2874b85064e8a5f3e19e8a66b7a" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>loadFromService</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1aed987dd73e54679bd6f5060d94521296" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>loadSelection</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a9badba6dda4d92e7330cbde7b7ddca81" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>mainWindow</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1af3ca357be5b17e47dce59ab3b30bdf84" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>noteList</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a87162a98405ba12e92363406bd9af4d0" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>NoteListPanel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1afa168799366fba4db85df46017dd63fc" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>performSearch</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a31946f53326d04103f962dfb2277d657" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>refreshNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1ae762ea0479774a1218f7b8a3122ece70" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>reload</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a2eaac91eb23a29f3563736f7c8d8d99a" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>removeNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a561683f152a8263fe9b650fc1ef81bf8" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>renameNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a6d91924f7ff5034325c74fdc03dd1d66" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>searchDebounce</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a194fb59f7747c64ae69e4d8fbd016c14" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>searchField</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a107244d28707c887151592fd133d1a76" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>searchIcon</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a9c33709d8209deb6ed8b4fa92461040e" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>selectNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1addbef7d387230bd496067bb3ef53782e" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>showAllNotes</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1a6a34e6aa8c59a492173fa6e3d644ef32" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel</scope><name>showContextMenu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

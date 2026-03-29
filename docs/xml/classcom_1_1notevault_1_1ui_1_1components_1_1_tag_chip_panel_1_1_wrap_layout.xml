@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::components::TagChipPanel::WrapLayout</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FlowLayout</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1aa5a3d135e35daaf196d71b10b14140e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.components.TagChipPanel.WrapLayout.WrapLayout</definition>
+        <argsstring>(int align, int hgap, int vgap)</argsstring>
+        <name>WrapLayout</name>
+        <qualifiedname>com.notevault.ui.components.TagChipPanel.WrapLayout.WrapLayout</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hgap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vgap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="85" column="16" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a4e4a48306ea5ee4846d0e9da635afa1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dimension</type>
+        <definition>Dimension com.notevault.ui.components.TagChipPanel.WrapLayout.preferredLayoutSize</definition>
+        <argsstring>(Container target)</argsstring>
+        <name>preferredLayoutSize</name>
+        <qualifiedname>com.notevault.ui.components.TagChipPanel.WrapLayout.preferredLayoutSize</qualifiedname>
+        <param>
+          <type>Container</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="90" column="26" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a4a5de5f9b4bd5446583408ebbe13a08f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dimension</type>
+        <definition>Dimension com.notevault.ui.components.TagChipPanel.WrapLayout.minimumLayoutSize</definition>
+        <argsstring>(Container target)</argsstring>
+        <name>minimumLayoutSize</name>
+        <qualifiedname>com.notevault.ui.components.TagChipPanel.WrapLayout.minimumLayoutSize</qualifiedname>
+        <param>
+          <type>Container</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="95" column="26" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a96b498a19af595b72e798192a0306dae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dimension</type>
+        <definition>Dimension com.notevault.ui.components.TagChipPanel.WrapLayout.layoutSize</definition>
+        <argsstring>(Container target, boolean preferred)</argsstring>
+        <name>layoutSize</name>
+        <qualifiedname>com.notevault.ui.components.TagChipPanel.WrapLayout.layoutSize</qualifiedname>
+        <param>
+          <type>Container</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>preferred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="99" column="27" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="99" bodyend="126"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>FlowLayout that wraps to new lines when there&apos;s not enough space. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.components.TagChipPanel.WrapLayout</label>
+        <link refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="84" column="19" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="84" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a96b498a19af595b72e798192a0306dae" prot="private" virt="non-virtual"><scope>com::notevault::ui::components::TagChipPanel::WrapLayout</scope><name>layoutSize</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a4a5de5f9b4bd5446583408ebbe13a08f" prot="public" virt="non-virtual"><scope>com::notevault::ui::components::TagChipPanel::WrapLayout</scope><name>minimumLayoutSize</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1a4e4a48306ea5ee4846d0e9da635afa1f" prot="public" virt="non-virtual"><scope>com::notevault::ui::components::TagChipPanel::WrapLayout</scope><name>preferredLayoutSize</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout_1aa5a3d135e35daaf196d71b10b14140e3" prot="public" virt="non-virtual"><scope>com::notevault::ui::components::TagChipPanel::WrapLayout</scope><name>WrapLayout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

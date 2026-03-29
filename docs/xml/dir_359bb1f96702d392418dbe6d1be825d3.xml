@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_359bb1f96702d392418dbe6d1be825d3" kind="dir">
+    <compoundname>src/main/java/com/notevault/util</compoundname>
+    <innerfile refid="_front_matter_parser_8java">FrontMatterParser.java</innerfile>
+    <innerfile refid="_vault_layout_8java">VaultLayout.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/util/"/>
+  </compounddef>
+</doxygen>

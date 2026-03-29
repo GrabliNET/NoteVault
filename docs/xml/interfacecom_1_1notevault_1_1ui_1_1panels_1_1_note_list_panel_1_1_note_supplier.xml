@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="interfacecom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_supplier" kind="interface" language="Java" prot="public">
+    <compoundname>com::notevault::ui::panels::NoteListPanel::NoteSupplier</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_supplier_1a4fa92db131d328f0f927995cac8fa46c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.ui.panels.NoteListPanel.NoteSupplier.get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.NoteSupplier.get</qualifiedname>
+        <exceptions> throws Exception</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="298" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.panels.NoteListPanel.NoteSupplier</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="297" column="15" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="297" bodyend="299"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_supplier_1a4fa92db131d328f0f927995cac8fa46c" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel::NoteSupplier</scope><name>get</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

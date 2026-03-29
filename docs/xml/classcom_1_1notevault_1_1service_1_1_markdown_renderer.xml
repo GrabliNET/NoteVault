@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1service_1_1_markdown_renderer" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::service::MarkdownRenderer</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1ab1b9a41df836a4f0afad779b6edfd409" prot="private" static="yes" mutable="no">
+        <type>final List&lt; Extension &gt;</type>
+        <definition>final List&lt;Extension&gt; com.notevault.service.MarkdownRenderer.EXTENSIONS</definition>
+        <argsstring></argsstring>
+        <name>EXTENSIONS</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.EXTENSIONS</qualifiedname>
+        <initializer>                                     = List.of(
+        TablesExtension.create(),
+        TaskListItemsExtension.create()
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="16" column="31" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a1c3f31fa17bc1510e9072c391535dcf5" prot="private" static="yes" mutable="no">
+        <type>final Parser</type>
+        <definition>final Parser com.notevault.service.MarkdownRenderer.PARSER</definition>
+        <argsstring></argsstring>
+        <name>PARSER</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.PARSER</qualifiedname>
+        <initializer>                           = Parser.builder()
+.extensions(EXTENSIONS)
+.build()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="21" column="33" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1ae2dd8730b4de7c402ba6528523836d65" prot="private" static="yes" mutable="no">
+        <type>final HtmlRenderer</type>
+        <definition>final HtmlRenderer com.notevault.service.MarkdownRenderer.RENDERER</definition>
+        <argsstring></argsstring>
+        <name>RENDERER</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.RENDERER</qualifiedname>
+        <initializer>                                   = HtmlRenderer.builder()
+.extensions(EXTENSIONS)
+.escapeHtml(false)
+.build()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="25" column="39" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a1d4242e95451f91fe69823eae14ede21" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.service.MarkdownRenderer.render</definition>
+        <argsstring>(String markdownContent, VaultLayout layout, Path noteFilePath)</argsstring>
+        <name>render</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.render</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>markdownContent</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">VaultLayout</ref></type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>noteFilePath</declname>
+        </param>
+        <briefdescription>
+<para>Render markdown content to a full HTML page for display in JEditorPane. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handles ![[filename]] attachment syntax by converting to  or  tags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="34" column="26" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="34" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a6779445a89aee80ebdc706c822825ecc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.service.MarkdownRenderer.renderSimple</definition>
+        <argsstring>(String markdown)</argsstring>
+        <name>renderSimple</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.renderSimple</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>markdown</declname>
+        </param>
+        <briefdescription>
+<para>Render plain markdown string (no attachment processing). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="51" column="26" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="51" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a78f27b6ab7c41c86dc28b14f5a18f26b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.service.MarkdownRenderer.wrapHtml</definition>
+        <argsstring>(String body, boolean dark)</argsstring>
+        <name>wrapHtml</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.wrapHtml</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>dark</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="117" column="26" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="117" bodyend="184"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a74941ed14dc9bd01927918a2369d13dd" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.service.MarkdownRenderer.processAttachmentRefs</definition>
+        <argsstring>(String body, VaultLayout layout, Path noteFilePath)</argsstring>
+        <name>processAttachmentRefs</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.processAttachmentRefs</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">VaultLayout</ref></type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>noteFilePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="58" column="27" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="58" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a86be8a718bdc24bbf871f53691aed0ba" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.service.MarkdownRenderer.resolveAttachmentTag</definition>
+        <argsstring>(String filename, VaultLayout layout, Path noteFilePath)</argsstring>
+        <name>resolveAttachmentTag</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.resolveAttachmentTag</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">VaultLayout</ref></type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>noteFilePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="81" column="27" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="81" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a3643f89cb7e99d05582719c6e5ef54a2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.notevault.service.MarkdownRenderer.stripFrontMatter</definition>
+        <argsstring>(String content)</argsstring>
+        <name>stripFrontMatter</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.stripFrontMatter</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="104" column="27" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="104" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a22955ced438ddefa979d60c80b5922c7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean com.notevault.service.MarkdownRenderer.isDarkTheme</definition>
+        <argsstring>()</argsstring>
+        <name>isDarkTheme</name>
+        <qualifiedname>com.notevault.service.MarkdownRenderer.isDarkTheme</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="112" column="28" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="112" bodyend="115"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.service.MarkdownRenderer</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/service/MarkdownRenderer.java" line="14" column="7" bodyfile="src/main/java/com/notevault/service/MarkdownRenderer.java" bodystart="14" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1ab1b9a41df836a4f0afad779b6edfd409" prot="private" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>EXTENSIONS</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a22955ced438ddefa979d60c80b5922c7" prot="private" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>isDarkTheme</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a1c3f31fa17bc1510e9072c391535dcf5" prot="private" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>PARSER</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a74941ed14dc9bd01927918a2369d13dd" prot="private" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>processAttachmentRefs</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a1d4242e95451f91fe69823eae14ede21" prot="public" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>render</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1ae2dd8730b4de7c402ba6528523836d65" prot="private" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>RENDERER</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a6779445a89aee80ebdc706c822825ecc" prot="public" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>renderSimple</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a86be8a718bdc24bbf871f53691aed0ba" prot="private" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>resolveAttachmentTag</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a3643f89cb7e99d05582719c6e5ef54a2" prot="private" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>stripFrontMatter</name></member>
+      <member refid="classcom_1_1notevault_1_1service_1_1_markdown_renderer_1a78f27b6ab7c41c86dc28b14f5a18f26b" prot="public" virt="non-virtual"><scope>com::notevault::service::MarkdownRenderer</scope><name>wrapHtml</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

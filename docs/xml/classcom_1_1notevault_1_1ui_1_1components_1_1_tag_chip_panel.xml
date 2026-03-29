@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::components::TagChipPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JPanel</basecompoundref>
+    <innerclass refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout" prot="public">com::notevault::ui::components::TagChipPanel::WrapLayout</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a0bdc5dc36d24f61cfbbb25b276478398" prot="private" static="no" mutable="no">
+        <type>final Consumer&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>final Consumer&lt;Tag&gt; com.notevault.ui.components.TagChipPanel.onRemove</definition>
+        <argsstring></argsstring>
+        <name>onRemove</name>
+        <qualifiedname>com.notevault.ui.components.TagChipPanel.onRemove</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="17" column="28" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1ae44811c4c0672a4a1b2e666e0bb37c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.components.TagChipPanel.TagChipPanel</definition>
+        <argsstring>(Consumer&lt; Tag &gt; onRemove)</argsstring>
+        <name>TagChipPanel</name>
+        <qualifiedname>com.notevault.ui.components.TagChipPanel.TagChipPanel</qualifiedname>
+        <param>
+          <type>Consumer&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+          <declname>onRemove</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="19" column="12" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a2f4fb6ec4006e5821b863294f5890044" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.components.TagChipPanel.setTags</definition>
+        <argsstring>(List&lt; Tag &gt; tags)</argsstring>
+        <name>setTags</name>
+        <qualifiedname>com.notevault.ui.components.TagChipPanel.setTags</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="26" column="17" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="26" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a39620e4728b12ab1b3b71103629c8919" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>JPanel</type>
+        <definition>JPanel com.notevault.ui.components.TagChipPanel.buildChip</definition>
+        <argsstring>(Tag tag)</argsstring>
+        <name>buildChip</name>
+        <qualifiedname>com.notevault.ui.components.TagChipPanel.buildChip</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref></type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="37" column="20" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="37" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Horizontal panel displaying tags as colored chips with an × remove button. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.components.TagChipPanel</label>
+        <link refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/components/TagChipPanel.java" line="15" column="7" bodyfile="src/main/java/com/notevault/ui/components/TagChipPanel.java" bodystart="15" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a39620e4728b12ab1b3b71103629c8919" prot="private" virt="non-virtual"><scope>com::notevault::ui::components::TagChipPanel</scope><name>buildChip</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a0bdc5dc36d24f61cfbbb25b276478398" prot="private" virt="non-virtual"><scope>com::notevault::ui::components::TagChipPanel</scope><name>onRemove</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1a2f4fb6ec4006e5821b863294f5890044" prot="public" virt="non-virtual"><scope>com::notevault::ui::components::TagChipPanel</scope><name>setTags</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1ae44811c4c0672a4a1b2e666e0bb37c35" prot="public" virt="non-virtual"><scope>com::notevault::ui::components::TagChipPanel</scope><name>TagChipPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="dir_bab5cc19cce40caca260ba7472b0a2e4" kind="dir">
+    <compoundname>src/main/java/com/notevault/ui</compoundname>
+    <innerdir refid="dir_474d672c4a9e1862ea254aa73f8169cd">src/main/java/com/notevault/ui/components</innerdir>
+    <innerdir refid="dir_6e15e5861a113f527725f4404de3e1e8">src/main/java/com/notevault/ui/dialogs</innerdir>
+    <innerdir refid="dir_e0483b35ef0130b69b5cc07321d97d26">src/main/java/com/notevault/ui/panels</innerdir>
+    <innerfile refid="_main_window_8java">MainWindow.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/ui/"/>
+  </compounddef>
+</doxygen>

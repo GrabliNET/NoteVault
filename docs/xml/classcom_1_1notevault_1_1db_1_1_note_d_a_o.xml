@@ -1,0 +1,635 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1db_1_1_note_d_a_o" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::db::NoteDAO</compoundname>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1aaf4fc5fb6268056e09f5d10a01cabd59" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Connection</type>
+        <definition>Connection com.notevault.db.NoteDAO.conn</definition>
+        <argsstring>()</argsstring>
+        <name>conn</name>
+        <qualifiedname>com.notevault.db.NoteDAO.conn</qualifiedname>
+        <briefdescription>
+<para>Вспомогательный метод получения соединения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Активное соединение с БД. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="38" column="24" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a14dacffcca8a4f0993a668017f2844df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.NoteDAO.syncTags</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>syncTags</name>
+        <qualifiedname>com.notevault.db.NoteDAO.syncTags</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Синхронизирует теги заметки с таблицей <javadoccode>note_tags</javadoccode>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Стратегия — «удалить всё и вставить заново» (delete-and-reinsert):<orderedlist>
+<listitem><para>Удаляем все строки <javadoccode>note_tags</javadoccode> для данной заметки.</para>
+</listitem><listitem><para>Для каждого тега из <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note_1aa6a04f87d9d19f2a2cc40b25849ab0cd" kindref="member">Note#getTags()</ref></computeroutput> вызываем <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ac683dabefcafc6251b57e39b0f6e9bf9" kindref="member">getOrCreateTag(String)</ref></computeroutput> и вставляем связь.</para>
+</listitem></orderedlist>
+</para>
+<para><simplesect kind="note"><para>Простая стратегия работает нормально при небольшом числе тегов (обычно &lt; 10 на заметку). При необходимости можно оптимизировать до диффа множеств.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с актуальным списком тегов и корректным ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке синхронизации. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="292" column="18" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="292" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a57b4d8e7f8157934008edfa3c04d9d1a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.NoteDAO.syncBook</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>syncBook</name>
+        <qualifiedname>com.notevault.db.NoteDAO.syncBook</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Синхронизирует принадлежность заметки к книге (<javadoccode>book_notes</javadoccode>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет все текущие записи <javadoccode>book_notes</javadoccode> для заметки, затем вставляет новую если <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note_1a2a8f5cdeedcec162e5cf20bb419fdeaa" kindref="member">Note#getBookId()</ref></computeroutput> не <javadoccode>null</javadoccode>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с актуальными <javadoccode>bookId</javadoccode> и <javadoccode>bookOrder</javadoccode>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке синхронизации. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="344" column="18" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="344" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a49be514310508833952e686c5e4eefcf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.db.NoteDAO.mapNote</definition>
+        <argsstring>(ResultSet rs)</argsstring>
+        <name>mapNote</name>
+        <qualifiedname>com.notevault.db.NoteDAO.mapNote</qualifiedname>
+        <param>
+          <type>ResultSet</type>
+          <declname>rs</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Маппит строку ResultSet в объект <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Читает колонки <javadoccode>id</javadoccode>, <javadoccode>title</javadoccode>, <javadoccode>file_path</javadoccode>, <javadoccode>created_at</javadoccode>, <javadoccode>updated_at</javadoccode>. Теги и книга не читаются здесь — они загружаются отдельными запросами выше.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ResultSet, позиционированный на нужной строке. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Заполненный объект <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></computeroutput> (без тегов и содержимого файла). </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке чтения колонок. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="372" column="18" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="372" bodyend="382"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a6dca6a6bbfc2f6aa4a9810932dc91d7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.db.NoteDAO.insert</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>insert</name>
+        <qualifiedname>com.notevault.db.NoteDAO.insert</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Сохраняет новую заметку в БД и присваивает ей сгенерированный ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>После INSERT синхронизирует теги (<javadoccode>note_tags</javadoccode>) и книгу (<javadoccode>book_notes</javadoccode>).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект заметки с заполненными <javadoccode>title</javadoccode>, <javadoccode>filePath</javadoccode>, <javadoccode>createdAt</javadoccode>, <javadoccode>updatedAt</javadoccode>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Тот же объект <javadoccode>note</javadoccode> с заполненным <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f" kindref="member">Note#getId()</ref></computeroutput>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке вставки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="53" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="53" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ae9ad6e0f021ea1f3703773b2ab14f618" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.NoteDAO.update</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>update</name>
+        <qualifiedname>com.notevault.db.NoteDAO.update</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Обновляет существующую заметку в БД. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет <javadoccode>title</javadoccode>, <javadoccode>file_path</javadoccode>, <javadoccode>updated_at</javadoccode>. Также синхронизирует теги и книгу. Поле <javadoccode>created_at</javadoccode> не изменяется.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заметка с актуальными данными и корректным <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f" kindref="member">Note#getId()</ref></computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке обновления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="80" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="80" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0728747695e65859e85a54c446634dac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.db.NoteDAO.delete</definition>
+        <argsstring>(long noteId)</argsstring>
+        <name>delete</name>
+        <qualifiedname>com.notevault.db.NoteDAO.delete</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>noteId</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Удаляет заметку из БД по ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Благодаря <javadoccode>ON DELETE CASCADE</javadoccode> в схеме, связанные записи в <javadoccode>note_tags</javadoccode>, <javadoccode>book_notes</javadoccode> и <javadoccode>attachments</javadoccode> удаляются автоматически.</para>
+<para><simplesect kind="warning"><para>Физический MD-файл при этом <bold>не удаляется</bold>. Удаление файла — ответственность вызывающего кода (<computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce" kindref="member">com.notevault.service.VaultService#deleteNote</ref></computeroutput>).</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noteId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ удаляемой заметки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке удаления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="107" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ad5723f704075627c10ffc41d402a91c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.db.NoteDAO.findById</definition>
+        <argsstring>(long id)</argsstring>
+        <name>findById</name>
+        <qualifiedname>com.notevault.db.NoteDAO.findById</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Находит заметку по первичному ключу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></computeroutput> или <javadoccode>null</javadoccode> если не найдена. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="121" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="121" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a4f3ad6742d8a06915fe8779b7324638b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.db.NoteDAO.findByPath</definition>
+        <argsstring>(String filePath)</argsstring>
+        <name>findByPath</name>
+        <qualifiedname>com.notevault.db.NoteDAO.findByPath</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>filePath</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Находит заметку по относительному пути к файлу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Используется при импорте и синхронизации файловой системы с БД.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Относительный путь (например <javadoccode>&quot;java/my-note.md&quot;</javadoccode>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></computeroutput> или <javadoccode>null</javadoccode> если не найдена. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="140" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="140" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1af65ea8d4c95cf1d99b77777dd40b45f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.db.NoteDAO.findAll</definition>
+        <argsstring>()</argsstring>
+        <name>findAll</name>
+        <qualifiedname>com.notevault.db.NoteDAO.findAll</qualifiedname>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Возвращает все заметки, отсортированные по дате изменения (новые первыми). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Для каждой заметки дополнительно выполняется запрос тегов через <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a20f9e3a2d1bd565e699fe9c609b2800a" kindref="member">findTagsForNote(long)</ref></computeroutput>. При большом количестве заметок это N+1 запросов — допустимо для локального SQLite.</para>
+<para><simplesect kind="return"><para>Список всех заметок с заполненными тегами. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="161" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="161" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a1dfbc77dbd1d41e9c1d349ffc48d5621" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.db.NoteDAO.findByTag</definition>
+        <argsstring>(long tagId)</argsstring>
+        <name>findByTag</name>
+        <qualifiedname>com.notevault.db.NoteDAO.findByTag</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>tagId</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Возвращает все заметки с указанным тегом. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tagId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ тега. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Список заметок с тегом, отсортированных по дате изменения. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="178" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="178" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1adda6c5eb37b8eaf7790152781ba1d70d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.db.NoteDAO.findByBook</definition>
+        <argsstring>(long bookId)</argsstring>
+        <name>findByBook</name>
+        <qualifiedname>com.notevault.db.NoteDAO.findByBook</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>bookId</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Возвращает заметки книги в порядке <javadoccode>order_index</javadoccode>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bookId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ книги. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Список заметок книги, упорядоченных по позиции. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="203" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="203" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0a120a09d344685d9da1bb6c9d657bcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+        <definition>List&lt; Note &gt; com.notevault.db.NoteDAO.search</definition>
+        <argsstring>(String query)</argsstring>
+        <name>search</name>
+        <qualifiedname>com.notevault.db.NoteDAO.search</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>query</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Полнотекстовый поиск заметок по заголовку (LIKE). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поисковый запрос (без подстановочных символов — они добавляются внутри). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Список заметок, заголовок которых содержит <javadoccode>query</javadoccode>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="233" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="233" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a20f9e3a2d1bd565e699fe9c609b2800a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>List&lt; Tag &gt; com.notevault.db.NoteDAO.findTagsForNote</definition>
+        <argsstring>(long noteId)</argsstring>
+        <name>findTagsForNote</name>
+        <qualifiedname>com.notevault.db.NoteDAO.findTagsForNote</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>noteId</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Возвращает теги конкретной заметки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noteId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ заметки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Список тегов, отсортированных по имени. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="253" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="253" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ac683dabefcafc6251b57e39b0f6e9bf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.notevault.db.NoteDAO.getOrCreateTag</definition>
+        <argsstring>(String name)</argsstring>
+        <name>getOrCreateTag</name>
+        <qualifiedname>com.notevault.db.NoteDAO.getOrCreateTag</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+<para>Возвращает ID тега по имени, создавая его при необходимости. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя тега (будет обрезан <javadoccode>trim()</javadoccode>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ID существующего или только что созданного тега. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SQLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибке чтения или вставки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/db/NoteDAO.java" line="316" column="17" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="316" bodyend="332"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>DAO (Data Access Object) для работы с таблицей <javadoccode>notes</javadoccode>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Инкапсулирует все SQL-операции над заметками. Соединение получает через <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_database_manager_1a00f22aef1446eac4b74ce4a94b64bcac" kindref="member">DatabaseManager#getConnection()</ref></computeroutput> при каждом обращении — объект не хранит ссылку на Connection, что позволяет безопасно переоткрывать vault.</para>
+<sect1 id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1autotoc_md3_1s1"><sect2 id="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1autotoc_md3">
+<title>Синхронизация тегов и книг</title><para>Методы <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a6dca6a6bbfc2f6aa4a9810932dc91d7f" kindref="member">insert(Note)</ref></computeroutput> и <computeroutput><ref refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ae9ad6e0f021ea1f3703773b2ab14f618" kindref="member">update(Note)</ref></computeroutput> автоматически вызывают <javadoccode>syncTags()</javadoccode> и <javadoccode>syncBook()</javadoccode>, которые приводят промежуточные таблицы <javadoccode>note_tags</javadoccode> и <javadoccode>book_notes</javadoccode> в соответствие с текущим состоянием объекта <computeroutput><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></computeroutput>.</para>
+<para><simplesect kind="note"><para>DAO не читает содержимое MD-файлов и не пишет в них. Синхронизация файловой системы — ответственность <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service" kindref="compound">com.notevault.service.VaultService</ref></computeroutput>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service" kindref="compound">com.notevault.service.VaultService</ref> </para>
+</simplesect>
+</para>
+</sect2></sect1>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.db.NoteDAO</label>
+        <link refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/db/NoteDAO.java" line="32" column="7" bodyfile="src/main/java/com/notevault/db/NoteDAO.java" bodystart="32" bodyend="383"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1aaf4fc5fb6268056e09f5d10a01cabd59" prot="private" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>conn</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0728747695e65859e85a54c446634dac" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>delete</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1af65ea8d4c95cf1d99b77777dd40b45f4" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>findAll</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1adda6c5eb37b8eaf7790152781ba1d70d" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>findByBook</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ad5723f704075627c10ffc41d402a91c9" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>findById</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a4f3ad6742d8a06915fe8779b7324638b" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>findByPath</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a1dfbc77dbd1d41e9c1d349ffc48d5621" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>findByTag</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a20f9e3a2d1bd565e699fe9c609b2800a" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>findTagsForNote</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ac683dabefcafc6251b57e39b0f6e9bf9" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>getOrCreateTag</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a6dca6a6bbfc2f6aa4a9810932dc91d7f" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>insert</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a49be514310508833952e686c5e4eefcf" prot="private" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>mapNote</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0a120a09d344685d9da1bb6c9d657bcb" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>search</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a57b4d8e7f8157934008edfa3c04d9d1a" prot="private" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>syncBook</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a14dacffcca8a4f0993a668017f2844df" prot="private" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>syncTags</name></member>
+      <member refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ae9ad6e0f021ea1f3703773b2ab14f618" prot="public" virt="non-virtual"><scope>com::notevault::db::NoteDAO</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

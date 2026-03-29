@@ -1,0 +1,798 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1model_1_1_note" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::model::Note</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1aa1a592d4e7f608424ff64feebe86cd77" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long com.notevault.model.Note.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>com.notevault.model.Note.id</qualifiedname>
+        <briefdescription>
+<para>Первичный ключ в таблице <javadoccode>notes</javadoccode> базы данных. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 — заметка ещё не сохранена. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="45" column="18" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1a5569d26a3925ee827bc484396403976f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.model.Note.title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>com.notevault.model.Note.title</qualifiedname>
+        <briefdescription>
+<para>Заголовок заметки (отображается в списке и используется как имя файла). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="48" column="20" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1a6375786bb21e7fc297ae959061ea6d88" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.model.Note.filePath</definition>
+        <argsstring></argsstring>
+        <name>filePath</name>
+        <qualifiedname>com.notevault.model.Note.filePath</qualifiedname>
+        <briefdescription>
+<para>Путь к MD-файлу относительно корня vault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Пример: <javadoccode>&quot;java/_my-note.md&quot;</javadoccode> или <javadoccode>&quot;_unsorted/untitled.md&quot;</javadoccode>. Разделитель всегда <javadoccode>&apos;/&apos;</javadoccode> независимо от ОС. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="56" column="20" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1a8d7a1e8354350be377f388c226210948" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.notevault.model.Note.content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <qualifiedname>com.notevault.model.Note.content</qualifiedname>
+        <briefdescription>
+<para>Полное содержимое файла, включая YAML front-matter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Поле заполняется лениво — только после вызова <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service_1a6e9bd86241b701df9cdc8e2e946706d5" kindref="member">com.notevault.service.VaultService#loadNoteContent(Note)</ref></computeroutput>. При получении заметок из БД это поле равно <javadoccode>null</javadoccode>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="65" column="20" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1a12530844eca0b99656bae213aeadba66" prot="private" static="no" mutable="no">
+        <type>LocalDateTime</type>
+        <definition>LocalDateTime com.notevault.model.Note.createdAt</definition>
+        <argsstring></argsstring>
+        <name>createdAt</name>
+        <qualifiedname>com.notevault.model.Note.createdAt</qualifiedname>
+        <briefdescription>
+<para>Дата и время создания заметки (UTC, сохраняется в БД как ISO-строка). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="68" column="27" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1a84bcb7cbaadc4685f79e8b31887fb8fa" prot="private" static="no" mutable="no">
+        <type>LocalDateTime</type>
+        <definition>LocalDateTime com.notevault.model.Note.updatedAt</definition>
+        <argsstring></argsstring>
+        <name>updatedAt</name>
+        <qualifiedname>com.notevault.model.Note.updatedAt</qualifiedname>
+        <briefdescription>
+<para>Дата и время последнего изменения (обновляется при каждом сохранении). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="71" column="27" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1accc76318b4cf7d0a6240cbce8d3a0069" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>List&lt;Tag&gt; com.notevault.model.Note.tags</definition>
+        <argsstring></argsstring>
+        <name>tags</name>
+        <qualifiedname>com.notevault.model.Note.tags</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+<para>Список тегов, привязанных к заметке. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Синхронизируется с таблицей <javadoccode>note_tags</javadoccode> через <computeroutput><ref refid="" kindref="compound">com.notevault.db.NoteDAO#syncTags(Note)</ref></computeroutput> (private). Также отражается в YAML front-matter файла. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="80" column="18" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1a301111fade54876683b3717d646dad6a" prot="private" static="no" mutable="no">
+        <type>Long</type>
+        <definition>Long com.notevault.model.Note.bookId</definition>
+        <argsstring></argsstring>
+        <name>bookId</name>
+        <qualifiedname>com.notevault.model.Note.bookId</qualifiedname>
+        <briefdescription>
+<para>Идентификатор книги, к которой принадлежит заметка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><javadoccode>null</javadoccode> означает, что заметка не входит ни в одну книгу. <simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1model_1_1_book" kindref="compound">com.notevault.model.Book</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="88" column="18" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1a25fea9821270f0124210ab1f334562b0" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer com.notevault.model.Note.bookOrder</definition>
+        <argsstring></argsstring>
+        <name>bookOrder</name>
+        <qualifiedname>com.notevault.model.Note.bookOrder</qualifiedname>
+        <briefdescription>
+<para>Порядковый номер заметки внутри книги (поле <javadoccode>order</javadoccode> в front-matter). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет последовательность при склейке заметок в книгу. Нумерация с нуля; <javadoccode>null</javadoccode> если заметка не входит в книгу. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="96" column="21" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1model_1_1_note_1ad613f23451ed40ba71ab405353210e54" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt;String, String&gt; com.notevault.model.Note.metaExtra</definition>
+        <argsstring></argsstring>
+        <name>metaExtra</name>
+        <qualifiedname>com.notevault.model.Note.metaExtra</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+<para>Дополнительные метаданные, не хранящиеся в отдельных полях. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Используется как временное хранилище при парсинге front-matter. На данный момент содержит единственный ключ:<itemizedlist>
+<listitem><para><javadoccode>&quot;bookName&quot;</javadoccode> — имя книги из front-matter до разрешения в <computeroutput><ref refid="" kindref="compound">bookId</ref></computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="warning"><para>Не персистируется напрямую; является вспомогательным полем для передачи данных между <computeroutput><ref refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser" kindref="compound">com.notevault.util.FrontMatterParser</ref></computeroutput> и <computeroutput><ref refid="classcom_1_1notevault_1_1service_1_1_vault_service" kindref="compound">com.notevault.service.VaultService</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="110" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="110" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1af12261b48e9317911fa214735e3fe7c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.model.Note.Note</definition>
+        <argsstring>()</argsstring>
+        <name>Note</name>
+        <qualifiedname>com.notevault.model.Note.Note</qualifiedname>
+        <briefdescription>
+<para>Конструктор по умолчанию (требуется для маппинга из ResultSet). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="113" column="12" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a9c62b36c90a66aaa762095d7c302e51a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.model.Note.Note</definition>
+        <argsstring>(String title, String filePath)</argsstring>
+        <name>Note</name>
+        <qualifiedname>com.notevault.model.Note.Note</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Создаёт новую заметку с заданным заголовком и путём к файлу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок заметки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Относительный путь к MD-файлу (может быть пустым до первого сохранения). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="121" column="12" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="121" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.notevault.model.Note.getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>com.notevault.model.Note.getId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Первичный ключ в БД. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="131" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a6f773c8d062b8859bae1277a80cfa2fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setId</definition>
+        <argsstring>(long id)</argsstring>
+        <name>setId</name>
+        <qualifiedname>com.notevault.model.Note.setId</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первичный ключ. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="133" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1ae082ea02f6c2a9b4ecc1a8e98c68e44a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Note.getTitle</definition>
+        <argsstring>()</argsstring>
+        <name>getTitle</name>
+        <qualifiedname>com.notevault.model.Note.getTitle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Заголовок заметки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="136" column="19" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a80d15ec55d70a8139519ca8dec5cc02e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setTitle</definition>
+        <argsstring>(String title)</argsstring>
+        <name>setTitle</name>
+        <qualifiedname>com.notevault.model.Note.setTitle</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок заметки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="138" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a21bd47bd8d83648504373bde82fee650" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Note.getFilePath</definition>
+        <argsstring>()</argsstring>
+        <name>getFilePath</name>
+        <qualifiedname>com.notevault.model.Note.getFilePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Относительный путь к файлу заметки внутри vault. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="141" column="19" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a53fc133aa0bd847b0313f7d862b39469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setFilePath</definition>
+        <argsstring>(String filePath)</argsstring>
+        <name>setFilePath</name>
+        <qualifiedname>com.notevault.model.Note.setFilePath</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Относительный путь к файлу. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="143" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a3a4e835c1899864c8e038e984db222ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Note.getContent</definition>
+        <argsstring>()</argsstring>
+        <name>getContent</name>
+        <qualifiedname>com.notevault.model.Note.getContent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Полное содержимое файла (front-matter + тело), или <javadoccode>null</javadoccode> если не загружено. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="146" column="19" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a557961fa4c7f26a45fcc8b33bd807fd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setContent</definition>
+        <argsstring>(String content)</argsstring>
+        <name>setContent</name>
+        <qualifiedname>com.notevault.model.Note.setContent</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полное содержимое файла. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="148" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a5dea4e089aa91ddf563fb54766ba8a8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDateTime</type>
+        <definition>LocalDateTime com.notevault.model.Note.getCreatedAt</definition>
+        <argsstring>()</argsstring>
+        <name>getCreatedAt</name>
+        <qualifiedname>com.notevault.model.Note.getCreatedAt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Дата создания. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="151" column="26" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1acadaa21a92a469da9f5da581a5101d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setCreatedAt</definition>
+        <argsstring>(LocalDateTime createdAt)</argsstring>
+        <name>setCreatedAt</name>
+        <qualifiedname>com.notevault.model.Note.setCreatedAt</qualifiedname>
+        <param>
+          <type>LocalDateTime</type>
+          <declname>createdAt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>createdAt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дата создания. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="153" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a31612e4a5eee4c1d88697e6b26c5d1cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDateTime</type>
+        <definition>LocalDateTime com.notevault.model.Note.getUpdatedAt</definition>
+        <argsstring>()</argsstring>
+        <name>getUpdatedAt</name>
+        <qualifiedname>com.notevault.model.Note.getUpdatedAt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Дата последнего изменения. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="156" column="26" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a7313a62632197afec6dfa2dff837ae61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setUpdatedAt</definition>
+        <argsstring>(LocalDateTime updatedAt)</argsstring>
+        <name>setUpdatedAt</name>
+        <qualifiedname>com.notevault.model.Note.setUpdatedAt</qualifiedname>
+        <param>
+          <type>LocalDateTime</type>
+          <declname>updatedAt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>updatedAt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дата изменения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="158" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1aa6a04f87d9d19f2a2cc40b25849ab0cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>List&lt; Tag &gt; com.notevault.model.Note.getTags</definition>
+        <argsstring>()</argsstring>
+        <name>getTags</name>
+        <qualifiedname>com.notevault.model.Note.getTags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Список тегов заметки (не <javadoccode>null</javadoccode>, может быть пустым). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="161" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1ac7e2444b75d621a08ebdc1bdb700509d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setTags</definition>
+        <argsstring>(List&lt; Tag &gt; tags)</argsstring>
+        <name>setTags</name>
+        <qualifiedname>com.notevault.model.Note.setTags</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый список тегов. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="163" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a2a8f5cdeedcec162e5cf20bb419fdeaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Long</type>
+        <definition>Long com.notevault.model.Note.getBookId</definition>
+        <argsstring>()</argsstring>
+        <name>getBookId</name>
+        <qualifiedname>com.notevault.model.Note.getBookId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ID книги или <javadoccode>null</javadoccode>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="166" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a709ff968407368c143516d74945edd3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setBookId</definition>
+        <argsstring>(Long bookId)</argsstring>
+        <name>setBookId</name>
+        <qualifiedname>com.notevault.model.Note.setBookId</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>bookId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bookId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID книги или <javadoccode>null</javadoccode>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="168" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a9fbf3d0e1299e220f36d646f547a036d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.notevault.model.Note.getBookOrder</definition>
+        <argsstring>()</argsstring>
+        <name>getBookOrder</name>
+        <qualifiedname>com.notevault.model.Note.getBookOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Порядковый номер в книге или <javadoccode>null</javadoccode>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="171" column="20" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1abde8703ba931dd1d08bb2a4302409406" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setBookOrder</definition>
+        <argsstring>(Integer bookOrder)</argsstring>
+        <name>setBookOrder</name>
+        <qualifiedname>com.notevault.model.Note.setBookOrder</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>bookOrder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bookOrder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Порядковый номер. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="173" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a23613b32016b945988104960d57670b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.notevault.model.Note.getMetaExtra</definition>
+        <argsstring>()</argsstring>
+        <name>getMetaExtra</name>
+        <qualifiedname>com.notevault.model.Note.getMetaExtra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Карта дополнительных метаданных (не <javadoccode>null</javadoccode>). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="176" column="16" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a62669f822f1fb316e5ec822191557a84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.model.Note.setMetaExtra</definition>
+        <argsstring>(Map&lt; String, String &gt; metaExtra)</argsstring>
+        <name>setMetaExtra</name>
+        <qualifiedname>com.notevault.model.Note.setMetaExtra</qualifiedname>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>metaExtra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metaExtra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Карта доп. метаданных. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="178" column="17" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="178" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a0d1bf8d504a6de63f1c82f07e44e77c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Note.getBodyContent</definition>
+        <argsstring>()</argsstring>
+        <name>getBodyContent</name>
+        <qualifiedname>com.notevault.model.Note.getBodyContent</qualifiedname>
+        <briefdescription>
+<para>Возвращает тело заметки без YAML front-matter блока. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если файл начинается с <javadoccode>---</javadoccode>, ищет закрывающий <javadoccode>---</javadoccode> и возвращает всё после него. Если front-matter отсутствует — возвращает <computeroutput><ref refid="" kindref="compound">content</ref></computeroutput> целиком.</para>
+<para><simplesect kind="return"><para>Текст заметки без front-matter, или пустая строка если <computeroutput><ref refid="" kindref="compound">content</ref></computeroutput> равен <javadoccode>null</javadoccode>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="192" column="19" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="192" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1model_1_1_note_1a14fd91f0ebc4676f259b18d75bb01561" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.notevault.model.Note.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.notevault.model.Note.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Заголовок заметки, или <javadoccode>&quot;(Untitled)&quot;</javadoccode> если заголовок не задан. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/model/Note.java" line="205" column="19" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="205" bodyend="207"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Модель заметки — центральная сущность приложения. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Каждая заметка соответствует одному файлу в формате Markdown внутри хранилища (vault). Путь к файлу хранится в поле <computeroutput><ref refid="" kindref="compound">filePath</ref></computeroutput> относительно корня vault, что обеспечивает переносимость хранилища.</para>
+<sect1 id="classcom_1_1notevault_1_1model_1_1_note_1autotoc_md9_1s1"><sect2 id="classcom_1_1notevault_1_1model_1_1_note_1autotoc_md9">
+<title>Структура файла заметки</title><para>Файл начинается с YAML front-matter блока, за которым следует тело заметки: <programlisting filename=".yaml"><codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">tags:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>java</highlight></codeline>
+<codeline><highlight class="normal">book:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>java_guide</highlight></codeline>
+<codeline><highlight class="normal">order:<sp/>3</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Заголовок<sp/>заметки</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Текст<sp/>заметки...</highlight></codeline>
+</programlisting></para>
+</sect2></sect1>
+<sect1 id="classcom_1_1notevault_1_1model_1_1_note_1autotoc_md10_1s1"><sect2 id="classcom_1_1notevault_1_1model_1_1_note_1autotoc_md10">
+<title>Размещение файла в vault</title><para>Физическое расположение файла определяется количеством тегов:<itemizedlist>
+<listitem><para><bold>0 тегов</bold> → <computeroutput>_unsorted/&lt;slug&gt;.md</computeroutput></para>
+</listitem><listitem><para><bold>1 тег</bold> → <computeroutput>&lt;tag&gt;/&lt;slug&gt;.md</computeroutput></para>
+</listitem><listitem><para><bold>2+ тегов</bold> → <computeroutput>_multi/&lt;slug&gt;.md</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1util_1_1_vault_layout" kindref="compound">com.notevault.util.VaultLayout</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1util_1_1_front_matter_parser" kindref="compound">com.notevault.util.FrontMatterParser</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1notevault_1_1db_1_1_note_d_a_o" kindref="compound">com.notevault.db.NoteDAO</ref> </para>
+</simplesect>
+</para>
+</sect2></sect1>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.model.Note</label>
+        <link refid="classcom_1_1notevault_1_1model_1_1_note"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/model/Note.java" line="42" column="7" bodyfile="src/main/java/com/notevault/model/Note.java" bodystart="42" bodyend="208"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a301111fade54876683b3717d646dad6a" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>bookId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a25fea9821270f0124210ab1f334562b0" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>bookOrder</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a8d7a1e8354350be377f388c226210948" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>content</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a12530844eca0b99656bae213aeadba66" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>createdAt</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a6375786bb21e7fc297ae959061ea6d88" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>filePath</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a0d1bf8d504a6de63f1c82f07e44e77c6" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getBodyContent</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a2a8f5cdeedcec162e5cf20bb419fdeaa" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getBookId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a9fbf3d0e1299e220f36d646f547a036d" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getBookOrder</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a3a4e835c1899864c8e038e984db222ac" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getContent</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a5dea4e089aa91ddf563fb54766ba8a8e" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getCreatedAt</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a21bd47bd8d83648504373bde82fee650" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getFilePath</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a23613b32016b945988104960d57670b3" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getMetaExtra</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1aa6a04f87d9d19f2a2cc40b25849ab0cd" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getTags</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1ae082ea02f6c2a9b4ecc1a8e98c68e44a" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getTitle</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a31612e4a5eee4c1d88697e6b26c5d1cd" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>getUpdatedAt</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1aa1a592d4e7f608424ff64feebe86cd77" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>id</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1ad613f23451ed40ba71ab405353210e54" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>metaExtra</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1af12261b48e9317911fa214735e3fe7c2" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>Note</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a9c62b36c90a66aaa762095d7c302e51a" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>Note</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a709ff968407368c143516d74945edd3c" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setBookId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1abde8703ba931dd1d08bb2a4302409406" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setBookOrder</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a557961fa4c7f26a45fcc8b33bd807fd0" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setContent</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1acadaa21a92a469da9f5da581a5101d6e" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setCreatedAt</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a53fc133aa0bd847b0313f7d862b39469" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setFilePath</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a6f773c8d062b8859bae1277a80cfa2fc" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setId</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a62669f822f1fb316e5ec822191557a84" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setMetaExtra</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1ac7e2444b75d621a08ebdc1bdb700509d" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setTags</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a80d15ec55d70a8139519ca8dec5cc02e" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setTitle</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a7313a62632197afec6dfa2dff837ae61" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>setUpdatedAt</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1accc76318b4cf7d0a6240cbce8d3a0069" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>tags</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a5569d26a3925ee827bc484396403976f" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>title</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a14fd91f0ebc4676f259b18d75bb01561" prot="public" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>toString</name></member>
+      <member refid="classcom_1_1notevault_1_1model_1_1_note_1a84bcb7cbaadc4685f79e8b31887fb8fa" prot="private" virt="non-virtual"><scope>com::notevault::model::Note</scope><name>updatedAt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

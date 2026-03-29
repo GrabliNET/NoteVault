@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="namespacecom_1_1notevault_1_1model" kind="namespace" language="Java">
+    <compoundname>com::notevault::model</compoundname>
+    <innerclass refid="classcom_1_1notevault_1_1model_1_1_attachment" prot="public">com::notevault::model::Attachment</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1model_1_1_book" prot="public">com::notevault::model::Book</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1model_1_1_note" prot="public">com::notevault::model::Note</innerclass>
+    <innerclass refid="classcom_1_1notevault_1_1model_1_1_tag" prot="public">com::notevault::model::Tag</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/notevault/model/Attachment.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

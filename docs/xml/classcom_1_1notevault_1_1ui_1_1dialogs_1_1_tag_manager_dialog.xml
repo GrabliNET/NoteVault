@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::dialogs::TagManagerDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ae74b4d418f60a7486f28f81823c8bffe" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>final List&lt;Tag&gt; com.notevault.ui.dialogs.TagManagerDialog.selectedTags</definition>
+        <argsstring></argsstring>
+        <name>selectedTags</name>
+        <qualifiedname>com.notevault.ui.dialogs.TagManagerDialog.selectedTags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="14" column="24" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a32524eed4a510a4833055f341562a0c6" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.notevault.ui.dialogs.TagManagerDialog.changed</definition>
+        <argsstring></argsstring>
+        <name>changed</name>
+        <qualifiedname>com.notevault.ui.dialogs.TagManagerDialog.changed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="15" column="21" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a8d65689a82588bd1d0894ca249606e67" prot="private" static="no" mutable="no">
+        <type>DefaultListModel&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>DefaultListModel&lt;Tag&gt; com.notevault.ui.dialogs.TagManagerDialog.availableModel</definition>
+        <argsstring></argsstring>
+        <name>availableModel</name>
+        <qualifiedname>com.notevault.ui.dialogs.TagManagerDialog.availableModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="16" column="30" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ad6e921e32e33b9a0db4c9b51773b6d91" prot="private" static="no" mutable="no">
+        <type>DefaultListModel&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>DefaultListModel&lt;Tag&gt; com.notevault.ui.dialogs.TagManagerDialog.selectedModel</definition>
+        <argsstring></argsstring>
+        <name>selectedModel</name>
+        <qualifiedname>com.notevault.ui.dialogs.TagManagerDialog.selectedModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="17" column="30" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a1b1f2f880958ea7163d7433b6dab35f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.dialogs.TagManagerDialog.TagManagerDialog</definition>
+        <argsstring>(Frame parent, com.notevault.model.Note note)</argsstring>
+        <name>TagManagerDialog</name>
+        <qualifiedname>com.notevault.ui.dialogs.TagManagerDialog.TagManagerDialog</qualifiedname>
+        <param>
+          <type>Frame</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">com.notevault.model.Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="19" column="12" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ac1490e7ea16bdb9c1762169447d10309" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>List&lt; Tag &gt; com.notevault.ui.dialogs.TagManagerDialog.getSelectedTags</definition>
+        <argsstring>()</argsstring>
+        <name>getSelectedTags</name>
+        <qualifiedname>com.notevault.ui.dialogs.TagManagerDialog.getSelectedTags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="129" column="17" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a376d60d5c69a926dddb8daa1d59bd0be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.notevault.ui.dialogs.TagManagerDialog.isChanged</definition>
+        <argsstring>()</argsstring>
+        <name>isChanged</name>
+        <qualifiedname>com.notevault.ui.dialogs.TagManagerDialog.isChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="130" column="20" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="130" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ad1fb242f4f3a00ab91c01a92f5280b42" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.dialogs.TagManagerDialog.buildUI</definition>
+        <argsstring>()</argsstring>
+        <name>buildUI</name>
+        <qualifiedname>com.notevault.ui.dialogs.TagManagerDialog.buildUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="27" column="18" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="27" bodyend="127"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.dialogs.TagManagerDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" line="12" column="7" bodyfile="src/main/java/com/notevault/ui/dialogs/TagManagerDialog.java" bodystart="12" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a8d65689a82588bd1d0894ca249606e67" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::TagManagerDialog</scope><name>availableModel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ad1fb242f4f3a00ab91c01a92f5280b42" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::TagManagerDialog</scope><name>buildUI</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a32524eed4a510a4833055f341562a0c6" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::TagManagerDialog</scope><name>changed</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ac1490e7ea16bdb9c1762169447d10309" prot="public" virt="non-virtual"><scope>com::notevault::ui::dialogs::TagManagerDialog</scope><name>getSelectedTags</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a376d60d5c69a926dddb8daa1d59bd0be" prot="public" virt="non-virtual"><scope>com::notevault::ui::dialogs::TagManagerDialog</scope><name>isChanged</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ad6e921e32e33b9a0db4c9b51773b6d91" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::TagManagerDialog</scope><name>selectedModel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1ae74b4d418f60a7486f28f81823c8bffe" prot="private" virt="non-virtual"><scope>com::notevault::ui::dialogs::TagManagerDialog</scope><name>selectedTags</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1dialogs_1_1_tag_manager_dialog_1a1b1f2f880958ea7163d7433b6dab35f1" prot="public" virt="non-virtual"><scope>com::notevault::ui::dialogs::TagManagerDialog</scope><name>TagManagerDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer" kind="class" language="Java" prot="private">
+    <compoundname>com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JPanel</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ListCellRenderer&lt; Note &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1ae0a0baeb58f4f50311fec7381d47f8ee" prot="private" static="no" mutable="no">
+        <type>final JLabel</type>
+        <definition>final JLabel com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.titleLabel</definition>
+        <argsstring></argsstring>
+        <name>titleLabel</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.titleLabel</qualifiedname>
+        <initializer>= new JLabel()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="240" column="30" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a117635a677131f41f970ec91df333597" prot="private" static="no" mutable="no">
+        <type>final JLabel</type>
+        <definition>final JLabel com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.dateLabel</definition>
+        <argsstring></argsstring>
+        <name>dateLabel</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.dateLabel</qualifiedname>
+        <initializer>= new JLabel()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="241" column="30" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1aabac9569e4e5ea3e2d7ea76a4074f045" prot="private" static="no" mutable="no">
+        <type>final JLabel</type>
+        <definition>final JLabel com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.tagsLabel</definition>
+        <argsstring></argsstring>
+        <name>tagsLabel</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.tagsLabel</qualifiedname>
+        <initializer>= new JLabel()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="242" column="30" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a10cbd8f6cd525d4a435f439461775c6f" prot="private" static="no" mutable="no">
+        <type>final JPanel</type>
+        <definition>final JPanel com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.textPanel</definition>
+        <argsstring></argsstring>
+        <name>textPanel</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.textPanel</qualifiedname>
+        <initializer>= new JPanel(new BorderLayout(0, 2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="243" column="30" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="243" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1af5d82e9c8f1992da26993508393b04f7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.NoteListCellRenderer</definition>
+        <argsstring>()</argsstring>
+        <name>NoteListCellRenderer</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.NoteListCellRenderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="245" column="9" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="245" bodyend="259"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a30f2b48bea1f389c1d501249f87856a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Component</type>
+        <definition>Component com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.getListCellRendererComponent</definition>
+        <argsstring>(JList&lt;? extends Note &gt; list, Note note, int index, boolean isSelected, boolean cellHasFocus)</argsstring>
+        <name>getListCellRendererComponent</name>
+        <qualifiedname>com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer.getListCellRendererComponent</qualifiedname>
+        <param>
+          <type>JList&lt;? extends <ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref> &gt;</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>isSelected</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>cellHasFocus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="262" column="26" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="262" bodyend="293"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.panels.NoteListPanel.NoteListCellRenderer</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/panels/NoteListPanel.java" line="239" column="20" bodyfile="src/main/java/com/notevault/ui/panels/NoteListPanel.java" bodystart="239" bodyend="294"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a117635a677131f41f970ec91df333597" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</scope><name>dateLabel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a30f2b48bea1f389c1d501249f87856a6" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</scope><name>getListCellRendererComponent</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1af5d82e9c8f1992da26993508393b04f7" prot="package" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</scope><name>NoteListCellRenderer</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1aabac9569e4e5ea3e2d7ea76a4074f045" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</scope><name>tagsLabel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1a10cbd8f6cd525d4a435f439461775c6f" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</scope><name>textPanel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_note_list_panel_1_1_note_list_cell_renderer_1ae0a0baeb58f4f50311fec7381d47f8ee" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::NoteListPanel::NoteListCellRenderer</scope><name>titleLabel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

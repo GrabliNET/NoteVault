@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="ru">
+  <compounddef id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel" kind="class" language="Java" prot="public">
+    <compoundname>com::notevault::ui::panels::EditorPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JPanel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a4ada349e5aa6afabd07403400fa72727" prot="private" static="no" mutable="no">
+        <type>final MainWindow</type>
+        <definition>final MainWindow com.notevault.ui.panels.EditorPanel.mainWindow</definition>
+        <argsstring></argsstring>
+        <name>mainWindow</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.mainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="23" column="30" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5cbb1b4ec5e38cfb6ee0b79583d233aa" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+        <definition>Note com.notevault.ui.panels.EditorPanel.currentNote</definition>
+        <argsstring></argsstring>
+        <name>currentNote</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.currentNote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="24" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa88f31160c25c2e57199c6a9cb8419fd" prot="private" static="no" mutable="no">
+        <type>JPanel</type>
+        <definition>JPanel com.notevault.ui.panels.EditorPanel.toolbar</definition>
+        <argsstring></argsstring>
+        <name>toolbar</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.toolbar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="27" column="20" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a79f42f41fb778fbdfb238d145d3e99f5" prot="private" static="no" mutable="no">
+        <type>JLabel</type>
+        <definition>JLabel com.notevault.ui.panels.EditorPanel.noteTitleLabel</definition>
+        <argsstring></argsstring>
+        <name>noteTitleLabel</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.noteTitleLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="28" column="20" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ab5e894c45379142aaed88dc567df9967" prot="private" static="no" mutable="no">
+        <type>JButton</type>
+        <definition>JButton com.notevault.ui.panels.EditorPanel.editPreviewToggle</definition>
+        <argsstring></argsstring>
+        <name>editPreviewToggle</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.editPreviewToggle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="29" column="21" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a701d376d6c2b4ae185e08a502f5cb86a" prot="private" static="no" mutable="no">
+        <type>JButton</type>
+        <definition>JButton com.notevault.ui.panels.EditorPanel.addTagBtn</definition>
+        <argsstring></argsstring>
+        <name>addTagBtn</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.addTagBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="30" column="21" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a7a921af7c137d8447a3e785fb5f589d0" prot="private" static="no" mutable="no">
+        <type>JButton</type>
+        <definition>JButton com.notevault.ui.panels.EditorPanel.attachBtn</definition>
+        <argsstring></argsstring>
+        <name>attachBtn</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.attachBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="31" column="21" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a7f4af22d2f0560617bf93d4d6400c3d7" prot="private" static="no" mutable="no">
+        <type>JButton</type>
+        <definition>JButton com.notevault.ui.panels.EditorPanel.bookBtn</definition>
+        <argsstring></argsstring>
+        <name>bookBtn</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.bookBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="32" column="21" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1acb8ffb65f0b765749932c3492d4e04eb" prot="private" static="no" mutable="no">
+        <type>JButton</type>
+        <definition>JButton com.notevault.ui.panels.EditorPanel.exportBtn</definition>
+        <argsstring></argsstring>
+        <name>exportBtn</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.exportBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="33" column="21" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a41b58802ca8778341d6ad6f7a93c5571" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel" kindref="compound">TagChipPanel</ref></type>
+        <definition>TagChipPanel com.notevault.ui.panels.EditorPanel.tagChipPanel</definition>
+        <argsstring></argsstring>
+        <name>tagChipPanel</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.tagChipPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="34" column="26" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a97eb11e8b4e1f7471b6ec1f629eb5019" prot="private" static="no" mutable="no">
+        <type>JSplitPane</type>
+        <definition>JSplitPane com.notevault.ui.panels.EditorPanel.editorSplit</definition>
+        <argsstring></argsstring>
+        <name>editorSplit</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.editorSplit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="37" column="24" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa4c695f82b02360ee9a3104174477401" prot="private" static="no" mutable="no">
+        <type>JTextArea</type>
+        <definition>JTextArea com.notevault.ui.panels.EditorPanel.editorArea</definition>
+        <argsstring></argsstring>
+        <name>editorArea</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.editorArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="38" column="23" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a65736ff290d1e080578ad1844de3a439" prot="private" static="no" mutable="no">
+        <type>JEditorPane</type>
+        <definition>JEditorPane com.notevault.ui.panels.EditorPanel.previewPane</definition>
+        <argsstring></argsstring>
+        <name>previewPane</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.previewPane</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="39" column="25" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a3f0f89e265fbad1356670d1a6142fd35" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.notevault.ui.panels.EditorPanel.previewVisible</definition>
+        <argsstring></argsstring>
+        <name>previewVisible</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.previewVisible</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="41" column="21" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa187c182cde09c2e15136d6e6f7a10e7" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer com.notevault.ui.panels.EditorPanel.autoSaveTimer</definition>
+        <argsstring></argsstring>
+        <name>autoSaveTimer</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.autoSaveTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="42" column="19" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a4f2a77cc89ecb9f9ca77ddebcc58eb8f" prot="private" static="no" mutable="no">
+        <type>volatile boolean</type>
+        <definition>volatile boolean com.notevault.ui.panels.EditorPanel.dirty</definition>
+        <argsstring></argsstring>
+        <name>dirty</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.dirty</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="43" column="30" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a97e66d88ef28e9cc66e6de7c8cffa30d" prot="private" static="no" mutable="no">
+        <type>javax.swing.Timer</type>
+        <definition>javax.swing.Timer com.notevault.ui.panels.EditorPanel.previewDebounce</definition>
+        <argsstring></argsstring>
+        <name>previewDebounce</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.previewDebounce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="222" column="29" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1af76606b2004664bee9e13b1497147360" prot="private" static="no" mutable="no">
+        <type>javax.swing.Timer</type>
+        <definition>javax.swing.Timer com.notevault.ui.panels.EditorPanel.autoSaveDebounce</definition>
+        <argsstring></argsstring>
+        <name>autoSaveDebounce</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.autoSaveDebounce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="231" column="29" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="231" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac2cbcd13169f0e91a6b975cb7d74dc7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.notevault.ui.panels.EditorPanel.EditorPanel</definition>
+        <argsstring>(MainWindow mainWindow)</argsstring>
+        <name>EditorPanel</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.EditorPanel</qualifiedname>
+        <param>
+          <type>MainWindow</type>
+          <declname>mainWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="45" column="12" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5593ac32898fedf86b7164c8ab6329ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.loadNote</definition>
+        <argsstring>(Note note)</argsstring>
+        <name>loadNote</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.loadNote</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_note" kindref="compound">Note</ref></type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="157" column="17" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="157" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a56ea88c3aeddc2b3400cf6dd265c1ab8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.clearEditor</definition>
+        <argsstring>()</argsstring>
+        <name>clearEditor</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.clearEditor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="174" column="17" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="174" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5a7c98fec51fb9f7a0c31b49df7dc732" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.refreshPreview</definition>
+        <argsstring>()</argsstring>
+        <name>refreshPreview</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.refreshPreview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="185" column="17" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a644611bcbaf271e8d3c605be7c71a0e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.saveCurrentNote</definition>
+        <argsstring>()</argsstring>
+        <name>saveCurrentNote</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.saveCurrentNote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="189" column="17" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="189" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac552b30f7a6dd29d392acecceaf0361e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.exportCurrentNoteToPdf</definition>
+        <argsstring>()</argsstring>
+        <name>exportCurrentNoteToPdf</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.exportCurrentNoteToPdf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="201" column="17" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="201" bodyend="212"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a753ecb278075e9bc39033df9cedceb45" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.buildUI</definition>
+        <argsstring>()</argsstring>
+        <name>buildUI</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.buildUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="51" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="51" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a236462445325766c0a02f53e958f261b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.onEdit</definition>
+        <argsstring>()</argsstring>
+        <name>onEdit</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.onEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="216" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="216" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a41dba182df8ed31f10bd5d83d5bc3512" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.updatePreviewDelayed</definition>
+        <argsstring>()</argsstring>
+        <name>updatePreviewDelayed</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.updatePreviewDelayed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="223" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="223" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ae7ed82bd1e61769d280164dec197670f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.scheduleAutoSave</definition>
+        <argsstring>()</argsstring>
+        <name>scheduleAutoSave</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.scheduleAutoSave</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="232" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="232" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac340a388735d1ec52e06bf55f9c24778" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.updatePreview</definition>
+        <argsstring>()</argsstring>
+        <name>updatePreview</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.updatePreview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="240" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="240" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a919a5bcdef805f9085f3276fce40537a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.togglePreview</definition>
+        <argsstring>()</argsstring>
+        <name>togglePreview</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.togglePreview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="253" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="253" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ad396369d127b098d4db542370072a54d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.manageTags</definition>
+        <argsstring>()</argsstring>
+        <name>manageTags</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.manageTags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="260" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="260" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ae954dcb69838e8973ae81009d8a22a32" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.onTagRemoved</definition>
+        <argsstring>(Tag tag)</argsstring>
+        <name>onTagRemoved</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.onTagRemoved</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1notevault_1_1model_1_1_tag" kindref="compound">Tag</ref></type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="277" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="277" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aef0282101a30c6c5286f8ad48a566164" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.attachFile</definition>
+        <argsstring>()</argsstring>
+        <name>attachFile</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.attachFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="289" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="289" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a29257eee0f11d6c0567dc29867ea612d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.assignBook</definition>
+        <argsstring>()</argsstring>
+        <name>assignBook</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.assignBook</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="307" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="307" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a00f8e29d0b38358ee8cd0c4f2be22ad0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.notevault.ui.panels.EditorPanel.updateToolbarEnabled</definition>
+        <argsstring>(boolean enabled)</argsstring>
+        <name>updateToolbarEnabled</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.updateToolbarEnabled</qualifiedname>
+        <param>
+          <type>boolean</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="322" column="18" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="322" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a170e73157072e9e353bfb605fe6166c1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>JButton</type>
+        <definition>JButton com.notevault.ui.panels.EditorPanel.toolbarBtn</definition>
+        <argsstring>(String text, String tooltip)</argsstring>
+        <name>toolbarBtn</name>
+        <qualifiedname>com.notevault.ui.panels.EditorPanel.toolbarBtn</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>tooltip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="331" column="21" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="331" bodyend="340"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.notevault.ui.panels.EditorPanel</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/notevault/ui/panels/EditorPanel.java" line="21" column="7" bodyfile="src/main/java/com/notevault/ui/panels/EditorPanel.java" bodystart="21" bodyend="341"/>
+    <listofallmembers>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a701d376d6c2b4ae185e08a502f5cb86a" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>addTagBtn</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a29257eee0f11d6c0567dc29867ea612d" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>assignBook</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a7a921af7c137d8447a3e785fb5f589d0" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>attachBtn</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aef0282101a30c6c5286f8ad48a566164" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>attachFile</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1af76606b2004664bee9e13b1497147360" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>autoSaveDebounce</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa187c182cde09c2e15136d6e6f7a10e7" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>autoSaveTimer</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a7f4af22d2f0560617bf93d4d6400c3d7" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>bookBtn</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a753ecb278075e9bc39033df9cedceb45" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>buildUI</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a56ea88c3aeddc2b3400cf6dd265c1ab8" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>clearEditor</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5cbb1b4ec5e38cfb6ee0b79583d233aa" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>currentNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a4f2a77cc89ecb9f9ca77ddebcc58eb8f" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>dirty</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa4c695f82b02360ee9a3104174477401" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>editorArea</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac2cbcd13169f0e91a6b975cb7d74dc7e" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>EditorPanel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a97eb11e8b4e1f7471b6ec1f629eb5019" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>editorSplit</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ab5e894c45379142aaed88dc567df9967" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>editPreviewToggle</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1acb8ffb65f0b765749932c3492d4e04eb" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>exportBtn</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac552b30f7a6dd29d392acecceaf0361e" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>exportCurrentNoteToPdf</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5593ac32898fedf86b7164c8ab6329ac" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>loadNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a4ada349e5aa6afabd07403400fa72727" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>mainWindow</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ad396369d127b098d4db542370072a54d" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>manageTags</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a79f42f41fb778fbdfb238d145d3e99f5" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>noteTitleLabel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a236462445325766c0a02f53e958f261b" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>onEdit</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ae954dcb69838e8973ae81009d8a22a32" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>onTagRemoved</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a97e66d88ef28e9cc66e6de7c8cffa30d" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>previewDebounce</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a65736ff290d1e080578ad1844de3a439" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>previewPane</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a3f0f89e265fbad1356670d1a6142fd35" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>previewVisible</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a5a7c98fec51fb9f7a0c31b49df7dc732" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>refreshPreview</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a644611bcbaf271e8d3c605be7c71a0e5" prot="public" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>saveCurrentNote</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ae7ed82bd1e61769d280164dec197670f" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>scheduleAutoSave</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a41b58802ca8778341d6ad6f7a93c5571" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>tagChipPanel</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a919a5bcdef805f9085f3276fce40537a" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>togglePreview</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1aa88f31160c25c2e57199c6a9cb8419fd" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>toolbar</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a170e73157072e9e353bfb605fe6166c1" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>toolbarBtn</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1ac340a388735d1ec52e06bf55f9c24778" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>updatePreview</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a41dba182df8ed31f10bd5d83d5bc3512" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>updatePreviewDelayed</name></member>
+      <member refid="classcom_1_1notevault_1_1ui_1_1panels_1_1_editor_panel_1a00f8e29d0b38358ee8cd0c4f2be22ad0" prot="private" virt="non-virtual"><scope>com::notevault::ui::panels::EditorPanel</scope><name>updateToolbarEnabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
