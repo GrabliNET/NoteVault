@@ -1,0 +1,664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoteVault: Класс com.notevault.model.Note</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NoteVault<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Приложение для управления заметками в формате Markdown</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classcom_1_1notevault_1_1model_1_1_note.html','','classcom_1_1notevault_1_1model_1_1_note-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс com.notevault.model.Note</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Модель заметки — центральная сущность приложения.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса com.notevault.model.Note:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classcom_1_1notevault_1_1model_1_1_note__coll__graph.svg" width="175" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af12261b48e9317911fa214735e3fe7c2" id="r_af12261b48e9317911fa214735e3fe7c2"><td class="memItemLeft"><a id="af12261b48e9317911fa214735e3fe7c2" name="af12261b48e9317911fa214735e3fe7c2"></a>
+&#160;</td><td class="memItemRight"><b>Note</b> ()</td></tr>
+<tr class="memdesc:af12261b48e9317911fa214735e3fe7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию (требуется для маппинга из ResultSet). <br /></td></tr>
+<tr class="memitem:a9c62b36c90a66aaa762095d7c302e51a" id="r_a9c62b36c90a66aaa762095d7c302e51a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9c62b36c90a66aaa762095d7c302e51a">Note</a> (String title, String filePath)</td></tr>
+<tr class="memdesc:a9c62b36c90a66aaa762095d7c302e51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт новую заметку с заданным заголовком и путём к файлу.  <br /></td></tr>
+<tr class="memitem:ace443c6d00f074082438429a0146a15f" id="r_ace443c6d00f074082438429a0146a15f"><td class="memItemLeft">long&#160;</td><td class="memItemRight"><a class="el" href="#ace443c6d00f074082438429a0146a15f">getId</a> ()</td></tr>
+<tr class="memitem:a6f773c8d062b8859bae1277a80cfa2fc" id="r_a6f773c8d062b8859bae1277a80cfa2fc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6f773c8d062b8859bae1277a80cfa2fc">setId</a> (long id)</td></tr>
+<tr class="memitem:ae082ea02f6c2a9b4ecc1a8e98c68e44a" id="r_ae082ea02f6c2a9b4ecc1a8e98c68e44a"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#ae082ea02f6c2a9b4ecc1a8e98c68e44a">getTitle</a> ()</td></tr>
+<tr class="memitem:a80d15ec55d70a8139519ca8dec5cc02e" id="r_a80d15ec55d70a8139519ca8dec5cc02e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a80d15ec55d70a8139519ca8dec5cc02e">setTitle</a> (String title)</td></tr>
+<tr class="memitem:a21bd47bd8d83648504373bde82fee650" id="r_a21bd47bd8d83648504373bde82fee650"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a21bd47bd8d83648504373bde82fee650">getFilePath</a> ()</td></tr>
+<tr class="memitem:a53fc133aa0bd847b0313f7d862b39469" id="r_a53fc133aa0bd847b0313f7d862b39469"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a53fc133aa0bd847b0313f7d862b39469">setFilePath</a> (String filePath)</td></tr>
+<tr class="memitem:a3a4e835c1899864c8e038e984db222ac" id="r_a3a4e835c1899864c8e038e984db222ac"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a3a4e835c1899864c8e038e984db222ac">getContent</a> ()</td></tr>
+<tr class="memitem:a557961fa4c7f26a45fcc8b33bd807fd0" id="r_a557961fa4c7f26a45fcc8b33bd807fd0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a557961fa4c7f26a45fcc8b33bd807fd0">setContent</a> (String content)</td></tr>
+<tr class="memitem:a5dea4e089aa91ddf563fb54766ba8a8e" id="r_a5dea4e089aa91ddf563fb54766ba8a8e"><td class="memItemLeft">LocalDateTime&#160;</td><td class="memItemRight"><a class="el" href="#a5dea4e089aa91ddf563fb54766ba8a8e">getCreatedAt</a> ()</td></tr>
+<tr class="memitem:acadaa21a92a469da9f5da581a5101d6e" id="r_acadaa21a92a469da9f5da581a5101d6e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acadaa21a92a469da9f5da581a5101d6e">setCreatedAt</a> (LocalDateTime createdAt)</td></tr>
+<tr class="memitem:a31612e4a5eee4c1d88697e6b26c5d1cd" id="r_a31612e4a5eee4c1d88697e6b26c5d1cd"><td class="memItemLeft">LocalDateTime&#160;</td><td class="memItemRight"><a class="el" href="#a31612e4a5eee4c1d88697e6b26c5d1cd">getUpdatedAt</a> ()</td></tr>
+<tr class="memitem:a7313a62632197afec6dfa2dff837ae61" id="r_a7313a62632197afec6dfa2dff837ae61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7313a62632197afec6dfa2dff837ae61">setUpdatedAt</a> (LocalDateTime updatedAt)</td></tr>
+<tr class="memitem:aa6a04f87d9d19f2a2cc40b25849ab0cd" id="r_aa6a04f87d9d19f2a2cc40b25849ab0cd"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa6a04f87d9d19f2a2cc40b25849ab0cd">getTags</a> ()</td></tr>
+<tr class="memitem:ac7e2444b75d621a08ebdc1bdb700509d" id="r_ac7e2444b75d621a08ebdc1bdb700509d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac7e2444b75d621a08ebdc1bdb700509d">setTags</a> (List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt; tags)</td></tr>
+<tr class="memitem:a2a8f5cdeedcec162e5cf20bb419fdeaa" id="r_a2a8f5cdeedcec162e5cf20bb419fdeaa"><td class="memItemLeft">Long&#160;</td><td class="memItemRight"><a class="el" href="#a2a8f5cdeedcec162e5cf20bb419fdeaa">getBookId</a> ()</td></tr>
+<tr class="memitem:a709ff968407368c143516d74945edd3c" id="r_a709ff968407368c143516d74945edd3c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a709ff968407368c143516d74945edd3c">setBookId</a> (Long bookId)</td></tr>
+<tr class="memitem:a9fbf3d0e1299e220f36d646f547a036d" id="r_a9fbf3d0e1299e220f36d646f547a036d"><td class="memItemLeft">Integer&#160;</td><td class="memItemRight"><a class="el" href="#a9fbf3d0e1299e220f36d646f547a036d">getBookOrder</a> ()</td></tr>
+<tr class="memitem:abde8703ba931dd1d08bb2a4302409406" id="r_abde8703ba931dd1d08bb2a4302409406"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abde8703ba931dd1d08bb2a4302409406">setBookOrder</a> (Integer bookOrder)</td></tr>
+<tr class="memitem:a23613b32016b945988104960d57670b3" id="r_a23613b32016b945988104960d57670b3"><td class="memItemLeft">Map&lt; String, String &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a23613b32016b945988104960d57670b3">getMetaExtra</a> ()</td></tr>
+<tr class="memitem:a62669f822f1fb316e5ec822191557a84" id="r_a62669f822f1fb316e5ec822191557a84"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a62669f822f1fb316e5ec822191557a84">setMetaExtra</a> (Map&lt; String, String &gt; metaExtra)</td></tr>
+<tr class="memitem:a0d1bf8d504a6de63f1c82f07e44e77c6" id="r_a0d1bf8d504a6de63f1c82f07e44e77c6"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a0d1bf8d504a6de63f1c82f07e44e77c6">getBodyContent</a> ()</td></tr>
+<tr class="memdesc:a0d1bf8d504a6de63f1c82f07e44e77c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает тело заметки без YAML front-matter блока.  <br /></td></tr>
+<tr class="memitem:a14fd91f0ebc4676f259b18d75bb01561" id="r_a14fd91f0ebc4676f259b18d75bb01561"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a14fd91f0ebc4676f259b18d75bb01561">toString</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Модель заметки — центральная сущность приложения. </p>
+<p>Каждая заметка соответствует одному файлу в формате Markdown внутри хранилища (vault). Путь к файлу хранится в поле <code><a class="el" href="">filePath</a></code> относительно корня vault, что обеспечивает переносимость хранилища.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+Структура файла заметки</h2>
+<p>Файл начинается с YAML front-matter блока, за которым следует тело заметки: </p><div class="fragment"><div class="line">---</div>
+<div class="line">tags:</div>
+<div class="line">  - java</div>
+<div class="line">book:</div>
+<div class="line">  - java_guide</div>
+<div class="line">order: 3</div>
+<div class="line">---</div>
+<div class="line"># Заголовок заметки</div>
+<div class="line"> </div>
+<div class="line">Текст заметки...</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+Размещение файла в vault</h2>
+<p>Физическое расположение файла определяется количеством тегов:</p><ul>
+<li><b>0 тегов</b> → <span class="tt">_unsorted/&lt;slug&gt;.md</span></li>
+<li><b>1 тег</b> → <span class="tt">&lt;tag&gt;/&lt;slug&gt;.md</span></li>
+<li><b>2+ тегов</b> → <span class="tt">_multi/&lt;slug&gt;.md</span></li>
+</ul>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classcom_1_1notevault_1_1util_1_1_vault_layout.html" title="Менеджер физической структуры директорий внутри vault.">com.notevault.util.VaultLayout</a> </dd>
+<dd>
+<a class="el" href="classcom_1_1notevault_1_1util_1_1_front_matter_parser.html" title="Парсер и генератор YAML front-matter блока в MD-файлах.">com.notevault.util.FrontMatterParser</a> </dd>
+<dd>
+<a class="el" href="classcom_1_1notevault_1_1db_1_1_note_d_a_o.html" title="DAO (Data Access Object) для работы с таблицей notes.">com.notevault.db.NoteDAO</a> </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a9c62b36c90a66aaa762095d7c302e51a" name="a9c62b36c90a66aaa762095d7c302e51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c62b36c90a66aaa762095d7c302e51a">&#9670;&#160;</a></span>Note()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.notevault.model.Note.Note </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>title</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт новую заметку с заданным заголовком и путём к файлу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Заголовок заметки. </td></tr>
+    <tr><td class="paramname">filePath</td><td>Относительный путь к MD-файлу (может быть пустым до первого сохранения). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ace443c6d00f074082438429a0146a15f" name="ace443c6d00f074082438429a0146a15f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace443c6d00f074082438429a0146a15f">&#9670;&#160;</a></span>getId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long com.notevault.model.Note.getId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Первичный ключ в БД. </dd></dl>
+
+</div>
+</div>
+<a id="a6f773c8d062b8859bae1277a80cfa2fc" name="a6f773c8d062b8859bae1277a80cfa2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f773c8d062b8859bae1277a80cfa2fc">&#9670;&#160;</a></span>setId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setId </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Первичный ключ. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae082ea02f6c2a9b4ecc1a8e98c68e44a" name="ae082ea02f6c2a9b4ecc1a8e98c68e44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae082ea02f6c2a9b4ecc1a8e98c68e44a">&#9670;&#160;</a></span>getTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.model.Note.getTitle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Заголовок заметки. </dd></dl>
+
+</div>
+</div>
+<a id="a80d15ec55d70a8139519ca8dec5cc02e" name="a80d15ec55d70a8139519ca8dec5cc02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d15ec55d70a8139519ca8dec5cc02e">&#9670;&#160;</a></span>setTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setTitle </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>title</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Заголовок заметки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a21bd47bd8d83648504373bde82fee650" name="a21bd47bd8d83648504373bde82fee650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21bd47bd8d83648504373bde82fee650">&#9670;&#160;</a></span>getFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.model.Note.getFilePath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Относительный путь к файлу заметки внутри vault. </dd></dl>
+
+</div>
+</div>
+<a id="a53fc133aa0bd847b0313f7d862b39469" name="a53fc133aa0bd847b0313f7d862b39469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53fc133aa0bd847b0313f7d862b39469">&#9670;&#160;</a></span>setFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setFilePath </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Относительный путь к файлу. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a4e835c1899864c8e038e984db222ac" name="a3a4e835c1899864c8e038e984db222ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4e835c1899864c8e038e984db222ac">&#9670;&#160;</a></span>getContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.model.Note.getContent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Полное содержимое файла (front-matter + тело), или <code class="JavaDocCode">null</code> если не загружено. </dd></dl>
+
+</div>
+</div>
+<a id="a557961fa4c7f26a45fcc8b33bd807fd0" name="a557961fa4c7f26a45fcc8b33bd807fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557961fa4c7f26a45fcc8b33bd807fd0">&#9670;&#160;</a></span>setContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setContent </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>content</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>Полное содержимое файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5dea4e089aa91ddf563fb54766ba8a8e" name="a5dea4e089aa91ddf563fb54766ba8a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dea4e089aa91ddf563fb54766ba8a8e">&#9670;&#160;</a></span>getCreatedAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LocalDateTime com.notevault.model.Note.getCreatedAt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Дата создания. </dd></dl>
+
+</div>
+</div>
+<a id="acadaa21a92a469da9f5da581a5101d6e" name="acadaa21a92a469da9f5da581a5101d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acadaa21a92a469da9f5da581a5101d6e">&#9670;&#160;</a></span>setCreatedAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setCreatedAt </td>
+          <td>(</td>
+          <td class="paramtype">LocalDateTime</td>          <td class="paramname"><span class="paramname"><em>createdAt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">createdAt</td><td>Дата создания. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a31612e4a5eee4c1d88697e6b26c5d1cd" name="a31612e4a5eee4c1d88697e6b26c5d1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31612e4a5eee4c1d88697e6b26c5d1cd">&#9670;&#160;</a></span>getUpdatedAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LocalDateTime com.notevault.model.Note.getUpdatedAt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Дата последнего изменения. </dd></dl>
+
+</div>
+</div>
+<a id="a7313a62632197afec6dfa2dff837ae61" name="a7313a62632197afec6dfa2dff837ae61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7313a62632197afec6dfa2dff837ae61">&#9670;&#160;</a></span>setUpdatedAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setUpdatedAt </td>
+          <td>(</td>
+          <td class="paramtype">LocalDateTime</td>          <td class="paramname"><span class="paramname"><em>updatedAt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">updatedAt</td><td>Дата изменения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6a04f87d9d19f2a2cc40b25849ab0cd" name="aa6a04f87d9d19f2a2cc40b25849ab0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a04f87d9d19f2a2cc40b25849ab0cd">&#9670;&#160;</a></span>getTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt; com.notevault.model.Note.getTags </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Список тегов заметки (не <code class="JavaDocCode">null</code>, может быть пустым). </dd></dl>
+
+</div>
+</div>
+<a id="ac7e2444b75d621a08ebdc1bdb700509d" name="ac7e2444b75d621a08ebdc1bdb700509d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e2444b75d621a08ebdc1bdb700509d">&#9670;&#160;</a></span>setTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setTags </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>tags</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tags</td><td>Новый список тегов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a8f5cdeedcec162e5cf20bb419fdeaa" name="a2a8f5cdeedcec162e5cf20bb419fdeaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8f5cdeedcec162e5cf20bb419fdeaa">&#9670;&#160;</a></span>getBookId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Long com.notevault.model.Note.getBookId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>ID книги или <code class="JavaDocCode">null</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a709ff968407368c143516d74945edd3c" name="a709ff968407368c143516d74945edd3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709ff968407368c143516d74945edd3c">&#9670;&#160;</a></span>setBookId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setBookId </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>bookId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bookId</td><td>ID книги или <code class="JavaDocCode">null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9fbf3d0e1299e220f36d646f547a036d" name="a9fbf3d0e1299e220f36d646f547a036d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fbf3d0e1299e220f36d646f547a036d">&#9670;&#160;</a></span>getBookOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Integer com.notevault.model.Note.getBookOrder </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Порядковый номер в книге или <code class="JavaDocCode">null</code>. </dd></dl>
+
+</div>
+</div>
+<a id="abde8703ba931dd1d08bb2a4302409406" name="abde8703ba931dd1d08bb2a4302409406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde8703ba931dd1d08bb2a4302409406">&#9670;&#160;</a></span>setBookOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setBookOrder </td>
+          <td>(</td>
+          <td class="paramtype">Integer</td>          <td class="paramname"><span class="paramname"><em>bookOrder</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bookOrder</td><td>Порядковый номер. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a23613b32016b945988104960d57670b3" name="a23613b32016b945988104960d57670b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23613b32016b945988104960d57670b3">&#9670;&#160;</a></span>getMetaExtra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt; String, String &gt; com.notevault.model.Note.getMetaExtra </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Карта дополнительных метаданных (не <code class="JavaDocCode">null</code>). </dd></dl>
+
+</div>
+</div>
+<a id="a62669f822f1fb316e5ec822191557a84" name="a62669f822f1fb316e5ec822191557a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62669f822f1fb316e5ec822191557a84">&#9670;&#160;</a></span>setMetaExtra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.model.Note.setMetaExtra </td>
+          <td>(</td>
+          <td class="paramtype">Map&lt; String, String &gt;</td>          <td class="paramname"><span class="paramname"><em>metaExtra</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">metaExtra</td><td>Карта доп. метаданных. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d1bf8d504a6de63f1c82f07e44e77c6" name="a0d1bf8d504a6de63f1c82f07e44e77c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1bf8d504a6de63f1c82f07e44e77c6">&#9670;&#160;</a></span>getBodyContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.model.Note.getBodyContent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает тело заметки без YAML front-matter блока. </p>
+<p>Если файл начинается с <code class="JavaDocCode">---</code>, ищет закрывающий <code class="JavaDocCode">---</code> и возвращает всё после него. Если front-matter отсутствует — возвращает <code><a class="el" href="">content</a></code> целиком.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Текст заметки без front-matter, или пустая строка если <code><a class="el" href="">content</a></code> равен <code class="JavaDocCode">null</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a14fd91f0ebc4676f259b18d75bb01561" name="a14fd91f0ebc4676f259b18d75bb01561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14fd91f0ebc4676f259b18d75bb01561">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.model.Note.toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Заголовок заметки, или <code class="JavaDocCode">"(Untitled)"</code> если заголовок не задан. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/main/java/com/notevault/model/<b>Note.java</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>notevault</b></li><li class="navelem"><b>model</b></li><li class="navelem"><a href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></li>
+    <li class="footer">Документация по NoteVault. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

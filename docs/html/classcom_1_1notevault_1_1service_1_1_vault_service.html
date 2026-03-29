@@ -1,0 +1,1054 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoteVault: Класс com.notevault.service.VaultService</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NoteVault<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Приложение для управления заметками в формате Markdown</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classcom_1_1notevault_1_1service_1_1_vault_service.html','','classcom_1_1notevault_1_1service_1_1_vault_service-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс com.notevault.service.VaultService</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Центральный сервисный слой приложения.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса com.notevault.service.VaultService:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classcom_1_1notevault_1_1service_1_1_vault_service__coll__graph.svg" width="183" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5f70401a9034bf14f46569cf0d609c2f" id="r_a5f70401a9034bf14f46569cf0d609c2f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5f70401a9034bf14f46569cf0d609c2f">openVault</a> (Path vaultRoot)  throws Exception </td></tr>
+<tr class="memdesc:a5f70401a9034bf14f46569cf0d609c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открывает хранилище заметок по указанному пути.  <br /></td></tr>
+<tr class="memitem:a00cfff9997b54c5494855c8dc20e2a6d" id="r_a00cfff9997b54c5494855c8dc20e2a6d"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#a00cfff9997b54c5494855c8dc20e2a6d">isVaultOpen</a> ()</td></tr>
+<tr class="memdesc:a00cfff9997b54c5494855c8dc20e2a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, открыт ли vault.  <br /></td></tr>
+<tr class="memitem:acbc120014fa079090f088f7e857f7924" id="r_acbc120014fa079090f088f7e857f7924"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1util_1_1_vault_layout.html">VaultLayout</a>&#160;</td><td class="memItemRight"><a class="el" href="#acbc120014fa079090f088f7e857f7924">getLayout</a> ()</td></tr>
+<tr class="memdesc:acbc120014fa079090f088f7e857f7924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает менеджер файловой раскладки.  <br /></td></tr>
+<tr class="memitem:a31177c35ada66e4019a3521dd0c14559" id="r_a31177c35ada66e4019a3521dd0c14559"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a>&#160;</td><td class="memItemRight"><a class="el" href="#a31177c35ada66e4019a3521dd0c14559">createNote</a> (String title)  throws Exception </td></tr>
+<tr class="memdesc:a31177c35ada66e4019a3521dd0c14559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт новую заметку с пустым телом и без тегов.  <br /></td></tr>
+<tr class="memitem:aacc7298527393af3b6776dde92ed678d" id="r_aacc7298527393af3b6776dde92ed678d"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a>&#160;</td><td class="memItemRight"><a class="el" href="#aacc7298527393af3b6776dde92ed678d">createNote</a> (String title, String body, List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt; tags)  throws Exception </td></tr>
+<tr class="memdesc:aacc7298527393af3b6776dde92ed678d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт новую заметку с заданным содержимым и тегами.  <br /></td></tr>
+<tr class="memitem:a439dd8e1fc2ce85b161fddbf7f6c0e10" id="r_a439dd8e1fc2ce85b161fddbf7f6c0e10"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a439dd8e1fc2ce85b161fddbf7f6c0e10">saveNote</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note, String newContent)  throws Exception </td></tr>
+<tr class="memdesc:a439dd8e1fc2ce85b161fddbf7f6c0e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет изменённое содержимое заметки.  <br /></td></tr>
+<tr class="memitem:a6d9901d90cd4532daf3a5119e99240e1" id="r_a6d9901d90cd4532daf3a5119e99240e1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6d9901d90cd4532daf3a5119e99240e1">updateNoteMeta</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)  throws Exception </td></tr>
+<tr class="memdesc:a6d9901d90cd4532daf3a5119e99240e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет метаданные заметки (теги, книга) без изменения тела.  <br /></td></tr>
+<tr class="memitem:a55e16ef92daaa1621949acccd5ed42f6" id="r_a55e16ef92daaa1621949acccd5ed42f6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a55e16ef92daaa1621949acccd5ed42f6">renameNote</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note, String newTitle)  throws Exception </td></tr>
+<tr class="memdesc:a55e16ef92daaa1621949acccd5ed42f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переименовывает заметку и физически переименовывает файл.  <br /></td></tr>
+<tr class="memitem:a8df06c786e94ea426fe24d2d79a1a7ce" id="r_a8df06c786e94ea426fe24d2d79a1a7ce"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8df06c786e94ea426fe24d2d79a1a7ce">deleteNote</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)  throws Exception </td></tr>
+<tr class="memdesc:a8df06c786e94ea426fe24d2d79a1a7ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет заметку: файл с диска и запись из БД.  <br /></td></tr>
+<tr class="memitem:a6e9bd86241b701df9cdc8e2e946706d5" id="r_a6e9bd86241b701df9cdc8e2e946706d5"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6e9bd86241b701df9cdc8e2e946706d5">loadNoteContent</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)  throws Exception </td></tr>
+<tr class="memdesc:a6e9bd86241b701df9cdc8e2e946706d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает содержимое MD-файла в объект заметки.  <br /></td></tr>
+<tr class="memitem:a6dfdc5ecf391ff0e0fc55b32c058d8e2" id="r_a6dfdc5ecf391ff0e0fc55b32c058d8e2"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6dfdc5ecf391ff0e0fc55b32c058d8e2">getAllNotes</a> ()  throws Exception </td></tr>
+<tr class="memdesc:a6dfdc5ecf391ff0e0fc55b32c058d8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает все заметки хранилища.  <br /></td></tr>
+<tr class="memitem:abbc0f374d4a1ee5210874779484cf6ea" id="r_abbc0f374d4a1ee5210874779484cf6ea"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abbc0f374d4a1ee5210874779484cf6ea">getNotesByTag</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> tag)  throws Exception </td></tr>
+<tr class="memdesc:abbc0f374d4a1ee5210874779484cf6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает заметки с указанным тегом.  <br /></td></tr>
+<tr class="memitem:a8a9fa42ec388ec5cd3e70db6aba90e28" id="r_a8a9fa42ec388ec5cd3e70db6aba90e28"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8a9fa42ec388ec5cd3e70db6aba90e28">getNotesByBook</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a> book)  throws Exception </td></tr>
+<tr class="memdesc:a8a9fa42ec388ec5cd3e70db6aba90e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает заметки книги с загруженным содержимым.  <br /></td></tr>
+<tr class="memitem:ac8577a4e6f64820816de6c2550b4ec2c" id="r_ac8577a4e6f64820816de6c2550b4ec2c"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac8577a4e6f64820816de6c2550b4ec2c">searchNotes</a> (String query)  throws Exception </td></tr>
+<tr class="memdesc:ac8577a4e6f64820816de6c2550b4ec2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет поиск заметок по части заголовка.  <br /></td></tr>
+<tr class="memitem:afa4ff5e503dbfd57060bd569426e5ff5" id="r_afa4ff5e503dbfd57060bd569426e5ff5"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afa4ff5e503dbfd57060bd569426e5ff5">getAllTags</a> ()  throws Exception </td></tr>
+<tr class="memdesc:afa4ff5e503dbfd57060bd569426e5ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает все теги с количеством заметок.  <br /></td></tr>
+<tr class="memitem:a6c2b95f17dc3edf538856293cb64fe27" id="r_a6c2b95f17dc3edf538856293cb64fe27"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c2b95f17dc3edf538856293cb64fe27">renameTag</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> tag, String newName)  throws Exception </td></tr>
+<tr class="memdesc:a6c2b95f17dc3edf538856293cb64fe27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переименовывает тег и обновляет front-matter всех затронутых заметок.  <br /></td></tr>
+<tr class="memitem:af90017ddceba03e0fff5df67b79cf1d7" id="r_af90017ddceba03e0fff5df67b79cf1d7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af90017ddceba03e0fff5df67b79cf1d7">deleteTag</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> tag)  throws Exception </td></tr>
+<tr class="memdesc:af90017ddceba03e0fff5df67b79cf1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет тег и очищает неиспользуемые теги.  <br /></td></tr>
+<tr class="memitem:a468dae458fde9a15fb5a0a567b06878d" id="r_a468dae458fde9a15fb5a0a567b06878d"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a468dae458fde9a15fb5a0a567b06878d">getAllBooks</a> ()  throws Exception </td></tr>
+<tr class="memdesc:a468dae458fde9a15fb5a0a567b06878d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает все книги.  <br /></td></tr>
+<tr class="memitem:af35db116e54951ab3fade7fe8a257193" id="r_af35db116e54951ab3fade7fe8a257193"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a>&#160;</td><td class="memItemRight"><a class="el" href="#af35db116e54951ab3fade7fe8a257193">createBook</a> (String name, String description)  throws Exception </td></tr>
+<tr class="memdesc:af35db116e54951ab3fade7fe8a257193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт новую книгу.  <br /></td></tr>
+<tr class="memitem:a20d4b617579a58755d031376f5baa95e" id="r_a20d4b617579a58755d031376f5baa95e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a20d4b617579a58755d031376f5baa95e">updateBook</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a> book)  throws Exception </td></tr>
+<tr class="memdesc:a20d4b617579a58755d031376f5baa95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет имя и описание книги.  <br /></td></tr>
+<tr class="memitem:a1db6199490f5c8f8477fac38f77bddab" id="r_a1db6199490f5c8f8477fac38f77bddab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1db6199490f5c8f8477fac38f77bddab">deleteBook</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a> book)  throws Exception </td></tr>
+<tr class="memdesc:a1db6199490f5c8f8477fac38f77bddab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет книгу (заметки при этом сохраняются).  <br /></td></tr>
+<tr class="memitem:a6214436e88511b5185536696610a7891" id="r_a6214436e88511b5185536696610a7891"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1model_1_1_attachment.html">Attachment</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6214436e88511b5185536696610a7891">addAttachment</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note, Path sourceFile)  throws Exception </td></tr>
+<tr class="memdesc:a6214436e88511b5185536696610a7891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копирует файл в директорию вложений заметки и регистрирует в БД.  <br /></td></tr>
+<tr class="memitem:acdb5217fb532251bdb6ebcf783562bcd" id="r_acdb5217fb532251bdb6ebcf783562bcd"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_attachment.html">Attachment</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acdb5217fb532251bdb6ebcf783562bcd">getAttachments</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)  throws Exception </td></tr>
+<tr class="memdesc:acdb5217fb532251bdb6ebcf783562bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает список вложений заметки.  <br /></td></tr>
+<tr class="memitem:a47a61e44d5f7d80519d82bad262f0bbc" id="r_a47a61e44d5f7d80519d82bad262f0bbc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a47a61e44d5f7d80519d82bad262f0bbc">deleteAttachment</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_attachment.html">Attachment</a> att)  throws Exception </td></tr>
+<tr class="memdesc:a47a61e44d5f7d80519d82bad262f0bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет вложение: физический файл и запись в БД.  <br /></td></tr>
+<tr class="memitem:ada2682780ae13fe09de153969c0e2067" id="r_ada2682780ae13fe09de153969c0e2067"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#ada2682780ae13fe09de153969c0e2067">getBookContent</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a> book)  throws Exception </td></tr>
+<tr class="memdesc:ada2682780ae13fe09de153969c0e2067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует объединённый Markdown-текст всех заметок книги.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:abe5535c0c907dab6be34c9859fb41f04" id="r_abe5535c0c907dab6be34c9859fb41f04"><td class="memItemLeft">static VaultService&#160;</td><td class="memItemRight"><a class="el" href="#abe5535c0c907dab6be34c9859fb41f04">getInstance</a> ()</td></tr>
+<tr class="memdesc:abe5535c0c907dab6be34c9859fb41f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает единственный экземпляр сервиса.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Центральный сервисный слой приложения. </p>
+<p>Координирует все операции, требующие одновременного изменения <b>файловой системы</b> и <b>базы данных</b>. Является единственным местом, где принимаются решения о физическом расположении файлов.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+Принцип двойного хранения</h2>
+<p>Каждая заметка существует в двух представлениях:</p><ul>
+<li><b>MD-файл</b> — источник истины для содержимого и базовых метаданных (теги, книга, порядок — через YAML front-matter).</li>
+<li><b>SQLite</b> — источник истины для быстрого поиска, индексов, связей и агрегированных данных (счётчик тегов и т.д.).</li>
+</ul>
+<p>При любом изменении оба представления обновляются в рамках одного публичного метода сервиса.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+Жизненный цикл vault</h2>
+<div class="fragment"><div class="line"><a class="code hl_class" href="classcom_1_1notevault_1_1service_1_1_vault_service.html">VaultService</a>.<a class="code hl_function" href="#abe5535c0c907dab6be34c9859fb41f04">getInstance</a>().<a class="code hl_function" href="#a5f70401a9034bf14f46569cf0d609c2f">openVault</a>(path);  <span class="comment">// 1. выбор vault</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> n = service.createNote(<span class="stringliteral">&quot;Title&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, tags); <span class="comment">// 2. создание заметки</span></div>
+<div class="line">service.saveNote(n, newContent);               <span class="comment">// 3. сохранение</span></div>
+<div class="line">service.deleteNote(n);                         <span class="comment">// 4. удаление</span></div>
+<div class="ttc" id="aclasscom_1_1notevault_1_1model_1_1_note_html"><div class="ttname"><a href="classcom_1_1notevault_1_1model_1_1_note.html">com.notevault.model.Note</a></div><div class="ttdoc">Модель заметки — центральная сущность приложения.</div><div class="ttdef"><b>Определения</b> Note.java:42</div></div>
+<div class="ttc" id="aclasscom_1_1notevault_1_1service_1_1_vault_service_html"><div class="ttname"><a href="classcom_1_1notevault_1_1service_1_1_vault_service.html">com.notevault.service.VaultService</a></div><div class="ttdoc">Центральный сервисный слой приложения.</div><div class="ttdef"><b>Определения</b> VaultService.java:47</div></div>
+<div class="ttc" id="aclasscom_1_1notevault_1_1service_1_1_vault_service_html_a5f70401a9034bf14f46569cf0d609c2f"><div class="ttname"><a href="#a5f70401a9034bf14f46569cf0d609c2f">com.notevault.service.VaultService.openVault</a></div><div class="ttdeci">void openVault(Path vaultRoot)</div><div class="ttdoc">Открывает хранилище заметок по указанному пути.</div><div class="ttdef"><b>Определения</b> VaultService.java:87</div></div>
+<div class="ttc" id="aclasscom_1_1notevault_1_1service_1_1_vault_service_html_abe5535c0c907dab6be34c9859fb41f04"><div class="ttname"><a href="#abe5535c0c907dab6be34c9859fb41f04">com.notevault.service.VaultService.getInstance</a></div><div class="ttdeci">static VaultService getInstance()</div><div class="ttdoc">Возвращает единственный экземпляр сервиса.</div><div class="ttdef"><b>Определения</b> VaultService.java:68</div></div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Не является потокобезопасным. Весь доступ должен производиться из Event Dispatch Thread или с внешней синхронизацией.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classcom_1_1notevault_1_1util_1_1_vault_layout.html" title="Менеджер физической структуры директорий внутри vault.">com.notevault.util.VaultLayout</a> </dd>
+<dd>
+<a class="el" href="classcom_1_1notevault_1_1util_1_1_front_matter_parser.html" title="Парсер и генератор YAML front-matter блока в MD-файлах.">com.notevault.util.FrontMatterParser</a> </dd>
+<dd>
+<a class="el" href="classcom_1_1notevault_1_1db_1_1_note_d_a_o.html" title="DAO (Data Access Object) для работы с таблицей notes.">com.notevault.db.NoteDAO</a> </dd></dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="abe5535c0c907dab6be34c9859fb41f04" name="abe5535c0c907dab6be34c9859fb41f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5535c0c907dab6be34c9859fb41f04">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VaultService com.notevault.service.VaultService.getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает единственный экземпляр сервиса. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Экземпляр <code><a class="el" href="classcom_1_1notevault_1_1service_1_1_vault_service.html">VaultService</a></code>. </dd></dl>
+
+</div>
+</div>
+<a id="a5f70401a9034bf14f46569cf0d609c2f" name="a5f70401a9034bf14f46569cf0d609c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f70401a9034bf14f46569cf0d609c2f">&#9670;&#160;</a></span>openVault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.openVault </td>
+          <td>(</td>
+          <td class="paramtype">Path</td>          <td class="paramname"><span class="paramname"><em>vaultRoot</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Открывает хранилище заметок по указанному пути. </p>
+<ol type="1">
+<li>Инициализирует <code><a class="el" href="classcom_1_1notevault_1_1util_1_1_vault_layout.html">VaultLayout</a></code> для управления файловой структурой.</li>
+<li>Создаёт системные директории vault (<code class="JavaDocCode">_unsorted</code>, <code class="JavaDocCode">_multi</code>, <code class="JavaDocCode">_attachments</code>, <code class="JavaDocCode">_db</code>).</li>
+<li>Открывает (или создаёт) SQLite БД через <code><a class="el" href="classcom_1_1notevault_1_1db_1_1_database_manager.html">DatabaseManager</a></code>.</li>
+</ol>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vaultRoot</td><td>Абсолютный путь к корневой директории vault. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>если не удалось создать директории или открыть БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00cfff9997b54c5494855c8dc20e2a6d" name="a00cfff9997b54c5494855c8dc20e2a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00cfff9997b54c5494855c8dc20e2a6d">&#9670;&#160;</a></span>isVaultOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.notevault.service.VaultService.isVaultOpen </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, открыт ли vault. </p>
+<dl class="section return"><dt>Возвращает</dt><dd><code class="JavaDocCode">true</code> если layout инициализирован и БД открыта. </dd></dl>
+
+</div>
+</div>
+<a id="acbc120014fa079090f088f7e857f7924" name="acbc120014fa079090f088f7e857f7924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc120014fa079090f088f7e857f7924">&#9670;&#160;</a></span>getLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1util_1_1_vault_layout.html">VaultLayout</a> com.notevault.service.VaultService.getLayout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает менеджер файловой раскладки. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Текущий <code><a class="el" href="classcom_1_1notevault_1_1util_1_1_vault_layout.html">VaultLayout</a></code> или <code class="JavaDocCode">null</code> если vault не открыт. </dd></dl>
+
+</div>
+</div>
+<a id="a31177c35ada66e4019a3521dd0c14559" name="a31177c35ada66e4019a3521dd0c14559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31177c35ada66e4019a3521dd0c14559">&#9670;&#160;</a></span>createNote() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> com.notevault.service.VaultService.createNote </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>title</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт новую заметку с пустым телом и без тегов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Заголовок заметки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Созданная заметка с заполненным <code class="JavaDocCode">id</code> и <code class="JavaDocCode">filePath</code>. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке файловой системы или БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aacc7298527393af3b6776dde92ed678d" name="aacc7298527393af3b6776dde92ed678d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc7298527393af3b6776dde92ed678d">&#9670;&#160;</a></span>createNote() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> com.notevault.service.VaultService.createNote </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>title</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>body</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>tags</em></span>&#160;) throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт новую заметку с заданным содержимым и тегами. </p>
+<p>Алгоритм:</p><ol type="1">
+<li>Определяет целевую директорию по тегам через <code><a class="el" href="classcom_1_1notevault_1_1util_1_1_vault_layout.html#a0fc1310784d361f294bcb8857ad56266">VaultLayout#noteFilePath</a></code>.</li>
+<li>Генерирует уникальное имя файла (добавляет суффикс при коллизии).</li>
+<li>Строит полный текст файла (front-matter + тело) через <code><a class="el" href="classcom_1_1notevault_1_1util_1_1_front_matter_parser.html#a46d1c589e255538e6f8ca2b281940af7">FrontMatterParser#buildContent</a></code>.</li>
+<li>Записывает файл на диск.</li>
+<li>Сохраняет метаданные в БД через <code><a class="el" href="">NoteDAO#insert</a></code>.</li>
+</ol>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Заголовок заметки. </td></tr>
+    <tr><td class="paramname">body</td><td>Тело заметки в формате Markdown (без front-matter). </td></tr>
+    <tr><td class="paramname">tags</td><td>Список тегов (может быть пустым). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Созданная и сохранённая заметка. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке файловой системы или БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a439dd8e1fc2ce85b161fddbf7f6c0e10" name="a439dd8e1fc2ce85b161fddbf7f6c0e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a439dd8e1fc2ce85b161fddbf7f6c0e10">&#9670;&#160;</a></span>saveNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.saveNote </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>newContent</em></span>&#160;) throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохраняет изменённое содержимое заметки. </p>
+<p>Перечитывает front-matter из нового содержимого (пользователь мог изменить теги вручную прямо в редакторе). При изменении тегов файл может быть <b>перемещён</b> в другую директорию vault.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка (должна иметь корректный <code class="JavaDocCode">id</code> и <code class="JavaDocCode">filePath</code>). </td></tr>
+    <tr><td class="paramname">newContent</td><td>Полный новый текст файла (front-matter + тело). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке файловой системы или БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6d9901d90cd4532daf3a5119e99240e1" name="a6d9901d90cd4532daf3a5119e99240e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9901d90cd4532daf3a5119e99240e1">&#9670;&#160;</a></span>updateNoteMeta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.updateNoteMeta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет метаданные заметки (теги, книга) без изменения тела. </p>
+<p>Перестраивает front-matter файла на основе текущего состояния объекта <code class="JavaDocCode">note</code>, при необходимости перемещает файл.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка с обновлёнными тегами / книгой. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке файловой системы или БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a55e16ef92daaa1621949acccd5ed42f6" name="a55e16ef92daaa1621949acccd5ed42f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e16ef92daaa1621949acccd5ed42f6">&#9670;&#160;</a></span>renameNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.renameNote </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>newTitle</em></span>&#160;) throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переименовывает заметку и физически переименовывает файл. </p>
+<p>Новое имя файла строится из нового заголовка через <code><a class="el" href="classcom_1_1notevault_1_1util_1_1_vault_layout.html#a98d045f4b799dd39f4962d796f261b5e">VaultLayout#sanitizeFileName</a></code>. Если файл с таким именем уже существует, добавляется числовой суффикс.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка для переименования. </td></tr>
+    <tr><td class="paramname">newTitle</td><td>Новый заголовок. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке файловой системы или БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8df06c786e94ea426fe24d2d79a1a7ce" name="a8df06c786e94ea426fe24d2d79a1a7ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df06c786e94ea426fe24d2d79a1a7ce">&#9670;&#160;</a></span>deleteNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.deleteNote </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет заметку: файл с диска и запись из БД. </p>
+<p>Удаление из БД каскадно очищает <code class="JavaDocCode">note_tags</code>, <code class="JavaDocCode">book_notes</code> и <code class="JavaDocCode">attachments</code>. Директория вложений удаляется только если она пуста.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка для удаления. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке файловой системы или БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e9bd86241b701df9cdc8e2e946706d5" name="a6e9bd86241b701df9cdc8e2e946706d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9bd86241b701df9cdc8e2e946706d5">&#9670;&#160;</a></span>loadNoteContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> com.notevault.service.VaultService.loadNoteContent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает содержимое MD-файла в объект заметки. </p>
+<p>Читает файл с диска и разбирает front-matter через <code><a class="el" href="classcom_1_1notevault_1_1util_1_1_front_matter_parser.html#ad66b202505a66d10cb5266fb6cbc5b85">FrontMatterParser#applyToNote</a></code>. Вызывается лениво — только при открытии заметки в редакторе.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка с корректным <code class="JavaDocCode">filePath</code>; содержимое будет перезаписано. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Тот же объект <code class="JavaDocCode">note</code> с заполненным <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html#a3a4e835c1899864c8e038e984db222ac">Note#getContent()</a></code>. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>если файл не найден или недоступен. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6dfdc5ecf391ff0e0fc55b32c058d8e2" name="a6dfdc5ecf391ff0e0fc55b32c058d8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dfdc5ecf391ff0e0fc55b32c058d8e2">&#9670;&#160;</a></span>getAllNotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt; com.notevault.service.VaultService.getAllNotes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает все заметки хранилища. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список заметок, отсортированных по дате изменения. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке запроса к БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abbc0f374d4a1ee5210874779484cf6ea" name="abbc0f374d4a1ee5210874779484cf6ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc0f374d4a1ee5210874779484cf6ea">&#9670;&#160;</a></span>getNotesByTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt; com.notevault.service.VaultService.getNotesByTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a></td>          <td class="paramname"><span class="paramname"><em>tag</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает заметки с указанным тегом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>Тег с корректным <code class="JavaDocCode">id</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список заметок. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке запроса к БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8a9fa42ec388ec5cd3e70db6aba90e28" name="a8a9fa42ec388ec5cd3e70db6aba90e28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a9fa42ec388ec5cd3e70db6aba90e28">&#9670;&#160;</a></span>getNotesByBook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt; com.notevault.service.VaultService.getNotesByBook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a></td>          <td class="paramname"><span class="paramname"><em>book</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает заметки книги с загруженным содержимым. </p>
+<p>В отличие от <code><a class="el" href="#a6dfdc5ecf391ff0e0fc55b32c058d8e2">getAllNotes()</a></code>, здесь содержимое файлов загружается сразу — для последующей склейки в <code><a class="el" href="#ada2682780ae13fe09de153969c0e2067">getBookContent</a></code>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">book</td><td>Книга с корректным <code class="JavaDocCode">id</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Заметки книги в порядке <code class="JavaDocCode">order_index</code>. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке запроса или чтения файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac8577a4e6f64820816de6c2550b4ec2c" name="ac8577a4e6f64820816de6c2550b4ec2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8577a4e6f64820816de6c2550b4ec2c">&#9670;&#160;</a></span>searchNotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt; com.notevault.service.VaultService.searchNotes </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет поиск заметок по части заголовка. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Поисковый запрос (LIKE без учёта регистра). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список подходящих заметок. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке запроса к БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa4ff5e503dbfd57060bd569426e5ff5" name="afa4ff5e503dbfd57060bd569426e5ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4ff5e503dbfd57060bd569426e5ff5">&#9670;&#160;</a></span>getAllTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt; com.notevault.service.VaultService.getAllTags </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает все теги с количеством заметок. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список тегов, отсортированных по имени. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке запроса к БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c2b95f17dc3edf538856293cb64fe27" name="a6c2b95f17dc3edf538856293cb64fe27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2b95f17dc3edf538856293cb64fe27">&#9670;&#160;</a></span>renameTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.renameTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a></td>          <td class="paramname"><span class="paramname"><em>tag</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>newName</em></span>&#160;) throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переименовывает тег и обновляет front-matter всех затронутых заметок. </p>
+<p>После переименования в БД перечитывает все заметки с этим тегом и перезаписывает их MD-файлы с обновлённым front-matter. Файлы <b>не перемещаются</b> (имя директории тега не меняется автоматически).</p>
+<dl class="section note"><dt>Заметки</dt><dd>Если нужно переместить файлы в директорию с новым именем тега, это потребует дополнительной реализации.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>Тег для переименования. </td></tr>
+    <tr><td class="paramname">newName</td><td>Новое имя тега. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке БД или файловой системы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af90017ddceba03e0fff5df67b79cf1d7" name="af90017ddceba03e0fff5df67b79cf1d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90017ddceba03e0fff5df67b79cf1d7">&#9670;&#160;</a></span>deleteTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.deleteTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a></td>          <td class="paramname"><span class="paramname"><em>tag</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет тег и очищает неиспользуемые теги. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>Тег для удаления. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a468dae458fde9a15fb5a0a567b06878d" name="a468dae458fde9a15fb5a0a567b06878d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a468dae458fde9a15fb5a0a567b06878d">&#9670;&#160;</a></span>getAllBooks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a> &gt; com.notevault.service.VaultService.getAllBooks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает все книги. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список книг, отсортированных по имени. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке запроса к БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af35db116e54951ab3fade7fe8a257193" name="af35db116e54951ab3fade7fe8a257193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35db116e54951ab3fade7fe8a257193">&#9670;&#160;</a></span>createBook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a> com.notevault.service.VaultService.createBook </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>description</em></span>&#160;) throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт новую книгу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Уникальное имя книги. </td></tr>
+    <tr><td class="paramname">description</td><td>Описание (может быть пустым). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Созданная книга с заполненным <code class="JavaDocCode">id</code>. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке вставки в БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20d4b617579a58755d031376f5baa95e" name="a20d4b617579a58755d031376f5baa95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d4b617579a58755d031376f5baa95e">&#9670;&#160;</a></span>updateBook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.updateBook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a></td>          <td class="paramname"><span class="paramname"><em>book</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет имя и описание книги. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">book</td><td>Книга с актуальными данными. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке обновления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1db6199490f5c8f8477fac38f77bddab" name="a1db6199490f5c8f8477fac38f77bddab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1db6199490f5c8f8477fac38f77bddab">&#9670;&#160;</a></span>deleteBook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.deleteBook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a></td>          <td class="paramname"><span class="paramname"><em>book</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет книгу (заметки при этом сохраняются). </p>
+<p>Удаление из БД каскадно удаляет <code class="JavaDocCode">book_notes</code>. Физические файлы заметок не затрагиваются.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">book</td><td>Книга для удаления. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке удаления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6214436e88511b5185536696610a7891" name="a6214436e88511b5185536696610a7891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6214436e88511b5185536696610a7891">&#9670;&#160;</a></span>addAttachment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1model_1_1_attachment.html">Attachment</a> com.notevault.service.VaultService.addAttachment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Path</td>          <td class="paramname"><span class="paramname"><em>sourceFile</em></span>&#160;) throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Копирует файл в директорию вложений заметки и регистрирует в БД. </p>
+<p>Файл копируется в <code class="JavaDocCode">_attachments/&lt;note-slug&gt;/</code>. При коллизии имён добавляется числовой суффикс. Исходный файл не удаляется.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка-владелец. </td></tr>
+    <tr><td class="paramname">sourceFile</td><td>Путь к исходному файлу. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Запись о вложении с заполненным <code class="JavaDocCode">id</code>. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке файловой системы или БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acdb5217fb532251bdb6ebcf783562bcd" name="acdb5217fb532251bdb6ebcf783562bcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb5217fb532251bdb6ebcf783562bcd">&#9670;&#160;</a></span>getAttachments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_attachment.html">Attachment</a> &gt; com.notevault.service.VaultService.getAttachments </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает список вложений заметки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список вложений. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке запроса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47a61e44d5f7d80519d82bad262f0bbc" name="a47a61e44d5f7d80519d82bad262f0bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a61e44d5f7d80519d82bad262f0bbc">&#9670;&#160;</a></span>deleteAttachment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.service.VaultService.deleteAttachment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_attachment.html">Attachment</a></td>          <td class="paramname"><span class="paramname"><em>att</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет вложение: физический файл и запись в БД. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">att</td><td>Вложение для удаления. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ada2682780ae13fe09de153969c0e2067" name="ada2682780ae13fe09de153969c0e2067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada2682780ae13fe09de153969c0e2067">&#9670;&#160;</a></span>getBookContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.service.VaultService.getBookContent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_book.html">Book</a></td>          <td class="paramname"><span class="paramname"><em>book</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Формирует объединённый Markdown-текст всех заметок книги. </p>
+<p>Заметки берутся в порядке <code class="JavaDocCode">order_index</code> и конкатенируются через горизонтальную линию <code class="JavaDocCode">---</code>. Физические файлы не изменяются. Результат используется для отображения книги в режиме чтения и для экспорта в PDF.</p>
+<p>Формат результата: </p><div class="fragment"><div class="line"># Название книги</div>
+<div class="line"> </div>
+<div class="line">Описание книги...</div>
+<div class="line"> </div>
+<div class="line">&lt;содержимое заметки 1&gt;</div>
+<div class="line"> </div>
+<div class="line">---</div>
+<div class="line"> </div>
+<div class="line">&lt;содержимое заметки 2&gt;</div>
+</div><!-- fragment --><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">book</td><td>Книга с корректным <code class="JavaDocCode">id</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Markdown-строка с объединённым содержимым. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке чтения файлов или запроса к БД. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/main/java/com/notevault/service/<b>VaultService.java</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>notevault</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a href="classcom_1_1notevault_1_1service_1_1_vault_service.html">VaultService</a></li>
+    <li class="footer">Документация по NoteVault. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

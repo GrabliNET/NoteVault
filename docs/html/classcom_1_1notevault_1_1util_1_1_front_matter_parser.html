@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoteVault: Класс com.notevault.util.FrontMatterParser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NoteVault<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Приложение для управления заметками в формате Markdown</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classcom_1_1notevault_1_1util_1_1_front_matter_parser.html','','classcom_1_1notevault_1_1util_1_1_front_matter_parser-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс com.notevault.util.FrontMatterParser</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Парсер и генератор YAML front-matter блока в MD-файлах.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса com.notevault.util.FrontMatterParser:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classcom_1_1notevault_1_1util_1_1_front_matter_parser__coll__graph.svg" width="178" height="182"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:ad66b202505a66d10cb5266fb6cbc5b85" id="r_ad66b202505a66d10cb5266fb6cbc5b85"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad66b202505a66d10cb5266fb6cbc5b85">applyToNote</a> (String content, <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)</td></tr>
+<tr class="memdesc:ad66b202505a66d10cb5266fb6cbc5b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбирает front-matter файла и заполняет поля объекта <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></code>.  <br /></td></tr>
+<tr class="memitem:a46d1c589e255538e6f8ca2b281940af7" id="r_a46d1c589e255538e6f8ca2b281940af7"><td class="memItemLeft">static String&#160;</td><td class="memItemRight"><a class="el" href="#a46d1c589e255538e6f8ca2b281940af7">buildContent</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note, String body)</td></tr>
+<tr class="memdesc:a46d1c589e255538e6f8ca2b281940af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строит полный текст MD-файла: front-matter (из полей <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html" title="Модель заметки — центральная сущность приложения.">Note</a>) + тело.  <br /></td></tr>
+<tr class="memitem:acb026c526adc6af2f7487746d32c9dcb" id="r_acb026c526adc6af2f7487746d32c9dcb"><td class="memItemLeft">static Map&lt; String, Object &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acb026c526adc6af2f7487746d32c9dcb">extractFrontMatter</a> (String content)</td></tr>
+<tr class="memdesc:acb026c526adc6af2f7487746d32c9dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Извлекает сырой front-matter блок как Map.  <br /></td></tr>
+<tr class="memitem:aa331632bb988b9e92b64c311aeed9649" id="r_aa331632bb988b9e92b64c311aeed9649"><td class="memItemLeft">static String&#160;</td><td class="memItemRight"><a class="el" href="#aa331632bb988b9e92b64c311aeed9649">extractBody</a> (String content)</td></tr>
+<tr class="memdesc:aa331632bb988b9e92b64c311aeed9649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает тело заметки без YAML front-matter.  <br /></td></tr>
+<tr class="memitem:adf958d043c26a39ccd35dbd378bdcd4a" id="r_adf958d043c26a39ccd35dbd378bdcd4a"><td class="memItemLeft">static List&lt; String &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adf958d043c26a39ccd35dbd378bdcd4a">extractAttachmentRefs</a> (String content)</td></tr>
+<tr class="memdesc:adf958d043c26a39ccd35dbd378bdcd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Извлекает список имён файлов из Obsidian-style ссылок <code class="JavaDocCode">![[file]]</code>.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Парсер и генератор YAML front-matter блока в MD-файлах. </p>
+<p>Обеспечивает двунаправленную конвертацию между YAML front-matter внутри Markdown-файлов и полями объекта <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></code>.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+Поддерживаемые поля front-matter</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Поле  </th><th class="markdownTableHeadNone">Тип  </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">tags</span>  </td><td class="markdownTableBodyNone">список строк  </td><td class="markdownTableBodyNone">Теги заметки  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">book</span>  </td><td class="markdownTableBodyNone">список строк  </td><td class="markdownTableBodyNone">Имя книги (берётся первый элемент)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">order</span>  </td><td class="markdownTableBodyNone">целое число  </td><td class="markdownTableBodyNone">Позиция в книге (с нуля)  </td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+Пример front-matter</h2>
+<div class="fragment"><div class="line">---</div>
+<div class="line">tags:</div>
+<div class="line">  - java</div>
+<div class="line">  - tutorial</div>
+<div class="line">book:</div>
+<div class="line">  - java_guide</div>
+<div class="line">order: 2</div>
+<div class="line">---</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+Синтаксис вложений</h2>
+<p>Ссылки на прикреплённые файлы используют Obsidian-style синтаксис: </p><div class="fragment"><div class="line">![[image.png]]</div>
+<div class="line">![[document.pdf]]</div>
+</div><!-- fragment --><p> <code><a class="el" href="#adf958d043c26a39ccd35dbd378bdcd4a">extractAttachmentRefs(String)</a></code> выделяет имена файлов из таких ссылок.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Класс является утилитным — все методы статические, экземпляр не создаётся.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classcom_1_1notevault_1_1service_1_1_vault_service.html" title="Центральный сервисный слой приложения.">com.notevault.service.VaultService</a> </dd>
+<dd>
+com.notevault.service.MarkdownRenderer </dd></dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ad66b202505a66d10cb5266fb6cbc5b85" name="ad66b202505a66d10cb5266fb6cbc5b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad66b202505a66d10cb5266fb6cbc5b85">&#9670;&#160;</a></span>applyToNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.util.FrontMatterParser.applyToNote </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>content</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Разбирает front-matter файла и заполняет поля объекта <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></code>. </p>
+<p>Если front-matter отсутствует или не содержит нужных полей, поля объекта <code class="JavaDocCode">note</code> не изменяются.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>Полное содержимое MD-файла (front-matter + тело). </td></tr>
+    <tr><td class="paramname">note</td><td>Объект заметки, в который записываются распознанные поля. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a46d1c589e255538e6f8ca2b281940af7" name="a46d1c589e255538e6f8ca2b281940af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d1c589e255538e6f8ca2b281940af7">&#9670;&#160;</a></span>buildContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.util.FrontMatterParser.buildContent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>body</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Строит полный текст MD-файла: front-matter (из полей <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html" title="Модель заметки — центральная сущность приложения.">Note</a>) + тело. </p>
+<p>Front-matter генерируется вручную (без SnakeYAML) для контроля форматирования вывода и минимизации лишних полей. Если у заметки нет тегов и она не принадлежит книге — front-matter не добавляется.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка с актуальными тегами, книгой и порядком. </td></tr>
+    <tr><td class="paramname">body</td><td>Тело заметки (без front-matter). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полный текст файла, готовый для записи на диск. </dd></dl>
+
+</div>
+</div>
+<a id="acb026c526adc6af2f7487746d32c9dcb" name="acb026c526adc6af2f7487746d32c9dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb026c526adc6af2f7487746d32c9dcb">&#9670;&#160;</a></span>extractFrontMatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt; String, Object &gt; com.notevault.util.FrontMatterParser.extractFrontMatter </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>content</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Извлекает сырой front-matter блок как Map. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>Полный текст MD-файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Распарсенная карта полей или <code class="JavaDocCode">null</code> если front-matter отсутствует. </dd></dl>
+
+</div>
+</div>
+<a id="aa331632bb988b9e92b64c311aeed9649" name="aa331632bb988b9e92b64c311aeed9649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa331632bb988b9e92b64c311aeed9649">&#9670;&#160;</a></span>extractBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.util.FrontMatterParser.extractBody </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>content</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает тело заметки без YAML front-matter. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>Полный текст MD-файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Тело без front-matter (пустая строка если <code class="JavaDocCode">content == null</code>). </dd></dl>
+
+</div>
+</div>
+<a id="adf958d043c26a39ccd35dbd378bdcd4a" name="adf958d043c26a39ccd35dbd378bdcd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf958d043c26a39ccd35dbd378bdcd4a">&#9670;&#160;</a></span>extractAttachmentRefs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; String &gt; com.notevault.util.FrontMatterParser.extractAttachmentRefs </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>content</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Извлекает список имён файлов из Obsidian-style ссылок <code class="JavaDocCode">![[file]]</code>. </p>
+<p>Ищет все вхождения паттерна <code class="JavaDocCode">![[...]]</code>} в теле заметки (front-matter при этом исключается).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>Полный текст MD-файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список имён файлов (без скобок и пути). </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/main/java/com/notevault/util/<b>FrontMatterParser.java</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>notevault</b></li><li class="navelem"><b>util</b></li><li class="navelem"><a href="classcom_1_1notevault_1_1util_1_1_front_matter_parser.html">FrontMatterParser</a></li>
+    <li class="footer">Документация по NoteVault. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -9,10 +9,29 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.prefs.Preferences;
 
+/**
+ * @file Main.java
+ * @brief Точка входа приложения NoteVault.
+ *
+ * @details
+ * Инициализирует Look & Feel (FlatLaf macOS-стиль), применяет тему
+ * (тёмная / светлая) из пользовательских настроек, затем запускает
+ * главное окно {@link com.notevault.ui.MainWindow} в потоке Event Dispatch Thread.
+ *
+ * Порядок инициализации:
+ * -# Выбор темы (из {@code Preferences} или автодетектирование).
+ * -# Настройка UIManager (скругления, ширина скроллбара и т.д.).
+ * -# Инициализация {@link DatabaseManager} (без открытия конкретного vault).
+ * -# Создание и отображение {@link MainWindow}.
+ */
 public class Main {
 
+    /**
+     * @brief Главный метод приложения.
+     *
+     * @param args Аргументы командной строки (не используются).
+     */
     public static void main(String[] args) {
-        // Apply FlatLaf Mac theme based on system preference
         try {
             String theme = getPreferredTheme();
             if ("dark".equals(theme)) {
@@ -20,8 +39,7 @@ public class Main {
             } else {
                 FlatMacLightLaf.setup();
             }
-            // Extra FlatLaf tweaks
-            UIManager.put("defaultFont", new Font("SF Pro Text", Font.PLAIN, 15));
+            UIManager.put("defaultFont", new Font("SF Pro Text", Font.PLAIN, 13));
             UIManager.put("Component.arc", 8);
             UIManager.put("Button.arc", 8);
             UIManager.put("TextComponent.arc", 6);
@@ -39,18 +57,23 @@ public class Main {
         });
     }
 
+    /**
+     * @brief Определяет предпочтительную тему оформления.
+     *
+     * @details
+     * Читает значение ключа {@code "theme"} из {@link Preferences}.
+     * Возможные значения: {@code "dark"}, {@code "light"}, {@code "auto"}.
+     * При значении {@code "auto"} возвращает {@code "light"} (системное
+     * определение тёмного режима macOS через переменную окружения оставлено
+     * как заглушка для будущей реализации).
+     *
+     * @return {@code "dark"} или {@code "light"}.
+     */
     private static String getPreferredTheme() {
         Preferences prefs = Preferences.userNodeForPackage(Main.class);
         String saved = prefs.get("theme", "auto");
         if ("dark".equals(saved)) return "dark";
         if ("light".equals(saved)) return "light";
-        // Auto-detect from system
-        String osTheme = System.getProperty("os.name", "").toLowerCase();
-        // Check macOS dark mode
-        try {
-            String result = System.getenv("DARK_MODE");
-            if ("1".equals(result)) return "dark";
-        } catch (Exception ignored) {}
         return "light";
     }
 }

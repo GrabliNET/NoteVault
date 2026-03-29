@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoteVault: Класс com.notevault.util.VaultLayout</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NoteVault<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Приложение для управления заметками в формате Markdown</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classcom_1_1notevault_1_1util_1_1_vault_layout.html','','classcom_1_1notevault_1_1util_1_1_vault_layout-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс com.notevault.util.VaultLayout</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Менеджер физической структуры директорий внутри vault.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса com.notevault.util.VaultLayout:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classcom_1_1notevault_1_1util_1_1_vault_layout__coll__graph.svg" width="166" height="395"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa9f14ea39f52a87bd71ab9ecf3ef76fd" id="r_aa9f14ea39f52a87bd71ab9ecf3ef76fd"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa9f14ea39f52a87bd71ab9ecf3ef76fd">VaultLayout</a> (Path vaultRoot)</td></tr>
+<tr class="memdesc:aa9f14ea39f52a87bd71ab9ecf3ef76fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт экземпляр для указанного vault.  <br /></td></tr>
+<tr class="memitem:a08a6cdcf2e700e24f55fb9ba5e56e4d4" id="r_a08a6cdcf2e700e24f55fb9ba5e56e4d4"><td class="memItemLeft">Path&#160;</td><td class="memItemRight"><a class="el" href="#a08a6cdcf2e700e24f55fb9ba5e56e4d4">getVaultRoot</a> ()</td></tr>
+<tr class="memitem:a336e7837b2918bd0443d04ff7c489204" id="r_a336e7837b2918bd0443d04ff7c489204"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a336e7837b2918bd0443d04ff7c489204">folderForNote</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)</td></tr>
+<tr class="memdesc:a336e7837b2918bd0443d04ff7c489204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет имя директории для заметки на основе её тегов.  <br /></td></tr>
+<tr class="memitem:a0fc1310784d361f294bcb8857ad56266" id="r_a0fc1310784d361f294bcb8857ad56266"><td class="memItemLeft">Path&#160;</td><td class="memItemRight"><a class="el" href="#a0fc1310784d361f294bcb8857ad56266">noteFilePath</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)</td></tr>
+<tr class="memdesc:a0fc1310784d361f294bcb8857ad56266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет ожидаемый абсолютный путь к MD-файлу заметки.  <br /></td></tr>
+<tr class="memitem:a842f2ca4b0ea581b868f728c314bd3e7" id="r_a842f2ca4b0ea581b868f728c314bd3e7"><td class="memItemLeft">Path&#160;</td><td class="memItemRight"><a class="el" href="#a842f2ca4b0ea581b868f728c314bd3e7">attachmentDir</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)</td></tr>
+<tr class="memdesc:a842f2ca4b0ea581b868f728c314bd3e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает директорию вложений для заметки.  <br /></td></tr>
+<tr class="memitem:a45ca207beba9eabc5a446d6d4f65913c" id="r_a45ca207beba9eabc5a446d6d4f65913c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a45ca207beba9eabc5a446d6d4f65913c">ensureDirs</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)  throws Exception </td></tr>
+<tr class="memdesc:a45ca207beba9eabc5a446d6d4f65913c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт все директории, необходимые для размещения заметки.  <br /></td></tr>
+<tr class="memitem:ab4fa88c1fa3f15beb2f1c8b75770c9b2" id="r_ab4fa88c1fa3f15beb2f1c8b75770c9b2"><td class="memItemLeft">Path&#160;</td><td class="memItemRight"><a class="el" href="#ab4fa88c1fa3f15beb2f1c8b75770c9b2">relocateIfNeeded</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note, Path currentPath)  throws Exception </td></tr>
+<tr class="memdesc:ab4fa88c1fa3f15beb2f1c8b75770c9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемещает файл заметки если её теги изменились.  <br /></td></tr>
+<tr class="memitem:abb884768cfd534b3ba6fdc8f47108c9c" id="r_abb884768cfd534b3ba6fdc8f47108c9c"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#abb884768cfd534b3ba6fdc8f47108c9c">relativePath</a> (Path absolutePath)</td></tr>
+<tr class="memdesc:abb884768cfd534b3ba6fdc8f47108c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет путь относительно корня vault.  <br /></td></tr>
+<tr class="memitem:a0bac2343b0bff34768ba306c415c2525" id="r_a0bac2343b0bff34768ba306c415c2525"><td class="memItemLeft">Path&#160;</td><td class="memItemRight"><a class="el" href="#a0bac2343b0bff34768ba306c415c2525">resolve</a> (String <a class="el" href="#abb884768cfd534b3ba6fdc8f47108c9c">relativePath</a>)</td></tr>
+<tr class="memdesc:a0bac2343b0bff34768ba306c415c2525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разрешает относительный путь в абсолютный.  <br /></td></tr>
+<tr class="memitem:a6d7b3717912dd6baa48127339c757469" id="r_a6d7b3717912dd6baa48127339c757469"><td class="memItemLeft">Path&#160;</td><td class="memItemRight"><a class="el" href="#a6d7b3717912dd6baa48127339c757469">uniquePath</a> (Path desired)</td></tr>
+<tr class="memdesc:a6d7b3717912dd6baa48127339c757469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает уникальный путь, добавляя числовой суффикс при коллизии.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a98d045f4b799dd39f4962d796f261b5e" id="r_a98d045f4b799dd39f4962d796f261b5e"><td class="memItemLeft">static String&#160;</td><td class="memItemRight"><a class="el" href="#a98d045f4b799dd39f4962d796f261b5e">sanitizeFileName</a> (String title)</td></tr>
+<tr class="memdesc:a98d045f4b799dd39f4962d796f261b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразует заголовок заметки в безопасное имя файла (без расширения).  <br /></td></tr>
+<tr class="memitem:a8b4b17b564931bc4c175b4f8869b574c" id="r_a8b4b17b564931bc4c175b4f8869b574c"><td class="memItemLeft">static String&#160;</td><td class="memItemRight"><a class="el" href="#a8b4b17b564931bc4c175b4f8869b574c">sanitizeDirName</a> (String name)</td></tr>
+<tr class="memdesc:a8b4b17b564931bc4c175b4f8869b574c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразует имя тега в безопасное имя директории.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a42c72e4bcee468012fec126e209d8a37" id="r_a42c72e4bcee468012fec126e209d8a37"><td class="memItemLeft"><a id="a42c72e4bcee468012fec126e209d8a37" name="a42c72e4bcee468012fec126e209d8a37"></a>
+static final String&#160;</td><td class="memItemRight"><b>DIR_UNSORTED</b> = &quot;_unsorted&quot;</td></tr>
+<tr class="memdesc:a42c72e4bcee468012fec126e209d8a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя директории для заметок без тегов. <br /></td></tr>
+<tr class="memitem:aa8495b18ab90847a5d1342f7453b20ce" id="r_aa8495b18ab90847a5d1342f7453b20ce"><td class="memItemLeft"><a id="aa8495b18ab90847a5d1342f7453b20ce" name="aa8495b18ab90847a5d1342f7453b20ce"></a>
+static final String&#160;</td><td class="memItemRight"><b>DIR_MULTI</b> = &quot;_multi&quot;</td></tr>
+<tr class="memdesc:aa8495b18ab90847a5d1342f7453b20ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя директории для заметок с несколькими тегами. <br /></td></tr>
+<tr class="memitem:a6f69dc63cd3de58f199351c45c559a3b" id="r_a6f69dc63cd3de58f199351c45c559a3b"><td class="memItemLeft"><a id="a6f69dc63cd3de58f199351c45c559a3b" name="a6f69dc63cd3de58f199351c45c559a3b"></a>
+static final String&#160;</td><td class="memItemRight"><b>DIR_ATTACHMENTS</b> = &quot;_attachments&quot;</td></tr>
+<tr class="memdesc:a6f69dc63cd3de58f199351c45c559a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя корневой директории вложений. <br /></td></tr>
+<tr class="memitem:a4c509ede24da6b2364ef9400089acf4e" id="r_a4c509ede24da6b2364ef9400089acf4e"><td class="memItemLeft"><a id="a4c509ede24da6b2364ef9400089acf4e" name="a4c509ede24da6b2364ef9400089acf4e"></a>
+static final String&#160;</td><td class="memItemRight"><b>DIR_DB</b> = &quot;_db&quot;</td></tr>
+<tr class="memdesc:a4c509ede24da6b2364ef9400089acf4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя директории базы данных. <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Менеджер физической структуры директорий внутри vault. </p>
+<p>Инкапсулирует все правила размещения файлов: какой заметке соответствует какой путь, где лежат вложения, как избежать коллизий имён.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+Структура vault</h2>
+<div class="fragment"><div class="line">vault/</div>
+<div class="line">├── _db/</div>
+<div class="line">│   └── notes.db          ← SQLite база данных</div>
+<div class="line">├── _unsorted/</div>
+<div class="line">│   └── *.md              ← заметки без тегов</div>
+<div class="line">├── _multi/</div>
+<div class="line">│   └── *.md              ← заметки с двумя и более тегами</div>
+<div class="line">├── _attachments/</div>
+<div class="line">│   └── &lt;note-slug&gt;/</div>
+<div class="line">│       └── &lt;file&gt;        ← вложения конкретной заметки</div>
+<div class="line">└── &lt;tag&gt;/</div>
+<div class="line">    └── *.md              ← заметки ровно с одним тегом</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+Правила размещения</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Число тегов  </th><th class="markdownTableHeadNone">Директория  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone"><span class="tt">_unsorted/</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone"><span class="tt">&lt;tagname&gt;/</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2+  </td><td class="markdownTableBodyNone"><span class="tt">_multi/</span>  </td></tr>
+</table>
+<p>Эта логика позволяет пользователю ориентироваться в хранилище даже без приложения: тематические заметки лежат в папках с понятными именами.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Класс работает только с путями; чтение/запись файлов — ответственность <code><a class="el" href="classcom_1_1notevault_1_1service_1_1_vault_service.html">com.notevault.service.VaultService</a></code>.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classcom_1_1notevault_1_1service_1_1_vault_service.html" title="Центральный сервисный слой приложения.">com.notevault.service.VaultService</a> </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="aa9f14ea39f52a87bd71ab9ecf3ef76fd" name="aa9f14ea39f52a87bd71ab9ecf3ef76fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f14ea39f52a87bd71ab9ecf3ef76fd">&#9670;&#160;</a></span>VaultLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.notevault.util.VaultLayout.VaultLayout </td>
+          <td>(</td>
+          <td class="paramtype">Path</td>          <td class="paramname"><span class="paramname"><em>vaultRoot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт экземпляр для указанного vault. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vaultRoot</td><td>Абсолютный путь к корню vault. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a08a6cdcf2e700e24f55fb9ba5e56e4d4" name="a08a6cdcf2e700e24f55fb9ba5e56e4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a6cdcf2e700e24f55fb9ba5e56e4d4">&#9670;&#160;</a></span>getVaultRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path com.notevault.util.VaultLayout.getVaultRoot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Корневая директория vault. </dd></dl>
+
+</div>
+</div>
+<a id="a336e7837b2918bd0443d04ff7c489204" name="a336e7837b2918bd0443d04ff7c489204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a336e7837b2918bd0443d04ff7c489204">&#9670;&#160;</a></span>folderForNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.util.VaultLayout.folderForNote </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определяет имя директории для заметки на основе её тегов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка (теги должны быть заполнены). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Имя поддиректории относительно vault root. </dd></dl>
+
+</div>
+</div>
+<a id="a0fc1310784d361f294bcb8857ad56266" name="a0fc1310784d361f294bcb8857ad56266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fc1310784d361f294bcb8857ad56266">&#9670;&#160;</a></span>noteFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path com.notevault.util.VaultLayout.noteFilePath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисляет ожидаемый абсолютный путь к MD-файлу заметки. </p>
+<p>Путь строится по схеме: <code class="JavaDocCode">&lt;vaultRoot&gt;/&lt;folder&gt;/&lt;slug&gt;.md</code>, где <code class="JavaDocCode">&lt;folder&gt;</code> определяется тегами, а <code class="JavaDocCode">&lt;slug&gt;</code> — санированным заголовком.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Возвращаемый путь может уже существовать. Для гарантии уникальности используйте <code><a class="el" href="#a6d7b3717912dd6baa48127339c757469">uniquePath(Path)</a></code>.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка с заполненными заголовком и тегами. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Абсолютный <code><a class="el" href="">Path</a></code> к MD-файлу. </dd></dl>
+
+</div>
+</div>
+<a id="a842f2ca4b0ea581b868f728c314bd3e7" name="a842f2ca4b0ea581b868f728c314bd3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842f2ca4b0ea581b868f728c314bd3e7">&#9670;&#160;</a></span>attachmentDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path com.notevault.util.VaultLayout.attachmentDir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает директорию вложений для заметки. </p>
+<p>Путь: <code class="JavaDocCode">&lt;vaultRoot&gt;/_attachments/&lt;note-slug&gt;/</code></p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка с заполненным заголовком. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Абсолютный <code><a class="el" href="">Path</a></code> к директории вложений. </dd></dl>
+
+</div>
+</div>
+<a id="a45ca207beba9eabc5a446d6d4f65913c" name="a45ca207beba9eabc5a446d6d4f65913c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ca207beba9eabc5a446d6d4f65913c">&#9670;&#160;</a></span>ensureDirs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.util.VaultLayout.ensureDirs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт все директории, необходимые для размещения заметки. </p>
+<p>Создаёт родительскую директорию MD-файла и директорию вложений.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>если создание директорий завершилось ошибкой. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4fa88c1fa3f15beb2f1c8b75770c9b2" name="ab4fa88c1fa3f15beb2f1c8b75770c9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fa88c1fa3f15beb2f1c8b75770c9b2">&#9670;&#160;</a></span>relocateIfNeeded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path com.notevault.util.VaultLayout.relocateIfNeeded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Path</td>          <td class="paramname"><span class="paramname"><em>currentPath</em></span>&#160;) throws Exception</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перемещает файл заметки если её теги изменились. </p>
+<p>Сравнивает <code class="JavaDocCode">currentPath</code> с ожидаемым путём по текущим тегам. Если пути различаются — перемещает файл через <code class="JavaDocCode">Files.move</code>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка с актуальными тегами. </td></tr>
+    <tr><td class="paramname">currentPath</td><td>Текущий абсолютный путь к файлу. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый (или тот же) абсолютный путь к файлу. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>при ошибке перемещения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb884768cfd534b3ba6fdc8f47108c9c" name="abb884768cfd534b3ba6fdc8f47108c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb884768cfd534b3ba6fdc8f47108c9c">&#9670;&#160;</a></span>relativePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.util.VaultLayout.relativePath </td>
+          <td>(</td>
+          <td class="paramtype">Path</td>          <td class="paramname"><span class="paramname"><em>absolutePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисляет путь относительно корня vault. </p>
+<p>Разделитель в возвращаемой строке всегда <code class="JavaDocCode">'/'</code> независимо от ОС.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">absolutePath</td><td>Абсолютный путь внутри vault. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Относительный путь с <code class="JavaDocCode">'/'</code> в качестве разделителя. </dd></dl>
+
+</div>
+</div>
+<a id="a0bac2343b0bff34768ba306c415c2525" name="a0bac2343b0bff34768ba306c415c2525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bac2343b0bff34768ba306c415c2525">&#9670;&#160;</a></span>resolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path com.notevault.util.VaultLayout.resolve </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>relativePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разрешает относительный путь в абсолютный. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="#abb884768cfd534b3ba6fdc8f47108c9c" title="Вычисляет путь относительно корня vault.">relativePath</a></td><td>Относительный путь (разделитель <code class="JavaDocCode">'/'</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Абсолютный <code><a class="el" href="">Path</a></code>. </dd></dl>
+
+</div>
+</div>
+<a id="a98d045f4b799dd39f4962d796f261b5e" name="a98d045f4b799dd39f4962d796f261b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d045f4b799dd39f4962d796f261b5e">&#9670;&#160;</a></span>sanitizeFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.util.VaultLayout.sanitizeFileName </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>title</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Преобразует заголовок заметки в безопасное имя файла (без расширения). </p>
+<p>Алгоритм:</p><ol type="1">
+<li>Обрезает пробелы.</li>
+<li>Заменяет символы, недопустимые в именах файлов, на <code class="JavaDocCode">_</code>.</li>
+<li>Заменяет пробелы на <code class="JavaDocCode">-</code>.</li>
+<li>Приводит к нижнему регистру.</li>
+<li>Сжимает множественные дефисы.</li>
+</ol>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Заголовок заметки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Безопасное имя файла или <code class="JavaDocCode">"untitled"</code> если заголовок пуст. </dd></dl>
+
+</div>
+</div>
+<a id="a8b4b17b564931bc4c175b4f8869b574c" name="a8b4b17b564931bc4c175b4f8869b574c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4b17b564931bc4c175b4f8869b574c">&#9670;&#160;</a></span>sanitizeDirName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.notevault.util.VaultLayout.sanitizeDirName </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Преобразует имя тега в безопасное имя директории. </p>
+<p>Аналог <code><a class="el" href="#a98d045f4b799dd39f4962d796f261b5e">sanitizeFileName</a></code> для директорий.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя тега. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Безопасное имя директории или <code class="JavaDocCode">"_unsorted"</code> если имя пусто. </dd></dl>
+
+</div>
+</div>
+<a id="a6d7b3717912dd6baa48127339c757469" name="a6d7b3717912dd6baa48127339c757469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7b3717912dd6baa48127339c757469">&#9670;&#160;</a></span>uniquePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path com.notevault.util.VaultLayout.uniquePath </td>
+          <td>(</td>
+          <td class="paramtype">Path</td>          <td class="paramname"><span class="paramname"><em>desired</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает уникальный путь, добавляя числовой суффикс при коллизии. </p>
+<p>Если <code class="JavaDocCode">desired</code> не существует — возвращает его без изменений. Иначе перебирает <code class="JavaDocCode">base-1.md</code>, <code class="JavaDocCode">base-2.md</code> и т.д. до первого несуществующего варианта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desired</td><td>Желаемый путь (обычно <code class="JavaDocCode">noteFilePath(note)</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Гарантированно несуществующий путь. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/main/java/com/notevault/util/<b>VaultLayout.java</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>notevault</b></li><li class="navelem"><b>util</b></li><li class="navelem"><a href="classcom_1_1notevault_1_1util_1_1_vault_layout.html">VaultLayout</a></li>
+    <li class="footer">Документация по NoteVault. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

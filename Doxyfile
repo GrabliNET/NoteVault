@@ -1,0 +1,63 @@
+# =============================================================================
+# Doxyfile — конфигурация Doxygen для проекта NoteVault
+# Генерация: doxygen Doxyfile
+# =============================================================================
+
+# ── Проект ───────────────────────────────────────────────────────────────────
+PROJECT_NAME           = "NoteVault"
+PROJECT_NUMBER         = 1.0.0
+PROJECT_BRIEF          = "Приложение для управления заметками в формате Markdown"
+OUTPUT_DIRECTORY       = docs/
+
+# ── Исходники ─────────────────────────────────────────────────────────────────
+INPUT                  = src/main/java/com/notevault/
+RECURSIVE              = YES
+FILE_PATTERNS          = *.java
+EXCLUDE_PATTERNS       = */test/*
+
+# ── Язык ─────────────────────────────────────────────────────────────────────
+OUTPUT_LANGUAGE        = Russian
+JAVADOC_AUTOBRIEF      = YES      # первая строка /** ... */ → @brief
+QT_AUTOBRIEF           = NO
+
+# ── Извлечение документации ──────────────────────────────────────────────────
+EXTRACT_ALL            = NO       # документировать только помеченные элементы
+EXTRACT_PRIVATE        = NO       # приватные поля/методы не включать
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+HIDE_UNDOC_MEMBERS     = YES
+HIDE_UNDOC_CLASSES     = YES
+
+# ── HTML-вывод ───────────────────────────────────────────────────────────────
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html/
+HTML_COLORSTYLE        = AUTO_DARK  # авто тёмная/светлая тема по системным настройкам
+GENERATE_TREEVIEW      = YES
+TREEVIEW_WIDTH         = 250
+HTML_TIMESTAMP         = YES
+
+# ── LaTeX/PDF — отключить если не нужен PDF напрямую из Doxygen ──────────────
+GENERATE_LATEX         = NO
+
+# ── Диаграммы (требуется Graphviz) ───────────────────────────────────────────
+HAVE_DOT               = YES      # поставить YES если установлен Graphviz
+DOT_IMAGE_FORMAT       = svg
+CALL_GRAPH             = NO       # граф вызовов (медленно, включать по желанию)
+CALLER_GRAPH           = NO
+CLASS_DIAGRAMS         = YES      # диаграммы наследования
+COLLABORATION_GRAPH    = YES      # граф зависимостей классов
+UML_LOOK               = YES      # UML-стиль диаграмм
+DOT_GRAPH_MAX_NODES    = 100
+
+# ── Разное ───────────────────────────────────────────────────────────────────
+WARN_IF_UNDOCUMENTED   = YES      # предупреждать о недокументированных элементах
+WARN_NO_PARAMDOC       = YES      # предупреждать об отсутствующих @param
+SORT_MEMBER_DOCS       = NO       # сохранять порядок объявления в файле
+SHOW_USED_FILES        = YES
+SHOW_FILES             = YES
+INLINE_SOURCES         = NO       # не встраивать исходники в документацию
+
+# ── Оптимизация под Java ─────────────────────────────────────────────────────
+OPTIMIZE_OUTPUT_JAVA   = YES      # корректный синтаксис Java в документации
+JAVADOC_BANNER         = NO
+AUTOLINK_SUPPORT       = YES      # автолинковка имён классов

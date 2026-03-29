@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoteVault: Класс com.notevault.db.NoteDAO</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NoteVault<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Приложение для управления заметками в формате Markdown</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classcom_1_1notevault_1_1db_1_1_note_d_a_o.html','','classcom_1_1notevault_1_1db_1_1_note_d_a_o-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс com.notevault.db.NoteDAO</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>DAO (Data Access Object) для работы с таблицей <code class="JavaDocCode">notes</code>.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса com.notevault.db.NoteDAO:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classcom_1_1notevault_1_1db_1_1_note_d_a_o__coll__graph.svg" width="183" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a6dca6a6bbfc2f6aa4a9810932dc91d7f" id="r_a6dca6a6bbfc2f6aa4a9810932dc91d7f"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6dca6a6bbfc2f6aa4a9810932dc91d7f">insert</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)  throws SQLException </td></tr>
+<tr class="memdesc:a6dca6a6bbfc2f6aa4a9810932dc91d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет новую заметку в БД и присваивает ей сгенерированный ID.  <br /></td></tr>
+<tr class="memitem:ae9ad6e0f021ea1f3703773b2ab14f618" id="r_ae9ad6e0f021ea1f3703773b2ab14f618"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae9ad6e0f021ea1f3703773b2ab14f618">update</a> (<a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> note)  throws SQLException </td></tr>
+<tr class="memdesc:ae9ad6e0f021ea1f3703773b2ab14f618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет существующую заметку в БД.  <br /></td></tr>
+<tr class="memitem:a0728747695e65859e85a54c446634dac" id="r_a0728747695e65859e85a54c446634dac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0728747695e65859e85a54c446634dac">delete</a> (long noteId)  throws SQLException </td></tr>
+<tr class="memdesc:a0728747695e65859e85a54c446634dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет заметку из БД по ID.  <br /></td></tr>
+<tr class="memitem:ad5723f704075627c10ffc41d402a91c9" id="r_ad5723f704075627c10ffc41d402a91c9"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad5723f704075627c10ffc41d402a91c9">findById</a> (long id)  throws SQLException </td></tr>
+<tr class="memdesc:ad5723f704075627c10ffc41d402a91c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит заметку по первичному ключу.  <br /></td></tr>
+<tr class="memitem:a4f3ad6742d8a06915fe8779b7324638b" id="r_a4f3ad6742d8a06915fe8779b7324638b"><td class="memItemLeft"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4f3ad6742d8a06915fe8779b7324638b">findByPath</a> (String filePath)  throws SQLException </td></tr>
+<tr class="memdesc:a4f3ad6742d8a06915fe8779b7324638b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит заметку по относительному пути к файлу.  <br /></td></tr>
+<tr class="memitem:af65ea8d4c95cf1d99b77777dd40b45f4" id="r_af65ea8d4c95cf1d99b77777dd40b45f4"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af65ea8d4c95cf1d99b77777dd40b45f4">findAll</a> ()  throws SQLException </td></tr>
+<tr class="memdesc:af65ea8d4c95cf1d99b77777dd40b45f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает все заметки, отсортированные по дате изменения (новые первыми).  <br /></td></tr>
+<tr class="memitem:a1dfbc77dbd1d41e9c1d349ffc48d5621" id="r_a1dfbc77dbd1d41e9c1d349ffc48d5621"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1dfbc77dbd1d41e9c1d349ffc48d5621">findByTag</a> (long tagId)  throws SQLException </td></tr>
+<tr class="memdesc:a1dfbc77dbd1d41e9c1d349ffc48d5621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает все заметки с указанным тегом.  <br /></td></tr>
+<tr class="memitem:adda6c5eb37b8eaf7790152781ba1d70d" id="r_adda6c5eb37b8eaf7790152781ba1d70d"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adda6c5eb37b8eaf7790152781ba1d70d">findByBook</a> (long bookId)  throws SQLException </td></tr>
+<tr class="memdesc:adda6c5eb37b8eaf7790152781ba1d70d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает заметки книги в порядке <code class="JavaDocCode">order_index</code>.  <br /></td></tr>
+<tr class="memitem:a0a120a09d344685d9da1bb6c9d657bcb" id="r_a0a120a09d344685d9da1bb6c9d657bcb"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0a120a09d344685d9da1bb6c9d657bcb">search</a> (String query)  throws SQLException </td></tr>
+<tr class="memdesc:a0a120a09d344685d9da1bb6c9d657bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Полнотекстовый поиск заметок по заголовку (LIKE).  <br /></td></tr>
+<tr class="memitem:a20f9e3a2d1bd565e699fe9c609b2800a" id="r_a20f9e3a2d1bd565e699fe9c609b2800a"><td class="memItemLeft">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a20f9e3a2d1bd565e699fe9c609b2800a">findTagsForNote</a> (long noteId)  throws SQLException </td></tr>
+<tr class="memdesc:a20f9e3a2d1bd565e699fe9c609b2800a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает теги конкретной заметки.  <br /></td></tr>
+<tr class="memitem:ac683dabefcafc6251b57e39b0f6e9bf9" id="r_ac683dabefcafc6251b57e39b0f6e9bf9"><td class="memItemLeft">long&#160;</td><td class="memItemRight"><a class="el" href="#ac683dabefcafc6251b57e39b0f6e9bf9">getOrCreateTag</a> (String name)  throws SQLException </td></tr>
+<tr class="memdesc:ac683dabefcafc6251b57e39b0f6e9bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает ID тега по имени, создавая его при необходимости.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>DAO (Data Access Object) для работы с таблицей <code class="JavaDocCode">notes</code>. </p>
+<p>Инкапсулирует все SQL-операции над заметками. Соединение получает через <code><a class="el" href="classcom_1_1notevault_1_1db_1_1_database_manager.html#a00f22aef1446eac4b74ce4a94b64bcac">DatabaseManager#getConnection()</a></code> при каждом обращении — объект не хранит ссылку на Connection, что позволяет безопасно переоткрывать vault.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+Синхронизация тегов и книг</h2>
+<p>Методы <code><a class="el" href="#a6dca6a6bbfc2f6aa4a9810932dc91d7f">insert(Note)</a></code> и <code><a class="el" href="#ae9ad6e0f021ea1f3703773b2ab14f618">update(Note)</a></code> автоматически вызывают <code class="JavaDocCode">syncTags()</code> и <code class="JavaDocCode">syncBook()</code>, которые приводят промежуточные таблицы <code class="JavaDocCode">note_tags</code> и <code class="JavaDocCode">book_notes</code> в соответствие с текущим состоянием объекта <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></code>.</p>
+<dl class="section note"><dt>Заметки</dt><dd>DAO не читает содержимое MD-файлов и не пишет в них. Синхронизация файловой системы — ответственность <code><a class="el" href="classcom_1_1notevault_1_1service_1_1_vault_service.html">com.notevault.service.VaultService</a></code>.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classcom_1_1notevault_1_1service_1_1_vault_service.html" title="Центральный сервисный слой приложения.">com.notevault.service.VaultService</a> </dd></dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a6dca6a6bbfc2f6aa4a9810932dc91d7f" name="a6dca6a6bbfc2f6aa4a9810932dc91d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dca6a6bbfc2f6aa4a9810932dc91d7f">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> com.notevault.db.NoteDAO.insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохраняет новую заметку в БД и присваивает ей сгенерированный ID. </p>
+<p>После INSERT синхронизирует теги (<code class="JavaDocCode">note_tags</code>) и книгу (<code class="JavaDocCode">book_notes</code>).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Объект заметки с заполненными <code class="JavaDocCode">title</code>, <code class="JavaDocCode">filePath</code>, <code class="JavaDocCode">createdAt</code>, <code class="JavaDocCode">updatedAt</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Тот же объект <code class="JavaDocCode">note</code> с заполненным <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html#ace443c6d00f074082438429a0146a15f">Note#getId()</a></code>. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке вставки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae9ad6e0f021ea1f3703773b2ab14f618" name="ae9ad6e0f021ea1f3703773b2ab14f618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ad6e0f021ea1f3703773b2ab14f618">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.db.NoteDAO.update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></td>          <td class="paramname"><span class="paramname"><em>note</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет существующую заметку в БД. </p>
+<p>Обновляет <code class="JavaDocCode">title</code>, <code class="JavaDocCode">file_path</code>, <code class="JavaDocCode">updated_at</code>. Также синхронизирует теги и книгу. Поле <code class="JavaDocCode">created_at</code> не изменяется.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>Заметка с актуальными данными и корректным <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html#ace443c6d00f074082438429a0146a15f">Note#getId()</a></code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке обновления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0728747695e65859e85a54c446634dac" name="a0728747695e65859e85a54c446634dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0728747695e65859e85a54c446634dac">&#9670;&#160;</a></span>delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.notevault.db.NoteDAO.delete </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>noteId</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет заметку из БД по ID. </p>
+<p>Благодаря <code class="JavaDocCode">ON DELETE CASCADE</code> в схеме, связанные записи в <code class="JavaDocCode">note_tags</code>, <code class="JavaDocCode">book_notes</code> и <code class="JavaDocCode">attachments</code> удаляются автоматически.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Физический MD-файл при этом <b>не удаляется</b>. Удаление файла — ответственность вызывающего кода (<code><a class="el" href="classcom_1_1notevault_1_1service_1_1_vault_service.html#a8df06c786e94ea426fe24d2d79a1a7ce">com.notevault.service.VaultService#deleteNote</a></code>).</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">noteId</td><td>Первичный ключ удаляемой заметки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке удаления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad5723f704075627c10ffc41d402a91c9" name="ad5723f704075627c10ffc41d402a91c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5723f704075627c10ffc41d402a91c9">&#9670;&#160;</a></span>findById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> com.notevault.db.NoteDAO.findById </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Находит заметку по первичному ключу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Первичный ключ. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Объект <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></code> или <code class="JavaDocCode">null</code> если не найдена. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке запроса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4f3ad6742d8a06915fe8779b7324638b" name="a4f3ad6742d8a06915fe8779b7324638b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f3ad6742d8a06915fe8779b7324638b">&#9670;&#160;</a></span>findByPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> com.notevault.db.NoteDAO.findByPath </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Находит заметку по относительному пути к файлу. </p>
+<p>Используется при импорте и синхронизации файловой системы с БД.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Относительный путь (например <code class="JavaDocCode">"java/my-note.md"</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Объект <code><a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a></code> или <code class="JavaDocCode">null</code> если не найдена. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке запроса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af65ea8d4c95cf1d99b77777dd40b45f4" name="af65ea8d4c95cf1d99b77777dd40b45f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af65ea8d4c95cf1d99b77777dd40b45f4">&#9670;&#160;</a></span>findAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt; com.notevault.db.NoteDAO.findAll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает все заметки, отсортированные по дате изменения (новые первыми). </p>
+<p>Для каждой заметки дополнительно выполняется запрос тегов через <code><a class="el" href="#a20f9e3a2d1bd565e699fe9c609b2800a">findTagsForNote(long)</a></code>. При большом количестве заметок это N+1 запросов — допустимо для локального SQLite.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список всех заметок с заполненными тегами. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке запроса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1dfbc77dbd1d41e9c1d349ffc48d5621" name="a1dfbc77dbd1d41e9c1d349ffc48d5621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dfbc77dbd1d41e9c1d349ffc48d5621">&#9670;&#160;</a></span>findByTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt; com.notevault.db.NoteDAO.findByTag </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>tagId</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает все заметки с указанным тегом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tagId</td><td>Первичный ключ тега. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список заметок с тегом, отсортированных по дате изменения. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке запроса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adda6c5eb37b8eaf7790152781ba1d70d" name="adda6c5eb37b8eaf7790152781ba1d70d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda6c5eb37b8eaf7790152781ba1d70d">&#9670;&#160;</a></span>findByBook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt; com.notevault.db.NoteDAO.findByBook </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>bookId</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает заметки книги в порядке <code class="JavaDocCode">order_index</code>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bookId</td><td>Первичный ключ книги. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список заметок книги, упорядоченных по позиции. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке запроса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a120a09d344685d9da1bb6c9d657bcb" name="a0a120a09d344685d9da1bb6c9d657bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a120a09d344685d9da1bb6c9d657bcb">&#9670;&#160;</a></span>search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_note.html">Note</a> &gt; com.notevault.db.NoteDAO.search </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Полнотекстовый поиск заметок по заголовку (LIKE). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Поисковый запрос (без подстановочных символов — они добавляются внутри). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список заметок, заголовок которых содержит <code class="JavaDocCode">query</code>. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке запроса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20f9e3a2d1bd565e699fe9c609b2800a" name="a20f9e3a2d1bd565e699fe9c609b2800a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f9e3a2d1bd565e699fe9c609b2800a">&#9670;&#160;</a></span>findTagsForNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classcom_1_1notevault_1_1model_1_1_tag.html">Tag</a> &gt; com.notevault.db.NoteDAO.findTagsForNote </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>noteId</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает теги конкретной заметки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">noteId</td><td>Первичный ключ заметки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список тегов, отсортированных по имени. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке запроса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac683dabefcafc6251b57e39b0f6e9bf9" name="ac683dabefcafc6251b57e39b0f6e9bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac683dabefcafc6251b57e39b0f6e9bf9">&#9670;&#160;</a></span>getOrCreateTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long com.notevault.db.NoteDAO.getOrCreateTag </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td> throws SQLException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает ID тега по имени, создавая его при необходимости. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя тега (будет обрезан <code class="JavaDocCode">trim()</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>ID существующего или только что созданного тега. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td>при ошибке чтения или вставки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/main/java/com/notevault/db/<b>NoteDAO.java</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>com</b></li><li class="navelem"><b>notevault</b></li><li class="navelem"><b>db</b></li><li class="navelem"><a href="classcom_1_1notevault_1_1db_1_1_note_d_a_o.html">NoteDAO</a></li>
+    <li class="footer">Документация по NoteVault. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

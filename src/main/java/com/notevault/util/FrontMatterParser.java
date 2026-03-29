@@ -7,23 +7,67 @@ import org.yaml.snakeyaml.Yaml;
 import java.util.*;
 
 /**
- * Reads and writes the YAML front-matter block at the top of Markdown files.
+ * @brief Парсер и генератор YAML front-matter блока в MD-файлах.
  *
- * Supported fields:
- *   tags:      list of strings
- *   book:      list with single book name (we use first entry)
- *   order:     integer (position within book)
+ * @details
+ * Обеспечивает двунаправленную конвертацию между YAML front-matter
+ * внутри Markdown-файлов и полями объекта {@link Note}.
+ *
+ * ## Поддерживаемые поля front-matter
+ * | Поле    | Тип           | Описание                              |
+ * |---------|---------------|---------------------------------------|
+ * | `tags`  | список строк  | Теги заметки                          |
+ * | `book`  | список строк  | Имя книги (берётся первый элемент)    |
+ * | `order` | целое число   | Позиция в книге (с нуля)              |
+ *
+ * ## Пример front-matter
+ * @code{.yaml}
+ * ---
+ * tags:
+ *   - java
+ *   - tutorial
+ * book:
+ *   - java_guide
+ * order: 2
+ * ---
+ * @endcode
+ *
+ * ## Синтаксис вложений
+ * Ссылки на прикреплённые файлы используют Obsidian-style синтаксис:
+ * @code{.md}
+ * ![[image.png]]
+ * ![[document.pdf]]
+ * @endcode
+ * {@link #extractAttachmentRefs(String)} выделяет имена файлов из таких ссылок.
+ *
+ * \note Класс является утилитным — все методы статические, экземпляр не создаётся.
+ *
+ * @see com.notevault.service.VaultService
+ * @see com.notevault.service.MarkdownRenderer
  */
 public class FrontMatterParser {
 
+    /** @brief SnakeYAML инстанс для десериализации front-matter. Не потокобезопасен сам по себе. */
     private static final Yaml YAML = new Yaml();
 
-    /** Parse front-matter from full file content and populate Note fields */
+    /** @brief Утилитный класс — конструктор недоступен. */
+    private FrontMatterParser() {}
+
+    /**
+     * @brief Разбирает front-matter файла и заполняет поля объекта {@link Note}.
+     *
+     * @details
+     * Если front-matter отсутствует или не содержит нужных полей,
+     * поля объекта {@code note} не изменяются.
+     *
+     * @param content Полное содержимое MD-файла (front-matter + тело).
+     * @param note    Объект заметки, в который записываются распознанные поля.
+     */
+    @SuppressWarnings("unchecked")
     public static void applyToNote(String content, Note note) {
         Map<String, Object> fm = extractFrontMatter(content);
         if (fm == null) return;
 
-        // Tags
         Object tagsObj = fm.get("tags");
         if (tagsObj instanceof List<?> tagList) {
             List<Tag> tags = new ArrayList<>();
@@ -33,17 +77,13 @@ public class FrontMatterParser {
             note.setTags(tags);
         }
 
-        // Book
         Object bookObj = fm.get("book");
         if (bookObj instanceof List<?> bookList && !bookList.isEmpty()) {
-            // book name stored; caller resolves to ID
-            String bookName = bookList.get(0).toString().trim();
-            note.getMetaExtra().put("bookName", bookName);
+            note.getMetaExtra().put("bookName", bookList.get(0).toString().trim());
         } else if (bookObj instanceof String s) {
             note.getMetaExtra().put("bookName", s.trim());
         }
 
-        // Order
         Object orderObj = fm.get("order");
         if (orderObj instanceof Integer i) {
             note.setBookOrder(i);
@@ -52,7 +92,19 @@ public class FrontMatterParser {
         }
     }
 
-    /** Build YAML front-matter string from Note and prepend to body */
+    /**
+     * @brief Строит полный текст MD-файла: front-matter (из полей Note) + тело.
+     *
+     * @details
+     * Front-matter генерируется вручную (без SnakeYAML) для контроля
+     * форматирования вывода и минимизации лишних полей. Если у заметки
+     * нет тегов и она не принадлежит книге — front-matter не добавляется.
+     *
+     * @param note Заметка с актуальными тегами, книгой и порядком.
+     * @param body Тело заметки (без front-matter).
+     * @return Полный текст файла, готовый для записи на диск.
+     */
+    @SuppressWarnings("unchecked")
     public static String buildContent(Note note, String body) {
         Map<String, Object> fm = new LinkedHashMap<>();
 
@@ -61,44 +113,40 @@ public class FrontMatterParser {
             for (Tag t : note.getTags()) tagNames.add(t.getName());
             fm.put("tags", tagNames);
         }
-
         if (note.getMetaExtra() != null && note.getMetaExtra().containsKey("bookName")) {
             fm.put("book", List.of(note.getMetaExtra().get("bookName")));
         }
-
         if (note.getBookOrder() != null) {
             fm.put("order", note.getBookOrder());
         }
 
-        if (fm.isEmpty()) {
-            return body != null ? body : "";
-        }
+        if (fm.isEmpty()) return body != null ? body : "";
 
         StringBuilder sb = new StringBuilder("---\n");
-        // Manual serialization for clean output
         if (fm.containsKey("tags")) {
             sb.append("tags:\n");
-            for (String t : (List<String>) fm.get("tags")) {
+            for (String t : (List<String>) fm.get("tags"))
                 sb.append("  - ").append(t).append("\n");
-            }
         }
         if (fm.containsKey("book")) {
             sb.append("book:\n");
-            for (Object b : (List<?>) fm.get("book")) {
+            for (Object b : (List<?>) fm.get("book"))
                 sb.append("  - ").append(b).append("\n");
-            }
         }
         if (fm.containsKey("order")) {
             sb.append("order: ").append(fm.get("order")).append("\n");
         }
         sb.append("---\n");
-        if (body != null && !body.isEmpty()) {
-            sb.append(body);
-        }
+        if (body != null && !body.isEmpty()) sb.append(body);
         return sb.toString();
     }
 
-    /** Extract raw front-matter map; returns null if none found */
+    /**
+     * @brief Извлекает сырой front-matter блок как Map.
+     *
+     * @param content Полный текст MD-файла.
+     * @return Распарсенная карта полей или {@code null} если front-matter отсутствует.
+     */
     @SuppressWarnings("unchecked")
     public static Map<String, Object> extractFrontMatter(String content) {
         if (content == null || !content.startsWith("---")) return null;
@@ -112,7 +160,12 @@ public class FrontMatterParser {
         return null;
     }
 
-    /** Strip front-matter block and return only the body */
+    /**
+     * @brief Возвращает тело заметки без YAML front-matter.
+     *
+     * @param content Полный текст MD-файла.
+     * @return Тело без front-matter (пустая строка если {@code content == null}).
+     */
     public static String extractBody(String content) {
         if (content == null) return "";
         if (!content.startsWith("---")) return content;
@@ -121,7 +174,16 @@ public class FrontMatterParser {
         return content.substring(end + 4).stripLeading();
     }
 
-    /** Parse Obsidian-style attachment reference: ![[filename]] */
+    /**
+     * @brief Извлекает список имён файлов из Obsidian-style ссылок {@code ![[file]]}.
+     *
+     * @details
+     * Ищет все вхождения паттерна {@code ![[...]]}} в теле заметки
+     * (front-matter при этом исключается).
+     *
+     * @param content Полный текст MD-файла.
+     * @return Список имён файлов (без скобок и пути).
+     */
     public static List<String> extractAttachmentRefs(String content) {
         List<String> refs = new ArrayList<>();
         String body = extractBody(content);
