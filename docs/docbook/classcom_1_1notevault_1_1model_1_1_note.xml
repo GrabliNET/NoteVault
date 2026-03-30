@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1model_1_1_note" xml:lang="ru">
+<title>Класс com.notevault.model.Note</title>
+<indexterm><primary>com.notevault.model.Note</primary></indexterm>
+<para>
+
+<para>Модель заметки — центральная сущность приложения. </para>
+ 
+</para>
+Граф связей класса com.notevault.model.Note:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1model_1_1_note__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1af12261b48e9317911fa214735e3fe7c2"/><emphasis role="strong">Note</emphasis> ()</para>
+
+<para>Конструктор по умолчанию (требуется для маппинга из ResultSet). </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a9c62b36c90a66aaa762095d7c302e51a">Note</link> (String title, String filePath)</para>
+
+<para>Создаёт новую заметку с заданным заголовком и путём к файлу. </para>
+</listitem>
+            <listitem><para>long <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f">getId</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a6f773c8d062b8859bae1277a80cfa2fc">setId</link> (long id)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1ae082ea02f6c2a9b4ecc1a8e98c68e44a">getTitle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a80d15ec55d70a8139519ca8dec5cc02e">setTitle</link> (String title)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a21bd47bd8d83648504373bde82fee650">getFilePath</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a53fc133aa0bd847b0313f7d862b39469">setFilePath</link> (String filePath)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a3a4e835c1899864c8e038e984db222ac">getContent</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a557961fa4c7f26a45fcc8b33bd807fd0">setContent</link> (String content)</para>
+</listitem>
+            <listitem><para>LocalDateTime <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a5dea4e089aa91ddf563fb54766ba8a8e">getCreatedAt</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1acadaa21a92a469da9f5da581a5101d6e">setCreatedAt</link> (LocalDateTime createdAt)</para>
+</listitem>
+            <listitem><para>LocalDateTime <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a31612e4a5eee4c1d88697e6b26c5d1cd">getUpdatedAt</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a7313a62632197afec6dfa2dff837ae61">setUpdatedAt</link> (LocalDateTime updatedAt)</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1aa6a04f87d9d19f2a2cc40b25849ab0cd">getTags</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1ac7e2444b75d621a08ebdc1bdb700509d">setTags</link> (List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; tags)</para>
+</listitem>
+            <listitem><para>Long <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a2a8f5cdeedcec162e5cf20bb419fdeaa">getBookId</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a709ff968407368c143516d74945edd3c">setBookId</link> (Long bookId)</para>
+</listitem>
+            <listitem><para>Integer <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a9fbf3d0e1299e220f36d646f547a036d">getBookOrder</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1abde8703ba931dd1d08bb2a4302409406">setBookOrder</link> (Integer bookOrder)</para>
+</listitem>
+            <listitem><para>Map&lt; String, String &gt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a23613b32016b945988104960d57670b3">getMetaExtra</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a62669f822f1fb316e5ec822191557a84">setMetaExtra</link> (Map&lt; String, String &gt; metaExtra)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a0d1bf8d504a6de63f1c82f07e44e77c6">getBodyContent</link> ()</para>
+
+<para>Возвращает тело заметки без YAML front-matter блока. </para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a14fd91f0ebc4676f259b18d75bb01561">toString</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Модель заметки — центральная сущность приложения. </para>
+
+
+
+<para>Каждая заметка соответствует одному файлу в формате Markdown внутри хранилища (vault). Путь к файлу хранится в поле <computeroutput><link linkend="_">filePath</link></computeroutput> относительно корня vault, что обеспечивает переносимость хранилища.</para>
+<section xml:id="_classcom_1_1notevault_1_1model_1_1_note_1autotoc_md9">
+<title>Структура файла заметки</title>
+<para>Файл начинается с YAML front-matter блока, за которым следует тело заметки: <literallayout><computeroutput>---
+tags:
+&#32;&#32;-&#32;java
+book:
+&#32;&#32;-&#32;java_guide
+order:&#32;3
+---
+<emphasis role="preprocessor">#&#32;Заголовок&#32;заметки</emphasis>
+
+Текст&#32;заметки...
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_classcom_1_1notevault_1_1model_1_1_note_1autotoc_md10">
+<title>Размещение файла в vault</title>
+<para>Физическое расположение файла определяется количеством тегов:<itemizedlist>
+<listitem>
+<para><emphasis role="bold">0 тегов</emphasis> → <computeroutput>_unsorted/&lt;slug&gt;.md</computeroutput></para>
+</listitem><listitem>
+<para><emphasis role="bold">1 тег</emphasis> → <computeroutput>&lt;tag&gt;/&lt;slug&gt;.md</computeroutput></para>
+</listitem><listitem>
+<para><emphasis role="bold">2+ тегов</emphasis> → <computeroutput>_multi/&lt;slug&gt;.md</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+
+<para><formalpara><title>См. также</title>
+
+<para><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout">com.notevault.util.VaultLayout</link> </para>
+
+<para><link linkend="_classcom_1_1notevault_1_1util_1_1_front_matter_parser">com.notevault.util.FrontMatterParser</link> </para>
+
+<para><link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o">com.notevault.db.NoteDAO</link> </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a9c62b36c90a66aaa762095d7c302e51a"/><section>
+    <title>Note()</title>
+<indexterm><primary>Note</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>Note</secondary></indexterm>
+<para><computeroutput>com.notevault.model.Note.Note (String title, String filePath)</computeroutput></para><para>
+
+<para>Создаёт новую заметку с заданным заголовком и путём к файлу. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>title</entry><entry>
+<para>Заголовок заметки. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>filePath</entry><entry>
+<para>Относительный путь к MD-файлу (может быть пустым до первого сохранения). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f"/><section>
+    <title>getId()</title>
+<indexterm><primary>getId</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getId</secondary></indexterm>
+<para><computeroutput>long com.notevault.model.Note.getId ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Первичный ключ в БД. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a6f773c8d062b8859bae1277a80cfa2fc"/><section>
+    <title>setId()</title>
+<indexterm><primary>setId</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setId</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setId (long id)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>Первичный ключ. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1ae082ea02f6c2a9b4ecc1a8e98c68e44a"/><section>
+    <title>getTitle()</title>
+<indexterm><primary>getTitle</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getTitle</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Note.getTitle ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Заголовок заметки. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a80d15ec55d70a8139519ca8dec5cc02e"/><section>
+    <title>setTitle()</title>
+<indexterm><primary>setTitle</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setTitle</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setTitle (String title)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>title</entry><entry>
+<para>Заголовок заметки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a21bd47bd8d83648504373bde82fee650"/><section>
+    <title>getFilePath()</title>
+<indexterm><primary>getFilePath</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getFilePath</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Note.getFilePath ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Относительный путь к файлу заметки внутри vault. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a53fc133aa0bd847b0313f7d862b39469"/><section>
+    <title>setFilePath()</title>
+<indexterm><primary>setFilePath</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setFilePath</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setFilePath (String filePath)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filePath</entry><entry>
+<para>Относительный путь к файлу. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a3a4e835c1899864c8e038e984db222ac"/><section>
+    <title>getContent()</title>
+<indexterm><primary>getContent</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getContent</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Note.getContent ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Полное содержимое файла (front-matter + тело), или <computeroutput>null</computeroutput> если не загружено. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a557961fa4c7f26a45fcc8b33bd807fd0"/><section>
+    <title>setContent()</title>
+<indexterm><primary>setContent</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setContent</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setContent (String content)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>content</entry><entry>
+<para>Полное содержимое файла. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a5dea4e089aa91ddf563fb54766ba8a8e"/><section>
+    <title>getCreatedAt()</title>
+<indexterm><primary>getCreatedAt</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getCreatedAt</secondary></indexterm>
+<para><computeroutput>LocalDateTime com.notevault.model.Note.getCreatedAt ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Дата создания. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1acadaa21a92a469da9f5da581a5101d6e"/><section>
+    <title>setCreatedAt()</title>
+<indexterm><primary>setCreatedAt</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setCreatedAt</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setCreatedAt (LocalDateTime createdAt)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>createdAt</entry><entry>
+<para>Дата создания. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a31612e4a5eee4c1d88697e6b26c5d1cd"/><section>
+    <title>getUpdatedAt()</title>
+<indexterm><primary>getUpdatedAt</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getUpdatedAt</secondary></indexterm>
+<para><computeroutput>LocalDateTime com.notevault.model.Note.getUpdatedAt ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Дата последнего изменения. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a7313a62632197afec6dfa2dff837ae61"/><section>
+    <title>setUpdatedAt()</title>
+<indexterm><primary>setUpdatedAt</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setUpdatedAt</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setUpdatedAt (LocalDateTime updatedAt)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>updatedAt</entry><entry>
+<para>Дата изменения. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1aa6a04f87d9d19f2a2cc40b25849ab0cd"/><section>
+    <title>getTags()</title>
+<indexterm><primary>getTags</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getTags</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; com.notevault.model.Note.getTags ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Список тегов заметки (не <computeroutput>null</computeroutput>, может быть пустым). </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1ac7e2444b75d621a08ebdc1bdb700509d"/><section>
+    <title>setTags()</title>
+<indexterm><primary>setTags</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setTags</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setTags (List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; tags)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tags</entry><entry>
+<para>Новый список тегов. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a2a8f5cdeedcec162e5cf20bb419fdeaa"/><section>
+    <title>getBookId()</title>
+<indexterm><primary>getBookId</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getBookId</secondary></indexterm>
+<para><computeroutput>Long com.notevault.model.Note.getBookId ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>ID книги или <computeroutput>null</computeroutput>. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a709ff968407368c143516d74945edd3c"/><section>
+    <title>setBookId()</title>
+<indexterm><primary>setBookId</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setBookId</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setBookId (Long bookId)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>bookId</entry><entry>
+<para>ID книги или <computeroutput>null</computeroutput>. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a9fbf3d0e1299e220f36d646f547a036d"/><section>
+    <title>getBookOrder()</title>
+<indexterm><primary>getBookOrder</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getBookOrder</secondary></indexterm>
+<para><computeroutput>Integer com.notevault.model.Note.getBookOrder ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Порядковый номер в книге или <computeroutput>null</computeroutput>. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1abde8703ba931dd1d08bb2a4302409406"/><section>
+    <title>setBookOrder()</title>
+<indexterm><primary>setBookOrder</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setBookOrder</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setBookOrder (Integer bookOrder)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>bookOrder</entry><entry>
+<para>Порядковый номер. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a23613b32016b945988104960d57670b3"/><section>
+    <title>getMetaExtra()</title>
+<indexterm><primary>getMetaExtra</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getMetaExtra</secondary></indexterm>
+<para><computeroutput>Map&lt; String, String &gt; com.notevault.model.Note.getMetaExtra ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Карта дополнительных метаданных (не <computeroutput>null</computeroutput>). </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a62669f822f1fb316e5ec822191557a84"/><section>
+    <title>setMetaExtra()</title>
+<indexterm><primary>setMetaExtra</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>setMetaExtra</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Note.setMetaExtra (Map&lt; String, String &gt; metaExtra)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>metaExtra</entry><entry>
+<para>Карта доп. метаданных. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a0d1bf8d504a6de63f1c82f07e44e77c6"/><section>
+    <title>getBodyContent()</title>
+<indexterm><primary>getBodyContent</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>getBodyContent</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Note.getBodyContent ( )</computeroutput></para><para>
+
+<para>Возвращает тело заметки без YAML front-matter блока. </para>
+</para>
+
+<para>Если файл начинается с <computeroutput>---</computeroutput>, ищет закрывающий <computeroutput>---</computeroutput> и возвращает всё после него. Если front-matter отсутствует — возвращает <computeroutput><link linkend="_">content</link></computeroutput> целиком.</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Текст заметки без front-matter, или пустая строка если <computeroutput><link linkend="_">content</link></computeroutput> равен <computeroutput>null</computeroutput>. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_note_1a14fd91f0ebc4676f259b18d75bb01561"/><section>
+    <title>toString()</title>
+<indexterm><primary>toString</primary><secondary>com.notevault.model.Note</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Note</primary><secondary>toString</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Note.toString ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Заголовок заметки, или <computeroutput>&quot;(Untitled)&quot;</computeroutput> если заголовок не задан. </para>
+</formalpara>
+</para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/model/Note.java</section>
+</section>

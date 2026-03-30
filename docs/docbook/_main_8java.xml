@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__main_8java" xml:lang="ru">
+<title>Файл src/main/java/com/notevault/Main.java</title>
+<indexterm><primary>src/main/java/com/notevault/Main.java</primary></indexterm>
+<para>
+
+<para>Точка входа приложения NoteVault. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">import com.formdev.flatlaf.themes.FlatMacDarkLaf;<?linebreak?>import com.formdev.flatlaf.themes.FlatMacLightLaf;<?linebreak?>import com.notevault.db.DatabaseManager;<?linebreak?>import com.notevault.ui.MainWindow;<?linebreak?>import javax.swing.*;<?linebreak?>import java.awt.*;<?linebreak?>import java.util.prefs.Preferences;<?linebreak?></programlisting>Граф включаемых заголовочных файлов для Main.java:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_main_8java__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Подробное описание</title>
+
+<para>Точка входа приложения NoteVault. </para>
+
+<para>Инициализирует Look &amp; Feel (FlatLaf macOS-стиль), применяет тему (тёмная / светлая) из пользовательских настроек, затем запускает главное окно <computeroutput><link linkend="_">com.notevault.ui.MainWindow</link></computeroutput> в потоке Event Dispatch Thread.</para>
+
+<para>Порядок инициализации:<orderedlist>
+<listitem>
+<para>Выбор темы (из <computeroutput>Preferences</computeroutput> или автодетектирование).</para>
+</listitem><listitem>
+<para>Настройка UIManager (скругления, ширина скроллбара и т.д.).</para>
+</listitem><listitem>
+<para>Инициализация <computeroutput><link linkend="_">DatabaseManager</link></computeroutput> (без открытия конкретного vault).</para>
+</listitem><listitem>
+<para>Создание и отображение <computeroutput><link linkend="_">MainWindow</link></computeroutput>. </para>
+</listitem></orderedlist>
+</para>
+</section>
+</section>

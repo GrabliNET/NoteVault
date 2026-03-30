@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel" xml:lang="ru">
+<title>Класс com.notevault.ui.components.TagChipPanel</title>
+<indexterm><primary>com.notevault.ui.components.TagChipPanel</primary></indexterm>
+<para>
+
+<para>Horizontal panel displaying tags as colored chips with an × remove button. </para>
+ 
+</para>
+Граф связей класса com.notevault.ui.components.TagChipPanel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Классы    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout">WrapLayout</link></para>
+
+<para>FlowLayout that wraps to new lines when there&apos;s not enough space. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Horizontal panel displaying tags as colored chips with an × remove button. </para>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/ui/components/TagChipPanel.java</section>
+</section>

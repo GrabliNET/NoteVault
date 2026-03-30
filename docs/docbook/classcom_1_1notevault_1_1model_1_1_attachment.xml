@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1model_1_1_attachment" xml:lang="ru">
+<title>Класс com.notevault.model.Attachment</title>
+<indexterm><primary>com.notevault.model.Attachment</primary></indexterm>
+<para>
+
+<para>Прикреплённый файл, связанный с конкретной заметкой. </para>
+ 
+</para>
+Граф связей класса com.notevault.model.Attachment:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1model_1_1_attachment__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1a1e3e52c4d31c2026dd5c5f96feccda83"/><emphasis role="strong">Attachment</emphasis> ()</para>
+
+<para>Конструктор по умолчанию. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1ac787491f993f5ecd6709134904a24389">Attachment</link> (long noteId, String fileName, String filePath)</para>
+
+<para>Создаёт запись о вложении. </para>
+</listitem>
+            <listitem><para>long <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1aff49276a3457de2f9786f64ab8023571">getId</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1a32d6a1633ec0cdbb877c5c1451918567">setId</link> (long id)</para>
+</listitem>
+            <listitem><para>long <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1a0d5eb7c8753b0ed86c575c6274ecd44e">getNoteId</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1a978cc037203be041a62777134b2a525a">setNoteId</link> (long noteId)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1adc0a43f3f773b9623d9595241844b60e">getFileName</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1aaed5d2b09ef78db6fa5f44edcdd35a33">setFileName</link> (String fileName)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1a2cf860ac17220ee38e79140f70159db5">getFilePath</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1ae8a603703d52b6363ba07faeb531b821">setFilePath</link> (String filePath)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment_1a039c8f1f3e34f479f287c6a3cf944862">toString</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Прикреплённый файл, связанный с конкретной заметкой. </para>
+
+
+
+<para>Вложения хранятся <emphasis role="bold">физически</emphasis> в папке <computeroutput>_attachments/&lt;note-slug&gt;/</computeroutput> внутри vault, а в БД (таблица <computeroutput>attachments</computeroutput>) хранится только ссылка на файл — имя и относительный путь. Сам бинарный контент в БД не попадает.</para>
+<section xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1autotoc_md4">
+<title>Ссылка в Markdown</title>
+<para>В тексте заметки вложение вставляется синтаксисом Obsidian-style: <literallayout><computeroutput>![[photo.png]]
+![[document.pdf]]
+</computeroutput></literallayout> При рендере превью <computeroutput><link linkend="_">com.notevault.service.MarkdownRenderer</link></computeroutput> подставляет абсолютный URI файла в тег <computeroutput>&lt;img&gt;</computeroutput> или <computeroutput>&lt;a&gt;</computeroutput>.</para>
+</section>
+<section xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1autotoc_md5">
+<title>Удаление</title>
+<para>При удалении заметки связанные записи в таблице <computeroutput>attachments</computeroutput> каскадно удаляются (FK <computeroutput>ON DELETE CASCADE</computeroutput>). Физические файлы удаляются отдельно в <computeroutput><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce">com.notevault.service.VaultService#deleteNote</link></computeroutput>.</para>
+
+<para><formalpara><title>См. также</title>
+
+<para>com.notevault.db.AttachmentDAO </para>
+
+<para><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6214436e88511b5185536696610a7891">com.notevault.service.VaultService.addAttachment</link> </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1ac787491f993f5ecd6709134904a24389"/><section>
+    <title>Attachment()</title>
+<indexterm><primary>Attachment</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>Attachment</secondary></indexterm>
+<para><computeroutput>com.notevault.model.Attachment.Attachment (long noteId, String fileName, String filePath)</computeroutput></para><para>
+
+<para>Создаёт запись о вложении. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>noteId</entry><entry>
+<para>ID заметки-владельца. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>fileName</entry><entry>
+<para>Имя файла. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>filePath</entry><entry>
+<para>Относительный путь к файлу внутри vault. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1aff49276a3457de2f9786f64ab8023571"/><section>
+    <title>getId()</title>
+<indexterm><primary>getId</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>getId</secondary></indexterm>
+<para><computeroutput>long com.notevault.model.Attachment.getId ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Первичный ключ. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1a32d6a1633ec0cdbb877c5c1451918567"/><section>
+    <title>setId()</title>
+<indexterm><primary>setId</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>setId</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Attachment.setId (long id)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>Первичный ключ. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1a0d5eb7c8753b0ed86c575c6274ecd44e"/><section>
+    <title>getNoteId()</title>
+<indexterm><primary>getNoteId</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>getNoteId</secondary></indexterm>
+<para><computeroutput>long com.notevault.model.Attachment.getNoteId ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>ID заметки-владельца. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1a978cc037203be041a62777134b2a525a"/><section>
+    <title>setNoteId()</title>
+<indexterm><primary>setNoteId</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>setNoteId</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Attachment.setNoteId (long noteId)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>noteId</entry><entry>
+<para>ID заметки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1adc0a43f3f773b9623d9595241844b60e"/><section>
+    <title>getFileName()</title>
+<indexterm><primary>getFileName</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>getFileName</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Attachment.getFileName ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Имя файла. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1aaed5d2b09ef78db6fa5f44edcdd35a33"/><section>
+    <title>setFileName()</title>
+<indexterm><primary>setFileName</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>setFileName</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Attachment.setFileName (String fileName)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>fileName</entry><entry>
+<para>Имя файла. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1a2cf860ac17220ee38e79140f70159db5"/><section>
+    <title>getFilePath()</title>
+<indexterm><primary>getFilePath</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>getFilePath</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Attachment.getFilePath ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Относительный путь к файлу. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1ae8a603703d52b6363ba07faeb531b821"/><section>
+    <title>setFilePath()</title>
+<indexterm><primary>setFilePath</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>setFilePath</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Attachment.setFilePath (String filePath)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filePath</entry><entry>
+<para>Относительный путь. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_attachment_1a039c8f1f3e34f479f287c6a3cf944862"/><section>
+    <title>toString()</title>
+<indexterm><primary>toString</primary><secondary>com.notevault.model.Attachment</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Attachment</primary><secondary>toString</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Attachment.toString ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Имя файла. </para>
+</formalpara>
+</para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/model/Attachment.java</section>
+</section>

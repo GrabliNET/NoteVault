@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="ru">
+    <info>
+    <title>NoteVault</title>
+    </info>
+<chapter>
+    <title>Классы</title>
+    <xi:include href="classcom_1_1notevault_1_1model_1_1_attachment.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1model_1_1_book.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1db_1_1_database_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1util_1_1_front_matter_parser.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1model_1_1_note.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1db_1_1_note_d_a_o.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1model_1_1_tag.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1util_1_1_vault_layout.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1service_1_1_vault_service.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Файлы</title>
+    <xi:include href="_main_8java.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

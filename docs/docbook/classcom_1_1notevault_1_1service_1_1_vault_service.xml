@@ -1,0 +1,1485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service" xml:lang="ru">
+<title>Класс com.notevault.service.VaultService</title>
+<indexterm><primary>com.notevault.service.VaultService</primary></indexterm>
+<para>
+
+<para>Центральный сервисный слой приложения. </para>
+ 
+</para>
+Граф связей класса com.notevault.service.VaultService:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1service_1_1_vault_service__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a5f70401a9034bf14f46569cf0d609c2f">openVault</link> (Path vaultRoot)  throws Exception </para>
+
+<para>Открывает хранилище заметок по указанному пути. </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a00cfff9997b54c5494855c8dc20e2a6d">isVaultOpen</link> ()</para>
+
+<para>Проверяет, открыт ли vault. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout">VaultLayout</link> <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1acbc120014fa079090f088f7e857f7924">getLayout</link> ()</para>
+
+<para>Возвращает менеджер файловой раскладки. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a31177c35ada66e4019a3521dd0c14559">createNote</link> (String title)  throws Exception </para>
+
+<para>Создаёт новую заметку с пустым телом и без тегов. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1aacc7298527393af3b6776dde92ed678d">createNote</link> (String title, String body, List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; tags)  throws Exception </para>
+
+<para>Создаёт новую заметку с заданным содержимым и тегами. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a439dd8e1fc2ce85b161fddbf7f6c0e10">saveNote</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note, String newContent)  throws Exception </para>
+
+<para>Сохраняет изменённое содержимое заметки. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6d9901d90cd4532daf3a5119e99240e1">updateNoteMeta</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)  throws Exception </para>
+
+<para>Обновляет метаданные заметки (теги, книга) без изменения тела. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a55e16ef92daaa1621949acccd5ed42f6">renameNote</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note, String newTitle)  throws Exception </para>
+
+<para>Переименовывает заметку и физически переименовывает файл. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce">deleteNote</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)  throws Exception </para>
+
+<para>Удаляет заметку: файл с диска и запись из БД. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6e9bd86241b701df9cdc8e2e946706d5">loadNoteContent</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)  throws Exception </para>
+
+<para>Загружает содержимое MD-файла в объект заметки. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6dfdc5ecf391ff0e0fc55b32c058d8e2">getAllNotes</link> ()  throws Exception </para>
+
+<para>Возвращает все заметки хранилища. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1abbc0f374d4a1ee5210874779484cf6ea">getNotesByTag</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> tag)  throws Exception </para>
+
+<para>Возвращает заметки с указанным тегом. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a8a9fa42ec388ec5cd3e70db6aba90e28">getNotesByBook</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> book)  throws Exception </para>
+
+<para>Возвращает заметки книги с загруженным содержимым. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1ac8577a4e6f64820816de6c2550b4ec2c">searchNotes</link> (String query)  throws Exception </para>
+
+<para>Выполняет поиск заметок по части заголовка. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1afa4ff5e503dbfd57060bd569426e5ff5">getAllTags</link> ()  throws Exception </para>
+
+<para>Возвращает все теги с количеством заметок. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6c2b95f17dc3edf538856293cb64fe27">renameTag</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> tag, String newName)  throws Exception </para>
+
+<para>Переименовывает тег и обновляет front-matter всех затронутых заметок. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1af90017ddceba03e0fff5df67b79cf1d7">deleteTag</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> tag)  throws Exception </para>
+
+<para>Удаляет тег и очищает неиспользуемые теги. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> &gt; <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a468dae458fde9a15fb5a0a567b06878d">getAllBooks</link> ()  throws Exception </para>
+
+<para>Возвращает все книги. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1af35db116e54951ab3fade7fe8a257193">createBook</link> (String name, String description)  throws Exception </para>
+
+<para>Создаёт новую книгу. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a20d4b617579a58755d031376f5baa95e">updateBook</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> book)  throws Exception </para>
+
+<para>Обновляет имя и описание книги. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a1db6199490f5c8f8477fac38f77bddab">deleteBook</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> book)  throws Exception </para>
+
+<para>Удаляет книгу (заметки при этом сохраняются). </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_attachment">Attachment</link> <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6214436e88511b5185536696610a7891">addAttachment</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note, Path sourceFile)  throws Exception </para>
+
+<para>Копирует файл в директорию вложений заметки и регистрирует в БД. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment">Attachment</link> &gt; <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1acdb5217fb532251bdb6ebcf783562bcd">getAttachments</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)  throws Exception </para>
+
+<para>Возвращает список вложений заметки. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a47a61e44d5f7d80519d82bad262f0bbc">deleteAttachment</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_attachment">Attachment</link> att)  throws Exception </para>
+
+<para>Удаляет вложение: физический файл и запись в БД. </para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1ada2682780ae13fe09de153969c0e2067">getBookContent</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> book)  throws Exception </para>
+
+<para>Формирует объединённый Markdown-текст всех заметок книги. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые статические члены    </title>
+        <itemizedlist>
+            <listitem><para>static VaultService <link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1abe5535c0c907dab6be34c9859fb41f04">getInstance</link> ()</para>
+
+<para>Возвращает единственный экземпляр сервиса. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Центральный сервисный слой приложения. </para>
+
+
+
+<para>Координирует все операции, требующие одновременного изменения <emphasis role="bold">файловой системы</emphasis> и <emphasis role="bold">базы данных</emphasis>. Является единственным местом, где принимаются решения о физическом расположении файлов.</para>
+<section xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1autotoc_md11">
+<title>Принцип двойного хранения</title>
+<para>Каждая заметка существует в двух представлениях:<itemizedlist>
+<listitem>
+<para><emphasis role="bold">MD-файл</emphasis> — источник истины для содержимого и базовых метаданных (теги, книга, порядок — через YAML front-matter).</para>
+</listitem><listitem>
+<para><emphasis role="bold">SQLite</emphasis> — источник истины для быстрого поиска, индексов, связей и агрегированных данных (счётчик тегов и т.д.).</para>
+</listitem></itemizedlist>
+</para>
+
+<para>При любом изменении оба представления обновляются в рамках одного публичного метода сервиса.</para>
+</section>
+<section xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1autotoc_md12">
+<title>Жизненный цикл vault</title>
+<para><literallayout><computeroutput>VaultService.getInstance().openVault(path);&#32;&#32;<emphasis role="comment">//&#32;1.&#32;выбор&#32;vault</emphasis>
+Note&#32;n&#32;=&#32;service.createNote(<emphasis role="stringliteral">&quot;Title&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>,&#32;tags);&#32;<emphasis role="comment">//&#32;2.&#32;создание&#32;заметки</emphasis>
+service.saveNote(n,&#32;newContent);&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;3.&#32;сохранение</emphasis>
+service.deleteNote(n);&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;4.&#32;удаление</emphasis>
+</computeroutput></literallayout></para>
+
+<para><warning><title>Предупреждения</title>
+
+<para>Не является потокобезопасным. Весь доступ должен производиться из Event Dispatch Thread или с внешней синхронизацией.</para>
+</warning>
+<formalpara><title>См. также</title>
+
+<para><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout">com.notevault.util.VaultLayout</link> </para>
+
+<para><link linkend="_classcom_1_1notevault_1_1util_1_1_front_matter_parser">com.notevault.util.FrontMatterParser</link> </para>
+
+<para><link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o">com.notevault.db.NoteDAO</link> </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1abe5535c0c907dab6be34c9859fb41f04"/><section>
+    <title>getInstance()</title>
+<indexterm><primary>getInstance</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getInstance</secondary></indexterm>
+<para><computeroutput>VaultService com.notevault.service.VaultService.getInstance ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Возвращает единственный экземпляр сервиса. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Экземпляр <computeroutput><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service">VaultService</link></computeroutput>. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a5f70401a9034bf14f46569cf0d609c2f"/><section>
+    <title>openVault()</title>
+<indexterm><primary>openVault</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>openVault</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.openVault (Path vaultRoot) throws Exception</computeroutput></para><para>
+
+<para>Открывает хранилище заметок по указанному пути. </para>
+</para>
+
+<para><orderedlist>
+<listitem>
+<para>Инициализирует <computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout">VaultLayout</link></computeroutput> для управления файловой структурой.</para>
+</listitem><listitem>
+<para>Создаёт системные директории vault (<computeroutput>_unsorted</computeroutput>, <computeroutput>_multi</computeroutput>, <computeroutput>_attachments</computeroutput>, <computeroutput>_db</computeroutput>).</para>
+</listitem><listitem>
+<para>Открывает (или создаёт) SQLite БД через <computeroutput><link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager">DatabaseManager</link></computeroutput>.</para>
+</listitem></orderedlist>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vaultRoot</entry><entry>
+<para>Абсолютный путь к корневой директории vault. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>если не удалось создать директории или открыть БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a00cfff9997b54c5494855c8dc20e2a6d"/><section>
+    <title>isVaultOpen()</title>
+<indexterm><primary>isVaultOpen</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>isVaultOpen</secondary></indexterm>
+<para><computeroutput>boolean com.notevault.service.VaultService.isVaultOpen ( )</computeroutput></para><para>
+
+<para>Проверяет, открыт ли vault. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para><computeroutput>true</computeroutput> если layout инициализирован и БД открыта. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1acbc120014fa079090f088f7e857f7924"/><section>
+    <title>getLayout()</title>
+<indexterm><primary>getLayout</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getLayout</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout">VaultLayout</link> com.notevault.service.VaultService.getLayout ( )</computeroutput></para><para>
+
+<para>Возвращает менеджер файловой раскладки. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Текущий <computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout">VaultLayout</link></computeroutput> или <computeroutput>null</computeroutput> если vault не открыт. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a31177c35ada66e4019a3521dd0c14559"/><section>
+    <title>createNote()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>createNote</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>createNote</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> com.notevault.service.VaultService.createNote (String title) throws Exception</computeroutput></para><para>
+
+<para>Создаёт новую заметку с пустым телом и без тегов. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>title</entry><entry>
+<para>Заголовок заметки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Созданная заметка с заполненным <computeroutput>id</computeroutput> и <computeroutput>filePath</computeroutput>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке файловой системы или БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1aacc7298527393af3b6776dde92ed678d"/><section>
+    <title>createNote()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>createNote</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>createNote</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> com.notevault.service.VaultService.createNote (String title, String body, List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; tags) throws Exception</computeroutput></para><para>
+
+<para>Создаёт новую заметку с заданным содержимым и тегами. </para>
+</para>
+
+<para>Алгоритм:<orderedlist>
+<listitem>
+<para>Определяет целевую директорию по тегам через <computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a0fc1310784d361f294bcb8857ad56266">VaultLayout#noteFilePath</link></computeroutput>.</para>
+</listitem><listitem>
+<para>Генерирует уникальное имя файла (добавляет суффикс при коллизии).</para>
+</listitem><listitem>
+<para>Строит полный текст файла (front-matter + тело) через <computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_front_matter_parser_1a46d1c589e255538e6f8ca2b281940af7">FrontMatterParser#buildContent</link></computeroutput>.</para>
+</listitem><listitem>
+<para>Записывает файл на диск.</para>
+</listitem><listitem>
+<para>Сохраняет метаданные в БД через <computeroutput><link linkend="_">NoteDAO#insert</link></computeroutput>.</para>
+</listitem></orderedlist>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>title</entry><entry>
+<para>Заголовок заметки. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>body</entry><entry>
+<para>Тело заметки в формате Markdown (без front-matter). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>tags</entry><entry>
+<para>Список тегов (может быть пустым). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Созданная и сохранённая заметка. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке файловой системы или БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a439dd8e1fc2ce85b161fddbf7f6c0e10"/><section>
+    <title>saveNote()</title>
+<indexterm><primary>saveNote</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>saveNote</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.saveNote (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note, String newContent) throws Exception</computeroutput></para><para>
+
+<para>Сохраняет изменённое содержимое заметки. </para>
+</para>
+
+<para>Перечитывает front-matter из нового содержимого (пользователь мог изменить теги вручную прямо в редакторе). При изменении тегов файл может быть <emphasis role="bold">перемещён</emphasis> в другую директорию vault.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка (должна иметь корректный <computeroutput>id</computeroutput> и <computeroutput>filePath</computeroutput>). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>newContent</entry><entry>
+<para>Полный новый текст файла (front-matter + тело). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке файловой системы или БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6d9901d90cd4532daf3a5119e99240e1"/><section>
+    <title>updateNoteMeta()</title>
+<indexterm><primary>updateNoteMeta</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>updateNoteMeta</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.updateNoteMeta (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note) throws Exception</computeroutput></para><para>
+
+<para>Обновляет метаданные заметки (теги, книга) без изменения тела. </para>
+</para>
+
+<para>Перестраивает front-matter файла на основе текущего состояния объекта <computeroutput>note</computeroutput>, при необходимости перемещает файл.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка с обновлёнными тегами / книгой. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке файловой системы или БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a55e16ef92daaa1621949acccd5ed42f6"/><section>
+    <title>renameNote()</title>
+<indexterm><primary>renameNote</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>renameNote</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.renameNote (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note, String newTitle) throws Exception</computeroutput></para><para>
+
+<para>Переименовывает заметку и физически переименовывает файл. </para>
+</para>
+
+<para>Новое имя файла строится из нового заголовка через <computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e">VaultLayout#sanitizeFileName</link></computeroutput>. Если файл с таким именем уже существует, добавляется числовой суффикс.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка для переименования. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>newTitle</entry><entry>
+<para>Новый заголовок. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке файловой системы или БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce"/><section>
+    <title>deleteNote()</title>
+<indexterm><primary>deleteNote</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>deleteNote</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.deleteNote (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note) throws Exception</computeroutput></para><para>
+
+<para>Удаляет заметку: файл с диска и запись из БД. </para>
+</para>
+
+<para>Удаление из БД каскадно очищает <computeroutput>note_tags</computeroutput>, <computeroutput>book_notes</computeroutput> и <computeroutput>attachments</computeroutput>. Директория вложений удаляется только если она пуста.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка для удаления. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке файловой системы или БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6e9bd86241b701df9cdc8e2e946706d5"/><section>
+    <title>loadNoteContent()</title>
+<indexterm><primary>loadNoteContent</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>loadNoteContent</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> com.notevault.service.VaultService.loadNoteContent (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note) throws Exception</computeroutput></para><para>
+
+<para>Загружает содержимое MD-файла в объект заметки. </para>
+</para>
+
+<para>Читает файл с диска и разбирает front-matter через <computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_front_matter_parser_1ad66b202505a66d10cb5266fb6cbc5b85">FrontMatterParser#applyToNote</link></computeroutput>. Вызывается лениво — только при открытии заметки в редакторе.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка с корректным <computeroutput>filePath</computeroutput>; содержимое будет перезаписано. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Тот же объект <computeroutput>note</computeroutput> с заполненным <computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note_1a3a4e835c1899864c8e038e984db222ac">Note#getContent()</link></computeroutput>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>если файл не найден или недоступен. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6dfdc5ecf391ff0e0fc55b32c058d8e2"/><section>
+    <title>getAllNotes()</title>
+<indexterm><primary>getAllNotes</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getAllNotes</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; com.notevault.service.VaultService.getAllNotes ( ) throws Exception</computeroutput></para><para>
+
+<para>Возвращает все заметки хранилища. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Список заметок, отсортированных по дате изменения. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке запроса к БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1abbc0f374d4a1ee5210874779484cf6ea"/><section>
+    <title>getNotesByTag()</title>
+<indexterm><primary>getNotesByTag</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getNotesByTag</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; com.notevault.service.VaultService.getNotesByTag (<link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> tag) throws Exception</computeroutput></para><para>
+
+<para>Возвращает заметки с указанным тегом. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tag</entry><entry>
+<para>Тег с корректным <computeroutput>id</computeroutput>. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Список заметок. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке запроса к БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a8a9fa42ec388ec5cd3e70db6aba90e28"/><section>
+    <title>getNotesByBook()</title>
+<indexterm><primary>getNotesByBook</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getNotesByBook</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; com.notevault.service.VaultService.getNotesByBook (<link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> book) throws Exception</computeroutput></para><para>
+
+<para>Возвращает заметки книги с загруженным содержимым. </para>
+</para>
+
+<para>В отличие от <computeroutput><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6dfdc5ecf391ff0e0fc55b32c058d8e2">getAllNotes()</link></computeroutput>, здесь содержимое файлов загружается сразу — для последующей склейки в <computeroutput><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1ada2682780ae13fe09de153969c0e2067">getBookContent</link></computeroutput>.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>book</entry><entry>
+<para>Книга с корректным <computeroutput>id</computeroutput>. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Заметки книги в порядке <computeroutput>order_index</computeroutput>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке запроса или чтения файлов. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1ac8577a4e6f64820816de6c2550b4ec2c"/><section>
+    <title>searchNotes()</title>
+<indexterm><primary>searchNotes</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>searchNotes</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; com.notevault.service.VaultService.searchNotes (String query) throws Exception</computeroutput></para><para>
+
+<para>Выполняет поиск заметок по части заголовка. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>query</entry><entry>
+<para>Поисковый запрос (LIKE без учёта регистра). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Список подходящих заметок. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке запроса к БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1afa4ff5e503dbfd57060bd569426e5ff5"/><section>
+    <title>getAllTags()</title>
+<indexterm><primary>getAllTags</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getAllTags</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; com.notevault.service.VaultService.getAllTags ( ) throws Exception</computeroutput></para><para>
+
+<para>Возвращает все теги с количеством заметок. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Список тегов, отсортированных по имени. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке запроса к БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6c2b95f17dc3edf538856293cb64fe27"/><section>
+    <title>renameTag()</title>
+<indexterm><primary>renameTag</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>renameTag</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.renameTag (<link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> tag, String newName) throws Exception</computeroutput></para><para>
+
+<para>Переименовывает тег и обновляет front-matter всех затронутых заметок. </para>
+</para>
+
+<para>После переименования в БД перечитывает все заметки с этим тегом и перезаписывает их MD-файлы с обновлённым front-matter. Файлы <emphasis role="bold">не перемещаются</emphasis> (имя директории тега не меняется автоматически).</para>
+
+<para><note><title>Заметки</title>
+
+<para>Если нужно переместить файлы в директорию с новым именем тега, это потребует дополнительной реализации.</para>
+</note>
+
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tag</entry><entry>
+<para>Тег для переименования. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>newName</entry><entry>
+<para>Новое имя тега. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке БД или файловой системы. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1af90017ddceba03e0fff5df67b79cf1d7"/><section>
+    <title>deleteTag()</title>
+<indexterm><primary>deleteTag</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>deleteTag</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.deleteTag (<link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> tag) throws Exception</computeroutput></para><para>
+
+<para>Удаляет тег и очищает неиспользуемые теги. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tag</entry><entry>
+<para>Тег для удаления. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a468dae458fde9a15fb5a0a567b06878d"/><section>
+    <title>getAllBooks()</title>
+<indexterm><primary>getAllBooks</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getAllBooks</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> &gt; com.notevault.service.VaultService.getAllBooks ( ) throws Exception</computeroutput></para><para>
+
+<para>Возвращает все книги. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Список книг, отсортированных по имени. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке запроса к БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1af35db116e54951ab3fade7fe8a257193"/><section>
+    <title>createBook()</title>
+<indexterm><primary>createBook</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>createBook</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> com.notevault.service.VaultService.createBook (String name, String description) throws Exception</computeroutput></para><para>
+
+<para>Создаёт новую книгу. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para>Уникальное имя книги. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>description</entry><entry>
+<para>Описание (может быть пустым). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Созданная книга с заполненным <computeroutput>id</computeroutput>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке вставки в БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a20d4b617579a58755d031376f5baa95e"/><section>
+    <title>updateBook()</title>
+<indexterm><primary>updateBook</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>updateBook</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.updateBook (<link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> book) throws Exception</computeroutput></para><para>
+
+<para>Обновляет имя и описание книги. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>book</entry><entry>
+<para>Книга с актуальными данными. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке обновления. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a1db6199490f5c8f8477fac38f77bddab"/><section>
+    <title>deleteBook()</title>
+<indexterm><primary>deleteBook</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>deleteBook</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.deleteBook (<link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> book) throws Exception</computeroutput></para><para>
+
+<para>Удаляет книгу (заметки при этом сохраняются). </para>
+</para>
+
+<para>Удаление из БД каскадно удаляет <computeroutput>book_notes</computeroutput>. Физические файлы заметок не затрагиваются.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>book</entry><entry>
+<para>Книга для удаления. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке удаления. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a6214436e88511b5185536696610a7891"/><section>
+    <title>addAttachment()</title>
+<indexterm><primary>addAttachment</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>addAttachment</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_attachment">Attachment</link> com.notevault.service.VaultService.addAttachment (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note, Path sourceFile) throws Exception</computeroutput></para><para>
+
+<para>Копирует файл в директорию вложений заметки и регистрирует в БД. </para>
+</para>
+
+<para>Файл копируется в <computeroutput>_attachments/&lt;note-slug&gt;/</computeroutput>. При коллизии имён добавляется числовой суффикс. Исходный файл не удаляется.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка-владелец. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>sourceFile</entry><entry>
+<para>Путь к исходному файлу. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Запись о вложении с заполненным <computeroutput>id</computeroutput>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке файловой системы или БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1acdb5217fb532251bdb6ebcf783562bcd"/><section>
+    <title>getAttachments()</title>
+<indexterm><primary>getAttachments</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getAttachments</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_attachment">Attachment</link> &gt; com.notevault.service.VaultService.getAttachments (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note) throws Exception</computeroutput></para><para>
+
+<para>Возвращает список вложений заметки. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Список вложений. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке запроса. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1a47a61e44d5f7d80519d82bad262f0bbc"/><section>
+    <title>deleteAttachment()</title>
+<indexterm><primary>deleteAttachment</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>deleteAttachment</secondary></indexterm>
+<para><computeroutput>void com.notevault.service.VaultService.deleteAttachment (<link linkend="_classcom_1_1notevault_1_1model_1_1_attachment">Attachment</link> att) throws Exception</computeroutput></para><para>
+
+<para>Удаляет вложение: физический файл и запись в БД. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>att</entry><entry>
+<para>Вложение для удаления. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1service_1_1_vault_service_1ada2682780ae13fe09de153969c0e2067"/><section>
+    <title>getBookContent()</title>
+<indexterm><primary>getBookContent</primary><secondary>com.notevault.service.VaultService</secondary></indexterm>
+<indexterm><primary>com.notevault.service.VaultService</primary><secondary>getBookContent</secondary></indexterm>
+<para><computeroutput>String com.notevault.service.VaultService.getBookContent (<link linkend="_classcom_1_1notevault_1_1model_1_1_book">Book</link> book) throws Exception</computeroutput></para><para>
+
+<para>Формирует объединённый Markdown-текст всех заметок книги. </para>
+</para>
+
+<para>Заметки берутся в порядке <computeroutput>order_index</computeroutput> и конкатенируются через горизонтальную линию <computeroutput>---</computeroutput>. Физические файлы не изменяются. Результат используется для отображения книги в режиме чтения и для экспорта в PDF.</para>
+
+<para>Формат результата: <literallayout><computeroutput><emphasis role="preprocessor">#&#32;Название&#32;книги</emphasis>
+
+Описание&#32;книги...
+
+&lt;содержимое&#32;заметки&#32;1&gt;
+
+---
+
+&lt;содержимое&#32;заметки&#32;2&gt;
+</computeroutput></literallayout></para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>book</entry><entry>
+<para>Книга с корректным <computeroutput>id</computeroutput>. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Markdown-строка с объединённым содержимым. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке чтения файлов или запроса к БД. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/service/VaultService.java</section>
+</section>

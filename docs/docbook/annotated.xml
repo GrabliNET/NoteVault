@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="ru">
+<title>Классы</title>
+Классы с их кратким описанием.<link linkend="_classcom_1_1notevault_1_1model_1_1_attachment">com.notevault.model.Attachment</link>
+<para>Прикреплённый файл, связанный с конкретной заметкой </para>
+<link linkend="_classcom_1_1notevault_1_1model_1_1_book">com.notevault.model.Book</link>
+<para>Книга — именованная коллекция заметок с фиксированным порядком </para>
+<link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager">com.notevault.db.DatabaseManager</link>
+<para>Синглтон-менеджер соединения с базой данных SQLite </para>
+<link linkend="_classcom_1_1notevault_1_1util_1_1_front_matter_parser">com.notevault.util.FrontMatterParser</link>
+<para>Парсер и генератор YAML front-matter блока в MD-файлах </para>
+<link linkend="_classcom_1_1notevault_1_1model_1_1_note">com.notevault.model.Note</link>
+<para>Модель заметки — центральная сущность приложения </para>
+<link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o">com.notevault.db.NoteDAO</link>
+<para>DAO (Data Access Object) для работы с таблицей <computeroutput>notes</computeroutput> </para>
+<link linkend="_classcom_1_1notevault_1_1model_1_1_tag">com.notevault.model.Tag</link>
+<para>Тег (ярлык) для быстрой фильтрации заметок </para>
+<link linkend="_classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel">com.notevault.ui.components.TagChipPanel</link>
+<para>Horizontal panel displaying tags as colored chips with an × remove button </para>
+<link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout">com.notevault.util.VaultLayout</link>
+<para>Менеджер физической структуры директорий внутри vault </para>
+<link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service">com.notevault.service.VaultService</link>
+<para>Центральный сервисный слой приложения </para>
+<link linkend="_classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout">com.notevault.ui.components.TagChipPanel.WrapLayout</link>
+<para>FlowLayout that wraps to new lines when there&apos;s not enough space </para>
+</section>

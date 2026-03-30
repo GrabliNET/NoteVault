@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout" xml:lang="ru">
+<title>Класс com.notevault.ui.components.TagChipPanel.WrapLayout</title>
+<indexterm><primary>com.notevault.ui.components.TagChipPanel.WrapLayout</primary></indexterm>
+<para>
+
+<para>FlowLayout that wraps to new lines when there&apos;s not enough space. </para>
+ 
+</para>
+Граф связей класса com.notevault.ui.components.TagChipPanel.WrapLayout:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1ui_1_1components_1_1_tag_chip_panel_1_1_wrap_layout__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Подробное описание</title>
+
+<para>FlowLayout that wraps to new lines when there&apos;s not enough space. </para>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/ui/components/TagChipPanel.java</section>
+</section>

@@ -1,0 +1,643 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout" xml:lang="ru">
+<title>Класс com.notevault.util.VaultLayout</title>
+<indexterm><primary>com.notevault.util.VaultLayout</primary></indexterm>
+<para>
+
+<para>Менеджер физической структуры директорий внутри vault. </para>
+ 
+</para>
+Граф связей класса com.notevault.util.VaultLayout:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1util_1_1_vault_layout__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1aa9f14ea39f52a87bd71ab9ecf3ef76fd">VaultLayout</link> (Path vaultRoot)</para>
+
+<para>Создаёт экземпляр для указанного vault. </para>
+</listitem>
+            <listitem><para>Path <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a08a6cdcf2e700e24f55fb9ba5e56e4d4">getVaultRoot</link> ()</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a336e7837b2918bd0443d04ff7c489204">folderForNote</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)</para>
+
+<para>Определяет имя директории для заметки на основе её тегов. </para>
+</listitem>
+            <listitem><para>Path <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a0fc1310784d361f294bcb8857ad56266">noteFilePath</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)</para>
+
+<para>Вычисляет ожидаемый абсолютный путь к MD-файлу заметки. </para>
+</listitem>
+            <listitem><para>Path <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a842f2ca4b0ea581b868f728c314bd3e7">attachmentDir</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)</para>
+
+<para>Возвращает директорию вложений для заметки. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a45ca207beba9eabc5a446d6d4f65913c">ensureDirs</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)  throws Exception </para>
+
+<para>Создаёт все директории, необходимые для размещения заметки. </para>
+</listitem>
+            <listitem><para>Path <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1ab4fa88c1fa3f15beb2f1c8b75770c9b2">relocateIfNeeded</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note, Path currentPath)  throws Exception </para>
+
+<para>Перемещает файл заметки если её теги изменились. </para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1abb884768cfd534b3ba6fdc8f47108c9c">relativePath</link> (Path absolutePath)</para>
+
+<para>Вычисляет путь относительно корня vault. </para>
+</listitem>
+            <listitem><para>Path <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a0bac2343b0bff34768ba306c415c2525">resolve</link> (String <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1abb884768cfd534b3ba6fdc8f47108c9c">relativePath</link>)</para>
+
+<para>Разрешает относительный путь в абсолютный. </para>
+</listitem>
+            <listitem><para>Path <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a6d7b3717912dd6baa48127339c757469">uniquePath</link> (Path desired)</para>
+
+<para>Возвращает уникальный путь, добавляя числовой суффикс при коллизии. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые статические члены    </title>
+        <itemizedlist>
+            <listitem><para>static String <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e">sanitizeFileName</link> (String title)</para>
+
+<para>Преобразует заголовок заметки в безопасное имя файла (без расширения). </para>
+</listitem>
+            <listitem><para>static String <link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a8b4b17b564931bc4c175b4f8869b574c">sanitizeDirName</link> (String name)</para>
+
+<para>Преобразует имя тега в безопасное имя директории. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Статические открытые данные    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a42c72e4bcee468012fec126e209d8a37"/>static final String <emphasis role="strong">DIR_UNSORTED</emphasis> = &quot;_unsorted&quot;</para>
+
+<para>Имя директории для заметок без тегов. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1aa8495b18ab90847a5d1342f7453b20ce"/>static final String <emphasis role="strong">DIR_MULTI</emphasis> = &quot;_multi&quot;</para>
+
+<para>Имя директории для заметок с несколькими тегами. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a6f69dc63cd3de58f199351c45c559a3b"/>static final String <emphasis role="strong">DIR_ATTACHMENTS</emphasis> = &quot;_attachments&quot;</para>
+
+<para>Имя корневой директории вложений. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a4c509ede24da6b2364ef9400089acf4e"/>static final String <emphasis role="strong">DIR_DB</emphasis> = &quot;_db&quot;</para>
+
+<para>Имя директории базы данных. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Менеджер физической структуры директорий внутри vault. </para>
+
+
+
+<para>Инкапсулирует все правила размещения файлов: какой заметке соответствует какой путь, где лежат вложения, как избежать коллизий имён.</para>
+<section xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1autotoc_md16">
+<title>Структура vault</title>
+<para><literallayout><computeroutput>vault/
+├──&#32;_db/
+│&#32;&#32;&#32;└──&#32;notes.db&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;←&#32;SQLite&#32;база&#32;данных
+├──&#32;_unsorted/
+│&#32;&#32;&#32;└──&#32;*.md&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;←&#32;заметки&#32;без&#32;тегов
+├──&#32;_multi/
+│&#32;&#32;&#32;└──&#32;*.md&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;←&#32;заметки&#32;с&#32;двумя&#32;и&#32;более&#32;тегами
+├──&#32;_attachments/
+│&#32;&#32;&#32;└──&#32;&lt;note-slug&gt;/
+│&#32;&#32;&#32;&#32;&#32;&#32;&#32;└──&#32;&lt;file&gt;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;←&#32;вложения&#32;конкретной&#32;заметки
+└──&#32;&lt;tag&gt;/
+&#32;&#32;&#32;&#32;└──&#32;*.md&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;←&#32;заметки&#32;ровно&#32;с&#32;одним&#32;тегом
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1autotoc_md17">
+<title>Правила размещения</title>
+<para><informaltable frame="all">
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry>
+<para>Число тегов  </para>
+</entry><entry>
+<para>Директория  </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>0  </para>
+</entry><entry>
+<para><computeroutput>_unsorted/</computeroutput>  </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>1  </para>
+</entry><entry>
+<para><computeroutput>&lt;tagname&gt;/</computeroutput>  </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>2+  </para>
+</entry><entry>
+<para><computeroutput>_multi/</computeroutput>  </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+
+<para>Эта логика позволяет пользователю ориентироваться в хранилище даже без приложения: тематические заметки лежат в папках с понятными именами.</para>
+
+<para><note><title>Заметки</title>
+
+<para>Класс работает только с путями; чтение/запись файлов — ответственность <computeroutput><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service">com.notevault.service.VaultService</link></computeroutput>.</para>
+</note>
+<formalpara><title>См. также</title>
+
+<para><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service">com.notevault.service.VaultService</link> </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1aa9f14ea39f52a87bd71ab9ecf3ef76fd"/><section>
+    <title>VaultLayout()</title>
+<indexterm><primary>VaultLayout</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>VaultLayout</secondary></indexterm>
+<para><computeroutput>com.notevault.util.VaultLayout.VaultLayout (Path vaultRoot)</computeroutput></para><para>
+
+<para>Создаёт экземпляр для указанного vault. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vaultRoot</entry><entry>
+<para>Абсолютный путь к корню vault. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a08a6cdcf2e700e24f55fb9ba5e56e4d4"/><section>
+    <title>getVaultRoot()</title>
+<indexterm><primary>getVaultRoot</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>getVaultRoot</secondary></indexterm>
+<para><computeroutput>Path com.notevault.util.VaultLayout.getVaultRoot ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Корневая директория vault. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a336e7837b2918bd0443d04ff7c489204"/><section>
+    <title>folderForNote()</title>
+<indexterm><primary>folderForNote</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>folderForNote</secondary></indexterm>
+<para><computeroutput>String com.notevault.util.VaultLayout.folderForNote (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)</computeroutput></para><para>
+
+<para>Определяет имя директории для заметки на основе её тегов. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка (теги должны быть заполнены). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Имя поддиректории относительно vault root. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a0fc1310784d361f294bcb8857ad56266"/><section>
+    <title>noteFilePath()</title>
+<indexterm><primary>noteFilePath</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>noteFilePath</secondary></indexterm>
+<para><computeroutput>Path com.notevault.util.VaultLayout.noteFilePath (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)</computeroutput></para><para>
+
+<para>Вычисляет ожидаемый абсолютный путь к MD-файлу заметки. </para>
+</para>
+
+<para>Путь строится по схеме: <computeroutput>&lt;vaultRoot&gt;/&lt;folder&gt;/&lt;slug&gt;.md</computeroutput>, где <computeroutput>&lt;folder&gt;</computeroutput> определяется тегами, а <computeroutput>&lt;slug&gt;</computeroutput> — санированным заголовком.</para>
+
+<para><warning><title>Предупреждения</title>
+
+<para>Возвращаемый путь может уже существовать. Для гарантии уникальности используйте <computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a6d7b3717912dd6baa48127339c757469">uniquePath(Path)</link></computeroutput>.</para>
+</warning>
+
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка с заполненными заголовком и тегами. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Абсолютный <computeroutput><link linkend="_">Path</link></computeroutput> к MD-файлу. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a842f2ca4b0ea581b868f728c314bd3e7"/><section>
+    <title>attachmentDir()</title>
+<indexterm><primary>attachmentDir</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>attachmentDir</secondary></indexterm>
+<para><computeroutput>Path com.notevault.util.VaultLayout.attachmentDir (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)</computeroutput></para><para>
+
+<para>Возвращает директорию вложений для заметки. </para>
+</para>
+
+<para>Путь: <computeroutput>&lt;vaultRoot&gt;/_attachments/&lt;note-slug&gt;/</computeroutput></para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка с заполненным заголовком. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Абсолютный <computeroutput><link linkend="_">Path</link></computeroutput> к директории вложений. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a45ca207beba9eabc5a446d6d4f65913c"/><section>
+    <title>ensureDirs()</title>
+<indexterm><primary>ensureDirs</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>ensureDirs</secondary></indexterm>
+<para><computeroutput>void com.notevault.util.VaultLayout.ensureDirs (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note) throws Exception</computeroutput></para><para>
+
+<para>Создаёт все директории, необходимые для размещения заметки. </para>
+</para>
+
+<para>Создаёт родительскую директорию MD-файла и директорию вложений.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>если создание директорий завершилось ошибкой. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1ab4fa88c1fa3f15beb2f1c8b75770c9b2"/><section>
+    <title>relocateIfNeeded()</title>
+<indexterm><primary>relocateIfNeeded</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>relocateIfNeeded</secondary></indexterm>
+<para><computeroutput>Path com.notevault.util.VaultLayout.relocateIfNeeded (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note, Path currentPath) throws Exception</computeroutput></para><para>
+
+<para>Перемещает файл заметки если её теги изменились. </para>
+</para>
+
+<para>Сравнивает <computeroutput>currentPath</computeroutput> с ожидаемым путём по текущим тегам. Если пути различаются — перемещает файл через <computeroutput>Files.move</computeroutput>.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка с актуальными тегами. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>currentPath</entry><entry>
+<para>Текущий абсолютный путь к файлу. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Новый (или тот же) абсолютный путь к файлу. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>при ошибке перемещения. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1abb884768cfd534b3ba6fdc8f47108c9c"/><section>
+    <title>relativePath()</title>
+<indexterm><primary>relativePath</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>relativePath</secondary></indexterm>
+<para><computeroutput>String com.notevault.util.VaultLayout.relativePath (Path absolutePath)</computeroutput></para><para>
+
+<para>Вычисляет путь относительно корня vault. </para>
+</para>
+
+<para>Разделитель в возвращаемой строке всегда <computeroutput>&apos;/&apos;</computeroutput> независимо от ОС.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>absolutePath</entry><entry>
+<para>Абсолютный путь внутри vault. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Относительный путь с <computeroutput>&apos;/&apos;</computeroutput> в качестве разделителя. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a0bac2343b0bff34768ba306c415c2525"/><section>
+    <title>resolve()</title>
+<indexterm><primary>resolve</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>resolve</secondary></indexterm>
+<para><computeroutput>Path com.notevault.util.VaultLayout.resolve (String relativePath)</computeroutput></para><para>
+
+<para>Разрешает относительный путь в абсолютный. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1abb884768cfd534b3ba6fdc8f47108c9c">relativePath</link></entry><entry>
+<para>Относительный путь (разделитель <computeroutput>&apos;/&apos;</computeroutput>). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Абсолютный <computeroutput><link linkend="_">Path</link></computeroutput>. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e"/><section>
+    <title>sanitizeFileName()</title>
+<indexterm><primary>sanitizeFileName</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>sanitizeFileName</secondary></indexterm>
+<para><computeroutput>String com.notevault.util.VaultLayout.sanitizeFileName (String title)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Преобразует заголовок заметки в безопасное имя файла (без расширения). </para>
+</para>
+
+<para>Алгоритм:<orderedlist>
+<listitem>
+<para>Обрезает пробелы.</para>
+</listitem><listitem>
+<para>Заменяет символы, недопустимые в именах файлов, на <computeroutput>_</computeroutput>.</para>
+</listitem><listitem>
+<para>Заменяет пробелы на <computeroutput>-</computeroutput>.</para>
+</listitem><listitem>
+<para>Приводит к нижнему регистру.</para>
+</listitem><listitem>
+<para>Сжимает множественные дефисы.</para>
+</listitem></orderedlist>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>title</entry><entry>
+<para>Заголовок заметки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Безопасное имя файла или <computeroutput>&quot;untitled&quot;</computeroutput> если заголовок пуст. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a8b4b17b564931bc4c175b4f8869b574c"/><section>
+    <title>sanitizeDirName()</title>
+<indexterm><primary>sanitizeDirName</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>sanitizeDirName</secondary></indexterm>
+<para><computeroutput>String com.notevault.util.VaultLayout.sanitizeDirName (String name)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Преобразует имя тега в безопасное имя директории. </para>
+</para>
+
+<para>Аналог <computeroutput><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a98d045f4b799dd39f4962d796f261b5e">sanitizeFileName</link></computeroutput> для директорий.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para>Имя тега. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Безопасное имя директории или <computeroutput>&quot;_unsorted&quot;</computeroutput> если имя пусто. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1util_1_1_vault_layout_1a6d7b3717912dd6baa48127339c757469"/><section>
+    <title>uniquePath()</title>
+<indexterm><primary>uniquePath</primary><secondary>com.notevault.util.VaultLayout</secondary></indexterm>
+<indexterm><primary>com.notevault.util.VaultLayout</primary><secondary>uniquePath</secondary></indexterm>
+<para><computeroutput>Path com.notevault.util.VaultLayout.uniquePath (Path desired)</computeroutput></para><para>
+
+<para>Возвращает уникальный путь, добавляя числовой суффикс при коллизии. </para>
+</para>
+
+<para>Если <computeroutput>desired</computeroutput> не существует — возвращает его без изменений. Иначе перебирает <computeroutput>base-1.md</computeroutput>, <computeroutput>base-2.md</computeroutput> и т.д. до первого несуществующего варианта.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>desired</entry><entry>
+<para>Желаемый путь (обычно <computeroutput>noteFilePath(note)</computeroutput>). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Гарантированно несуществующий путь. </para>
+</formalpara>
+</para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/util/VaultLayout.java</section>
+</section>

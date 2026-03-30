@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o" xml:lang="ru">
+<title>Класс com.notevault.db.NoteDAO</title>
+<indexterm><primary>com.notevault.db.NoteDAO</primary></indexterm>
+<para>
+
+<para>DAO (Data Access Object) для работы с таблицей <computeroutput>notes</computeroutput>. </para>
+ 
+</para>
+Граф связей класса com.notevault.db.NoteDAO:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1db_1_1_note_d_a_o__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a6dca6a6bbfc2f6aa4a9810932dc91d7f">insert</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)  throws SQLException </para>
+
+<para>Сохраняет новую заметку в БД и присваивает ей сгенерированный ID. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ae9ad6e0f021ea1f3703773b2ab14f618">update</link> (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note)  throws SQLException </para>
+
+<para>Обновляет существующую заметку в БД. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0728747695e65859e85a54c446634dac">delete</link> (long noteId)  throws SQLException </para>
+
+<para>Удаляет заметку из БД по ID. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ad5723f704075627c10ffc41d402a91c9">findById</link> (long id)  throws SQLException </para>
+
+<para>Находит заметку по первичному ключу. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a4f3ad6742d8a06915fe8779b7324638b">findByPath</link> (String filePath)  throws SQLException </para>
+
+<para>Находит заметку по относительному пути к файлу. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1af65ea8d4c95cf1d99b77777dd40b45f4">findAll</link> ()  throws SQLException </para>
+
+<para>Возвращает все заметки, отсортированные по дате изменения (новые первыми). </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a1dfbc77dbd1d41e9c1d349ffc48d5621">findByTag</link> (long tagId)  throws SQLException </para>
+
+<para>Возвращает все заметки с указанным тегом. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1adda6c5eb37b8eaf7790152781ba1d70d">findByBook</link> (long bookId)  throws SQLException </para>
+
+<para>Возвращает заметки книги в порядке <computeroutput>order_index</computeroutput>. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0a120a09d344685d9da1bb6c9d657bcb">search</link> (String query)  throws SQLException </para>
+
+<para>Полнотекстовый поиск заметок по заголовку (LIKE). </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a20f9e3a2d1bd565e699fe9c609b2800a">findTagsForNote</link> (long noteId)  throws SQLException </para>
+
+<para>Возвращает теги конкретной заметки. </para>
+</listitem>
+            <listitem><para>long <link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ac683dabefcafc6251b57e39b0f6e9bf9">getOrCreateTag</link> (String name)  throws SQLException </para>
+
+<para>Возвращает ID тега по имени, создавая его при необходимости. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>DAO (Data Access Object) для работы с таблицей <computeroutput>notes</computeroutput>. </para>
+
+
+
+<para>Инкапсулирует все SQL-операции над заметками. Соединение получает через <computeroutput><link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager_1a00f22aef1446eac4b74ce4a94b64bcac">DatabaseManager#getConnection()</link></computeroutput> при каждом обращении — объект не хранит ссылку на Connection, что позволяет безопасно переоткрывать vault.</para>
+<section xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1autotoc_md3">
+<title>Синхронизация тегов и книг</title>
+<para>Методы <computeroutput><link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a6dca6a6bbfc2f6aa4a9810932dc91d7f">insert(Note)</link></computeroutput> и <computeroutput><link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ae9ad6e0f021ea1f3703773b2ab14f618">update(Note)</link></computeroutput> автоматически вызывают <computeroutput>syncTags()</computeroutput> и <computeroutput>syncBook()</computeroutput>, которые приводят промежуточные таблицы <computeroutput>note_tags</computeroutput> и <computeroutput>book_notes</computeroutput> в соответствие с текущим состоянием объекта <computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link></computeroutput>.</para>
+
+<para><note><title>Заметки</title>
+
+<para>DAO не читает содержимое MD-файлов и не пишет в них. Синхронизация файловой системы — ответственность <computeroutput><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service">com.notevault.service.VaultService</link></computeroutput>.</para>
+</note>
+<formalpara><title>См. также</title>
+
+<para><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service">com.notevault.service.VaultService</link> </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a6dca6a6bbfc2f6aa4a9810932dc91d7f"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>insert</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> com.notevault.db.NoteDAO.insert (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note) throws SQLException</computeroutput></para><para>
+
+<para>Сохраняет новую заметку в БД и присваивает ей сгенерированный ID. </para>
+</para>
+
+<para>После INSERT синхронизирует теги (<computeroutput>note_tags</computeroutput>) и книгу (<computeroutput>book_notes</computeroutput>).</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Объект заметки с заполненными <computeroutput>title</computeroutput>, <computeroutput>filePath</computeroutput>, <computeroutput>createdAt</computeroutput>, <computeroutput>updatedAt</computeroutput>. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Тот же объект <computeroutput>note</computeroutput> с заполненным <computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f">Note#getId()</link></computeroutput>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке вставки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ae9ad6e0f021ea1f3703773b2ab14f618"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>void com.notevault.db.NoteDAO.update (<link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> note) throws SQLException</computeroutput></para><para>
+
+<para>Обновляет существующую заметку в БД. </para>
+</para>
+
+<para>Обновляет <computeroutput>title</computeroutput>, <computeroutput>file_path</computeroutput>, <computeroutput>updated_at</computeroutput>. Также синхронизирует теги и книгу. Поле <computeroutput>created_at</computeroutput> не изменяется.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>note</entry><entry>
+<para>Заметка с актуальными данными и корректным <computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note_1ace443c6d00f074082438429a0146a15f">Note#getId()</link></computeroutput>. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке обновления. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0728747695e65859e85a54c446634dac"/><section>
+    <title>delete()</title>
+<indexterm><primary>delete</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>delete</secondary></indexterm>
+<para><computeroutput>void com.notevault.db.NoteDAO.delete (long noteId) throws SQLException</computeroutput></para><para>
+
+<para>Удаляет заметку из БД по ID. </para>
+</para>
+
+<para>Благодаря <computeroutput>ON DELETE CASCADE</computeroutput> в схеме, связанные записи в <computeroutput>note_tags</computeroutput>, <computeroutput>book_notes</computeroutput> и <computeroutput>attachments</computeroutput> удаляются автоматически.</para>
+
+<para><warning><title>Предупреждения</title>
+
+<para>Физический MD-файл при этом <emphasis role="bold">не удаляется</emphasis>. Удаление файла — ответственность вызывающего кода (<computeroutput><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a8df06c786e94ea426fe24d2d79a1a7ce">com.notevault.service.VaultService#deleteNote</link></computeroutput>).</para>
+</warning>
+
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>noteId</entry><entry>
+<para>Первичный ключ удаляемой заметки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке удаления. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ad5723f704075627c10ffc41d402a91c9"/><section>
+    <title>findById()</title>
+<indexterm><primary>findById</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>findById</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> com.notevault.db.NoteDAO.findById (long id) throws SQLException</computeroutput></para><para>
+
+<para>Находит заметку по первичному ключу. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>Первичный ключ. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Объект <computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link></computeroutput> или <computeroutput>null</computeroutput> если не найдена. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке запроса. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a4f3ad6742d8a06915fe8779b7324638b"/><section>
+    <title>findByPath()</title>
+<indexterm><primary>findByPath</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>findByPath</secondary></indexterm>
+<para><computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> com.notevault.db.NoteDAO.findByPath (String filePath) throws SQLException</computeroutput></para><para>
+
+<para>Находит заметку по относительному пути к файлу. </para>
+</para>
+
+<para>Используется при импорте и синхронизации файловой системы с БД.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filePath</entry><entry>
+<para>Относительный путь (например <computeroutput>&quot;java/my-note.md&quot;</computeroutput>). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Объект <computeroutput><link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link></computeroutput> или <computeroutput>null</computeroutput> если не найдена. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке запроса. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1af65ea8d4c95cf1d99b77777dd40b45f4"/><section>
+    <title>findAll()</title>
+<indexterm><primary>findAll</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>findAll</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; com.notevault.db.NoteDAO.findAll ( ) throws SQLException</computeroutput></para><para>
+
+<para>Возвращает все заметки, отсортированные по дате изменения (новые первыми). </para>
+</para>
+
+<para>Для каждой заметки дополнительно выполняется запрос тегов через <computeroutput><link linkend="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a20f9e3a2d1bd565e699fe9c609b2800a">findTagsForNote(long)</link></computeroutput>. При большом количестве заметок это N+1 запросов — допустимо для локального SQLite.</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Список всех заметок с заполненными тегами. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке запроса. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a1dfbc77dbd1d41e9c1d349ffc48d5621"/><section>
+    <title>findByTag()</title>
+<indexterm><primary>findByTag</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>findByTag</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; com.notevault.db.NoteDAO.findByTag (long tagId) throws SQLException</computeroutput></para><para>
+
+<para>Возвращает все заметки с указанным тегом. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tagId</entry><entry>
+<para>Первичный ключ тега. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Список заметок с тегом, отсортированных по дате изменения. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке запроса. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1adda6c5eb37b8eaf7790152781ba1d70d"/><section>
+    <title>findByBook()</title>
+<indexterm><primary>findByBook</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>findByBook</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; com.notevault.db.NoteDAO.findByBook (long bookId) throws SQLException</computeroutput></para><para>
+
+<para>Возвращает заметки книги в порядке <computeroutput>order_index</computeroutput>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>bookId</entry><entry>
+<para>Первичный ключ книги. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Список заметок книги, упорядоченных по позиции. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке запроса. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a0a120a09d344685d9da1bb6c9d657bcb"/><section>
+    <title>search()</title>
+<indexterm><primary>search</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>search</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_note">Note</link> &gt; com.notevault.db.NoteDAO.search (String query) throws SQLException</computeroutput></para><para>
+
+<para>Полнотекстовый поиск заметок по заголовку (LIKE). </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>query</entry><entry>
+<para>Поисковый запрос (без подстановочных символов — они добавляются внутри). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Список заметок, заголовок которых содержит <computeroutput>query</computeroutput>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке запроса. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1a20f9e3a2d1bd565e699fe9c609b2800a"/><section>
+    <title>findTagsForNote()</title>
+<indexterm><primary>findTagsForNote</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>findTagsForNote</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classcom_1_1notevault_1_1model_1_1_tag">Tag</link> &gt; com.notevault.db.NoteDAO.findTagsForNote (long noteId) throws SQLException</computeroutput></para><para>
+
+<para>Возвращает теги конкретной заметки. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>noteId</entry><entry>
+<para>Первичный ключ заметки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Список тегов, отсортированных по имени. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке запроса. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_note_d_a_o_1ac683dabefcafc6251b57e39b0f6e9bf9"/><section>
+    <title>getOrCreateTag()</title>
+<indexterm><primary>getOrCreateTag</primary><secondary>com.notevault.db.NoteDAO</secondary></indexterm>
+<indexterm><primary>com.notevault.db.NoteDAO</primary><secondary>getOrCreateTag</secondary></indexterm>
+<para><computeroutput>long com.notevault.db.NoteDAO.getOrCreateTag (String name) throws SQLException</computeroutput></para><para>
+
+<para>Возвращает ID тега по имени, создавая его при необходимости. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para>Имя тега (будет обрезан <computeroutput>trim()</computeroutput>). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>ID существующего или только что созданного тега. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SQLException</entry><entry>
+<para>при ошибке чтения или вставки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/db/NoteDAO.java</section>
+</section>

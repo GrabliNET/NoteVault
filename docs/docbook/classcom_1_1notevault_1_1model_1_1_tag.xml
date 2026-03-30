@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1model_1_1_tag" xml:lang="ru">
+<title>Класс com.notevault.model.Tag</title>
+<indexterm><primary>com.notevault.model.Tag</primary></indexterm>
+<para>
+
+<para>Тег (ярлык) для быстрой фильтрации заметок. </para>
+ 
+</para>
+Граф связей класса com.notevault.model.Tag:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1model_1_1_tag__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1aad49b502f3fd3c41244869f015449401"/><emphasis role="strong">Tag</emphasis> ()</para>
+
+<para>Конструктор по умолчанию. </para>
+</listitem>
+            <listitem><para><link linkend="_classcom_1_1notevault_1_1model_1_1_tag_1a94d0247289a4e4da912324807c29a183">Tag</link> (String name)</para>
+
+<para>Создаёт тег с заданным именем. </para>
+</listitem>
+            <listitem><para>long <link linkend="_classcom_1_1notevault_1_1model_1_1_tag_1ad1a4a232281806edf648a9ea8b7c1467">getId</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_tag_1a8a306276696a81614344c0b14a526355">setId</link> (long id)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_tag_1a26aa099743fc217a7ebd630572423c80">getName</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_tag_1a21ed58afcc84fb0238732738583a303a">setName</link> (String name)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classcom_1_1notevault_1_1model_1_1_tag_1a660bc92a4e212c3ceb8bf73665983298">getNoteCount</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1model_1_1_tag_1aaaa58cb614d065cb355bd81ebee686e0">setNoteCount</link> (int noteCount)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1notevault_1_1model_1_1_tag_1a43e89863fa0f84c1450bcd31c306c836">toString</link> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1ad2abb90a7ae39238c165bb417dbb699c"/>boolean <emphasis role="strong">equals</emphasis> (Object o)</para>
+
+<para>Два тега равны, если совпадают их имена (регистронезависимо). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Тег (ярлык) для быстрой фильтрации заметок. </para>
+
+
+
+<para>Теги хранятся в таблице <computeroutput>tags</computeroutput> БД с ограничением <computeroutput>UNIQUE COLLATE NOCASE</computeroutput> (регистронезависимая уникальность). Связь с заметками реализована через промежуточную таблицу <computeroutput>note_tags</computeroutput> (many-to-many).</para>
+
+<para>В YAML front-matter заметки теги записываются как список: <literallayout><computeroutput>tags:
+&#32;&#32;-&#32;java
+&#32;&#32;-&#32;tutorial
+</computeroutput></literallayout></para>
+
+<para>Физически заметки с одним тегом размещаются в папке с именем тега, что позволяет ориентироваться в хранилище без приложения.</para>
+
+<para><formalpara><title>См. также</title>
+
+<para>com.notevault.db.TagDAO </para>
+
+<para><link linkend="_classcom_1_1notevault_1_1util_1_1_vault_layout">com.notevault.util.VaultLayout</link> </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1a94d0247289a4e4da912324807c29a183"/><section>
+    <title>Tag()</title>
+<indexterm><primary>Tag</primary><secondary>com.notevault.model.Tag</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Tag</primary><secondary>Tag</secondary></indexterm>
+<para><computeroutput>com.notevault.model.Tag.Tag (String name)</computeroutput></para><para>
+
+<para>Создаёт тег с заданным именем. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para>Имя тега (без <computeroutput>#</computeroutput>). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1ad1a4a232281806edf648a9ea8b7c1467"/><section>
+    <title>getId()</title>
+<indexterm><primary>getId</primary><secondary>com.notevault.model.Tag</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Tag</primary><secondary>getId</secondary></indexterm>
+<para><computeroutput>long com.notevault.model.Tag.getId ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Первичный ключ. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1a8a306276696a81614344c0b14a526355"/><section>
+    <title>setId()</title>
+<indexterm><primary>setId</primary><secondary>com.notevault.model.Tag</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Tag</primary><secondary>setId</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Tag.setId (long id)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>Первичный ключ. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1a26aa099743fc217a7ebd630572423c80"/><section>
+    <title>getName()</title>
+<indexterm><primary>getName</primary><secondary>com.notevault.model.Tag</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Tag</primary><secondary>getName</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Tag.getName ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Имя тега. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1a21ed58afcc84fb0238732738583a303a"/><section>
+    <title>setName()</title>
+<indexterm><primary>setName</primary><secondary>com.notevault.model.Tag</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Tag</primary><secondary>setName</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Tag.setName (String name)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para>Имя тега. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1a660bc92a4e212c3ceb8bf73665983298"/><section>
+    <title>getNoteCount()</title>
+<indexterm><primary>getNoteCount</primary><secondary>com.notevault.model.Tag</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Tag</primary><secondary>getNoteCount</secondary></indexterm>
+<para><computeroutput>int com.notevault.model.Tag.getNoteCount ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Число заметок с этим тегом (денормализованное поле). </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1aaaa58cb614d065cb355bd81ebee686e0"/><section>
+    <title>setNoteCount()</title>
+<indexterm><primary>setNoteCount</primary><secondary>com.notevault.model.Tag</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Tag</primary><secondary>setNoteCount</secondary></indexterm>
+<para><computeroutput>void com.notevault.model.Tag.setNoteCount (int noteCount)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>noteCount</entry><entry>
+<para>Число заметок. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1model_1_1_tag_1a43e89863fa0f84c1450bcd31c306c836"/><section>
+    <title>toString()</title>
+<indexterm><primary>toString</primary><secondary>com.notevault.model.Tag</secondary></indexterm>
+<indexterm><primary>com.notevault.model.Tag</primary><secondary>toString</secondary></indexterm>
+<para><computeroutput>String com.notevault.model.Tag.toString ( )</computeroutput></para>
+<para><formalpara><title>Возвращает</title>
+
+<para>Имя тега. </para>
+</formalpara>
+</para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/model/Tag.java</section>
+</section>

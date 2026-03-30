@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager" xml:lang="ru">
+<title>Класс com.notevault.db.DatabaseManager</title>
+<indexterm><primary>com.notevault.db.DatabaseManager</primary></indexterm>
+<para>
+
+<para>Синглтон-менеджер соединения с базой данных SQLite. </para>
+ 
+</para>
+Граф связей класса com.notevault.db.DatabaseManager:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcom_1_1notevault_1_1db_1_1_database_manager__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager_1a42b54822e14be23513c4b8bc437b7564">initialize</link> ()</para>
+
+<para>Вызывается при старте приложения до выбора vault. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager_1a9aeb78ed51b075d9aedef99826a8544f">openVault</link> (String vaultPath)</para>
+
+<para>Открывает (или создаёт) базу данных в указанном vault. </para>
+</listitem>
+            <listitem><para>Connection <link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager_1a00f22aef1446eac4b74ce4a94b64bcac">getConnection</link> ()</para>
+
+<para>Возвращает активное соединение с БД. </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager_1a4799102dbe7478ae807a9509339610cd">isOpen</link> ()</para>
+
+<para>Проверяет, открыто ли соединение с БД. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager_1aeaf67f070e82cdac4057fb233e0a9aa1">close</link> ()</para>
+
+<para>Закрывает соединение с БД. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые статические члены    </title>
+        <itemizedlist>
+            <listitem><para>static DatabaseManager <link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager_1a65712db998cc14fa231fb575992b998d">getInstance</link> ()</para>
+
+<para>Возвращает единственный экземпляр менеджера. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Синглтон-менеджер соединения с базой данных SQLite. </para>
+
+
+
+<para>Управляет жизненным циклом единственного <computeroutput><link linkend="_">Connection</link></computeroutput> к файлу <computeroutput>_db/notes.db</computeroutput> внутри выбранного vault.</para>
+<section xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md0">
+<title>Схема БД</title>
+<para><informaltable frame="all">
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry>
+<para>Таблица  </para>
+</entry><entry>
+<para>Назначение  </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para><computeroutput>notes</computeroutput>  </para>
+</entry><entry>
+<para>Основные метаданные заметок  </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para><computeroutput>tags</computeroutput>  </para>
+</entry><entry>
+<para>Глобальный список тегов  </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para><computeroutput>note_tags</computeroutput>  </para>
+</entry><entry>
+<para>Связь M:N между заметками и тегами  </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para><computeroutput>books</computeroutput>  </para>
+</entry><entry>
+<para>Именованные коллекции заметок  </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para><computeroutput>book_notes</computeroutput>  </para>
+</entry><entry>
+<para>Связь M:N с порядком для книг  </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para><computeroutput>attachments</computeroutput>  </para>
+</entry><entry>
+<para>Ссылки на прикреплённые файлы (без бинарных данных)  </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+</section>
+<section xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md1">
+<title>Настройки SQLite</title>
+<para>При открытии устанавливаются PRAGMA:<itemizedlist>
+<listitem>
+<para><emphasis role="bold">WAL</emphasis> — Write-Ahead Logging, параллельные чтения без блокировок.</para>
+</listitem><listitem>
+<para><emphasis role="bold">foreign_keys=ON</emphasis> — каскадные удаления по FK.</para>
+</listitem><listitem>
+<para><emphasis role="bold">synchronous=NORMAL</emphasis> — баланс надёжности и скорости при WAL.</para>
+</listitem><listitem>
+<para><emphasis role="bold">busy_timeout=5000</emphasis> — ожидание до 5 с при заблокированном файле.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1autotoc_md2">
+<title>Важно о порядке вызова PRAGMA</title>
+<para>Каждый PRAGMA исполняется в <emphasis role="bold">отдельном</emphasis> <computeroutput><link linkend="_">Statement</link></computeroutput> через try-with-resources. Это необходимо из-за поведения sqlite-jdbc ≥ 3.45: драйвер удерживает неявную транзакцию после первого <computeroutput>execute()</computeroutput>, и цепочка вызовов на одном Statement приводит к <computeroutput>SQLITE_BUSY</computeroutput>.</para>
+
+<para><warning><title>Предупреждения</title>
+
+<para>Не является потокобезопасным. Все операции должны выполняться из Event Dispatch Thread или с внешней синхронизацией.</para>
+</warning>
+<formalpara><title>См. также</title>
+
+<para><link linkend="_classcom_1_1notevault_1_1service_1_1_vault_service_1a5f70401a9034bf14f46569cf0d609c2f">com.notevault.service.VaultService.openVault</link>(java.nio.file.Path) </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1a65712db998cc14fa231fb575992b998d"/><section>
+    <title>getInstance()</title>
+<indexterm><primary>getInstance</primary><secondary>com.notevault.db.DatabaseManager</secondary></indexterm>
+<indexterm><primary>com.notevault.db.DatabaseManager</primary><secondary>getInstance</secondary></indexterm>
+<para><computeroutput>DatabaseManager com.notevault.db.DatabaseManager.getInstance ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Возвращает единственный экземпляр менеджера. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Экземпляр <computeroutput><link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager">DatabaseManager</link></computeroutput>. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1a42b54822e14be23513c4b8bc437b7564"/><section>
+    <title>initialize()</title>
+<indexterm><primary>initialize</primary><secondary>com.notevault.db.DatabaseManager</secondary></indexterm>
+<indexterm><primary>com.notevault.db.DatabaseManager</primary><secondary>initialize</secondary></indexterm>
+<para><computeroutput>void com.notevault.db.DatabaseManager.initialize ( )</computeroutput></para><para>
+
+<para>Вызывается при старте приложения до выбора vault. </para>
+</para>
+
+<para>Метод-заглушка; реальная инициализация происходит в <computeroutput><link linkend="_classcom_1_1notevault_1_1db_1_1_database_manager_1a9aeb78ed51b075d9aedef99826a8544f">openVault(String)</link></computeroutput>. </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1a9aeb78ed51b075d9aedef99826a8544f"/><section>
+    <title>openVault()</title>
+<indexterm><primary>openVault</primary><secondary>com.notevault.db.DatabaseManager</secondary></indexterm>
+<indexterm><primary>com.notevault.db.DatabaseManager</primary><secondary>openVault</secondary></indexterm>
+<para><computeroutput>void com.notevault.db.DatabaseManager.openVault (String vaultPath)</computeroutput></para><para>
+
+<para>Открывает (или создаёт) базу данных в указанном vault. </para>
+</para>
+
+<para>Алгоритм:<orderedlist>
+<listitem>
+<para>Закрывает предыдущее соединение, если оно открыто.</para>
+</listitem><listitem>
+<para>Создаёт директорию <computeroutput>&lt;vaultPath&gt;/_db/</computeroutput> если не существует.</para>
+</listitem><listitem>
+<para>Открывает соединение JDBC с файлом <computeroutput>notes.db</computeroutput>.</para>
+</listitem><listitem>
+<para>Применяет PRAGMA (по одному на Statement).</para>
+</listitem><listitem>
+<para>Создаёт схему БД если таблицы ещё не существуют.</para>
+</listitem></orderedlist>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vaultPath</entry><entry>
+<para>Абсолютный путь к корневой директории vault. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>RuntimeException</entry><entry>
+<para>если соединение или создание схемы провалилось. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1a00f22aef1446eac4b74ce4a94b64bcac"/><section>
+    <title>getConnection()</title>
+<indexterm><primary>getConnection</primary><secondary>com.notevault.db.DatabaseManager</secondary></indexterm>
+<indexterm><primary>com.notevault.db.DatabaseManager</primary><secondary>getConnection</secondary></indexterm>
+<para><computeroutput>Connection com.notevault.db.DatabaseManager.getConnection ( )</computeroutput></para><para>
+
+<para>Возвращает активное соединение с БД. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Активный <computeroutput><link linkend="_">Connection</link></computeroutput>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>IllegalStateException</entry><entry>
+<para>если vault ещё не открыт. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1a4799102dbe7478ae807a9509339610cd"/><section>
+    <title>isOpen()</title>
+<indexterm><primary>isOpen</primary><secondary>com.notevault.db.DatabaseManager</secondary></indexterm>
+<indexterm><primary>com.notevault.db.DatabaseManager</primary><secondary>isOpen</secondary></indexterm>
+<para><computeroutput>boolean com.notevault.db.DatabaseManager.isOpen ( )</computeroutput></para><para>
+
+<para>Проверяет, открыто ли соединение с БД. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para><computeroutput>true</computeroutput> если соединение существует и не закрыто. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classcom_1_1notevault_1_1db_1_1_database_manager_1aeaf67f070e82cdac4057fb233e0a9aa1"/><section>
+    <title>close()</title>
+<indexterm><primary>close</primary><secondary>com.notevault.db.DatabaseManager</secondary></indexterm>
+<indexterm><primary>com.notevault.db.DatabaseManager</primary><secondary>close</secondary></indexterm>
+<para><computeroutput>void com.notevault.db.DatabaseManager.close ( )</computeroutput></para><para>
+
+<para>Закрывает соединение с БД. </para>
+</para>
+
+<para>Вызывается при завершении приложения из <computeroutput><link linkend="_">com.notevault.ui.MainWindow</link></computeroutput>. </para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+src/main/java/com/notevault/db/DatabaseManager.java</section>
+</section>
