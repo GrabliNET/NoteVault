@@ -39,7 +39,7 @@ public class Main {
             } else {
                 FlatMacLightLaf.setup();
             }
-            UIManager.put("defaultFont", new Font("SF Pro Text", Font.PLAIN, 15));
+            UIManager.put("defaultFont", new Font("SF Pro Text", Font.PLAIN, 16));
             UIManager.put("Component.arc", 8);
             UIManager.put("Button.arc", 8);
             UIManager.put("TextComponent.arc", 6);
